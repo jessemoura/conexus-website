@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONEXUS Guest Hub para Hospedagens | CONEXUS</title>
+  <meta name="description" content="Central digital para pousadas, Airbnb, cabanas e hospedagens. Organize informações, melhore a experiência do hóspede e reduza dúvidas repetitivas.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.conexus.press/servicos/conexus-guest-hub/">
+  <!-- Multilingual SEO hreflang -->
+  <link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/servicos/conexus-guest-hub/">
+  <link rel="alternate" hreflang="en" href="https://www.conexus.press/servicos/conexus-guest-hub/?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.conexus.press/servicos/conexus-guest-hub/?lang=es">
+  <link rel="alternate" hreflang="x-default" href="https://www.conexus.press/servicos/conexus-guest-hub/">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="stylesheet" href="/src/styles/components.css">
+
+  <!-- ANTI-FOUC THEME DETECTION SCRIPT -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('conexus_theme');
+      const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <!-- DADOS ESTRUTURADOS (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://conexus.press/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Serviços",
+        "item": "https://conexus.press/servicos/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "CONEXUS Guest Hub",
+        "item": "https://conexus.press/servicos/conexus-guest-hub/"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "CONEXUS Guest Hub",
+    "provider": {
+      "@type": "Organization",
+      "name": "CONEXUS",
+      "url": "https://conexus.press/"
+    },
+    "description": "Central digital personalizada para pousadas, cabanas, Airbnb e pequenas hospedagens. Reúne informações, regras, localização, recomendações e contato em uma experiência moderna para o hóspede.",
+    "serviceType": "Hospitalidade Digital",
+    "areaServed": "Brasil"
+  }
+  </script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="/" class="brand-logo" aria-label="CONEXUS - Página Inicial">
+        <img src="/assets/logos/conexus-logo-transparent.png" alt="CONEXUS Logo" width="180" height="48" loading="eager">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="/" class="nav-link" data-i18n="nav.home">Início</a>
+        <a href="/servicos/" class="nav-link active" data-i18n="nav.services">Serviços</a>
+        <a href="/sobre/" class="nav-link" data-i18n="nav.about">Sobre</a>
+        <a href="/portfolio/" class="nav-link" data-i18n="nav.portfolio">Portfólio</a>
+        <a href="/blog/" class="nav-link" data-i18n="nav.blog">Blog</a>
+        <a href="/faq/" class="nav-link" data-i18n="nav.faq">FAQ</a>
+        <a href="/contato/" class="nav-link" data-i18n="nav.contact">Contato</a>
+
+        <div class="header-social-links">
+          <a href="https://www.linkedin.com/in/jesse-ribeiro-a49666409/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-link" data-track="social_click" data-cta-position="header_linkedin">
+            <svg width="25" height="25" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.7a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26Z"/></svg>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-link" data-track="social_click" data-cta-position="header_instagram">
+            <svg width="25" height="25" viewBox="0 0 24 24">
+              <defs>
+                <linearGradient id="igHeaderGradGuest" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#f09433"/>
+                  <stop offset="25%" stop-color="#e6683c"/>
+                  <stop offset="50%" stop-color="#dc2743"/>
+                  <stop offset="75%" stop-color="#cc2366"/>
+                  <stop offset="100%" stop-color="#bc1888"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#igHeaderGradGuest)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-primary" data-whatsapp-key="serviceGeneral" data-track="whatsapp_click" data-cta-position="header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFFFFF" viewBox="0 0 448 512" style="margin-right: 4px;">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+          </svg>
+          <span data-i18n="common.talkToConexus">Falar com a CONEXUS</span>
+        </a>
+                        <!-- LANGUAGE SELECTOR -->
+        <div class="lang-selector-dropdown" id="lang-selector">
+          <button class="lang-btn" id="lang-btn" aria-label="Selecionar Idioma" aria-expanded="false" aria-haspopup="true">
+            <img src="/assets/icons/flags/br.svg" alt="Bandeira do Brasil" class="lang-flag-img lang-active-flag-img" width="20" height="14" loading="eager">
+            <span class="lang-code lang-active-code">PT</span>
+            <svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-menu" id="lang-menu" role="menu" aria-label="Idiomas disponíveis">
+            <button class="lang-option active" data-lang="pt" role="menuitem" aria-selected="true">
+              <img src="/assets/icons/flags/br.svg" alt="Bandeira do Brasil" class="lang-flag-img" width="20" height="14" loading="eager">
+              <span class="lang-option-name">Português</span>
+              <span class="lang-check">✓</span>
+            </button>
+            <button class="lang-option" data-lang="en" role="menuitem" aria-selected="false">
+              <img src="/assets/icons/flags/gb.svg" alt="Flag of the United Kingdom" class="lang-flag-img" width="20" height="14" loading="eager">
+              <span class="lang-option-name">English</span>
+              <span class="lang-check">✓</span>
+            </button>
+            <button class="lang-option" data-lang="es" role="menuitem" aria-selected="false">
+              <img src="/assets/icons/flags/es.svg" alt="Bandera de España" class="lang-flag-img" width="20" height="14" loading="eager">
+              <span class="lang-option-name">Español</span>
+              <span class="lang-check">✓</span>
+            </button>
+          </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar Tema Claro/Escuro" title="Alternar Tema">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div id="mobile-menu" class="mobile-menu" aria-label="Menu Mobile">
+    <a href="/" class="nav-link" data-i18n="nav.home">Início</a>
+    <a href="/servicos/" class="nav-link active" data-i18n="nav.services">Serviços</a>
+    <a href="/sobre/" class="nav-link" data-i18n="nav.about">Sobre</a>
+    <a href="/portfolio/" class="nav-link" data-i18n="nav.portfolio">Portfólio</a>
+    <a href="/blog/" class="nav-link" data-i18n="nav.blog">Blog</a>
+    <a href="/faq/" class="nav-link" data-i18n="nav.faq">FAQ</a>
+    <a href="/contato/" class="nav-link" data-i18n="nav.contact">Contato</a>
+    <div style="display: flex; gap: 1rem; margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--color-border-subtle);">
+      <a href="https://www.linkedin.com/in/jesse-ribeiro-a49666409/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-link" data-track="social_click" data-cta-position="mobile_linkedin">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.7a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26Z"/></svg>
+      </a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-link" data-track="social_click" data-cta-position="mobile_instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24">
+          <defs>
+            <linearGradient id="igMobileGradGuest" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#f09433"/>
+              <stop offset="25%" stop-color="#e6683c"/>
+              <stop offset="50%" stop-color="#dc2743"/>
+              <stop offset="75%" stop-color="#cc2366"/>
+              <stop offset="100%" stop-color="#bc1888"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#igMobileGradGuest)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="#" class="btn btn-primary" style="width: 100%;" data-whatsapp-key="serviceGeneral" data-track="whatsapp_click" data-cta-position="mobile_menu" data-i18n="common.talkToConexus">Falar com a CONEXUS</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge" data-i18n="conexusGuestHubPage.badge">HOSPITALIDADE • EXPERIÊNCIA DIGITAL</span>
+          <h1 class="hero-title" data-i18n="conexusGuestHubPage.title">CONEXUS Guest Hub</h1>
+          <p class="hero-description" style="font-size: var(--fs-lg); color: var(--color-primary-cyan); font-weight: 600; margin-bottom: 0.75rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k1">Experiência digital para hóspedes. Mais organização para sua hospedagem.</p>
+          <p class="hero-description" data-i18n="autoContent.servicos_conexus_guest_hub.k2">Central digital personalizada para pousadas, cabanas, Airbnb e pequenas hospedagens. Reúne informações, regras, Wi-Fi, localização, recomendações gastronômicas e contato em uma experiência moderna, ágil e intuitiva para o hóspede.</p>
+          <div class="hero-ctas" style="flex-wrap: wrap; gap: 1rem;">
+            <a href="https://vilaserena.conexus.press/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="demo_click" data-cta-position="guest_hub_hero_demo">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span data-i18n="services.guestHub.viewDemo">Ver Demo Vila Serena</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+            <a href="#" class="btn btn-secondary" data-whatsapp-key="serviceGeneral" data-track="whatsapp_click" data-cta-position="guest_hub_hero_whatsapp" data-i18n="autoContent.servicos_conexus_guest_hub.k3">Solicitar para Minha Hospedagem</a>
+          </div>
+        </div>
+
+        <!-- HERO COVER IMAGE -->
+        <div class="hero-media">
+          <img src="/assets/images/conexus-guest-hub-cover.png" alt="CONEXUS Guest Hub para Hospedagens e Pousadas" width="580" height="390" loading="eager" style="border-radius: var(--radius-lg); border: 1px solid var(--color-cyan-border); box-shadow: var(--shadow-subtle);">
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE É O GUEST HUB -->
+    <section class="section" style="background-color: var(--color-surface-navy); border-y: 1px solid var(--color-border-subtle);">
+      <div class="container" style="max-width: 960px;">
+        <div class="section-header">
+          <span class="tag" style="color: #21B8F6 !important; border-color: rgba(33, 184, 246, 0.3) !important;" data-i18n="autoContent.servicos_conexus_guest_hub.k4">CONCEITO & PROPÓSITO</span>
+          <h2 style="color: var(--color-text-white);" data-i18n="autoContent.servicos_conexus_guest_hub.k5">O que é o CONEXUS Guest Hub?</h2>
+          <p class="section-subtitle" style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k6">O Guest Hub é uma central digital interativa, moderna e intuitiva projetada especificamente para o hóspede acessar diretamente pelo smartphone via QR Code na acomodação ou link enviado no momento da reserva.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.5rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k7">Tudo em um só lugar</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k8">Reúne regras da casa, senha do Wi-Fi, horários de check-in/out, contatos diretos e recomendações da região sem que o hóspede precise procurar em mensagens antigas.</p>
+          </div>
+
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.5rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k9">100% Mobile First</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k10">Não requer download de nenhum aplicativo. Abre instantaneamente em qualquer navegador de celular, com carregamento ultra-rápido e navegação ergonômica.</p>
+          </div>
+
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.5rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k11">Identidade Personalizada</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k12">Totalmente customizado com as cores, logotipo, fotos, tom de voz e estilo único da sua propriedade ou pousada, elevando o valor percebido da diária.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag" data-i18n="autoContent.servicos_conexus_guest_hub.k13">PÚBLICO-ALVO</span>
+          <h2 data-i18n="autoContent.servicos_conexus_guest_hub.k14">Para quem é o CONEXUS Guest Hub?</h2>
+          <p class="section-subtitle" data-i18n="autoContent.servicos_conexus_guest_hub.k15">Desenvolvido sob medida para anfitriões e gestores de hospitalidade que desejam oferecer uma experiência memorável e profissional.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.25rem; margin-top: 2rem;">
+          <div style="padding: 1.5rem; background: var(--color-surface-navy); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); text-align: center;">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.35rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k16">Pousadas & Chalés</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0;" data-i18n="autoContent.servicos_conexus_guest_hub.k17">Estruturas de charme que querem acolher seus hóspedes com sofisticação e autonomia.</p>
+          </div>
+
+          <div style="padding: 1.5rem; background: var(--color-surface-navy); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); text-align: center;">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><line x1="12" x2="12.01" y1="18" y2="18"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.35rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k18">Airbnb & Temporada</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0;" data-i18n="autoContent.servicos_conexus_guest_hub.k19">Apartamentos e casas de aluguel por temporada que precisam de autoatendimento ágil.</p>
+          </div>
+
+          <div style="padding: 1.5rem; background: var(--color-surface-navy); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); text-align: center;">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.35rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k20">Cabanas & Glampings</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0;" data-i18n="autoContent.servicos_conexus_guest_hub.k21">Hospedagens na natureza onde instruções claras de chegada e lazer são fundamentais.</p>
+          </div>
+
+          <div style="padding: 1.5rem; background: var(--color-surface-navy); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); text-align: center;">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.35rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k22">Pequenas Hospedagens</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0;" data-i18n="autoContent.servicos_conexus_guest_hub.k23">Boutique hotels, guest houses e flats que buscam eficiência operacional e encanto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS E ESTRUTURA INCLUSA -->
+    <section class="section" style="background-color: var(--color-surface-navy); border-top: 1px solid var(--color-border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag" style="color: #21B8F6 !important; border-color: rgba(33, 184, 246, 0.3) !important;" data-i18n="autoContent.servicos_conexus_guest_hub.k24">ESTRUTURA COMPLETA</span>
+          <h2 style="color: var(--color-text-white);" data-i18n="autoContent.servicos_conexus_guest_hub.k25">O que está incluso no CONEXUS Guest Hub?</h2>
+          <p class="section-subtitle" style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k26">Cada módulo é cuidadosamente arquitetado para atender as dúvidas mais frequentes antes mesmo que o hóspede precise perguntar.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.4rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k27">Informações da Hospedagem</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k28">Apresentação da propriedade, fotos das comodidades, instruções sobre ar-condicionado, lareira, banheira e equipamentos disponíveis.</p>
+          </div>
+
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.4rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k29">Check-in & Check-out</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k30">Horários oficiais, instruções de acesso inteligente, fechaduras eletrônicas, senhas de portão e passo a passo claro para a saída.</p>
+          </div>
+
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.4rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k31">Wi-Fi & Regras da Casa</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k32">Nome da rede e botão para copiar a senha com 1 toque, além de diretrizes de silêncio, lixo, pets e boa convivência.</p>
+          </div>
+
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.4rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k33">Localização & Rotas</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k34">Endereço preciso com link direto para navegação no Google Maps e Waze, facilitando a chegada sem erros.</p>
+          </div>
+
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.4rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k35">Contato Rápido</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k36">Canal direto de suporte com o anfitrião ou concierge via WhatsApp com mensagem personalizada para emergências ou dúvidas.</p>
+          </div>
+
+          <div style="background: #061426; padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.4rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k37">Restaurantes, Atrações & Recomendações</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k38">Guia gastronômico curado com cafés, bistrôs, mercados, delivery, passeios, praias e experiências locais imperdíveis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAL: MUITO MAIS QUE UMA PÁGINA DE LINKS -->
+    <section class="section" style="background: var(--color-surface-navy); border-top: 1px solid var(--color-border-subtle);">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header">
+          <span class="tag" style="color: #21B8F6 !important; border-color: rgba(33, 184, 246, 0.3) !important;" data-i18n="autoContent.servicos_conexus_guest_hub.k39">DIFERENCIAL EXCLUSIVO</span>
+          <h2 style="color: var(--color-text-white);" data-i18n="autoContent.servicos_conexus_guest_hub.k40">Muito mais que uma página de links</h2>
+          <p class="section-subtitle" style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k41">Entenda por que o CONEXUS Guest Hub transforma a percepção da sua hospedagem e não se compara a agregadores de links genéricos.</p>
+        </div>
+
+        <div style="background: #061426; border: 1px solid var(--color-cyan-border); border-radius: var(--radius-lg); padding: 2.25rem; box-shadow: var(--shadow-subtle); margin-top: 2rem;">
+          <p style="font-size: var(--fs-base); color: var(--color-text-white); line-height: 1.7; margin-bottom: 1.5rem;">
+            Enquanto páginas de links convencionais são genéricas, impessoais e parecem listas frias de botões, o <strong style="color: #21B8F6 !important;">CONEXUS Guest Hub</strong> é uma <strong style="color: var(--color-text-white);" data-i18n="autoContent.servicos_conexus_guest_hub.k42">experiência digital completa de hospitalidade</strong>.
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+            <div style="padding: 1.25rem; background: var(--color-surface-navy); border-radius: var(--radius-md); border-left: 3px solid #ef4444;">
+              <h4 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span data-i18n="services.guestHub.compGenericTitle">Páginas de links genéricas</span>
+              </h4>
+              <ul style="list-style: none; padding: 0; margin: 0; color: var(--color-text-muted); font-size: var(--fs-xs); display: flex; flex-direction: column; gap: 0.4rem;">
+                <li style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k43">✕ Apenas botões soltos sem hierarquia</li>
+                <li style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k44">✕ Layout engessado com anúncios de terceiros</li>
+                <li style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k45">✕ Não transmitem autoridade nem charme</li>
+                <li style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k46">✕ Dificuldade de organizar conteúdos complexos</li>
+              </ul>
+            </div>
+
+            <div style="padding: 1.25rem; background: var(--color-surface-navy); border-radius: var(--radius-md); border-left: 3px solid #21B8F6;">
+              <h4 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#21B8F6" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="20 6 9 17 4 12"/></svg>
+                CONEXUS Guest Hub
+              </h4>
+              <ul style="list-style: none; padding: 0; margin: 0; color: var(--color-text-muted); font-size: var(--fs-xs); display: flex; flex-direction: column; gap: 0.4rem;">
+                <li style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k47">✓ Central digital sob medida com branding próprio</li>
+                <li style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k48">✓ Módulos visuais ergonômicos e ricos em detalhes</li>
+                <li style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k49">✓ Sensação de concierge particular no smartphone</li>
+                <li style="color: var(--color-text-muted);" data-i18n="autoContent.servicos_conexus_guest_hub.k50">✓ Integração com mapa, Wi-Fi em 1 toque e rotas GPS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS PARA O ANFITRIÃO E PARA O HÓSPEDE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag" data-i18n="autoContent.servicos_conexus_guest_hub.k51">VANTAGENS REAIS</span>
+          <h2 data-i18n="autoContent.servicos_conexus_guest_hub.k52">Benefícios para o Anfitrião e para o Hóspede</h2>
+          <p class="section-subtitle" data-i18n="autoContent.servicos_conexus_guest_hub.k53">Uma solução ganha-ganha que economiza seu tempo e encanta quem se hospeda com você.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 2.5rem;">
+          <!-- Benefícios Anfitrião -->
+          <div style="background: var(--color-surface-navy); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <div class="service-icon" style="margin-bottom: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <h3 style="color: var(--color-text-white); font-size: var(--fs-lg); margin: 0;" data-i18n="autoContent.servicos_conexus_guest_hub.k54">Para o Anfitrião</h3>
+            </div>
+            <ul class="service-card-list" style="font-size: var(--fs-sm); gap: 0.85rem;">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k55">Redução drástica de perguntas repetitivas:</strong> menos tempo respondendo senhas de Wi-Fi e horários.</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k56">Hospitalidade profissional:</strong> impressione desde o primeiro contato antes mesmo do check-in.</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k57">Valorização da hospedagem:</strong> suporte de alto padrão que justifica avaliações 5 estrelas.</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k58">Atualizações ágeis:</strong> informações e dicas sempre fáceis de manter em dia.</li>
+            </ul>
+          </div>
+
+          <!-- Benefícios Hóspede -->
+          <div style="background: var(--color-surface-navy); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <div class="service-icon" style="margin-bottom: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 style="color: var(--color-text-white); font-size: var(--fs-lg); margin: 0;" data-i18n="autoContent.servicos_conexus_guest_hub.k59">Para o Hóspede</h3>
+            </div>
+            <ul class="service-card-list" style="font-size: var(--fs-sm); gap: 0.85rem;">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k60">Autonomia total na estadia:</strong> consulta regras e acessos a qualquer momento pelo smartphone.</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k61">Experiência acolhedora:</strong> recomendações exclusivas do anfitrião para comer e passear bem.</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k62">Sem fricção tecnológica:</strong> sem senhas de app ou instalações pesadas no celular.</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k63">Comunicação tranquila:</strong> botão direto para falar com o anfitrião quando necessário.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMONSTRAÇÃO AO VIVO (VILA SERENA) -->
+    <section class="section" style="background-color: var(--color-surface-navy); border-top: 1px solid var(--color-border-subtle);">
+      <div class="container" style="max-width: 900px; text-align: center;">
+        <span class="tag" data-i18n="autoContent.servicos_conexus_guest_hub.k64">VEJA EM FUNCIONAMENTO</span>
+        <h2 data-i18n="conexusGuestHubPage.demoTitle">Demonstração Interativa ao Vivo</h2>
+        <p class="section-subtitle" style="margin-bottom: 2rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k65">Conheça o case real da demonstração Vila Serena e teste a navegação fluida exatamente como seu hóspede irá vivenciar.</p>
+
+        <div style="background: var(--color-bg-dark); border: 1px solid var(--color-cyan-border); border-radius: var(--radius-lg); padding: 2.5rem 2rem; box-shadow: var(--shadow-subtle);">
+          <div style="max-width: 600px; margin: 0 auto;">
+            <div style="color: var(--color-primary-cyan); font-size: var(--fs-sm); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k66">DEMO ONLINE EXCLUSIVA</div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-xl); margin-bottom: 1rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k67">Vila Serena • Guest Hub Interativo</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-sm); line-height: 1.6; margin-bottom: 2rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k68">Acesse a demonstração completa em nova aba para experimentar a interface mobile-first, atalhos de Wi-Fi, regras e recomendações gastronômicas.</p>
+            <a href="https://vilaserena.conexus.press/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.85rem 2rem; font-size: var(--fs-base);" data-track="demo_click" data-cta-position="guest_hub_demo_section">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span data-i18n="services.guestHub.viewDemo">Ver Demo Vila Serena</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 SOLUÇÕES OFERECIDAS (SEM PREÇOS) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag" data-i18n="autoContent.servicos_conexus_guest_hub.k69">MODELOS DE ATENDIMENTO</span>
+          <h2 data-i18n="autoContent.servicos_conexus_guest_hub.k70">Conheça Nossas Soluções para sua Hospedagem</h2>
+          <p class="section-subtitle" data-i18n="autoContent.servicos_conexus_guest_hub.k71">Estruturas modulares pensadas para o tamanho e a necessidade da sua propriedade.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2.5rem;">
+          <!-- Solução 1: Guest Hub -->
+          <div style="background: var(--color-surface-navy); padding: 2.25rem 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle); display: flex; flex-direction: column;">
+            <span class="card-tag" data-i18n="autoContent.servicos_conexus_guest_hub.k72">DIGITAL COMPLETO</span>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-lg); margin-top: 0.5rem; margin-bottom: 0.75rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k73">Guest Hub</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin-bottom: 1.5rem; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k74">Central digital personalizada para sua hospedagem com todos os módulos essenciais para o hóspede acessar pelo celular.</p>
+            <ul class="service-card-list" style="margin-bottom: 2rem;">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f1">Central digital 100% Mobile-First</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f2">Regras da casa, Wi-Fi e check-in/out</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f3">Guia gastronômico e atrações locais</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f4">Botão direto de WhatsApp com anfitrião</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f5">QR Code para imprimir e dispor no local</span></li>
+            </ul>
+            <a href="#" class="btn btn-secondary" data-whatsapp-key="serviceGeneral" data-track="whatsapp_click" data-cta-position="guest_hub_plan_basic" style="margin-top: auto;" data-i18n="autoContent.servicos_conexus_guest_hub.k75">Solicitar Guest Hub</a>
+          </div>
+
+          <!-- Solução 2: Guest Hub + Welcome Book -->
+          <div style="background: var(--color-surface-navy); padding: 2.25rem 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-cyan-border); box-shadow: var(--shadow-subtle); display: flex; flex-direction: column; position: relative;">
+            <span class="card-tag" data-i18n="autoContent.servicos_conexus_guest_hub.k76">EXPERIÊNCIA INTEGRADA • MAIS POPULAR</span>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-lg); margin-top: 0.5rem; margin-bottom: 0.75rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k77">Guest Hub + Welcome Book</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin-bottom: 1.5rem; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k78">A união perfeita entre a agilidade do digital e a elegância de um guia diagramado exclusivo para sua propriedade.</p>
+            <ul class="service-card-list" style="margin-bottom: 2rem;">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f6">Tudo incluso no plano Guest Hub Digital</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f7">Welcome Book em PDF diagramado em alta resolução</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f8">Arquivo pronto para impressão em gráfica / encadernação</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f9">Placa elegante com QR Code para balcão ou mesa</span></li>
+            </ul>
+            <a href="#" class="btn btn-primary" data-whatsapp-key="serviceGeneral" data-track="whatsapp_click" data-cta-position="guest_hub_plan_combo" style="margin-top: auto;" data-i18n="autoContent.servicos_conexus_guest_hub.k79">Solicitar Guest Hub + Welcome Book</a>
+          </div>
+
+          <!-- Solução 3: Premium -->
+          <div style="background: var(--color-surface-navy); padding: 2.25rem 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle); display: flex; flex-direction: column;">
+            <span class="card-tag" data-i18n="autoContent.servicos_conexus_guest_hub.k80">MULTILÍNGUE & EXCLUSIVO</span>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-lg); margin-top: 0.5rem; margin-bottom: 0.75rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k81">Premium</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin-bottom: 1.5rem; line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k82">Para pousadas e acomodações com público internacional e necessidade de suporte multilíngue refinado.</p>
+            <ul class="service-card-list" style="margin-bottom: 2rem;">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f10">Todas as funcionalidades do pacote completo</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong data-i18n="autoContent.servicos_conexus_guest_hub.k83">Até 3 idiomas escolhidos pelo cliente</strong> (ex: Português, Inglês, Espanhol)</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f11">Personalização avançada de seções e fotos</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="services.guestHub.f12">Suporte prioritário na implementação</span></li>
+            </ul>
+            <a href="#" class="btn btn-secondary" data-whatsapp-key="serviceGeneral" data-track="whatsapp_click" data-cta-position="guest_hub_plan_premium" style="margin-top: auto;" data-i18n="autoContent.servicos_conexus_guest_hub.k84">Solicitar Versão Premium</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="container final-cta-grid">
+        <div class="final-cta-content">
+          <span class="tag" data-i18n="autoContent.servicos_conexus_guest_hub.k85">Transforme a Experiência</span>
+          <h2 data-i18n="conexusGuestHubPage.ctaTitle">Pronto para elevar o padrão da sua hospedagem?</h2>
+          <p class="lead" data-i18n="autoContent.servicos_conexus_guest_hub.k86">Fale com nossa equipe pelo WhatsApp e descubra como implementar o CONEXUS Guest Hub na sua pousada, cabana ou Airbnb.</p>
+          <div class="cta-buttons-wrapper">
+            <a href="#" class="btn btn-primary" data-whatsapp-key="serviceGeneral" data-track="whatsapp_click" data-cta-position="guest_hub_final_primary"><span data-i18n="services.guestHub.request">Solicitar CONEXUS Guest Hub</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://vilaserena.conexus.press/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-track="demo_click" data-cta-position="guest_hub_final_demo"><span data-i18n="services.guestHub.viewDemo">Ver Demonstração Vila Serena</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="final-cta-visual">
+          <div style="background: linear-gradient(135deg, var(--color-surface-navy) 0%, var(--color-bg-dark) 100%); border-radius: var(--radius-lg); border: 1px solid var(--color-cyan-border); padding: 2.5rem; text-align: center; box-shadow: var(--shadow-subtle);">
+            <div style="color: var(--color-primary-cyan); margin-bottom: 1rem;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.5rem;" data-i18n="autoContent.servicos_conexus_guest_hub.k87">Hospitalidade Inteligente</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); line-height: 1.6;" data-i18n="autoContent.servicos_conexus_guest_hub.k88">Mais organização para o anfitrião, mais encantamento para o hóspede.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" aria-label="CONEXUS Logo Footer">
+            <img src="/assets/logos/conexus-logo-transparent.png" alt="CONEXUS Logo" width="160" height="40" loading="lazy">
+          </a>
+          <p data-i18n="footer.tagline">
+            Estratégia e marketing digital conectando websites profissionais, SEO, branding e redes sociais para fortalecer empresas.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.colNavTitle">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="/" data-i18n="nav.home">Início</a></li>
+            <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+            <li><a href="/sobre/" data-i18n="footer.aboutConexus">Sobre a CONEXUS</a></li>
+            <li><a href="/portfolio/" data-i18n="nav.portfolio">Portfólio</a></li>
+            <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="/faq/" data-i18n="footer.faq">Perguntas Frequentes</a></li>
+            <li><a href="/contato/" data-i18n="nav.contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.colServicesTitle">Serviços</h4>
+          <ul class="footer-links">
+            <li><a href="/servicos/criacao-de-sites/" data-i18n="footer.serviceWebsites">Criação de Sites</a></li>
+            <li><a href="/servicos/site-one-page/" data-i18n="footer.serviceOnePage">Site One Page</a></li>
+            <li><a href="/servicos/conexus-guest-hub/" data-i18n="footer.serviceGuestHub">CONEXUS Guest Hub</a></li>
+            <li><a href="/servicos/seo/" data-i18n="footer.serviceSEO">SEO para Empresas</a></li>
+            <li><a href="/servicos/seo-local-google-meu-negocio/" data-i18n="footer.serviceSEOLocal">SEO Local & Google</a></li>
+            <li><a href="/servicos/branding-identidade-visual/" data-i18n="footer.serviceBranding">Branding & Identidade</a></li>
+            <li><a href="/servicos/gestao-redes-sociais/" data-i18n="footer.serviceSocialMedia">Gestão de Redes Sociais</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.colContactTitle">Contato & Redes</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="mailto:comercial@conexus.press" data-track="email_click" data-cta-position="footer" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                comercial@conexus.press
+              </a>
+            </li>
+            <li style="margin-top: 0.35rem;">
+              <a href="mailto:jesse.ribeiro@conexus.press" data-track="email_click" data-cta-position="footer" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                jesse.ribeiro@conexus.press
+              </a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.85rem; margin-top: 0.5rem;">
+              <a href="https://www.linkedin.com/in/jesse-ribeiro-a49666409/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon" data-track="social_click" data-cta-position="footer_linkedin">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.7a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26Z"/></svg>
+              </a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-icon" data-track="social_click" data-cta-position="footer_instagram">
+                <svg width="22" height="22" viewBox="0 0 24 24">
+                  <defs>
+                    <linearGradient id="igFooterGradGuest" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#f09433"/>
+                      <stop offset="25%" stop-color="#e6683c"/>
+                      <stop offset="50%" stop-color="#dc2743"/>
+                      <stop offset="75%" stop-color="#cc2366"/>
+                      <stop offset="100%" stop-color="#bc1888"/>
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#igFooterGradGuest)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        <span data-i18n="footer.rights">© 2026 CONEXUS. Todos os direitos reservados.</span>
+      </div>
+      <div class="footer-signature">
+        <span data-i18n="footer.devBy">Desenvolvido por</span> <a href="/" class="signature-link">CONEXUS</a>
+      </div>
+      <div style="display: flex; gap: 1.5rem;">
+        <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.privacy">Política de Privacidade</a>
+        <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.terms">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="#" class="whatsapp-float" aria-label="Conversar pelo WhatsApp" data-whatsapp-key="serviceGeneral" data-track="whatsapp_click" data-cta-position="floating_button">
+  <span class="whatsapp-tooltip" data-i18n="common.chatWhatsapp">Conversar pelo WhatsApp</span>
+  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#FFFFFF" viewBox="0 0 448 512">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+  </svg>
+</a>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

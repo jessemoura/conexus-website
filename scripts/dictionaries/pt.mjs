@@ -1,0 +1,222 @@
+import { commonDict } from './common.mjs';
+import { mainPagesDict } from './mainPages.mjs';
+import { servicesSubpagesDict } from './servicesSubpages.mjs';
+import { portfolioCasesDict } from './portfolioCases.mjs';
+import { blogArticlesDict } from './blogArticles.mjs';
+
+export const ptDict = {
+  langCode: 'pt',
+  langName: 'Português',
+  flag: '/assets/icons/flags/br.svg',
+  flagAlt: 'Bandeira do Brasil',
+  htmlLang: 'pt-BR',
+
+  meta: {
+    homeTitle: 'Agência de Marketing Digital para Empresas | CONEXUS',
+    homeDescription: 'Websites profissionais, SEO, presença no Google, branding e redes sociais para empresas que querem fortalecer sua presença digital e gerar oportunidades.',
+    servicosTitle: 'Serviços de Marketing Digital | CONEXUS',
+    servicosDescription: 'Soluções integradas em Criação de Sites, SEO, Branding e Redes Sociais para empresas que buscam resultados reais e autoridade online.',
+    criacaoSitesTitle: 'Criação de Sites Profissionais para Empresas | CONEXUS',
+    criacaoSitesDescription: 'Desenvolvimento de sites institucionais modernos, rápidos e otimizados para converter visitantes em clientes. Design exclusivo e responsivo.',
+    siteOnePageTitle: 'Site One Page para Empresas | CONEXUS',
+    siteOnePageDescription: 'Estrutura estratégica de página única, direta ao ponto e de alto impacto para converter visitantes em oportunidades.',
+    seoTitle: 'SEO para Empresas — Otimização para o Google | CONEXUS',
+    seoDescription: 'Aumente o tráfego qualificado e conquiste as primeiras posições no Google com estratégias avançadas de SEO técnico e de conteúdo.',
+    seoLocalTitle: 'SEO Local & Perfil da Empresa no Google | CONEXUS',
+    seoLocalDescription: 'Destaque sua empresa nas buscas locais do Google e no Google Maps. Atraia mais clientes da sua região com SEO Local especializado.',
+    brandingTitle: 'Branding & Identidade Visual | CONEXUS',
+    brandingDescription: 'Construção de marcas fortes, memoráveis e profissionais que transmitem confiança e autoridade em todos os pontos de contato.',
+    gestaoRedesTitle: 'Gestão de Redes Sociais para Empresas | CONEXUS',
+    gestaoRedesDescription: 'Posicionamento estratégico, design profissional e conteúdo de valor para engajar seu público e transformar seguidores em clientes.',
+    conexusGuestHubTitle: 'CONEXUS Guest Hub — Guia Digital para Hospedagens',
+    conexusGuestHubDescription: 'Transforme a experiência dos seus hóspedes com um guia digital completo, interativo e sem necessidade de aplicativo.',
+    sobreTitle: 'Sobre a CONEXUS | Estratégia e Presença Digital',
+    sobreDescription: 'Conheça a CONEXUS: nossa história, valores e metodologia focada em posicionar empresas com autoridade e alta performance digital.',
+    portfolioTitle: 'Portfólio de Projetos Digitais | CONEXUS',
+    portfolioDescription: 'Conheça nossos trabalhos em criação de sites, SEO, branding e marketing digital para empresas no Brasil e no exterior.',
+    blogTitle: 'Blog de Marketing Digital & Estratégia | CONEXUS',
+    blogDescription: 'Artigos, insights e guias práticos sobre criação de sites, SEO, branding e marketing digital para empresários e tomadores de decisão.',
+    faqTitle: 'Perguntas Frequentes (FAQ) | CONEXUS',
+    faqDescription: 'Tire suas dúvidas sobre criação de sites, prazos, formas de pagamento, SEO e metodologia de trabalho da CONEXUS.',
+    contatoTitle: 'Fale Conosco | CONEXUS Marketing Digital',
+    contatoDescription: 'Entre em contato com a equipe da CONEXUS e descubra como podemos acelerar a presença digital da sua empresa.'
+  },
+
+  nav: {
+    home: 'Início',
+    services: 'Serviços',
+    about: 'Sobre',
+    portfolio: 'Portfólio',
+    blog: 'Blog',
+    faq: 'FAQ',
+    contact: 'Contato',
+    ctaHeader: 'Falar com a CONEXUS',
+    ctaMobile: 'Falar com a CONEXUS',
+    selectLang: 'Selecionar Idioma'
+  },
+
+  hero: {
+    badge: 'ESTRATÉGIA & PRESENÇA DIGITAL INTEGRADA',
+    title: 'Marketing digital para transformar presença online em oportunidades',
+    description: 'Websites profissionais, SEO, presença no Google, branding e redes sociais para empresas que querem fortalecer sua presença digital e gerar oportunidades.',
+    ctaPrimary: 'Quero fortalecer minha presença digital',
+    ctaSecondary: 'Conhecer Soluções'
+  },
+
+  services: {
+    tag: 'SOLUÇÕES ESTRATÉGICAS',
+    title: 'Serviços que Conectam sua Empresa a Novas Oportunidades',
+    subtitle: 'Conheça os pilares da CONEXUS para impulsionar a visibilidade, autoridade e conversão da sua empresa.',
+    s1Tag: 'DESENVOLVIMENTO WEB',
+    s1Title: 'Criação de Sites Profissionais',
+    s1Desc: 'Websites institucionais e plataformas de alta performance, ultra-rápidos, 100% responsivos e otimizados desde a fundação técnica para os mecanismos de busca.',
+    s2Tag: 'CONVERSÃO DIRETA',
+    s2Title: 'Site One Page',
+    s2Desc: 'Página única objetiva focada em comunicação direta e alta conversão para lançamentos, campanhas de anúncios e empresas em estágio inicial.',
+    s3Tag: 'VISIBILIDADE NO GOOGLE',
+    s3Title: 'SEO para Empresas',
+    s3Desc: 'Estratégias avançadas de otimização orgânica e pesquisa de palavras-chave para posicionar sua empresa nas primeiras páginas do Google sem depender só de anúncios.',
+    s4Tag: 'PRESENÇA REGIONAL',
+    s4Title: 'SEO Local & Google Meu Negócio',
+    s4Desc: 'Fortalecimento do Perfil da Empresa e presença no Google Maps para que clientes da sua cidade encontrem sua marca no momento exato da pesquisa.',
+    s5Tag: 'AUTORIDADE DE MARCA',
+    s5Title: 'Branding & Identidade Visual',
+    s5Desc: 'Desenvolvimento de marcas memoráveis, logotipos profissionais e manuais de identidade corporativa alinhados à sua autoridade de mercado.',
+    s6Tag: 'ENGAJAMENTO & CONTEÚDO',
+    s6Title: 'Gestão de Redes Sociais',
+    s6Desc: 'Planejamento estratégico de conteúdo visual profissional para envolver seu público, fortalecer o posicionamento e alimentar o funil de vendas.'
+  },
+
+  portfolio: {
+    tag: 'CASOS & PORTFÓLIO',
+    title: 'Projetos Desenvolvidos com Estratégia e Foco em Resultados',
+    subtitle: 'Conheça alguns dos projetos entregues para empresas no Brasil e no exterior.',
+    viewProject: 'Visualizar Projeto',
+    c1Tag: 'JORNALISMO & COMUNICAÇÃO • BRASIL',
+    c1Title: 'Michelly Corrêa',
+    c1Desc: 'Portal institucional de comunicação e estratégia de autoridade de marca para o mercado nacional de jornalismo.',
+    c2Tag: 'SERVIÇOS ESPECIALIZADOS • PORTUGAL',
+    c2Title: 'SOS Aberturas',
+    c2Desc: 'Plataforma web responsiva otimizada para atendimento técnico e conversão rápida de contatos diretos no mercado português.',
+    c3Tag: 'MARKETING DIGITAL • REINO UNIDO',
+    c3Title: 'CONEXXUS Digital Marketing UK',
+    c3Desc: 'Projeto digital completo desenvolvido para a operação da CONEXXUS no Reino Unido, reunindo website multipáginas, estrutura de SEO, conteúdo, serviços e presença digital em uma experiência integrada.',
+    c4Tag: 'BELEZA & ESTÉTICA • REINO UNIDO',
+    c4Title: 'Nikki Studio',
+    c4Desc: 'Identidade visual e plataforma web integrada para estúdio especializado em estética e beleza em Swindon, Reino Unido.',
+    c5Tag: 'HOME IMPROVEMENTS • REINO UNIDO',
+    c5Title: 'Crafix',
+    c5Desc: 'Desenvolvimento de website institucional e posicionamento digital para empresa especializada em manutenção, reformas e melhorias residenciais no Reino Unido.',
+    c6Tag: 'CLEANING SERVICES • REINO UNIDO',
+    c6Title: 'Lumora',
+    c6Desc: 'Desenvolvimento de website One Page responsivo e estratégia de SEO local no Google para serviços de limpeza residencial e comercial.',
+    c7Tag: 'BARBER SHOP • REINO UNIDO',
+    c7Title: 'Oxford Barber',
+    c7Desc: 'Presença digital de alto padrão e identidade corporativa para barbearia tradicional em Oxford, Reino Unido.'
+  },
+
+  about: {
+    tag: 'SOBRE A CONEXUS',
+    title: 'Estratégia e Inteligência Digital Orientadas ao Seu Negócio',
+    lead: 'Conectamos tecnologia web, otimização no Google, identidade visual e redes sociais em uma estratégia coerente e orientada a resultados.',
+    btn: 'Conhecer a CONEXUS'
+  },
+
+  process: {
+    tag: 'NOSSO MÉTODO',
+    title: 'Como Transformamos Sua Presença Digital em 5 Etapas',
+    subtitle: 'Conheça o processo estruturado da CONEXUS para construir soluções de alto impacto.'
+  },
+
+  reviews: {
+    tag: 'DEPOIMENTOS & AVALIAÇÕES',
+    title: 'O que nossos clientes dizem',
+    subtitle: 'Avaliações reais de clientes que confiaram na CONEXUS para fortalecer sua presença digital e impulsionar seus negócios.',
+    googleBadge: 'Avaliação no Google',
+    viewAllGoogle: 'Ver avaliações no Google',
+    readMore: 'Ler avaliação completa',
+    readLess: 'Ler menos',
+    r1Text: 'Eu contratei para meu site e ele além de entregar antes do prazo, conseguiu otimizar tanto o SEO que no segundo dia que o site estava no ar já tinha contatos comerciais vindos por lá. Super recomendo o trabalho da Conexus! Agilizado e preço justo.',
+    r2Text: 'ótimo serviço, bem-feito e com muita qualidade! Site bonito, rápido e o gerenciamento no Google melhorou muito minha visibilidade. Profissionais sinceros, atenciosos e que entregam resultado de verdade. Super recomendo!',
+    r3Trunc: 'Sou muito grata pelo site que ele criou para o meu negócio de manicure. Ter um site com design profissional realmente elevou meu negócio a outro patamar, de uma forma que eu não esperava. O site tem um visual limpo, moderno e sofisticado...',
+    r3P1: 'Sou muito grata pelo site que ele criou para o meu negócio de manicure. Ter um site com design profissional realmente elevou meu negócio a outro patamar, de uma forma que eu não esperava. O site tem um visual limpo, moderno e sofisticado.',
+    r3P2: 'Eu não esperava que minha clientela crescesse tanto e tão rápido depois de colocar o site no Google. O número de agendamentos aumentou drasticamente logo após o lançamento, proporcionando ao meu negócio uma visibilidade que eu nunca tinha tido antes. O crescimento foi tão expressivo que já investi em produtos e materiais melhores para atender à demanda crescente.',
+    r3P3: 'Embora ele esteja apenas começando, a qualidade do seu trabalho e o impacto que ele gerou no meu negócio são realmente impressionantes. Se você quer ampliar sua clientela e busca um site com visual premium que realmente atraia clientes, recomendo fortemente os serviços dele.',
+    r4Trunc: 'Contratamos a Conexus para o desenvolvimento do site de uma cliente e tivemos uma ótima experiência em todo o processo. O trabalho foi conduzido com profissionalismo, atenção aos detalhes e muita agilidade, desde o entendimento do projeto até a entrega final...',
+    r4P1: 'Contratamos a Conexus para o desenvolvimento do site de uma cliente e tivemos uma ótima experiência em todo o processo. O trabalho foi conduzido com profissionalismo, atenção aos detalhes e muita agilidade, desde o entendimento do projeto até a entrega final. Gostamos tanto do resultado que indicamos a empresa para uma conhecida, que também precisava desenvolver seu site.',
+    r4P2: 'Mais uma vez, a entrega surpreendeu: o projeto ficou muito bem feito e foi concluído em tempo recorde. É muito bom poder indicar um fornecedor com a segurança de saber que o trabalho será bem executado. Recomendamos!',
+    r5Trunc: 'Excelente trabalho! Não tenho palavras para expressar o quanto fiquei satisfeito com o resultado do Guest Hub criado para o meu apartamento que disponibilizo no Booking. O trabalho ficou simplesmente incrível, muito completo e pensado em cada detalhe...',
+    r5P1: 'Excelente trabalho! Não tenho palavras para expressar o quanto fiquei satisfeito com o resultado do Guest Hub criado para o meu apartamento que disponibilizo no Booking.',
+    r5P2: 'O trabalho ficou simplesmente incrível, muito completo e pensado em cada detalhe. O material em 3 idiomas, informações importantes sobre a hospedagem, pontos turísticos próximos, além das ótimas recomendações de restaurantes e locais para refeições, fizeram toda a diferença.',
+    r5P3: 'Mais do que um simples guia, ficou um verdadeiro site completo para proporcionar uma experiência muito melhor aos hóspedes. O resultado superou completamente minhas expectativas e agregou muito valor ao meu imóvel e à experiência de quem se hospeda.',
+    r5P4: 'Parabéns pelo profissionalismo, atenção aos detalhes e pela qualidade do trabalho! Recomendo de olhos fechados. Excelente serviço! 👏🏻',
+    r6Trunc: 'Tivemos uma experiência excepcional com a Conexus! Contratamos para criar a página do nosso Welcome Book para nossos hóspedes e ficamos muito satisfeitos com o resultado. O Jesse foi o nosso guia e foi muito atencioso, paciente e sempre disponível...',
+    r6P1: 'Tivemos uma experiência excepcional com a Conexus! Contratamos para criar a página do nosso Welcome Book para nossos hóspedes e ficamos muito satisfeitos com o resultado.',
+    r6P2: 'O Jesse foi o nosso guia e foi muito atencioso, paciente e sempre disponível para tirar nossas dúvidas e fazer os ajustes necessários. Mesmo quando mudamos alguns detalhes no meio do caminho, ele sempre nos atendeu prontamente.',
+    r6P3: 'A página ficou esteticamente linda, organizada e, acima de tudo, muito fácil de usar, que era exatamente o que buscávamos para facilitar a experiência dos nossos hóspedes.',
+    r6P4: 'Além disso, ter o Welcome Book disponível em português, inglês e espanhol com apenas um clique foi uma grande vantagem para nós, principalmente porque recebemos hóspedes de diferentes lugares.',
+    r6P5: 'Gostamos muito do resultado e do atendimento. Recomendamos a Conexus com certeza! 😊'
+  },
+
+  ctaFinal: {
+    tag: 'Pronto para Começar?',
+    title: 'Pronto para fortalecer a presença digital da sua empresa?',
+    lead: 'Entre em contato com nossa equipe para avaliar as necessidades da sua empresa e estruturar a solução mais eficiente para seu negócio.',
+    ctaPrimary: 'Quero fortalecer minha presença digital',
+    ctaSecondary: 'Prefere e-mail? Fale com a CONEXUS'
+  },
+
+  footer: {
+    tagline: 'Agência de marketing digital especializada em presença online, criação de sites e crescimento de empresas.',
+    colNavTitle: 'Navegação',
+    colServicesTitle: 'Serviços',
+    colContactTitle: 'Contato & Redes',
+    colInstTitle: 'Institucional',
+    colContactOnlyTitle: 'Contato',
+    articleTagline: 'Agência de marketing digital especializada em websites profissionais, SEO, Google Meu Negócio, branding e gestão de redes sociais.',
+    locationAndCoverage: 'Brasil & Internacional',
+    supportTitle: 'Atendimento Digital',
+    businessHours: 'Segunda a Sexta, 9h às 18h',
+    socialNetworks: 'Redes Sociais',
+    home: 'Início',
+    services: 'Serviços',
+    aboutConexus: 'Sobre a CONEXUS',
+    portfolio: 'Portfólio',
+    blog: 'Blog',
+    faq: 'Perguntas Frequentes',
+    contactUs: 'Contato',
+    serviceWebsites: 'Criação de Sites',
+    serviceOnePage: 'Site One Page',
+    serviceGuestHub: 'CONEXUS Guest Hub',
+    serviceSEO: 'SEO para Empresas',
+    serviceSEOShort: 'SEO',
+    serviceSEOLocal: 'SEO Local & Google',
+    serviceBranding: 'Branding & Identidade',
+    serviceSocialMedia: 'Gestão de Redes Sociais',
+    serviceSocialMediaShort: 'Redes Sociais',
+    rights: '© 2026 CONEXUS. Todos os direitos reservados.',
+    devBy: 'Desenvolvido por CONEXUS',
+    devFocus: 'Desenvolvido com foco em alta performance e autoridade digital.',
+    privacy: 'Política de Privacidade',
+    terms: 'Termos de Uso'
+  },
+
+  whatsapp: {
+    homeHero: 'Olá! Conheci a CONEXUS pelo website e gostaria de conversar sobre a presença digital da minha empresa.',
+    serviceGeneral: 'Olá! Gostaria de mais informações sobre as soluções de marketing digital da CONEXUS.',
+    serviceWebsites: 'Olá! Tenho interesse em criar um site profissional para minha empresa com a CONEXUS.',
+    serviceOnePage: 'Olá! Gostaria de saber mais sobre a criação de site One Page com a CONEXUS.',
+    serviceSEO: 'Olá! Quero melhorar a presença e visibilidade da minha empresa no Google com a CONEXUS.',
+    serviceSEOLocal: 'Olá! Tenho interesse no serviço de SEO Local e Perfil da Empresa no Google da CONEXUS.',
+    serviceBranding: 'Olá! Gostaria de fortalecer a marca e identidade visual da minha empresa com a CONEXUS.',
+    serviceSocialMedia: 'Olá! Gostaria de saber mais sobre a gestão de redes sociais da CONEXUS.',
+    portfolio: 'Olá! Vi o portfólio da CONEXUS e gostaria de solicitar uma proposta para meu projeto.',
+    contactFinal: 'Olá! Gostaria de conversar com a equipe da CONEXUS sobre o meu projeto digital.'
+  },
+
+  common: commonDict.pt,
+  ...mainPagesDict.pt,
+  ...servicesSubpagesDict.pt,
+  ...portfolioCasesDict.pt,
+  ...blogArticlesDict.pt
+};
