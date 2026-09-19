@@ -10,6 +10,7 @@
     "test": "node scripts/validate-site.js"
   },
   "devDependencies": {
+    "sharp": "^0.35.4",
     "vite": "^5.1.0"
   }
 }
