@@ -23,7 +23,7 @@ const whitelistWords = [
   'CONEXUS',
   'CONEXUS Guest Hub',
   'Welcome Book',
-  'Michelly Corrêa',
+  'Michelly Correa',
   'Nikki Studio',
   'Crafix',
   'Di Piallato',

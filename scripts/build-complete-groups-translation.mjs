@@ -160,7 +160,7 @@ function translateAutoContent(ptValue, lang) {
   if (/^[0-9\s.,\-_+–—/%$€£✓()·•→←|↗★@:]+$/.test(trimmed)) {
     return ptValue;
   }
-  if (['CONEXUS', 'CONEXUS Guest Hub', 'Welcome Book', 'Nikki Studio', 'SOS Aberturas', 'Michelly Corrêa', 'Crafix', 'Di Piallato', 'Lumora Cleaning Services', 'CONEXXUS UK', 'Oxford Barber', 'Vila Serena'].includes(trimmed)) {
+  if (['CONEXUS', 'CONEXUS Guest Hub', 'Welcome Book', 'Nikki Studio', 'SOS Aberturas', 'Michelly Correa', 'Crafix', 'Di Piallato', 'Lumora Cleaning Services', 'CONEXXUS UK', 'Oxford Barber', 'Vila Serena'].includes(trimmed)) {
     return ptValue;
   }
 

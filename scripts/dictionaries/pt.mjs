@@ -93,7 +93,7 @@ export const ptDict = {
     subtitle: 'Conheça alguns dos projetos entregues para empresas no Brasil e no exterior.',
     viewProject: 'Visualizar Projeto',
     c1Tag: 'JORNALISMO & COMUNICAÇÃO • BRASIL',
-    c1Title: 'Michelly Corrêa',
+    c1Title: 'Michelly Correa',
     c1Desc: 'Portal institucional de comunicação e estratégia de autoridade de marca para o mercado nacional de jornalismo.',
     c2Tag: 'SERVIÇOS ESPECIALIZADOS • PORTUGAL',
     c2Title: 'SOS Aberturas',
@@ -195,7 +195,7 @@ export const ptDict = {
     serviceSocialMedia: 'Gestão de Redes Sociais',
     serviceSocialMediaShort: 'Redes Sociais',
     rights: '© 2026 CONEXUS. Todos os direitos reservados.',
-    devBy: 'Desenvolvido por CONEXUS',
+    devBy: 'Desenvolvido por',
     devFocus: 'Desenvolvido com foco em alta performance e autoridade digital.',
     privacy: 'Política de Privacidade',
     terms: 'Termos de Uso'

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Configuração Central do Website CONEXUS
  * 
  * Marca pública: CONEXUS
@@ -39,7 +39,9 @@ export const siteConfig = {
     serviceBranding: 'Olá! Gostaria de fortalecer a marca e identidade visual da minha empresa com a CONEXUS.',
     serviceSocialMedia: 'Olá! Gostaria de saber mais sobre a gestão de redes sociais da CONEXUS.',
     portfolio: 'Olá! Vi o portfólio da CONEXUS e gostaria de solicitar uma proposta para meu projeto.',
-    contactFinal: 'Olá! Gostaria de conversar com a equipe da CONEXUS sobre o meu projeto digital.'
+    contactFinal: 'Olá! Gostaria de conversar com a equipe da CONEXUS sobre o meu projeto digital.',
+    diagnosticoGratuito: 'Olá! Gostaria de solicitar um diagnóstico gratuito da presença digital e do site da minha empresa com a CONEXUS.',
+    serviceAppDev: 'Olá! Tenho interesse no desenvolvimento de aplicativo para minha empresa com a CONEXUS.'
   },
 
   // Catálogo de Serviços para Cards da Home
@@ -91,6 +93,14 @@ export const siteConfig = {
       link: '/servicos/gestao-redes-sociais/',
       ctaMessageKey: 'serviceSocialMedia',
       featured: false
+    },
+    {
+      id: 'desenvolvimento-de-aplicativos',
+      title: 'Desenvolvimento de Aplicativos',
+      description: 'Desenvolvimento de aplicativos sob medida para empresas. Soluções corporativas e operacionais para Android e Google Play com foco em processos e clientes.',
+      link: '/servicos/desenvolvimento-de-aplicativos/',
+      ctaMessageKey: 'serviceAppDev',
+      featured: true
     }
   ],
 
@@ -105,7 +115,7 @@ export const siteConfig = {
       image: '/assets/images/di-piallato-gelateria-portfolio-conexus.png'
     },
     {
-      title: 'Michelly Corrêa',
+      title: 'Michelly Correa',
       category: 'Website Profissional',
       tag: 'JORNALISMO & COMUNICAÇÃO • BRASIL',
       location: 'Brasil',

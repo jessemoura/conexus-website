@@ -93,7 +93,7 @@ export const enDict = {
     subtitle: 'Explore selected projects delivered for businesses across Brazil and international markets.',
     viewProject: 'View Project',
     c1Tag: 'JOURNALISM & COMMUNICATIONS • BRAZIL',
-    c1Title: 'Michelly Corrêa',
+    c1Title: 'Michelly Correa',
     c1Desc: 'Institutional communications portal and brand authority strategy for national journalism in Brazil.',
     c2Tag: 'SPECIALIZED SERVICES • PORTUGAL',
     c2Title: 'SOS Aberturas',
@@ -195,7 +195,7 @@ export const enDict = {
     serviceSocialMedia: 'Social Media Management',
     serviceSocialMediaShort: 'Social Media',
     rights: '© 2026 CONEXUS. All rights reserved.',
-    devBy: 'Developed by CONEXUS',
+    devBy: 'Developed by',
     devFocus: 'Engineered for high performance and digital authority.',
     privacy: 'Privacy Policy',
     terms: 'Terms of Use'

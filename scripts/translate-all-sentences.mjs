@@ -110,7 +110,7 @@ function translateText(text, targetLang) {
     'CONEXUS Guest Hub',
     'CONEXUS',
     'Welcome Book',
-    'Michelly Corrêa',
+    'Michelly Correa',
     'Nikki Studio',
     'Crafix',
     'Di Piallato',

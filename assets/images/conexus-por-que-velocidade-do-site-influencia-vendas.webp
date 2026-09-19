@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2545" />
+      <stop offset="100%" stop-color="#134074" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="440" fill="url(#bgGrad)" />
+  <rect width="860" height="440" fill="url(#gridPattern)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="700" cy="120" r="180" fill="#00F0FF" opacity="0.12" filter="blur(40px)" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+
+  <!-- Graphical Element -->
+  <g transform="translate(140, 20)">
+    <rect x="180" y="80" width="440" height="260" rx="12" fill="none" stroke="#00F0FF" stroke-width="3" opacity="0.8"/><line x1="180" y1="130" x2="620" y2="130" stroke="#00F0FF" stroke-width="2" opacity="0.5"/><circle cx="210" cy="105" r="5" fill="#00F0FF"/><circle cx="230" cy="105" r="5" fill="#00F0FF" opacity="0.6"/><circle cx="250" cy="105" r="5" fill="#00F0FF" opacity="0.3"/><rect x="210" y="160" width="180" height="120" rx="6" fill="#00F0FF" opacity="0.15" stroke="#00F0FF" stroke-width="1.5"/><rect x="420" y="160" width="170" height="20" rx="4" fill="#00F0FF" opacity="0.7"/><rect x="420" y="195" width="150" height="12" rx="3" fill="#FFFFFF" opacity="0.4"/><rect x="420" y="220" width="160" height="12" rx="3" fill="#FFFFFF" opacity="0.4"/><rect x="420" y="250" width="100" height="30" rx="6" fill="#00F0FF" opacity="0.85"/>
+  </g>
+
+  <!-- Darkening Gradient Overlay at Bottom -->
+  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+
+  <!-- Content Box / Card Header -->
+  <g transform="translate(50, 260)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="185.5" height="26" rx="4" fill="#00F0FF" fill-opacity="0.15" stroke="#00F0FF" stroke-width="1.2" />
+    <text x="12" y="17" fill="#00F0FF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">WEBSITES & DESIGN</text>
+    
+    <!-- Title Line 1 -->
+    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="25" font-weight="800">Por Que a Velocidade do Site</text>
+    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="700">Influencia Diretamente Suas Vendas e Ranqueamento no Google</text>
+    
+    <!-- Footer Brand & Date -->
+    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+  </g>
+
+  <!-- Top Brand Watermark -->
+  <text x="790" y="50" fill="#FFFFFF" opacity="0.3" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" text-anchor="end" letter-spacing="2">CONEXUS</text>
+</svg>

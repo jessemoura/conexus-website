@@ -118,7 +118,7 @@ export function translateSentence(ptText, lang) {
 
   // 3. Exact Brand Whitelist
   if (trimmed === 'CONEXUS' || trimmed === 'CONEXUS Guest Hub' || trimmed === 'Welcome Book' ||
-      trimmed === 'Nikki Studio' || trimmed === 'SOS Aberturas' || trimmed === 'Michelly Corrêa' ||
+      trimmed === 'Nikki Studio' || trimmed === 'SOS Aberturas' || trimmed === 'Michelly Correa' ||
       trimmed === 'Crafix' || trimmed === 'Di Piallato' || trimmed === 'Lumora Cleaning Services' ||
       trimmed === 'CONEXXUS UK' || trimmed === 'Oxford Barber' || trimmed === 'Vila Serena') {
     return ptText;

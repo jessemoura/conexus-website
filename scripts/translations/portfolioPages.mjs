@@ -75,7 +75,7 @@ export const portfolioPagesTranslations = {
     },
     caseMichellyCorrea: {
       badge: 'CASE STUDY • JOURNALISM & COMMUNICATIONS • BRAZIL',
-      title: 'Michelly Corrêa: Institutional Portal & Authority Strategy',
+      title: 'Michelly Correa: Institutional Portal & Authority Strategy',
       desc: 'Institutional communications platform and brand positioning architecture for one of Brazil\'s renowned national broadcast journalists and media consultants.',
       clientLabel: 'Client',
       locationLabel: 'Location',
@@ -336,7 +336,7 @@ export const portfolioPagesTranslations = {
     },
     caseMichellyCorrea: {
       badge: 'CASO DE ÉXITO • PERIODISMO Y MEDIOS • BRASIL',
-      title: 'Michelly Corrêa: Portal Institucional y Estrategia de Autoridad',
+      title: 'Michelly Correa: Portal Institucional y Estrategia de Autoridad',
       desc: 'Plataforma institucional de comunicación y arquitectura de posicionamiento para reconocida periodista de televisión y consultora de medios en Brasil.',
       clientLabel: 'Cliente',
       locationLabel: 'Ubicación',

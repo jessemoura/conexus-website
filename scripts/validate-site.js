@@ -154,6 +154,15 @@ assert(criacaoH1.length === 1, `Página /servicos/criacao-de-sites/ possui exata
 assert(criacaoSitesHtml.includes('content="index, follow"'), 'Página /servicos/criacao-de-sites/ contém a tag meta robots="index, follow".');
 assert(criacaoSitesHtml.includes('<title>Criação de Sites Profissionais para Empresas | CONEXUS</title>'), 'Página /servicos/criacao-de-sites/ contém o Title tag oficial.');
 
+// TEST 8: Validação da Página Desenvolvimento de Aplicativos
+console.log('\n[TEST 8] Validação de SEO & Estrutura de Desenvolvimento de Aplicativos');
+const appDevHtml = fs.readFileSync(path.join(rootDir, 'servicos/desenvolvimento-de-aplicativos/index.html'), 'utf8');
+const appDevH1 = appDevHtml.match(/<h1[^>]*>([\s\S]*?)<\/h1>/gi) || [];
+assert(appDevH1.length === 1, `Página /servicos/desenvolvimento-de-aplicativos/ possui exatamente 1 tag H1 (Encontrado: ${appDevH1.length}).`);
+assert(appDevHtml.includes('content="index, follow"'), 'Página /servicos/desenvolvimento-de-aplicativos/ contém a tag meta robots="index, follow".');
+assert(appDevHtml.includes('<title>Desenvolvimento de Aplicativos para Empresas | CONEXUS</title>'), 'Página /servicos/desenvolvimento-de-aplicativos/ contém o Title tag oficial.');
+assert(appDevHtml.includes('schema.org'), 'Página /servicos/desenvolvimento-de-aplicativos/ contém dados estruturados Schema.org JSON-LD.');
+
 // SUMÁRIO DOS TESTES
 console.log('\n====================================================');
 console.log(` RESULTADO DOS TESTES: ${passedTests}/${totalTests} PASSOU (${failedTests} FALHAS)`);

@@ -271,7 +271,7 @@ Evitar páginas órfãs e canibalização.
 
 ## 9. Portfólio inicial
 
-1.  Michelly Corrêa --- `www.michellycorrea.com` --- Brasil --- projeto
+1.  Michelly Correa --- `www.michellycorrea.com` --- Brasil --- projeto
     real --- jornalista/comunicadora.
 2.  SOS Aberturas --- `www.sosaberturas.pt` --- Portugal --- projeto
     real; confirmar escopo exato antes do case.

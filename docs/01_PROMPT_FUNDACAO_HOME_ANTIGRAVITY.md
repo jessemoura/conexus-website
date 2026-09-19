@@ -369,7 +369,7 @@ Título:
 
 Projetos disponíveis no portfólio mestre:
 
--   Michelly Corrêa --- projeto real
+-   Michelly Correa --- projeto real
 -   SOS Aberturas --- projeto real
 -   Nikki Studio --- projeto real
 -   CONEXXUS Digital Marketing UK --- projeto próprio
