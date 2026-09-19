@@ -10,7 +10,8 @@
   left: 0;
   width: 100%;
   height: var(--header-height);
-  z-index: 9999;
+  z-index: 99999;
+  overflow: visible;
   background-color: var(--color-navy-alpha-80);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -18,17 +19,20 @@
   transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
+.header .container,
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  overflow: visible !important;
 }
 
 .header-actions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  overflow: visible !important;
 }
 
 .brand-logo {
@@ -2218,8 +2222,15 @@ html, body {
     display: block;
   }
 
-  .container {
+  .container:not(.header-container) {
     overflow-x: hidden;
+  }
+
+  .header .container,
+  .header-container {
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
   }
 }
 
@@ -2603,6 +2614,11 @@ html, body {
   position: relative;
   display: inline-flex;
   align-items: center;
+  z-index: 100000;
+}
+
+.lang-selector-dropdown.is-open {
+  z-index: 100002;
 }
 
 .lang-btn {
@@ -2679,6 +2695,7 @@ html, body {
   top: calc(100% + 8px);
   right: 0;
   min-width: 155px;
+  max-width: calc(100vw - 24px);
   background: rgba(18, 20, 29, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -2691,14 +2708,16 @@ html, body {
   gap: 0.2rem;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transform: translateY(-6px) scale(0.97);
   transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
-  z-index: 99999;
+  z-index: 100003;
 }
 
 .lang-selector-dropdown.is-open .lang-menu {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateY(0) scale(1);
 }
 

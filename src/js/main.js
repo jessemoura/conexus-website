@@ -5,11 +5,17 @@ import { initThemeToggle } from './themeToggle.js';
 import { initReviews } from './reviews.js';
 import { initI18n } from './i18n.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+function initAll() {
   initI18n();
   initWhatsAppLinks();
   initMobileMenu();
   initTracking();
   initThemeToggle();
   initReviews();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAll);
+} else {
+  initAll();
+}
