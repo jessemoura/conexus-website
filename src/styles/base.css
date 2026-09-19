@@ -81,7 +81,6 @@ img, video {
   outline-offset: 4px;
 }
 
-/* Utility Containers */
 .container {
   width: 100%;
   max-width: var(--container-max-width);
@@ -89,6 +88,14 @@ img, video {
   margin-right: auto;
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .section {
