@@ -1,46 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_transformacao_digital_pequenas_empresas_guia" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#091E3A" />
       <stop offset="100%" stop-color="#1E293B" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="gridPattern_transformacao_digital_pequenas_empresas_guia" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="440" fill="url(#bgGrad)" />
-  <rect width="860" height="440" fill="url(#gridPattern)" />
+  <rect width="860" height="440" fill="url(#bgGrad_transformacao_digital_pequenas_empresas_guia)" />
+  <rect width="860" height="440" fill="url(#gridPattern_transformacao_digital_pequenas_empresas_guia)" />
 
   <!-- Ambient Glow -->
-  <circle cx="700" cy="120" r="180" fill="#2DD4BF" opacity="0.12" filter="blur(40px)" />
-  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+  <circle cx="700" cy="120" r="180" fill="#2DD4BF" opacity="0.12" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" />
 
-  <!-- Graphical Element -->
-  <g transform="translate(140, 20)">
-    <rect x="250" y="140" width="120" height="120" rx="16" fill="none" stroke="#2DD4BF" stroke-width="3" opacity="0.8"/><rect x="430" y="140" width="120" height="120" rx="16" fill="none" stroke="#2DD4BF" stroke-width="3" opacity="0.8"/><rect x="340" y="240" width="120" height="120" rx="16" fill="#2DD4BF" opacity="0.2" stroke="#2DD4BF" stroke-width="3"/><path d="M370 200 L430 200" stroke="#2DD4BF" stroke-width="3" stroke-dasharray="4,4"/><path d="M310 260 L340 300" stroke="#2DD4BF" stroke-width="3"/><path d="M490 260 L460 300" stroke="#2DD4BF" stroke-width="3"/>
-  </g>
+  <!-- Unique Thematic Graphical Element -->
+  
+    <g transform="translate(100, 20)">
+      <!-- Paper to Cloud Digital Transformation Portal -->
+      <rect x="60" y="50" width="140" height="160" rx="8" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+      <text x="130" y="90" fill="#94A3B8" font-size="12" font-weight="700" text-anchor="middle">📄 PROCESSOS</text>
+      <text x="130" y="120" fill="#94A3B8" font-size="12" font-weight="700" text-anchor="middle">MANUAIS &amp;</text>
+      <text x="130" y="150" fill="#94A3B8" font-size="12" font-weight="700" text-anchor="middle">PLANILHAS</text>
+      <text x="130" y="190" fill="#EF4444" font-size="11" font-weight="800" text-anchor="middle">Passado</text>
+      <!-- Digital Portal Arrow -->
+      <path d="M 220 130 L 320 130" stroke="#2DD4BF" stroke-width="6"/>
+      <polygon points="320,130 305,120 305,140" fill="#2DD4BF"/>
+
+      <rect x="340" y="50" width="160" height="160" rx="8" fill="#0B2545" stroke="#2DD4BF" stroke-width="2.5"/>
+      <text x="420" y="90" fill="#2DD4BF" font-size="13" font-weight="900" text-anchor="middle">☁️ ECOSSISTEMA</text>
+      <text x="420" y="120" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">DIGITAL EM NUVEM</text>
+      <text x="420" y="150" fill="#00F0FF" font-size="11" font-weight="700" text-anchor="middle">Site • CRM • IA</text>
+      <text x="420" y="190" fill="#10B981" font-size="11" font-weight="800" text-anchor="middle">Alta Rentabilidade</text>
+    </g>
 
   <!-- Darkening Gradient Overlay at Bottom -->
-  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+  <rect x="0" y="240" width="860" height="200" fill="#091E3A" opacity="0.9" />
 
   <!-- Content Box / Card Header -->
-  <g transform="translate(50, 260)">
+  <g transform="translate(50, 270)">
     <!-- Badge -->
     <rect x="0" y="0" width="223.5" height="26" rx="4" fill="#2DD4BF" fill-opacity="0.15" stroke="#2DD4BF" stroke-width="1.2" />
     <text x="12" y="17" fill="#2DD4BF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">TRANSFORMAÇÃO DIGITAL</text>
     
     <!-- Title Line 1 -->
-    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800">Transformação Digital para Pequenas Empresas: Guia</text>
-    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="700">Prático sem Complicação</text>
+    <text x="0" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">Transformação Digital para Pequenas Empresas: Guia</text>
+    <text x="0" y="90" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">Prático sem Complicação</text>
     
     <!-- Footer Brand & Date -->
-    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
   </g>
 
   <!-- Top Brand Watermark -->

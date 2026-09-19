@@ -1,46 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_google_perfil_da_empresa_guia_completo" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#071A2F" />
       <stop offset="100%" stop-color="#0F4C81" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="gridPattern_google_perfil_da_empresa_guia_completo" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="440" fill="url(#bgGrad)" />
-  <rect width="860" height="440" fill="url(#gridPattern)" />
+  <rect width="860" height="440" fill="url(#bgGrad_google_perfil_da_empresa_guia_completo)" />
+  <rect width="860" height="440" fill="url(#gridPattern_google_perfil_da_empresa_guia_completo)" />
 
   <!-- Ambient Glow -->
-  <circle cx="700" cy="120" r="180" fill="#38BDF8" opacity="0.12" filter="blur(40px)" />
-  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+  <circle cx="700" cy="120" r="180" fill="#38BDF8" opacity="0.12" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" />
 
-  <!-- Graphical Element -->
-  <g transform="translate(140, 20)">
-    <circle cx="400" cy="200" r="90" fill="none" stroke="#38BDF8" stroke-width="4" opacity="0.8"/><circle cx="400" cy="200" r="60" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6,6" opacity="0.5"/><path d="M470 270 L550 350" stroke="#38BDF8" stroke-width="12" stroke-linecap="round"/><path d="M370 200 L390 220 L440 170" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+  <!-- Unique Thematic Graphical Element -->
+  
+    <g transform="translate(100, 20)">
+      <!-- Google Business Profile Card -->
+      <rect x="70" y="30" width="420" height="220" rx="12" fill="#071A2F" stroke="#38BDF8" stroke-width="2"/>
+      <rect x="95" y="55" width="65" height="65" rx="10" fill="#38BDF8"/>
+      <text x="127" y="98" fill="#071A2F" font-size="34" font-weight="900" text-anchor="middle">G</text>
+      <text x="175" y="75" fill="#FFFFFF" font-size="17" font-weight="800">Perfil da Empresa no Google</text>
+      <text x="175" y="100" fill="#F59E0B" font-size="15">★★★★★ <tspan fill="#38BDF8" font-size="13" font-weight="700">5.0 (148 avaliações)</tspan></text>
+      <text x="175" y="120" fill="#10B981" font-size="12" font-weight="700">✓ Aberto agora • Empresa Verificada</text>
+      <line x1="95" y1="140" x2="465" y2="140" stroke="#38BDF8" stroke-width="1" opacity="0.3"/>
+      <!-- Action buttons -->
+      <rect x="95" y="160" width="110" height="35" rx="6" fill="#38BDF8"/>
+      <text x="150" y="182" fill="#071A2F" font-size="12" font-weight="900" text-anchor="middle">🌐 Website</text>
+      <rect x="220" y="160" width="110" height="35" rx="6" fill="#0F4C81" stroke="#38BDF8" stroke-width="1.5"/>
+      <text x="275" y="182" fill="#FFFFFF" font-size="12" font-weight="800" text-anchor="middle">📍 Rotas</text>
+      <rect x="345" y="160" width="120" height="35" rx="6" fill="#10B981"/>
+      <text x="405" y="182" fill="#FFFFFF" font-size="12" font-weight="900" text-anchor="middle">📞 Ligar</text>
+    </g>
 
   <!-- Darkening Gradient Overlay at Bottom -->
-  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+  <rect x="0" y="240" width="860" height="200" fill="#071A2F" opacity="0.9" />
 
   <!-- Content Box / Card Header -->
-  <g transform="translate(50, 260)">
+  <g transform="translate(50, 270)">
     <!-- Badge -->
     <rect x="0" y="0" width="138" height="26" rx="4" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-width="1.2" />
     <text x="12" y="17" fill="#38BDF8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">SEO &amp; GOOGLE</text>
     
     <!-- Title Line 1 -->
-    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800">Google Perfil da Empresa: Guia Prático</text>
-    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="700">para Dominar o Google Maps</text>
+    <text x="0" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">Google Perfil da Empresa: Guia Prático</text>
+    <text x="0" y="90" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">para Dominar o Google Maps</text>
     
     <!-- Footer Brand & Date -->
-    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
   </g>
 
   <!-- Top Brand Watermark -->

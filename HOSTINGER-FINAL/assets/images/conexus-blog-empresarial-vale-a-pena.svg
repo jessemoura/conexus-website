@@ -1,46 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_blog_empresarial_vale_a_pena_2026" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#111827" />
       <stop offset="100%" stop-color="#1E3A8A" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="gridPattern_blog_empresarial_vale_a_pena_2026" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="440" fill="url(#bgGrad)" />
-  <rect width="860" height="440" fill="url(#gridPattern)" />
+  <rect width="860" height="440" fill="url(#bgGrad_blog_empresarial_vale_a_pena_2026)" />
+  <rect width="860" height="440" fill="url(#gridPattern_blog_empresarial_vale_a_pena_2026)" />
 
   <!-- Ambient Glow -->
-  <circle cx="700" cy="120" r="180" fill="#60A5FA" opacity="0.12" filter="blur(40px)" />
-  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+  <circle cx="700" cy="120" r="180" fill="#60A5FA" opacity="0.12" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" />
 
-  <!-- Graphical Element -->
-  <g transform="translate(140, 20)">
-    <path d="M220 300 L320 220 L420 260 L580 120" fill="none" stroke="#60A5FA" stroke-width="6" stroke-linecap="round"/><polygon points="580,120 540,130 570,160" fill="#60A5FA"/><circle cx="220" cy="300" r="8" fill="#60A5FA"/><circle cx="320" cy="220" r="8" fill="#60A5FA"/><circle cx="420" cy="260" r="8" fill="#60A5FA"/><circle cx="580" cy="120" r="10" fill="#FFFFFF"/>
-  </g>
+  <!-- Unique Thematic Graphical Element -->
+  
+    <g transform="translate(100, 20)">
+      <!-- Corporate Blog Post Card with Readership Growth -->
+      <rect x="60" y="30" width="220" height="200" rx="10" fill="#0B2545" stroke="#60A5FA" stroke-width="2"/>
+      <rect x="80" y="50" width="180" height="60" rx="6" fill="#1E3A8A"/>
+      <line x1="80" y1="125" x2="260" y2="125" stroke="#FFFFFF" stroke-width="3" opacity="0.6"/>
+      <line x1="80" y1="145" x2="220" y2="145" stroke="#FFFFFF" stroke-width="3" opacity="0.4"/>
+      <line x1="80" y1="165" x2="240" y2="165" stroke="#FFFFFF" stroke-width="3" opacity="0.4"/>
+      <!-- Readership Growth Graph -->
+      <rect x="310" y="30" width="190" height="200" rx="10" fill="#071A2F" stroke="#10B981" stroke-width="2"/>
+      <text x="405" y="65" fill="#10B981" font-size="13" font-weight="800" text-anchor="middle">TRÁFEGO ORGÂNICO</text>
+      <polyline points="330,190 370,160 410,120 450,140 480,80" fill="none" stroke="#10B981" stroke-width="4"/>
+      <circle cx="480" cy="80" r="6" fill="#10B981"/>
+      <text x="405" y="215" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">+450% LEITORES / MÊS</text>
+    </g>
 
   <!-- Darkening Gradient Overlay at Bottom -->
-  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+  <rect x="0" y="240" width="860" height="200" fill="#111827" opacity="0.9" />
 
   <!-- Content Box / Card Header -->
-  <g transform="translate(50, 260)">
+  <g transform="translate(50, 270)">
     <!-- Badge -->
     <rect x="0" y="0" width="185.5" height="26" rx="4" fill="#60A5FA" fill-opacity="0.15" stroke="#60A5FA" stroke-width="1.2" />
     <text x="12" y="17" fill="#60A5FA" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">MARKETING DIGITAL</text>
     
     <!-- Title Line 1 -->
-    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800">Blog Empresarial Ainda Vale a Pena</text>
-    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="700">em 2026? Impacto no SEO e Vendas</text>
+    <text x="0" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">Blog Empresarial Ainda Vale a Pena</text>
+    <text x="0" y="90" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">em 2026? Impacto no SEO e Vendas</text>
     
     <!-- Footer Brand & Date -->
-    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
   </g>
 
   <!-- Top Brand Watermark -->

@@ -1,46 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_como_escolher_agencia_de_marketing_digital" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#091E3A" />
       <stop offset="100%" stop-color="#1E293B" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="gridPattern_como_escolher_agencia_de_marketing_digital" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="440" fill="url(#bgGrad)" />
-  <rect width="860" height="440" fill="url(#gridPattern)" />
+  <rect width="860" height="440" fill="url(#bgGrad_como_escolher_agencia_de_marketing_digital)" />
+  <rect width="860" height="440" fill="url(#gridPattern_como_escolher_agencia_de_marketing_digital)" />
 
   <!-- Ambient Glow -->
-  <circle cx="700" cy="120" r="180" fill="#2DD4BF" opacity="0.12" filter="blur(40px)" />
-  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+  <circle cx="700" cy="120" r="180" fill="#2DD4BF" opacity="0.12" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" />
 
-  <!-- Graphical Element -->
-  <g transform="translate(140, 20)">
-    <rect x="250" y="140" width="120" height="120" rx="16" fill="none" stroke="#2DD4BF" stroke-width="3" opacity="0.8"/><rect x="430" y="140" width="120" height="120" rx="16" fill="none" stroke="#2DD4BF" stroke-width="3" opacity="0.8"/><rect x="340" y="240" width="120" height="120" rx="16" fill="#2DD4BF" opacity="0.2" stroke="#2DD4BF" stroke-width="3"/><path d="M370 200 L430 200" stroke="#2DD4BF" stroke-width="3" stroke-dasharray="4,4"/><path d="M310 260 L340 300" stroke="#2DD4BF" stroke-width="3"/><path d="M490 260 L460 300" stroke="#2DD4BF" stroke-width="3"/>
-  </g>
+  <!-- Unique Thematic Graphical Element -->
+  
+    <g transform="translate(100, 20)">
+      <!-- Agency Evaluation Checklist & Magnifying Glass -->
+      <rect x="60" y="30" width="440" height="210" rx="12" fill="#0B2545" stroke="#2DD4BF" stroke-width="2"/>
+      <text x="90" y="70" fill="#2DD4BF" font-size="15" font-weight="800">CRITÉRIOS DE ESCOLHA DA AGÊNCIA:</text>
+      <text x="90" y="105" fill="#FFFFFF" font-size="12">✔ Portfólio real com cases comprovados</text>
+      <text x="90" y="135" fill="#FFFFFF" font-size="12">✔ Engenharia de código próprio (sem modelos lentos)</text>
+      <text x="90" y="165" fill="#FFFFFF" font-size="12">✔ Foco em ROI financeiro e aquisição de clientes</text>
+      <text x="90" y="195" fill="#FFFFFF" font-size="12">✔ Transparência de métricas e suporte contínuo</text>
+      <!-- Seal -->
+      <circle cx="430" cy="135" r="40" fill="#1E293B" stroke="#2DD4BF" stroke-width="2"/>
+      <text x="430" y="132" fill="#2DD4BF" font-size="12" font-weight="900" text-anchor="middle">CONEXUS</text>
+      <text x="430" y="148" fill="#FFFFFF" font-size="9" font-weight="700" text-anchor="middle">QUALIDADE</text>
+    </g>
 
   <!-- Darkening Gradient Overlay at Bottom -->
-  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+  <rect x="0" y="240" width="860" height="200" fill="#091E3A" opacity="0.9" />
 
   <!-- Content Box / Card Header -->
-  <g transform="translate(50, 260)">
+  <g transform="translate(50, 270)">
     <!-- Badge -->
     <rect x="0" y="0" width="223.5" height="26" rx="4" fill="#2DD4BF" fill-opacity="0.15" stroke="#2DD4BF" stroke-width="1.2" />
     <text x="12" y="17" fill="#2DD4BF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">TRANSFORMAÇÃO DIGITAL</text>
     
     <!-- Title Line 1 -->
-    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800">Como Escolher a Agência de Marketing</text>
-    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="700">Digital Ideal e Evitar Promessas Vazias</text>
+    <text x="0" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">Como Escolher a Agência de Marketing</text>
+    <text x="0" y="90" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">Digital Ideal e Evitar Promessas Vazias</text>
     
     <!-- Footer Brand & Date -->
-    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
   </g>
 
   <!-- Top Brand Watermark -->

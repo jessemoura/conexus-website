@@ -1,46 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_como_transformar_visitantes_do_site_em_clientes" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#111827" />
       <stop offset="100%" stop-color="#1E3A8A" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="gridPattern_como_transformar_visitantes_do_site_em_clientes" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="440" fill="url(#bgGrad)" />
-  <rect width="860" height="440" fill="url(#gridPattern)" />
+  <rect width="860" height="440" fill="url(#bgGrad_como_transformar_visitantes_do_site_em_clientes)" />
+  <rect width="860" height="440" fill="url(#gridPattern_como_transformar_visitantes_do_site_em_clientes)" />
 
   <!-- Ambient Glow -->
-  <circle cx="700" cy="120" r="180" fill="#60A5FA" opacity="0.12" filter="blur(40px)" />
-  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+  <circle cx="700" cy="120" r="180" fill="#60A5FA" opacity="0.12" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" />
 
-  <!-- Graphical Element -->
-  <g transform="translate(140, 20)">
-    <path d="M220 300 L320 220 L420 260 L580 120" fill="none" stroke="#60A5FA" stroke-width="6" stroke-linecap="round"/><polygon points="580,120 540,130 570,160" fill="#60A5FA"/><circle cx="220" cy="300" r="8" fill="#60A5FA"/><circle cx="320" cy="220" r="8" fill="#60A5FA"/><circle cx="420" cy="260" r="8" fill="#60A5FA"/><circle cx="580" cy="120" r="10" fill="#FFFFFF"/>
-  </g>
+  <!-- Unique Thematic Graphical Element -->
+  
+    <g transform="translate(100, 20)">
+      <!-- Conversion Rate Optimization Heatmap & CTA Clicks -->
+      <rect x="70" y="30" width="420" height="210" rx="12" fill="#0B2545" stroke="#60A5FA" stroke-width="2"/>
+      <circle cx="280" cy="110" r="45" fill="rgba(239, 68, 68, 0.4)" filter="blur(10px)"/>
+      <circle cx="280" cy="110" r="25" fill="rgba(245, 158, 11, 0.6)" filter="blur(5px)"/>
+      <!-- High Converting Button -->
+      <rect x="180" y="90" width="200" height="48" rx="24" fill="#10B981" stroke="#34D399" stroke-width="2"/>
+      <text x="280" y="120" fill="#FFFFFF" font-size="14" font-weight="900" text-anchor="middle">FALAR COM CONSULTOR</text>
+      <!-- Cursor Clicking Pointer -->
+      <polygon points="320,130 340,165 330,170 345,195 335,200 320,175 305,185" fill="#FFFFFF" stroke="#000000" stroke-width="1.5"/>
+      <text x="280" y="215" fill="#60A5FA" font-size="14" font-weight="800" text-anchor="middle">CRO: OTIMIZAÇÃO DE TAXA DE CONVERSÃO</text>
+    </g>
 
   <!-- Darkening Gradient Overlay at Bottom -->
-  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+  <rect x="0" y="240" width="860" height="200" fill="#111827" opacity="0.9" />
 
   <!-- Content Box / Card Header -->
-  <g transform="translate(50, 260)">
+  <g transform="translate(50, 270)">
     <!-- Badge -->
     <rect x="0" y="0" width="185.5" height="26" rx="4" fill="#60A5FA" fill-opacity="0.15" stroke="#60A5FA" stroke-width="1.2" />
     <text x="12" y="17" fill="#60A5FA" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">MARKETING DIGITAL</text>
     
     <!-- Title Line 1 -->
-    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800">CRO na Prática: Como Transformar Visitantes</text>
-    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="700">do Site em Clientes Pagantes</text>
+    <text x="0" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">CRO na Prática: Como Transformar Visitantes</text>
+    <text x="0" y="90" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">do Site em Clientes Pagantes</text>
     
     <!-- Footer Brand & Date -->
-    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
   </g>
 
   <!-- Top Brand Watermark -->

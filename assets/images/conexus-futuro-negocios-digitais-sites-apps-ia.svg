@@ -1,46 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_futuro_negocios_digitais_sites_apps_automacao_ia" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#071426" />
       <stop offset="100%" stop-color="#164E63" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="gridPattern_futuro_negocios_digitais_sites_apps_automacao_ia" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="440" fill="url(#bgGrad)" />
-  <rect width="860" height="440" fill="url(#gridPattern)" />
+  <rect width="860" height="440" fill="url(#bgGrad_futuro_negocios_digitais_sites_apps_automacao_ia)" />
+  <rect width="860" height="440" fill="url(#gridPattern_futuro_negocios_digitais_sites_apps_automacao_ia)" />
 
   <!-- Ambient Glow -->
-  <circle cx="700" cy="120" r="180" fill="#22D3EE" opacity="0.12" filter="blur(40px)" />
-  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+  <circle cx="700" cy="120" r="180" fill="#22D3EE" opacity="0.12" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" />
 
-  <!-- Graphical Element -->
-  <g transform="translate(140, 20)">
-    <circle cx="400" cy="220" r="100" fill="none" stroke="#22D3EE" stroke-width="2" stroke-dasharray="8,8" opacity="0.4"/><circle cx="400" cy="220" r="50" fill="none" stroke="#22D3EE" stroke-width="3" opacity="0.8"/><polygon points="400,140 430,220 400,200 370,220" fill="#22D3EE"/><polygon points="400,300 430,220 400,240 370,220" fill="#22D3EE" opacity="0.5"/>
-  </g>
+  <!-- Unique Thematic Graphical Element -->
+  
+    <g transform="translate(100, 20)">
+      <!-- Master Convergence Nexus (Web + Apps + Automation + AI) -->
+      <circle cx="280" cy="125" r="95" fill="#071426" stroke="#22D3EE" stroke-width="3"/>
+      <circle cx="280" cy="125" r="35" fill="#10B981"/>
+      <text x="280" y="132" fill="#071A2F" font-size="13" font-weight="900" text-anchor="middle">CONEXUS</text>
+      <!-- 4 Converging satellite nodes -->
+      <rect x="50" y="40" width="110" height="40" rx="6" fill="#0F4C81" stroke="#00F0FF" stroke-width="1.5"/>
+      <text x="105" y="65" fill="#00F0FF" font-size="12" font-weight="800" text-anchor="middle">🌐 Websites</text>
+      <line x1="160" y1="60" x2="250" y2="105" stroke="#00F0FF" stroke-width="2"/>
+
+      <rect x="400" y="40" width="110" height="40" rx="6" fill="#0F4C81" stroke="#38BDF8" stroke-width="1.5"/>
+      <text x="455" y="65" fill="#38BDF8" font-size="12" font-weight="800" text-anchor="middle">📱 Apps</text>
+      <line x1="400" y1="60" x2="310" y2="105" stroke="#38BDF8" stroke-width="2"/>
+
+      <rect x="50" y="170" width="110" height="40" rx="6" fill="#0F4C81" stroke="#818CF8" stroke-width="1.5"/>
+      <text x="105" y="195" fill="#818CF8" font-size="12" font-weight="800" text-anchor="middle">⚡ Automação</text>
+      <line x1="160" y1="190" x2="250" y2="145" stroke="#818CF8" stroke-width="2"/>
+
+      <rect x="400" y="170" width="110" height="40" rx="6" fill="#0F4C81" stroke="#2DD4BF" stroke-width="1.5"/>
+      <text x="455" y="195" fill="#2DD4BF" font-size="12" font-weight="800" text-anchor="middle">🤖 IA</text>
+      <line x1="400" y1="190" x2="310" y2="145" stroke="#2DD4BF" stroke-width="2"/>
+    </g>
 
   <!-- Darkening Gradient Overlay at Bottom -->
-  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+  <rect x="0" y="240" width="860" height="200" fill="#071426" opacity="0.9" />
 
   <!-- Content Box / Card Header -->
-  <g transform="translate(50, 260)">
+  <g transform="translate(50, 270)">
     <!-- Badge -->
     <rect x="0" y="0" width="252" height="26" rx="4" fill="#22D3EE" fill-opacity="0.15" stroke="#22D3EE" stroke-width="1.2" />
     <text x="12" y="17" fill="#22D3EE" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CRESCIMENTO &amp; TECNOLOGIA</text>
     
     <!-- Title Line 1 -->
-    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800">O Futuro dos Negócios Digitais: A</text>
-    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="700">Convergência Entre Websites, Aplicativos, Automação e IA</text>
+    <text x="0" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">O Futuro dos Negócios Digitais: A</text>
+    <text x="0" y="90" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">Convergência Entre Websites, Aplicativos, Automação e IA</text>
     
     <!-- Footer Brand & Date -->
-    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
   </g>
 
   <!-- Top Brand Watermark -->

@@ -1,46 +1,89 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_15_maneiras_usar_ia_nos_negocios" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F172A" />
       <stop offset="100%" stop-color="#312E81" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="gridPattern_15_maneiras_usar_ia_nos_negocios" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="440" fill="url(#bgGrad)" />
-  <rect width="860" height="440" fill="url(#gridPattern)" />
+  <rect width="860" height="440" fill="url(#bgGrad_15_maneiras_usar_ia_nos_negocios)" />
+  <rect width="860" height="440" fill="url(#gridPattern_15_maneiras_usar_ia_nos_negocios)" />
 
   <!-- Ambient Glow -->
-  <circle cx="700" cy="120" r="180" fill="#818CF8" opacity="0.12" filter="blur(40px)" />
-  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+  <circle cx="700" cy="120" r="180" fill="#818CF8" opacity="0.12" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" />
 
-  <!-- Graphical Element -->
-  <g transform="translate(140, 20)">
-    <circle cx="400" cy="180" r="25" fill="#818CF8" opacity="0.9"/><circle cx="300" cy="260" r="18" fill="#818CF8" opacity="0.7"/><circle cx="500" cy="260" r="18" fill="#818CF8" opacity="0.7"/><circle cx="350" cy="340" r="14" fill="#818CF8" opacity="0.5"/><circle cx="450" cy="340" r="14" fill="#818CF8" opacity="0.5"/><line x1="400" y1="180" x2="300" y2="260" stroke="#818CF8" stroke-width="3" opacity="0.6"/><line x1="400" y1="180" x2="500" y2="260" stroke="#818CF8" stroke-width="3" opacity="0.6"/><line x1="300" y1="260" x2="350" y2="340" stroke="#818CF8" stroke-width="2" opacity="0.4"/><line x1="500" y1="260" x2="450" y2="340" stroke="#818CF8" stroke-width="2" opacity="0.4"/><line x1="350" y1="340" x2="450" y2="340" stroke="#818CF8" stroke-width="2" opacity="0.4"/><line x1="300" y1="260" x2="500" y2="260" stroke="#818CF8" stroke-width="2" stroke-dasharray="4,4" opacity="0.3"/>
-  </g>
+  <!-- Unique Thematic Graphical Element -->
+  
+    <g transform="translate(100, 20)">
+      <!-- 15 Modular AI Capabilities Grid -->
+      <g transform="translate(50, 25)">
+        <rect x="0" y="0" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="40" y="30" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Copywriting</text>
+
+        <rect x="90" y="0" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="130" y="30" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Atendimento</text>
+
+        <rect x="180" y="0" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="220" y="30" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Automação</text>
+
+        <rect x="270" y="0" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="310" y="30" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Análise Dados</text>
+
+        <rect x="360" y="0" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="400" y="30" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">SEO &amp; Blog</text>
+
+        <rect x="0" y="60" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="40" y="90" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Finanças</text>
+
+        <rect x="90" y="60" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="130" y="90" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Contratos</text>
+
+        <rect x="180" y="60" width="80" height="50" rx="6" fill="#818CF8"/>
+        <text x="220" y="90" fill="#071A2F" font-size="12" font-weight="900" text-anchor="middle">15 MODOS</text>
+
+        <rect x="270" y="60" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="310" y="90" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Triagem</text>
+
+        <rect x="360" y="60" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="400" y="90" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Imagens</text>
+
+        <rect x="0" y="120" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="40" y="150" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Follow-up</text>
+
+        <rect x="90" y="120" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="130" y="150" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Propostas</text>
+
+        <rect x="180" y="120" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="220" y="150" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">CRM</text>
+
+        <rect x="270" y="120" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="310" y="150" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Suporte 24/7</text>
+
+        <rect x="360" y="120" width="80" height="50" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1"/>
+        <text x="400" y="150" fill="#818CF8" font-size="10" font-weight="800" text-anchor="middle">Predição</text>
+      </g>
+    </g>
 
   <!-- Darkening Gradient Overlay at Bottom -->
-  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+  <rect x="0" y="240" width="860" height="200" fill="#0F172A" opacity="0.9" />
 
   <!-- Content Box / Card Header -->
-  <g transform="translate(50, 260)">
+  <g transform="translate(50, 270)">
     <!-- Badge -->
     <rect x="0" y="0" width="242.5" height="26" rx="4" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="1.2" />
     <text x="12" y="17" fill="#818CF8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">INTELIGÊNCIA ARTIFICIAL</text>
     
     <!-- Title Line 1 -->
-    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800">15 Maneiras Práticas de Usar Inteligência</text>
-    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="700">Artificial nos Negócios em 2026</text>
+    <text x="0" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">15 Maneiras Práticas de Usar Inteligência</text>
+    <text x="0" y="90" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">Artificial nos Negócios em 2026</text>
     
     <!-- Footer Brand & Date -->
-    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
   </g>
 
   <!-- Top Brand Watermark -->

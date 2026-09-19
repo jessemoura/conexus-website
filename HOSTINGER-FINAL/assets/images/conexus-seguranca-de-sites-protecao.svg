@@ -1,46 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad_seguranca_de_sites_como_proteger_empresa_clientes" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#071426" />
       <stop offset="100%" stop-color="#164E63" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="gridPattern_seguranca_de_sites_como_proteger_empresa_clientes" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="440" fill="url(#bgGrad)" />
-  <rect width="860" height="440" fill="url(#gridPattern)" />
+  <rect width="860" height="440" fill="url(#bgGrad_seguranca_de_sites_como_proteger_empresa_clientes)" />
+  <rect width="860" height="440" fill="url(#gridPattern_seguranca_de_sites_como_proteger_empresa_clientes)" />
 
   <!-- Ambient Glow -->
-  <circle cx="700" cy="120" r="180" fill="#22D3EE" opacity="0.12" filter="blur(40px)" />
-  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" filter="blur(30px)" />
+  <circle cx="700" cy="120" r="180" fill="#22D3EE" opacity="0.12" />
+  <circle cx="150" cy="350" r="140" fill="#2563EB" opacity="0.1" />
 
-  <!-- Graphical Element -->
-  <g transform="translate(140, 20)">
-    <circle cx="400" cy="220" r="100" fill="none" stroke="#22D3EE" stroke-width="2" stroke-dasharray="8,8" opacity="0.4"/><circle cx="400" cy="220" r="50" fill="none" stroke="#22D3EE" stroke-width="3" opacity="0.8"/><polygon points="400,140 430,220 400,200 370,220" fill="#22D3EE"/><polygon points="400,300 430,220 400,240 370,220" fill="#22D3EE" opacity="0.5"/>
-  </g>
+  <!-- Unique Thematic Graphical Element -->
+  
+    <g transform="translate(100, 20)">
+      <!-- Cybersecurity Firewall & Encryption Shield -->
+      <path d="M 280 35 L 380 75 L 380 165 Q 280 235 280 235 Q 180 165 180 75 Z" fill="#071426" stroke="#22D3EE" stroke-width="3"/>
+      <rect x="255" y="105" width="50" height="40" rx="6" fill="#22D3EE"/>
+      <path d="M 265 105 L 265 90 Q 280 70 295 90 L 295 105" fill="none" stroke="#22D3EE" stroke-width="4"/>
+      <circle cx="280" cy="122" r="5" fill="#071426"/>
+      <!-- Security tags -->
+      <rect x="50" y="80" width="110" height="35" rx="6" fill="#0F4C81" stroke="#22D3EE" stroke-width="1.2"/>
+      <text x="105" y="102" fill="#22D3EE" font-size="11" font-weight="800" text-anchor="middle">🔒 SSL / TLS 1.3</text>
+
+      <rect x="400" y="80" width="110" height="35" rx="6" fill="#0F4C81" stroke="#22D3EE" stroke-width="1.2"/>
+      <text x="455" y="102" fill="#22D3EE" font-size="11" font-weight="800" text-anchor="middle">🛡️ WAF Firewall</text>
+
+      <rect x="50" y="150" width="110" height="35" rx="6" fill="#0F4C81" stroke="#22D3EE" stroke-width="1.2"/>
+      <text x="105" y="172" fill="#22D3EE" font-size="11" font-weight="800" text-anchor="middle">💾 Backups Diários</text>
+
+      <rect x="400" y="150" width="110" height="35" rx="6" fill="#0F4C81" stroke="#22D3EE" stroke-width="1.2"/>
+      <text x="455" y="172" fill="#22D3EE" font-size="11" font-weight="800" text-anchor="middle">⚡ Anti-DDoS</text>
+    </g>
 
   <!-- Darkening Gradient Overlay at Bottom -->
-  <rect x="0" y="200" width="860" height="240" fill="url(#bgGrad)" opacity="0.85" />
+  <rect x="0" y="240" width="860" height="200" fill="#071426" opacity="0.9" />
 
   <!-- Content Box / Card Header -->
-  <g transform="translate(50, 260)">
+  <g transform="translate(50, 270)">
     <!-- Badge -->
     <rect x="0" y="0" width="252" height="26" rx="4" fill="#22D3EE" fill-opacity="0.15" stroke="#22D3EE" stroke-width="1.2" />
     <text x="12" y="17" fill="#22D3EE" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CRESCIMENTO &amp; TECNOLOGIA</text>
     
     <!-- Title Line 1 -->
-    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800">Segurança de Websites: Como Proteger Sua</text>
-    <text x="0" y="98" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="700">Empresa e Seus Clientes Contra Ataques</text>
+    <text x="0" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">Segurança de Websites: Como Proteger Sua</text>
+    <text x="0" y="90" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">Empresa e Seus Clientes Contra Ataques</text>
     
     <!-- Footer Brand & Date -->
-    <text x="0" y="135" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
+    <text x="0" y="125" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">CONEXUS • Guia Estratégico Digital • 2026</text>
   </g>
 
   <!-- Top Brand Watermark -->
