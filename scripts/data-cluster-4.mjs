@@ -12,7 +12,7 @@ export const cluster4Articles = [
       "es": "25 de abril de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-inteligencia-artificial-pequenas-empresas.webp",
+    "image": "/assets/images/conexus-inteligencia-artificial-pequenas-empresas-v2.webp",
     "relatedSlugs": [
       "como-usar-chatgpt-dia-a-dia-da-empresa",
       "15-maneiras-usar-ia-nos-negocios",
@@ -351,7 +351,7 @@ export const cluster4Articles = [
       "es": "20 de abril de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-usar-chatgpt-dia-a-dia-empresa.webp",
+    "image": "/assets/images/conexus-como-usar-chatgpt-dia-a-dia-empresa-v2.webp",
     "relatedSlugs": [
       "inteligencia-artificial-para-pequenas-empresas",
       "15-maneiras-usar-ia-nos-negocios",
@@ -657,7 +657,7 @@ export const cluster4Articles = [
       "es": "15 de abril de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-15-maneiras-usar-ia-nos-negocios.webp",
+    "image": "/assets/images/conexus-15-maneiras-usar-ia-nos-negocios-v2.webp",
     "relatedSlugs": [
       "inteligencia-artificial-para-pequenas-empresas",
       "automacao-de-marketing-economizar-tempo-vender-mais",
@@ -977,7 +977,7 @@ export const cluster4Articles = [
       "es": "10 de abril de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-ia-atendimento-cliente.webp",
+    "image": "/assets/images/conexus-ia-atendimento-cliente-v2.webp",
     "relatedSlugs": [
       "whatsapp-no-site-aumentar-contatos-conversoes",
       "inteligencia-artificial-para-pequenas-empresas",
@@ -1283,7 +1283,7 @@ export const cluster4Articles = [
       "es": "05 de abril de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-automacao-de-marketing.webp",
+    "image": "/assets/images/conexus-automacao-de-marketing-v2.webp",
     "relatedSlugs": [
       "funil-de-vendas-digital-pequenas-empresas",
       "inteligencia-artificial-para-pequenas-empresas",
@@ -1622,7 +1622,7 @@ export const cluster4Articles = [
       "es": "30 de marzo de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-ia-vai-substituir-sites.webp",
+    "image": "/assets/images/conexus-ia-vai-substituir-sites-v2.webp",
     "relatedSlugs": [
       "inteligencia-artificial-para-pequenas-empresas",
       "ia-e-seo-mudancas-mecanismos-de-busca",
@@ -1961,7 +1961,7 @@ export const cluster4Articles = [
       "es": "25 de marzo de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-ia-transforma-marketing-digital.webp",
+    "image": "/assets/images/conexus-como-ia-transforma-marketing-digital-v2.webp",
     "relatedSlugs": [
       "ia-e-seo-mudancas-mecanismos-de-busca",
       "inteligencia-artificial-para-pequenas-empresas",
@@ -2300,7 +2300,7 @@ export const cluster4Articles = [
       "es": "20 de marzo de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-ia-e-seo-mudancas-google.webp",
+    "image": "/assets/images/conexus-ia-e-seo-mudancas-google-v2.webp",
     "relatedSlugs": [
       "seo-para-pequenas-empresas-guia-completo",
       "seo-tecnico-fatores-crescimento-google",
@@ -2639,7 +2639,7 @@ export const cluster4Articles = [
       "es": "15 de marzo de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-preparar-empresa-era-ia.webp",
+    "image": "/assets/images/conexus-como-preparar-empresa-era-ia-v2.webp",
     "relatedSlugs": [
       "inteligencia-artificial-para-pequenas-empresas",
       "agentes-de-ia-o-que-sao-como-ajudam-empresas",
@@ -2978,7 +2978,7 @@ export const cluster4Articles = [
       "es": "10 de marzo de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-agentes-de-ia-para-empresas.webp",
+    "image": "/assets/images/conexus-agentes-de-ia-para-empresas-v2.webp",
     "relatedSlugs": [
       "inteligencia-artificial-para-pequenas-empresas",
       "automacao-de-marketing-economizar-tempo-vender-mais",

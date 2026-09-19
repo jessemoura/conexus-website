@@ -12,7 +12,7 @@ export const cluster3Articles = [
       "es": "15 de junio de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-site-ou-instagram-qual-mais-importante.webp",
+    "image": "/assets/images/conexus-site-ou-instagram-qual-mais-importante-v2.webp",
     "relatedSlugs": [
       "instagram-substitui-site-profissional",
       "presenca-digital-o-que-empresa-precisa-2026",
@@ -271,7 +271,7 @@ export const cluster3Articles = [
       "es": "10 de junio de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-instagram-substitui-site-profissional.webp",
+    "image": "/assets/images/conexus-instagram-substitui-site-profissional-v2.webp",
     "relatedSlugs": [
       "site-ou-instagram-qual-mais-importante",
       "como-construir-confianca-marca-ambiente-digital",
@@ -611,7 +611,7 @@ export const cluster3Articles = [
       "es": "05 de junio de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-criar-autoridade-digital-marca.webp",
+    "image": "/assets/images/conexus-como-criar-autoridade-digital-marca-v2.webp",
     "relatedSlugs": [
       "presenca-digital-o-que-empresa-precisa-2026",
       "blog-empresarial-vale-a-pena-2026",
@@ -951,7 +951,7 @@ export const cluster3Articles = [
       "es": "30 de mayo de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-transformar-visitantes-em-clientes.webp",
+    "image": "/assets/images/conexus-como-transformar-visitantes-em-clientes-v2.webp",
     "relatedSlugs": [
       "whatsapp-no-site-aumentar-contatos-conversoes",
       "como-site-profissional-gera-mais-clientes",
@@ -1257,7 +1257,7 @@ export const cluster3Articles = [
       "es": "25 de mayo de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-whatsapp-no-site-conversoes.webp",
+    "image": "/assets/images/conexus-whatsapp-no-site-conversoes-v2.webp",
     "relatedSlugs": [
       "como-transformar-visitantes-do-site-em-clientes",
       "formulario-ou-whatsapp-qual-gera-mais-contatos",
@@ -1596,7 +1596,7 @@ export const cluster3Articles = [
       "es": "20 de mayo de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-marketing-de-conteudo-atrair-clientes.webp",
+    "image": "/assets/images/conexus-marketing-de-conteudo-atrair-clientes-v2.webp",
     "relatedSlugs": [
       "blog-empresarial-vale-a-pena-2026",
       "seo-para-pequenas-empresas-guia-completo",
@@ -1893,7 +1893,7 @@ export const cluster3Articles = [
       "es": "15 de mayo de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-blog-empresarial-vale-a-pena.webp",
+    "image": "/assets/images/conexus-blog-empresarial-vale-a-pena-v2.webp",
     "relatedSlugs": [
       "marketing-de-conteudo-atrair-sem-anuncios",
       "seo-para-pequenas-empresas-guia-completo",
@@ -2188,7 +2188,7 @@ export const cluster3Articles = [
       "es": "10 de mayo de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-estrategia-digital-negocios-locais.webp",
+    "image": "/assets/images/conexus-estrategia-digital-negocios-locais-v2.webp",
     "relatedSlugs": [
       "seo-local-como-conquistar-clientes-regiao",
       "google-perfil-da-empresa-guia-completo",
@@ -2527,7 +2527,7 @@ export const cluster3Articles = [
       "es": "05 de mayo de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-presenca-digital-o-que-empresa-precisa.webp",
+    "image": "/assets/images/conexus-presenca-digital-o-que-empresa-precisa-v2.webp",
     "relatedSlugs": [
       "site-ou-instagram-qual-mais-importante",
       "como-criar-autoridade-digital-marca",
@@ -2867,7 +2867,7 @@ export const cluster3Articles = [
       "es": "30 de abril de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-funil-de-vendas-digital-pequenas-empresas.webp",
+    "image": "/assets/images/conexus-funil-de-vendas-digital-pequenas-empresas-v2.webp",
     "relatedSlugs": [
       "como-transformar-visitantes-do-site-em-clientes",
       "whatsapp-no-site-aumentar-contatos-conversoes",

@@ -12,7 +12,7 @@ export const cluster2Articles = [
       "es": "10 de agosto de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-seo-para-pequenas-empresas.webp",
+    "image": "/assets/images/conexus-seo-para-pequenas-empresas-v2.webp",
     "relatedSlugs": [
       "seo-local-como-conquistar-clientes-regiao",
       "palavras-chave-como-descobrir-pesquisas-clientes",
@@ -316,7 +316,7 @@ export const cluster2Articles = [
       "es": "05 de agosto de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-seo-local-como-conquistar-clientes-regiao.webp",
+    "image": "/assets/images/conexus-seo-local-como-conquistar-clientes-regiao-v2.webp",
     "relatedSlugs": [
       "google-perfil-da-empresa-guia-completo",
       "como-conseguir-mais-avaliacoes-no-google",
@@ -622,7 +622,7 @@ export const cluster2Articles = [
       "es": "30 de julio de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-aparecer-no-google-curitiba.webp",
+    "image": "/assets/images/conexus-como-aparecer-no-google-curitiba-v2.webp",
     "relatedSlugs": [
       "seo-local-como-conquistar-clientes-regiao",
       "google-perfil-da-empresa-guia-completo",
@@ -920,7 +920,7 @@ export const cluster2Articles = [
       "es": "25 de julio de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-google-perfil-da-empresa-guia.webp",
+    "image": "/assets/images/conexus-google-perfil-da-empresa-guia-v2.webp",
     "relatedSlugs": [
       "como-conseguir-mais-avaliacoes-no-google",
       "como-responder-avaliacoes-google-reputacao",
@@ -1260,7 +1260,7 @@ export const cluster2Articles = [
       "es": "20 de julio de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-como-conseguir-mais-avaliacoes-no-google.webp",
+    "image": "/assets/images/conexus-como-conseguir-mais-avaliacoes-no-google-v2.webp",
     "relatedSlugs": [
       "como-responder-avaliacoes-google-reputacao",
       "google-perfil-da-empresa-guia-completo",
@@ -1600,7 +1600,7 @@ export const cluster2Articles = [
       "es": "15 de julio de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-como-responder-avaliacoes-google.webp",
+    "image": "/assets/images/conexus-como-responder-avaliacoes-google-v2.webp",
     "relatedSlugs": [
       "como-conseguir-mais-avaliacoes-no-google",
       "reputacao-online-como-proteger-imagem-empresa",
@@ -1911,7 +1911,7 @@ export const cluster2Articles = [
       "es": "10 de julio de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-google-search-console-guia.webp",
+    "image": "/assets/images/conexus-google-search-console-guia-v2.webp",
     "relatedSlugs": [
       "seo-tecnico-fatores-crescimento-google",
       "palavras-chave-como-descobrir-pesquisas-clientes",
@@ -2217,7 +2217,7 @@ export const cluster2Articles = [
       "es": "05 de julio de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-palavras-chave-pesquisa-clientes.webp",
+    "image": "/assets/images/conexus-palavras-chave-pesquisa-clientes-v2.webp",
     "relatedSlugs": [
       "seo-para-pequenas-empresas-guia-completo",
       "marketing-de-conteudo-atrair-sem-anuncios",
@@ -2523,7 +2523,7 @@ export const cluster2Articles = [
       "es": "28 de junio de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-seo-tecnico-fatores-crescimento.webp",
+    "image": "/assets/images/conexus-seo-tecnico-fatores-crescimento-v2.webp",
     "relatedSlugs": [
       "por-que-velocidade-do-site-influencia-vendas",
       "site-responsivo-mobile-first-indispensavel",
@@ -2863,7 +2863,7 @@ export const cluster2Articles = [
       "es": "20 de junio de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-seo-para-prestadores-de-servicos.webp",
+    "image": "/assets/images/conexus-seo-para-prestadores-de-servicos-v2.webp",
     "relatedSlugs": [
       "seo-local-como-conquistar-clientes-regiao",
       "como-site-profissional-gera-mais-clientes",

@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Inspeção Visual — 60 Capas Fotográficas Blog CONEXUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080c14;
+      --card-bg: #0f172a;
+      --border: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --success: #10b981;
+      --approved: #3b82f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      padding: 2.5rem 1.5rem;
+      min-height: 100vh;
+    }
+    .header {
+      max-width: 1440px;
+      margin: 0 auto 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .header-left .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+    .header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+    .header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.4rem;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+    .stats-bar {
+      display: flex;
+      gap: 1.25rem;
+      background: var(--card-bg);
+      padding: 1rem 1.5rem;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    .stat-item { text-align: center; }
+    .stat-val { font-size: 1.5rem; font-weight: 800; color: var(--accent); }
+    .stat-val.success { color: var(--success); }
+    .stat-lbl { font-size: 0.7rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.06em; margin-top: 2px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 2rem;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+    .card-img-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 860 / 440;
+      background: #020617;
+      overflow: hidden;
+    }
+    .card-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .badge-num {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+      backdrop-filter: blur(8px);
+    }
+    .badge-status {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(16, 185, 129, 0.9);
+      color: #ffffff;
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      backdrop-filter: blur(8px);
+    }
+    .badge-status.approved {
+      background: rgba(59, 130, 246, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .card-body {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .card-category {
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.5rem;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.45;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    .card-meta {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: monospace;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 0.65rem 0.85rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .card-meta span { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <div class="badge">Apresentação para Aprovação Visual</div>
+      <h1>Galeria das 60 Capas Fotográficas — Blog CONEXUS</h1>
+      <p>Padrão 100% fotográfico / fotorealista editorial (câmera real: profissionais, escritórios modernos, comércio local, reuniões e infraestrutura tecnológica). Zero vetores, zero templates azuis, zero infográficos e zero repetições.</p>
+    </div>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-val success">60/60</div>
+        <div class="stat-lbl">Fotografias Válidas</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">0</div>
+        <div class="stat-lbl">Vetoriais</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">0</div>
+        <div class="stat-lbl">Quebradas</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">0</div>
+        <div class="stat-lbl">Repetidas</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid">
+    
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-site-one-page-ou-multipaginas-v2.webp?t=1789845995216" alt="Site One Page ou Multipáginas: Qual é o Melhor para Sua Empresa?" loading="lazy">
+        <div class="badge-num">#1</div>
+        <div class="badge-status approved">★ Amostra Aprovada</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Site One Page ou Multipáginas: Qual é o Melhor para Sua Empresa?</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-site-one-page-ou-multipaginas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 65.9 KB WebP</div>
+          <div><strong>Slug:</strong> site-one-page-ou-multipaginas-qual-escolher</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-10-sinais-empresa-precisa-novo-site-v2.webp?t=1789845995216" alt="10 Sinais Claros de que Sua Empresa Precisa de um Novo Site Urgente" loading="lazy">
+        <div class="badge-num">#2</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">10 Sinais Claros de que Sua Empresa Precisa de um Novo Site Urgente</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-10-sinais-empresa-precisa-novo-site-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 39.3 KB WebP</div>
+          <div><strong>Slug:</strong> 10-sinais-empresa-precisa-novo-site</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-site-profissional-gera-mais-clientes-v2.webp?t=1789845995216" alt="Como um Site Profissional Pode Gerar Mais Clientes Todos os Dias" loading="lazy">
+        <div class="badge-num">#3</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Como um Site Profissional Pode Gerar Mais Clientes Todos os Dias</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-site-profissional-gera-mais-clientes-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 52.3 KB WebP</div>
+          <div><strong>Slug:</strong> como-site-profissional-gera-mais-clientes</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-site-responsivo-mobile-first-v2.webp?t=1789845995216" alt="Site Responsivo: Por que o Mobile First é Indispensável em 2026" loading="lazy">
+        <div class="badge-num">#4</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Site Responsivo: Por que o Mobile First é Indispensável em 2026</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-site-responsivo-mobile-first-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 25.6 KB WebP</div>
+          <div><strong>Slug:</strong> site-responsivo-mobile-first-indispensavel</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-landing-page-ou-site-completo-v2.webp?t=1789845995216" alt="Landing Page ou Site Completo: Qual Escolher para Suas Campanhas?" loading="lazy">
+        <div class="badge-num">#5</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Landing Page ou Site Completo: Qual Escolher para Suas Campanhas?</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-landing-page-ou-site-completo-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 35.2 KB WebP</div>
+          <div><strong>Slug:</strong> landing-page-ou-site-completo-diferencas</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-quanto-tempo-leva-para-criar-site-profissional-v2.webp?t=1789845995216" alt="Quanto Tempo Leva para Criar um Site Profissional Sob Medida?" loading="lazy">
+        <div class="badge-num">#6</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Quanto Tempo Leva para Criar um Site Profissional Sob Medida?</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-quanto-tempo-leva-para-criar-site-profissional-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 34.2 KB WebP</div>
+          <div><strong>Slug:</strong> quanto-tempo-leva-para-criar-site-profissional</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-escolher-dominio-profissional-para-empresa-v2.webp?t=1789845995216" alt="Como Escolher o Domínio Profissional Perfeito para Sua Empresa" loading="lazy">
+        <div class="badge-num">#7</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Como Escolher o Domínio Profissional Perfeito para Sua Empresa</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-escolher-dominio-profissional-para-empresa-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 98.5 KB WebP</div>
+          <div><strong>Slug:</strong> como-escolher-dominio-profissional-para-empresa</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-por-que-velocidade-do-site-influencia-vendas-v2.webp?t=1789845995216" alt="Por Que a Velocidade do Site Influencia Diretamente Suas Vendas e Ranqueamento no Google" loading="lazy">
+        <div class="badge-num">#8</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Por Que a Velocidade do Site Influencia Diretamente Suas Vendas e Ranqueamento no Google</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-por-que-velocidade-do-site-influencia-vendas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 40.5 KB WebP</div>
+          <div><strong>Slug:</strong> por-que-velocidade-do-site-influencia-vendas</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-site-multilingue-como-alcancar-clientes-internacionais-v2.webp?t=1789845995216" alt="Site Multilíngue: Como Estruturar Sua Presença para Alcançar Clientes Internacionais" loading="lazy">
+        <div class="badge-num">#9</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Site Multilíngue: Como Estruturar Sua Presença para Alcançar Clientes Internacionais</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-site-multilingue-como-alcancar-clientes-internacionais-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 54.2 KB WebP</div>
+          <div><strong>Slug:</strong> site-multilingue-como-alcancar-clientes-internacionais</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-calcular-roi-site-profissional-v2.webp?t=1789845995216" alt="Como Calcular o Retorno sobre Investimento (ROI) de um Site Profissional" loading="lazy">
+        <div class="badge-num">#10</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Criação de Sites • Websites & Web Design</div>
+        <h2 class="card-title">Como Calcular o Retorno sobre Investimento (ROI) de um Site Profissional</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-calcular-roi-site-profissional-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 46.1 KB WebP</div>
+          <div><strong>Slug:</strong> como-calcular-roi-site-profissional</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-seo-para-pequenas-empresas-v2.webp?t=1789845995216" alt="SEO para Pequenas Empresas: O Guia Completo para Conquistar as Primeiras Posições" loading="lazy">
+        <div class="badge-num">#11</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">SEO para Pequenas Empresas: O Guia Completo para Conquistar as Primeiras Posições</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-seo-para-pequenas-empresas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 45.9 KB WebP</div>
+          <div><strong>Slug:</strong> seo-para-pequenas-empresas-guia-completo</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-seo-local-como-conquistar-clientes-regiao-v2.webp?t=1789845995216" alt="SEO Local: Como Conquistar Clientes da Sua Região, Cidade e Bairro" loading="lazy">
+        <div class="badge-num">#12</div>
+        <div class="badge-status approved">★ Amostra Aprovada</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">SEO Local: Como Conquistar Clientes da Sua Região, Cidade e Bairro</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-seo-local-como-conquistar-clientes-regiao-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 26.0 KB WebP</div>
+          <div><strong>Slug:</strong> seo-local-como-conquistar-clientes-regiao</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-aparecer-no-google-curitiba-v2.webp?t=1789845995216" alt="Como Posicionar Sua Empresa no Google em Curitiba e Região Metropolitana" loading="lazy">
+        <div class="badge-num">#13</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">Como Posicionar Sua Empresa no Google em Curitiba e Região Metropolitana</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-aparecer-no-google-curitiba-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 127.2 KB WebP</div>
+          <div><strong>Slug:</strong> como-aparecer-no-google-curitiba</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-google-perfil-da-empresa-guia-v2.webp?t=1789845995216" alt="Google Perfil da Empresa: Guia Prático para Dominar o Google Maps" loading="lazy">
+        <div class="badge-num">#14</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">Google Perfil da Empresa: Guia Prático para Dominar o Google Maps</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-google-perfil-da-empresa-guia-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 74.7 KB WebP</div>
+          <div><strong>Slug:</strong> google-perfil-da-empresa-guia-completo</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-conseguir-mais-avaliacoes-no-google-v2.webp?t=1789845995216" alt="Como Conseguir Mais Avaliações 5 Estrelas no Google de Forma Ética" loading="lazy">
+        <div class="badge-num">#15</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">Como Conseguir Mais Avaliações 5 Estrelas no Google de Forma Ética</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-conseguir-mais-avaliacoes-no-google-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 31.2 KB WebP</div>
+          <div><strong>Slug:</strong> como-conseguir-mais-avaliacoes-no-google</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-responder-avaliacoes-google-v2.webp?t=1789845995216" alt="Como Responder Avaliações no Google (Positivas e Negativas) e Fortalecer Sua Marca" loading="lazy">
+        <div class="badge-num">#16</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">Como Responder Avaliações no Google (Positivas e Negativas) e Fortalecer Sua Marca</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-responder-avaliacoes-google-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 66.7 KB WebP</div>
+          <div><strong>Slug:</strong> como-responder-avaliacoes-google-reputacao</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-google-search-console-guia-v2.webp?t=1789845995216" alt="Google Search Console: O Que Empresários Precisam Acompanhar para Crescer" loading="lazy">
+        <div class="badge-num">#17</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">Google Search Console: O Que Empresários Precisam Acompanhar para Crescer</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-google-search-console-guia-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 33.4 KB WebP</div>
+          <div><strong>Slug:</strong> google-search-console-guia-para-empresarios</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-palavras-chave-pesquisa-clientes-v2.webp?t=1789845995216" alt="Pesquisa de Palavras-Chave: Como Descobrir Exatamente o Que Seus Clientes Buscam" loading="lazy">
+        <div class="badge-num">#18</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">Pesquisa de Palavras-Chave: Como Descobrir Exatamente o Que Seus Clientes Buscam</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-palavras-chave-pesquisa-clientes-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 29.6 KB WebP</div>
+          <div><strong>Slug:</strong> palavras-chave-como-descobrir-pesquisas-clientes</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-seo-tecnico-fatores-crescimento-v2.webp?t=1789845995216" alt="SEO Técnico: Os Fatores Ocultos que Ajudam um Site a Crescer no Google" loading="lazy">
+        <div class="badge-num">#19</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">SEO Técnico: Os Fatores Ocultos que Ajudam um Site a Crescer no Google</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-seo-tecnico-fatores-crescimento-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 49.2 KB WebP</div>
+          <div><strong>Slug:</strong> seo-tecnico-fatores-crescimento-google</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-seo-para-prestadores-de-servicos-v2.webp?t=1789845995216" alt="SEO para Prestadores de Serviços: Como Dominar Buscas Locais de Alta Conversão" loading="lazy">
+        <div class="badge-num">#20</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">SEO & Google • SEO & Google</div>
+        <h2 class="card-title">SEO para Prestadores de Serviços: Como Dominar Buscas Locais de Alta Conversão</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-seo-para-prestadores-de-servicos-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 42.7 KB WebP</div>
+          <div><strong>Slug:</strong> seo-para-prestadores-de-servicos</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-site-ou-instagram-qual-mais-importante-v2.webp?t=1789845995216" alt="Site Institucional ou Instagram: Qual é Mais Importante para Sua Empresa?" loading="lazy">
+        <div class="badge-num">#21</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">Site Institucional ou Instagram: Qual é Mais Importante para Sua Empresa?</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-site-ou-instagram-qual-mais-importante-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 6.9 KB WebP</div>
+          <div><strong>Slug:</strong> site-ou-instagram-qual-mais-importante</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-instagram-substitui-site-profissional-v2.webp?t=1789845995216" alt="O Instagram Pode Substituir um Site Profissional? Riscos e Limitações" loading="lazy">
+        <div class="badge-num">#22</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">O Instagram Pode Substituir um Site Profissional? Riscos e Limitações</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-instagram-substitui-site-profissional-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 14.3 KB WebP</div>
+          <div><strong>Slug:</strong> instagram-substitui-site-profissional</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-criar-autoridade-digital-marca-v2.webp?t=1789845995216" alt="Como Construir Autoridade Digital Consistente e se Tornar Referência no Seu Setor" loading="lazy">
+        <div class="badge-num">#23</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">Como Construir Autoridade Digital Consistente e se Tornar Referência no Seu Setor</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-criar-autoridade-digital-marca-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 116.0 KB WebP</div>
+          <div><strong>Slug:</strong> como-criar-autoridade-digital-marca</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-transformar-visitantes-em-clientes-v2.webp?t=1789845995216" alt="CRO na Prática: Como Transformar Visitantes do Site em Clientes Pagantes" loading="lazy">
+        <div class="badge-num">#24</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">CRO na Prática: Como Transformar Visitantes do Site em Clientes Pagantes</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-transformar-visitantes-em-clientes-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 45.8 KB WebP</div>
+          <div><strong>Slug:</strong> como-transformar-visitantes-do-site-em-clientes</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-whatsapp-no-site-conversoes-v2.webp?t=1789845995216" alt="Botão de WhatsApp no Site: Boas Práticas de UX que Multiplicam Conversões" loading="lazy">
+        <div class="badge-num">#25</div>
+        <div class="badge-status approved">★ Amostra Aprovada</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">Botão de WhatsApp no Site: Boas Práticas de UX que Multiplicam Conversões</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-whatsapp-no-site-conversoes-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 51.7 KB WebP</div>
+          <div><strong>Slug:</strong> whatsapp-no-site-aumentar-contatos-conversoes</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-marketing-de-conteudo-atrair-clientes-v2.webp?t=1789845995216" alt="Marketing de Conteúdo Estratégico: Como Atrair Clientes Sem Depender Apenas de Anúncios" loading="lazy">
+        <div class="badge-num">#26</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">Marketing de Conteúdo Estratégico: Como Atrair Clientes Sem Depender Apenas de Anúncios</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-marketing-de-conteudo-atrair-clientes-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 39.6 KB WebP</div>
+          <div><strong>Slug:</strong> marketing-de-conteudo-atrair-sem-anuncios</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-blog-empresarial-vale-a-pena-v2.webp?t=1789845995216" alt="Blog Empresarial Ainda Vale a Pena em 2026? Impacto no SEO e Vendas" loading="lazy">
+        <div class="badge-num">#27</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">Blog Empresarial Ainda Vale a Pena em 2026? Impacto no SEO e Vendas</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-blog-empresarial-vale-a-pena-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 30.8 KB WebP</div>
+          <div><strong>Slug:</strong> blog-empresarial-vale-a-pena-2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-estrategia-digital-negocios-locais-v2.webp?t=1789845995216" alt="Como Criar uma Estratégia Digital Integrada para Negócios Locais" loading="lazy">
+        <div class="badge-num">#28</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">Como Criar uma Estratégia Digital Integrada para Negócios Locais</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-estrategia-digital-negocios-locais-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 35.6 KB WebP</div>
+          <div><strong>Slug:</strong> como-criar-estrategia-digital-negocios-locais</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-presenca-digital-o-que-empresa-precisa-v2.webp?t=1789845995216" alt="Presença Digital: Os 5 Pilares Obrigatórios que Toda Empresa Precisa Manter em 2026" loading="lazy">
+        <div class="badge-num">#29</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">Presença Digital: Os 5 Pilares Obrigatórios que Toda Empresa Precisa Manter em 2026</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-presenca-digital-o-que-empresa-precisa-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 83.2 KB WebP</div>
+          <div><strong>Slug:</strong> presenca-digital-o-que-empresa-precisa-2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-funil-de-vendas-digital-pequenas-empresas-v2.webp?t=1789845995216" alt="Funil de Vendas Digital para Pequenas Empresas: Do Primeiro Clique ao WhatsApp" loading="lazy">
+        <div class="badge-num">#30</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Marketing Digital • Marketing Digital</div>
+        <h2 class="card-title">Funil de Vendas Digital para Pequenas Empresas: Do Primeiro Clique ao WhatsApp</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-funil-de-vendas-digital-pequenas-empresas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 74.5 KB WebP</div>
+          <div><strong>Slug:</strong> funil-de-vendas-digital-pequenas-empresas</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-inteligencia-artificial-pequenas-empresas-v2.webp?t=1789845995216" alt="Inteligência Artificial para Pequenas Empresas: O Guia Definitivo de Aplicação Prática" loading="lazy">
+        <div class="badge-num">#31</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">Inteligência Artificial para Pequenas Empresas: O Guia Definitivo de Aplicação Prática</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-inteligencia-artificial-pequenas-empresas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 60.7 KB WebP</div>
+          <div><strong>Slug:</strong> inteligencia-artificial-para-pequenas-empresas</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-usar-chatgpt-dia-a-dia-empresa-v2.webp?t=1789845995216" alt="Como Usar o ChatGPT no Dia a Dia da Empresa com Eficiência e Segurança" loading="lazy">
+        <div class="badge-num">#32</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">Como Usar o ChatGPT no Dia a Dia da Empresa com Eficiência e Segurança</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-usar-chatgpt-dia-a-dia-empresa-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 98.4 KB WebP</div>
+          <div><strong>Slug:</strong> como-usar-chatgpt-dia-a-dia-da-empresa</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-15-maneiras-usar-ia-nos-negocios-v2.webp?t=1789845995216" alt="15 Maneiras Práticas de Usar Inteligência Artificial nos Negócios em 2026" loading="lazy">
+        <div class="badge-num">#33</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">15 Maneiras Práticas de Usar Inteligência Artificial nos Negócios em 2026</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-15-maneiras-usar-ia-nos-negocios-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 73.0 KB WebP</div>
+          <div><strong>Slug:</strong> 15-maneiras-usar-ia-nos-negocios</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-ia-atendimento-cliente-v2.webp?t=1789845995216" alt="IA no Atendimento ao Cliente: Vantagens Comerciais e Cuidados Essenciais" loading="lazy">
+        <div class="badge-num">#34</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">IA no Atendimento ao Cliente: Vantagens Comerciais e Cuidados Essenciais</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-ia-atendimento-cliente-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 33.6 KB WebP</div>
+          <div><strong>Slug:</strong> ia-no-atendimento-ao-cliente-vantagens-cuidados</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-automacao-de-marketing-v2.webp?t=1789845995216" alt="Automação de Marketing: Como Economizar Tempo e Vender Mais no Piloto Automático" loading="lazy">
+        <div class="badge-num">#35</div>
+        <div class="badge-status approved">★ Amostra Aprovada</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">Automação de Marketing: Como Economizar Tempo e Vender Mais no Piloto Automático</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-automacao-de-marketing-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 59.3 KB WebP</div>
+          <div><strong>Slug:</strong> automacao-de-marketing-economizar-tempo-vender-mais</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-ia-vai-substituir-sites-v2.webp?t=1789845995216" alt="A Inteligência Artificial Vai Substituir os Websites Tradicionais? Mitos e Realidades" loading="lazy">
+        <div class="badge-num">#36</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">A Inteligência Artificial Vai Substituir os Websites Tradicionais? Mitos e Realidades</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-ia-vai-substituir-sites-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 47.5 KB WebP</div>
+          <div><strong>Slug:</strong> inteligencia-artificial-vai-substituir-sites</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-ia-transforma-marketing-digital-v2.webp?t=1789845995216" alt="Como a Inteligência Artificial Está Transformando o Marketing Digital em 2026" loading="lazy">
+        <div class="badge-num">#37</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">Como a Inteligência Artificial Está Transformando o Marketing Digital em 2026</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-ia-transforma-marketing-digital-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 72.1 KB WebP</div>
+          <div><strong>Slug:</strong> como-ia-esta-transformando-marketing-digital</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-ia-e-seo-mudancas-google-v2.webp?t=1789845995216" alt="IA e SEO: Como os Mecanismos de Busca Estão Mudando com Google AI Overviews e GEO" loading="lazy">
+        <div class="badge-num">#38</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">IA e SEO: Como os Mecanismos de Busca Estão Mudando com Google AI Overviews e GEO</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-ia-e-seo-mudancas-google-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 37.3 KB WebP</div>
+          <div><strong>Slug:</strong> ia-e-seo-mudancas-mecanismos-de-busca</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-preparar-empresa-era-ia-v2.webp?t=1789845995216" alt="Como Preparar Sua Empresa para a Era da Inteligência Artificial: Guia Estratégico" loading="lazy">
+        <div class="badge-num">#39</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">Como Preparar Sua Empresa para a Era da Inteligência Artificial: Guia Estratégico</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-preparar-empresa-era-ia-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 45.6 KB WebP</div>
+          <div><strong>Slug:</strong> como-preparar-empresa-para-era-da-ia</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-agentes-de-ia-para-empresas-v2.webp?t=1789845995216" alt="Agentes Autônomos de IA: O Que São e Como Estão Revolucionando as Empresas" loading="lazy">
+        <div class="badge-num">#40</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Inteligência Artificial • Inteligência Artificial & Automação</div>
+        <h2 class="card-title">Agentes Autônomos de IA: O Que São e Como Estão Revolucionando as Empresas</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-agentes-de-ia-para-empresas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 26.5 KB WebP</div>
+          <div><strong>Slug:</strong> agentes-de-ia-o-que-sao-como-ajudam-empresas</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-transformacao-digital-pequenas-empresas-v2.webp?t=1789845995216" alt="Transformação Digital para Pequenas Empresas: Guia Prático sem Complicação" loading="lazy">
+        <div class="badge-num">#41</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Transformação Digital • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Transformação Digital para Pequenas Empresas: Guia Prático sem Complicação</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-transformacao-digital-pequenas-empresas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 62.9 KB WebP</div>
+          <div><strong>Slug:</strong> transformacao-digital-pequenas-empresas-guia</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-profissionalizar-empresa-tecnologia-v2.webp?t=1789845995216" alt="Como Profissionalizar uma Pequena Empresa Usando Tecnologia Moderna" loading="lazy">
+        <div class="badge-num">#42</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Tecnologia • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Como Profissionalizar uma Pequena Empresa Usando Tecnologia Moderna</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-profissionalizar-empresa-tecnologia-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 36.3 KB WebP</div>
+          <div><strong>Slug:</strong> como-profissionalizar-pequena-empresa-com-tecnologia</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-email-profissional-abandonar-genericos-v2.webp?t=1789845995216" alt="E-mail Profissional: Por Que Sua Empresa Deve Abandonar Endereços Gratuitos Imediatamente" loading="lazy">
+        <div class="badge-num">#43</div>
+        <div class="badge-status approved">★ Amostra Aprovada</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Tecnologia • Negócios & Transformação Digital</div>
+        <h2 class="card-title">E-mail Profissional: Por Que Sua Empresa Deve Abandonar Endereços Gratuitos Imediatamente</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-email-profissional-abandonar-genericos-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 48.3 KB WebP</div>
+          <div><strong>Slug:</strong> email-profissional-abandonar-enderecos-genericos</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-construir-confianca-marca-digital-v2.webp?t=1789845995216" alt="Como Construir Confiança e Credibilidade Inabalável em uma Marca no Ambiente Digital" loading="lazy">
+        <div class="badge-num">#44</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Branding • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Como Construir Confiança e Credibilidade Inabalável em uma Marca no Ambiente Digital</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-construir-confianca-marca-digital-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 27.3 KB WebP</div>
+          <div><strong>Slug:</strong> como-construir-confianca-marca-ambiente-digital</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-reputacao-online-proteger-imagem-v2.webp?t=1789845995216" alt="Gestão de Reputação Online: Como Monitorar, Prevenir Crises e Proteger Sua Marca" loading="lazy">
+        <div class="badge-num">#45</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Branding • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Gestão de Reputação Online: Como Monitorar, Prevenir Crises e Proteger Sua Marca</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-reputacao-online-proteger-imagem-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 43.7 KB WebP</div>
+          <div><strong>Slug:</strong> reputacao-online-como-proteger-imagem-empresa</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-escolher-agencia-marketing-digital-v2.webp?t=1789845995216" alt="Como Escolher a Agência de Marketing Digital Ideal e Evitar Promessas Vazias" loading="lazy">
+        <div class="badge-num">#46</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Gestão • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Como Escolher a Agência de Marketing Digital Ideal e Evitar Promessas Vazias</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-escolher-agencia-marketing-digital-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 51.2 KB WebP</div>
+          <div><strong>Slug:</strong> como-escolher-agencia-de-marketing-digital</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-agencia-ou-freelancer-comparativo-v2.webp?t=1789845995216" alt="Agência Especializada ou Freelancer: Qual é a Melhor Opção para Seu Projeto?" loading="lazy">
+        <div class="badge-num">#47</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Gestão • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Agência Especializada ou Freelancer: Qual é a Melhor Opção para Seu Projeto?</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-agencia-ou-freelancer-comparativo-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 45.2 KB WebP</div>
+          <div><strong>Slug:</strong> agencia-ou-freelancer-qual-melhor-para-projeto</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-tecnologia-reduz-custos-empresa-v2.webp?t=1789845995216" alt="Como a Tecnologia e a Automação Reduzem Custos Operacionais em Pequenas Empresas" loading="lazy">
+        <div class="badge-num">#48</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Gestão • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Como a Tecnologia e a Automação Reduzem Custos Operacionais em Pequenas Empresas</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-tecnologia-reduz-custos-empresa-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 11.1 KB WebP</div>
+          <div><strong>Slug:</strong> como-tecnologia-reduz-custos-pequena-empresa</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-digitalizacao-processos-como-comecar-v2.webp?t=1789845995216" alt="Digitalização de Processos: Como Começar Sem Complicação e Sem Perder Tempo" loading="lazy">
+        <div class="badge-num">#49</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Gestão • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Digitalização de Processos: Como Começar Sem Complicação e Sem Perder Tempo</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-digitalizacao-processos-como-comecar-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 49.6 KB WebP</div>
+          <div><strong>Slug:</strong> digitalizacao-de-processos-como-comecar</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-tendencias-digitais-pequenas-empresas-v2.webp?t=1789845995216" alt="Tendências Digitais que Pequenas e Médias Empresas Devem Adotar em 2026" loading="lazy">
+        <div class="badge-num">#50</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Negócios & Tecnologia • Negócios & Transformação Digital</div>
+        <h2 class="card-title">Tendências Digitais que Pequenas e Médias Empresas Devem Adotar em 2026</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-tendencias-digitais-pequenas-empresas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 13.9 KB WebP</div>
+          <div><strong>Slug:</strong> tendencias-digitais-pequenas-empresas-acompanhar</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-como-conseguir-mais-clientes-internet-v2.webp?t=1789845995216" alt="Como Conseguir Mais Clientes Pela Internet: O Guia Definitivo de Aquisição Previsível" loading="lazy">
+        <div class="badge-num">#51</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Crescimento & Vendas • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">Como Conseguir Mais Clientes Pela Internet: O Guia Definitivo de Aquisição Previsível</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-como-conseguir-mais-clientes-internet-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 117.2 KB WebP</div>
+          <div><strong>Slug:</strong> como-conseguir-mais-clientes-pela-internet</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-transformar-google-canal-aquisicao-v2.webp?t=1789845995216" alt="Como Transformar o Google no Principal Canal de Aquisição de Clientes da Sua Empresa" loading="lazy">
+        <div class="badge-num">#52</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Crescimento & Vendas • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">Como Transformar o Google no Principal Canal de Aquisição de Clientes da Sua Empresa</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-transformar-google-canal-aquisicao-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 83.7 KB WebP</div>
+          <div><strong>Slug:</strong> como-transformar-google-canal-aquisicao-clientes</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-medir-resultados-site-v2.webp?t=1789845995216" alt="Como Medir se Seu Site Realmente Está Trazendo Resultados Financeiros" loading="lazy">
+        <div class="badge-num">#53</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Métricas & Conversão • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">Como Medir se Seu Site Realmente Está Trazendo Resultados Financeiros</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-medir-resultados-site-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 43.3 KB WebP</div>
+          <div><strong>Slug:</strong> como-medir-se-site-traz-resultados</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-google-analytics-metricas-importam-v2.webp?t=1789845995216" alt="Google Analytics 4 (GA4): As Únicas Métricas que Empresários Precisam Acompanhar" loading="lazy">
+        <div class="badge-num">#54</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Métricas & Conversão • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">Google Analytics 4 (GA4): As Únicas Métricas que Empresários Precisam Acompanhar</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-google-analytics-metricas-importam-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 75.9 KB WebP</div>
+          <div><strong>Slug:</strong> google-analytics-metricas-que-realmente-importam</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-formulario-ou-whatsapp-conversao-v2.webp?t=1789845995216" alt="Formulário de Contato ou Botão de WhatsApp: Qual Gera Mais Oportunidades?" loading="lazy">
+        <div class="badge-num">#55</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Conversão & Vendas • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">Formulário de Contato ou Botão de WhatsApp: Qual Gera Mais Oportunidades?</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-formulario-ou-whatsapp-conversao-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 55.0 KB WebP</div>
+          <div><strong>Slug:</strong> formulario-ou-whatsapp-qual-gera-mais-contatos</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-seguranca-de-sites-protecao-v2.webp?t=1789845995216" alt="Segurança de Websites: Como Proteger Sua Empresa e Seus Clientes Contra Ataques" loading="lazy">
+        <div class="badge-num">#56</div>
+        <div class="badge-status approved">★ Amostra Aprovada</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Segurança Digital • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">Segurança de Websites: Como Proteger Sua Empresa e Seus Clientes Contra Ataques</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-seguranca-de-sites-protecao-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 99.0 KB WebP</div>
+          <div><strong>Slug:</strong> seguranca-de-sites-como-proteger-empresa-clientes</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-lgpd-para-sites-pequenas-empresas-v2.webp?t=1789845995216" alt="LGPD para Sites: O Que Pequenas e Médias Empresas Precisam Saber e Aplicar" loading="lazy">
+        <div class="badge-num">#57</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Segurança & Legislação • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">LGPD para Sites: O Que Pequenas e Médias Empresas Precisam Saber e Aplicar</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-lgpd-para-sites-pequenas-empresas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 133.3 KB WebP</div>
+          <div><strong>Slug:</strong> lgpd-para-sites-pequenas-empresas</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-aplicativos-para-empresas-quando-vale-a-pena-v2.webp?t=1789845995216" alt="Aplicativos para Empresas: Quando Vale a Pena Desenvolver um App e Quando um Site é Suficiente?" loading="lazy">
+        <div class="badge-num">#58</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Tecnologia & Apps • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">Aplicativos para Empresas: Quando Vale a Pena Desenvolver um App e Quando um Site é Suficiente?</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-aplicativos-para-empresas-quando-vale-a-pena-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 44.2 KB WebP</div>
+          <div><strong>Slug:</strong> aplicativos-para-empresas-quando-vale-a-pena</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-software-personalizado-para-empresas-v2.webp?t=1789845995216" alt="Software Personalizado: Quando Sua Empresa Realmente Precisa de um Sistema Sob Medida?" loading="lazy">
+        <div class="badge-num">#59</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Tecnologia & Software • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">Software Personalizado: Quando Sua Empresa Realmente Precisa de um Sistema Sob Medida?</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-software-personalizado-para-empresas-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 39.9 KB WebP</div>
+          <div><strong>Slug:</strong> software-personalizado-quando-empresa-precisa</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img-wrapper">
+        <img src="/assets/images/conexus-futuro-negocios-digitais-sites-apps-ia-v2.webp?t=1789845995216" alt="O Futuro dos Negócios Digitais: A Convergência Entre Websites, Aplicativos, Automação e IA" loading="lazy">
+        <div class="badge-num">#60</div>
+        <div class="badge-status ">Fotografia Real</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Visão de Futuro & Tecnologia • Crescimento, Conversão & Tecnologia</div>
+        <h2 class="card-title">O Futuro dos Negócios Digitais: A Convergência Entre Websites, Aplicativos, Automação e IA</h2>
+        <div class="card-meta">
+          <div><strong>Arquivo:</strong> <span>conexus-futuro-negocios-digitais-sites-apps-ia-v2.webp</span></div>
+          <div><strong>Dimensões:</strong> 860 × 440 px | 61.2 KB WebP</div>
+          <div><strong>Slug:</strong> futuro-negocios-digitais-sites-apps-automacao-ia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

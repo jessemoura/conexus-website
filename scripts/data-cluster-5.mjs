@@ -12,7 +12,7 @@ export const cluster5Articles = [
       "es": "05 de marzo de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-transformacao-digital-pequenas-empresas.webp",
+    "image": "/assets/images/conexus-transformacao-digital-pequenas-empresas-v2.webp",
     "relatedSlugs": [
       "como-profissionalizar-pequena-empresa-com-tecnologia",
       "digitalizacao-de-processos-como-comecar",
@@ -351,7 +351,7 @@ export const cluster5Articles = [
       "es": "28 de febrero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-profissionalizar-empresa-tecnologia.webp",
+    "image": "/assets/images/conexus-profissionalizar-empresa-tecnologia-v2.webp",
     "relatedSlugs": [
       "transformacao-digital-pequenas-empresas-guia",
       "email-profissional-abandonar-enderecos-genericos",
@@ -691,7 +691,7 @@ export const cluster5Articles = [
       "es": "25 de febrero de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-email-profissional-abandonar-genericos.webp",
+    "image": "/assets/images/conexus-email-profissional-abandonar-genericos-v2.webp",
     "relatedSlugs": [
       "como-escolher-dominio-profissional-para-empresa",
       "como-profissionalizar-pequena-empresa-com-tecnologia",
@@ -1030,7 +1030,7 @@ export const cluster5Articles = [
       "es": "20 de febrero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-construir-confianca-marca-digital.webp",
+    "image": "/assets/images/conexus-construir-confianca-marca-digital-v2.webp",
     "relatedSlugs": [
       "como-criar-autoridade-digital-marca",
       "reputacao-online-como-proteger-imagem-empresa",
@@ -1370,7 +1370,7 @@ export const cluster5Articles = [
       "es": "15 de febrero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-reputacao-online-proteger-imagem.webp",
+    "image": "/assets/images/conexus-reputacao-online-proteger-imagem-v2.webp",
     "relatedSlugs": [
       "como-responder-avaliacoes-google-reputacao",
       "como-construir-confianca-marca-ambiente-digital",
@@ -1709,7 +1709,7 @@ export const cluster5Articles = [
       "es": "10 de febrero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-escolher-agencia-marketing-digital.webp",
+    "image": "/assets/images/conexus-como-escolher-agencia-marketing-digital-v2.webp",
     "relatedSlugs": [
       "agencia-ou-freelancer-qual-melhor-para-projeto",
       "como-medir-se-site-traz-resultados",
@@ -2049,7 +2049,7 @@ export const cluster5Articles = [
       "es": "05 de febrero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-agencia-ou-freelancer-comparativo.webp",
+    "image": "/assets/images/conexus-agencia-ou-freelancer-comparativo-v2.webp",
     "relatedSlugs": [
       "como-escolher-agencia-de-marketing-digital",
       "quanto-tempo-leva-para-criar-site-profissional",
@@ -2344,7 +2344,7 @@ export const cluster5Articles = [
       "es": "30 de enero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-tecnologia-reduz-custos-empresa.webp",
+    "image": "/assets/images/conexus-como-tecnologia-reduz-custos-empresa-v2.webp",
     "relatedSlugs": [
       "digitalizacao-de-processos-como-comecar",
       "automacao-de-marketing-economizar-tempo-vender-mais",
@@ -2683,7 +2683,7 @@ export const cluster5Articles = [
       "es": "25 de enero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-digitalizacao-processos-como-comecar.webp",
+    "image": "/assets/images/conexus-digitalizacao-processos-como-comecar-v2.webp",
     "relatedSlugs": [
       "como-tecnologia-reduz-custos-pequena-empresa",
       "transformacao-digital-pequenas-empresas-guia",
@@ -3022,7 +3022,7 @@ export const cluster5Articles = [
       "es": "20 de enero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-tendencias-digitais-pequenas-empresas.webp",
+    "image": "/assets/images/conexus-tendencias-digitais-pequenas-empresas-v2.webp",
     "relatedSlugs": [
       "presenca-digital-o-que-empresa-precisa-2026",
       "transformacao-digital-pequenas-empresas-guia",

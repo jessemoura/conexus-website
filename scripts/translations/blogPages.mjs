@@ -2,10 +2,8 @@ export const blogPagesTranslations = {
   "en": {
     "blogHub": {
       "tag": "BLOG & STRATEGIC CONTENT",
-      "badge": "BLOG & STRATEGIC CONTENT",
       "title": "Digital Insights & Practical Guides",
       "subtitle": "Strategies, trends, and expert knowledge in website creation, SEO, local search positioning, Google Business Profile, and digital hospitality.",
-      "desc": "Practical articles, guides, and analysis on website creation, SEO, Google Business Profile, branding, and digital growth strategies.",
       "filterAll": "All Articles",
       "filterWebsites": "Websites",
       "filterSEO": "SEO & Google",
@@ -157,10 +155,8 @@ export const blogPagesTranslations = {
   "es": {
     "blogHub": {
       "tag": "BLOG Y CONTENIDO ESTRATÉGICO",
-      "badge": "BLOG Y CONTENIDO ESTRATÉGICO",
       "title": "Ideas Digitales y Guías Prácticas",
       "subtitle": "Estrategias, tendencias y conocimientos especializados en creación de sitios web, SEO, posicionamiento local, Perfil de Google y hospitalidad digital.",
-      "desc": "Artículos prácticos, guías y análisis sobre creación de sitios web, SEO, Perfil de Google, branding y estrategias de crecimiento digital.",
       "filterAll": "Todos los Artículos",
       "filterWebsites": "Sitios Web",
       "filterSEO": "SEO y Google",

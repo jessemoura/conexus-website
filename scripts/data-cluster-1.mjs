@@ -12,7 +12,7 @@ export const cluster1Articles = [
       "es": "12 de septiembre de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-site-one-page-ou-multipaginas.webp",
+    "image": "/assets/images/conexus-site-one-page-ou-multipaginas-v2.webp",
     "relatedSlugs": [
       "landing-page-ou-site-completo-diferencas",
       "quanto-tempo-leva-para-criar-site-profissional",
@@ -318,7 +318,7 @@ export const cluster1Articles = [
       "es": "10 de septiembre de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-10-sinais-empresa-precisa-novo-site.webp",
+    "image": "/assets/images/conexus-10-sinais-empresa-precisa-novo-site-v2.webp",
     "relatedSlugs": [
       "site-one-page-ou-multipaginas-qual-escolher",
       "por-que-velocidade-do-site-influencia-vendas",
@@ -653,7 +653,7 @@ export const cluster1Articles = [
       "es": "08 de septiembre de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-site-profissional-gera-mais-clientes.webp",
+    "image": "/assets/images/conexus-como-site-profissional-gera-mais-clientes-v2.webp",
     "relatedSlugs": [
       "site-one-page-ou-multipaginas-qual-escolher",
       "whatsapp-no-site-aumentar-contatos-conversoes",
@@ -918,7 +918,7 @@ export const cluster1Articles = [
       "es": "06 de septiembre de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-site-responsivo-mobile-first.webp",
+    "image": "/assets/images/conexus-site-responsivo-mobile-first-v2.webp",
     "relatedSlugs": [
       "site-one-page-ou-multipaginas-qual-escolher",
       "por-que-velocidade-do-site-influencia-vendas",
@@ -1223,7 +1223,7 @@ export const cluster1Articles = [
       "es": "04 de septiembre de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-landing-page-ou-site-completo.webp",
+    "image": "/assets/images/conexus-landing-page-ou-site-completo-v2.webp",
     "relatedSlugs": [
       "site-one-page-ou-multipaginas-qual-escolher",
       "como-site-profissional-gera-mais-clientes",
@@ -1526,7 +1526,7 @@ export const cluster1Articles = [
       "es": "02 de septiembre de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-quanto-tempo-leva-para-criar-site-profissional.webp",
+    "image": "/assets/images/conexus-quanto-tempo-leva-para-criar-site-profissional-v2.webp",
     "relatedSlugs": [
       "site-one-page-ou-multipaginas-qual-escolher",
       "10-sinais-empresa-precisa-novo-site",
@@ -1855,7 +1855,7 @@ export const cluster1Articles = [
       "es": "30 de agosto de 2026"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-como-escolher-dominio-profissional-para-empresa.webp",
+    "image": "/assets/images/conexus-como-escolher-dominio-profissional-para-empresa-v2.webp",
     "relatedSlugs": [
       "email-profissional-abandonar-enderecos-genericos",
       "como-construir-confianca-marca-ambiente-digital",
@@ -2173,7 +2173,7 @@ export const cluster1Articles = [
       "es": "25 de agosto de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-por-que-velocidade-do-site-influencia-vendas.webp",
+    "image": "/assets/images/conexus-por-que-velocidade-do-site-influencia-vendas-v2.webp",
     "relatedSlugs": [
       "site-responsivo-mobile-first-indispensavel",
       "seo-tecnico-fatores-crescimento-google",
@@ -2458,7 +2458,7 @@ export const cluster1Articles = [
       "es": "20 de agosto de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-site-multilingue-como-alcancar-clientes-internacionais.webp",
+    "image": "/assets/images/conexus-site-multilingue-como-alcancar-clientes-internacionais-v2.webp",
     "relatedSlugs": [
       "site-one-page-ou-multipaginas-qual-escolher",
       "como-construir-confianca-marca-ambiente-digital",
@@ -2765,7 +2765,7 @@ export const cluster1Articles = [
       "es": "15 de agosto de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-como-calcular-roi-site-profissional.webp",
+    "image": "/assets/images/conexus-como-calcular-roi-site-profissional-v2.webp",
     "relatedSlugs": [
       "como-site-profissional-gera-mais-clientes",
       "site-one-page-ou-multipaginas-qual-escolher",

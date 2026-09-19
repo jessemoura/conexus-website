@@ -12,7 +12,7 @@ export const cluster6Articles = [
       "es": "15 de enero de 2026"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-como-conseguir-mais-clientes-internet.webp",
+    "image": "/assets/images/conexus-como-conseguir-mais-clientes-internet-v2.webp",
     "relatedSlugs": [
       "como-transformar-google-canal-aquisicao-clientes",
       "como-site-profissional-gera-mais-clientes",
@@ -351,7 +351,7 @@ export const cluster6Articles = [
       "es": "10 de enero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-transformar-google-canal-aquisicao.webp",
+    "image": "/assets/images/conexus-transformar-google-canal-aquisicao-v2.webp",
     "relatedSlugs": [
       "seo-para-pequenas-empresas-guia-completo",
       "como-conseguir-mais-clientes-pela-internet",
@@ -690,7 +690,7 @@ export const cluster6Articles = [
       "es": "05 de enero de 2026"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-medir-resultados-site.webp",
+    "image": "/assets/images/conexus-medir-resultados-site-v2.webp",
     "relatedSlugs": [
       "google-analytics-metricas-que-realmente-importam",
       "como-calcular-roi-site-profissional",
@@ -1029,7 +1029,7 @@ export const cluster6Articles = [
       "es": "28 de diciembre de 2025"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-google-analytics-metricas-importam.webp",
+    "image": "/assets/images/conexus-google-analytics-metricas-importam-v2.webp",
     "relatedSlugs": [
       "como-medir-se-site-traz-resultados",
       "como-calcular-roi-site-profissional",
@@ -1368,7 +1368,7 @@ export const cluster6Articles = [
       "es": "20 de diciembre de 2025"
     },
     "readTime": "6 min",
-    "image": "/assets/images/conexus-formulario-ou-whatsapp-conversao.webp",
+    "image": "/assets/images/conexus-formulario-ou-whatsapp-conversao-v2.webp",
     "relatedSlugs": [
       "whatsapp-no-site-aumentar-contatos-conversoes",
       "como-transformar-visitantes-do-site-em-clientes",
@@ -1667,7 +1667,7 @@ export const cluster6Articles = [
       "es": "15 de diciembre de 2025"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-seguranca-de-sites-protecao.webp",
+    "image": "/assets/images/conexus-seguranca-de-sites-protecao-v2.webp",
     "relatedSlugs": [
       "lgpd-para-sites-pequenas-empresas",
       "por-que-velocidade-do-site-influencia-vendas",
@@ -2006,7 +2006,7 @@ export const cluster6Articles = [
       "es": "10 de diciembre de 2025"
     },
     "readTime": "7 min",
-    "image": "/assets/images/conexus-lgpd-para-sites-pequenas-empresas.webp",
+    "image": "/assets/images/conexus-lgpd-para-sites-pequenas-empresas-v2.webp",
     "relatedSlugs": [
       "seguranca-de-sites-como-proteger-empresa-clientes",
       "como-construir-confianca-marca-ambiente-digital",
@@ -2345,7 +2345,7 @@ export const cluster6Articles = [
       "es": "05 de diciembre de 2025"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-aplicativos-para-empresas-quando-vale-a-pena.webp",
+    "image": "/assets/images/conexus-aplicativos-para-empresas-quando-vale-a-pena-v2.webp",
     "relatedSlugs": [
       "software-personalizado-quando-empresa-precisa",
       "futuro-negocios-digitais-sites-apps-automacao-ia",
@@ -2653,7 +2653,7 @@ export const cluster6Articles = [
       "es": "28 de noviembre de 2025"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-software-personalizado-para-empresas.webp",
+    "image": "/assets/images/conexus-software-personalizado-para-empresas-v2.webp",
     "relatedSlugs": [
       "aplicativos-para-empresas-quando-vale-a-pena",
       "futuro-negocios-digitais-sites-apps-automacao-ia",
@@ -2992,7 +2992,7 @@ export const cluster6Articles = [
       "es": "20 de noviembre de 2025"
     },
     "readTime": "8 min",
-    "image": "/assets/images/conexus-futuro-negocios-digitais-sites-apps-ia.webp",
+    "image": "/assets/images/conexus-futuro-negocios-digitais-sites-apps-ia-v2.webp",
     "relatedSlugs": [
       "como-preparar-empresa-para-era-da-ia",
       "agentes-de-ia-o-que-sao-como-ajudam-empresas",
