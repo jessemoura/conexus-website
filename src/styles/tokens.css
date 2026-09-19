@@ -107,20 +107,16 @@
   --color-card-bg: #FFFFFF;
   --color-card-border: rgba(0, 58, 112, 0.14);
   --color-text-white: #07182D;
-  --color-text-muted: #2D3E50;
+  --color-text-muted: #35465A;
   --color-header-bg: #003A70;
-  --color-cyan: #004A80;
-  --color-cyan-glow: #EBF5FF;
-  --color-cyan-border: rgba(0, 74, 128, 0.25);
-  --color-primary-cyan: #0066B3;
 
   --section-navy-bg: #F4F7FA;
   --section-navy-text: #07182D;
-  --section-navy-muted: #2D3E50;
+  --section-navy-muted: #35465A;
 
   --section-light-bg: #FFFFFF;
   --section-light-text: #07182D;
-  --section-light-muted: #2D3E50;
+  --section-light-muted: #35465A;
   --section-light-border: rgba(0, 58, 112, 0.14);
 
   --section-graphite-bg: #FFFFFF;

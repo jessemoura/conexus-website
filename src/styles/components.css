@@ -1250,40 +1250,23 @@
 [data-theme="light"] .service-card,
 [data-theme="light"] .portfolio-card,
 [data-theme="light"] .blog-card,
-[data-theme="light"] .blog-post-card,
 [data-theme="light"] .process-step,
 [data-theme="light"] .placeholder-card {
   background: #FFFFFF !important;
   background-color: #FFFFFF !important;
-  border: 1px solid rgba(0, 58, 112, 0.16) !important;
-  box-shadow: 0 4px 20px rgba(7, 24, 45, 0.06) !important;
+  border: 1px solid rgba(0, 58, 112, 0.14);
+  box-shadow: 0 4px 20px rgba(7, 24, 45, 0.05);
 }
 
 [data-theme="light"] .card-title,
 [data-theme="light"] .card-title a,
-[data-theme="light"] .blog-post-card .card-title,
-[data-theme="light"] .blog-post-card .card-title a,
-[data-theme="light"] .blog-card .card-title,
-[data-theme="light"] .blog-card .card-title a,
 [data-theme="light"] .service-card h3,
 [data-theme="light"] .service-card.featured h3,
 [data-theme="light"] .service-card.feature-card h3 {
-  color: #061426 !important;
-  font-weight: 700 !important;
+  color: #07182D !important;
 }
 
-[data-theme="light"] .card-title a:hover,
-[data-theme="light"] .blog-post-card .card-title a:hover,
-[data-theme="light"] .blog-card .card-title a:hover {
-  color: #0066B3 !important;
-}
-
-/* DESCRIÇÃO DOS ARTIGOS E CARDS NO LIGHT MODE: Alto contraste e excelente legibilidade */
 [data-theme="light"] .card-description,
-[data-theme="light"] .blog-post-card .card-description,
-[data-theme="light"] .blog-card .card-description,
-[data-theme="light"] .card .card-description,
-[data-theme="light"] .blog-post-card p,
 [data-theme="light"] .service-card p,
 [data-theme="light"] .service-card.featured p,
 [data-theme="light"] .service-card.feature-card p,
@@ -1293,55 +1276,12 @@
 [data-theme="light"] .service-card .service-card-list li,
 [data-theme="light"] .service-card.featured .service-card-list li,
 [data-theme="light"] .service-card.feature-card .service-card-list li {
-  color: #1E293B !important;
-  font-weight: 450 !important;
-  line-height: 1.65 !important;
+  color: #35465A !important;
 }
 
-/* BADGE / CATEGORIA NO LIGHT MODE: Fundo azul suave e texto azul marinho CONEXUS */
-[data-theme="light"] .badge,
-[data-theme="light"] .blog-post-card .badge,
-[data-theme="light"] .card .badge,
-[data-theme="light"] .blog-card .badge,
 [data-theme="light"] .service-card .card-tag,
 [data-theme="light"] .card-tag {
-  background: #EBF5FF !important;
-  background-color: #EBF5FF !important;
-  color: #004A80 !important;
-  border: 1px solid rgba(0, 74, 128, 0.25) !important;
-  font-weight: 700 !important;
-}
-
-/* METADADOS DO BLOG NO LIGHT MODE: Data e tempo de leitura */
-[data-theme="light"] .blog-post-card span[style*="--color-text-muted"],
-[data-theme="light"] .blog-card span[style*="--color-text-muted"],
-[data-theme="light"] .card span[style*="--color-text-muted"] {
-  color: #475569 !important;
-  font-weight: 500 !important;
-}
-
-/* FILTROS DE CATEGORIA DO BLOG NO LIGHT MODE */
-[data-theme="light"] .blog-filter-container .filter-btn {
-  background: #FFFFFF !important;
-  background-color: #FFFFFF !important;
-  color: #334155 !important;
-  border: 1px solid rgba(0, 58, 112, 0.2) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="light"] .blog-filter-container .filter-btn:hover {
-  background: #F0F6FC !important;
-  background-color: #F0F6FC !important;
-  color: #003A70 !important;
-  border-color: #0066B3 !important;
-}
-
-[data-theme="light"] .blog-filter-container .filter-btn.active {
-  background: #003A70 !important;
-  background-color: #003A70 !important;
-  color: #FFFFFF !important;
-  border-color: #003A70 !important;
-  box-shadow: 0 2px 8px rgba(0, 58, 112, 0.25) !important;
+  color: #0066B3 !important;
 }
 
 [data-theme="light"] .stacked-card {
