@@ -1,11 +1,8 @@
-import glob
 import os
 import re
 
-# We will apply a version timestamp/hash query parameter, e.g. ?v=20260919.01
-VERSION = "20260919.01"
+VERSION = "20260919.02"
 
-# Find all HTML files excluding node_modules, dist, HOSTINGER-FINAL, .git
 all_html = []
 for root, dirs, files in os.walk("."):
     dirs[:] = [d for d in dirs if d not in ["node_modules", "dist", "HOSTINGER-FINAL", ".git", ".gemini", "scratch"]]
@@ -21,13 +18,13 @@ for filepath in all_html:
         content = f.read()
 
     new_content = content
-    # Replace /src/styles/components.css or /src/styles/components.css?v=... with /src/styles/components.css?v=VERSION
+    # Replace /src/styles/components.css with /src/styles/components.css?v=20260919.02
     new_content = re.sub(r'(/src/styles/components\.css)(\?v=[^"\'\s>]+)?', rf'\1?v={VERSION}', new_content)
-    # Replace /src/styles/base.css with /src/styles/base.css?v=VERSION
+    # Replace /src/styles/base.css with /src/styles/base.css?v=20260919.02
     new_content = re.sub(r'(/src/styles/base\.css)(\?v=[^"\'\s>]+)?', rf'\1?v={VERSION}', new_content)
-    # Replace /src/js/main.js with /src/js/main.js?v=VERSION
+    # Replace /src/js/main.js with /src/js/main.js?v=20260919.02
     new_content = re.sub(r'(/src/js/main\.js)(\?v=[^"\'\s>]+)?', rf'\1?v={VERSION}', new_content)
-    # Replace /src/js/i18n.js with /src/js/i18n.js?v=VERSION
+    # Replace /src/js/i18n.js with /src/js/i18n.js?v=20260919.02
     new_content = re.sub(r'(/src/js/i18n\.js)(\?v=[^"\'\s>]+)?', rf'\1?v={VERSION}', new_content)
 
     if new_content != content:
