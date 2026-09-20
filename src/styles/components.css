@@ -2855,12 +2855,21 @@ html, body {
 ------------------------------------------------------------- */
 .diag-hero-badges {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   flex-wrap: wrap;
   margin-bottom: 1rem;
   width: 100%;
   max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .diag-hero-badges {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
 }
 
 .diag-hero-badges .hero-badge,
@@ -2869,17 +2878,17 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.4rem 0.75rem;
-  font-size: clamp(0.7rem, 2.6vw, var(--fs-xs));
+  padding: 0.35rem 0.75rem;
+  font-size: clamp(0.68rem, 2.7vw, 0.8rem);
   font-weight: 700;
   border-radius: var(--radius-full);
   line-height: 1.3;
   max-width: 100%;
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
   white-space: normal;
   word-break: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .diag-hero-badges .badge-highlight {
@@ -2908,8 +2917,11 @@ html, body {
 .diag-cards-grid .card {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   overflow: hidden;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 639px) {
@@ -2954,18 +2966,19 @@ html, body {
 /* Diagnóstico Gratuito - Steps Grid */
 .diag-steps-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  gap: 1.5rem;
-  margin-top: 2.5rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
-@media (max-width: 639px) {
+@media (min-width: 768px) {
   .diag-steps-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -2980,6 +2993,7 @@ html, body {
   height: 100%;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   transition: transform var(--transition-fast), border-color var(--transition-fast);
 }
@@ -3009,7 +3023,7 @@ html, body {
   font-weight: 700;
   margin-bottom: 0.5rem;
   word-break: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .diag-step-desc {
@@ -3018,7 +3032,7 @@ html, body {
   margin: 0;
   line-height: 1.6;
   word-break: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 [data-theme="light"] .diag-step-card {
@@ -3061,7 +3075,7 @@ html, body {
   font-weight: 700;
   margin: 1rem 0 0.75rem;
   word-break: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .diag-free-box .free-desc {
@@ -3071,67 +3085,54 @@ html, body {
   max-width: 720px;
   margin: 0 auto 1.5rem;
   word-break: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .diag-free-box .free-badges {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
+}
+
+.diag-badge-green,
+.diag-badge-cyan,
+.diag-badge-neutral {
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: clamp(0.68rem, 2.6vw, 0.78rem);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .diag-badge-green {
   background: rgba(37, 211, 102, 0.15);
   color: #25D366;
   border: 1px solid rgba(37, 211, 102, 0.3);
-  padding: 0.35rem 0.75rem;
-  border-radius: var(--radius-full);
-  font-size: clamp(0.72rem, 2.7vw, var(--fs-xs));
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  box-sizing: border-box;
-  max-width: 100%;
-  white-space: normal;
-  text-align: center;
-  line-height: 1.3;
 }
 
 .diag-badge-cyan {
   background: rgba(33, 184, 246, 0.15);
   color: var(--color-primary-cyan);
   border: 1px solid var(--color-cyan-border);
-  padding: 0.35rem 0.75rem;
-  border-radius: var(--radius-full);
-  font-size: clamp(0.72rem, 2.7vw, var(--fs-xs));
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  box-sizing: border-box;
-  max-width: 100%;
-  white-space: normal;
-  text-align: center;
-  line-height: 1.3;
 }
 
 .diag-badge-neutral {
   background: rgba(255, 255, 255, 0.08);
   color: var(--color-text-white);
   border: 1px solid var(--color-border-subtle);
-  padding: 0.35rem 0.75rem;
-  border-radius: var(--radius-full);
-  font-size: clamp(0.72rem, 2.7vw, var(--fs-xs));
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  box-sizing: border-box;
-  max-width: 100%;
-  white-space: normal;
-  text-align: center;
-  line-height: 1.3;
 }
 
 @media (max-width: 639px) {

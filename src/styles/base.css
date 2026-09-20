@@ -151,6 +151,17 @@ img, video {
   text-decoration: none;
 }
 
+@media (max-width: 639px) {
+  .btn {
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+}
+
 .btn-primary {
   background: linear-gradient(135deg, var(--color-primary-cyan) 0%, var(--color-accent-blue) 100%);
   color: #040E1B;
