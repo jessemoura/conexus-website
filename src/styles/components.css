@@ -1392,6 +1392,27 @@
   color: #35465A !important;
 }
 
+
+[data-theme="light"] .stacked-card.card-soquindins .stacked-card-num,
+[data-theme="light"] .stacked-card.card-soquindins .stacked-card-tag {
+  color: #C05621 !important;
+}
+
+[data-theme="light"] .stacked-card.card-curitipao .stacked-card-num,
+[data-theme="light"] .stacked-card.card-curitipao .stacked-card-tag {
+  color: #C05621 !important;
+}
+
+[data-theme="light"] .stacked-card.card-fastguincho .stacked-card-num,
+[data-theme="light"] .stacked-card.card-fastguincho .stacked-card-tag {
+  color: #B8860B !important;
+}
+
+[data-theme="light"] .stacked-card.card-atthos .stacked-card-num,
+[data-theme="light"] .stacked-card.card-atthos .stacked-card-tag {
+  color: #007A78 !important;
+}
+
 [data-theme="light"] .stacked-card.card-dipiallato .stacked-card-num,
 [data-theme="light"] .stacked-card.card-dipiallato .stacked-card-tag {
   color: #C05621 !important;
@@ -2035,6 +2056,43 @@
 .stacked-card.card-oxford .stacked-card-num,
 .stacked-card.card-oxford .stacked-card-tag {
   color: #D4AF37;
+}
+
+
+.stacked-card.card-soquindins {
+  border-color: rgba(230, 126, 34, 0.4);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(230, 126, 34, 0.1);
+}
+.stacked-card.card-soquindins .stacked-card-num,
+.stacked-card.card-soquindins .stacked-card-tag {
+  color: #E67E22;
+}
+
+.stacked-card.card-curitipao {
+  border-color: rgba(230, 126, 34, 0.4);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(230, 126, 34, 0.1);
+}
+.stacked-card.card-curitipao .stacked-card-num,
+.stacked-card.card-curitipao .stacked-card-tag {
+  color: #E67E22;
+}
+
+.stacked-card.card-fastguincho {
+  border-color: rgba(234, 179, 8, 0.4);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(234, 179, 8, 0.1);
+}
+.stacked-card.card-fastguincho .stacked-card-num,
+.stacked-card.card-fastguincho .stacked-card-tag {
+  color: #EAB308;
+}
+
+.stacked-card.card-atthos {
+  border-color: rgba(0, 191, 165, 0.4);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 191, 165, 0.1);
+}
+.stacked-card.card-atthos .stacked-card-num,
+.stacked-card.card-atthos .stacked-card-tag {
+  color: #00BFA5;
 }
 
 .stacked-card.card-dipiallato {
