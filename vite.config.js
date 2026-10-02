@@ -21,6 +21,7 @@ export default defineConfig({
         sobre: resolve(__dirname, 'sobre/index.html'),
         portfolio: resolve(__dirname, 'portfolio/index.html'),
         portfolioDiPiallato: resolve(__dirname, 'portfolio/di-piallato/index.html'),
+        portfolioCuritipao: resolve(__dirname, 'portfolio/curitipao/index.html'),
         portfolioWelcomeBook: resolve(__dirname, 'portfolio/welcome-book-apartamento-41/index.html'),
         portfolioNikkiStudio: resolve(__dirname, 'portfolio/nikki-studio/index.html'),
         portfolioCrafix: resolve(__dirname, 'portfolio/crafix/index.html'),
