@@ -30,6 +30,7 @@ export default defineConfig({
         portfolioLumora: resolve(__dirname, 'portfolio/lumora-cleaning-services/index.html'),
         portfolioConexxusUk: resolve(__dirname, 'portfolio/conexxus-uk/index.html'),
         blog: resolve(__dirname, 'blog/index.html'),
+        blogCuritipao2026: resolve(__dirname, 'blog/curitipao-2026-festival-panificacao-curitiba/index.html'),
         blogComoUsarSiteAtrairClientesGoogle: resolve(__dirname, 'blog/como-usar-site-para-atrair-clientes-google/index.html'),
         blogQuantoCustaSite: resolve(__dirname, 'blog/quanto-custa-site-profissional-2026/index.html'),
         blogPorQueEmpresaPrecisaDeSite: resolve(__dirname, 'blog/por-que-sua-empresa-precisa-de-um-site/index.html'),

@@ -122,9 +122,15 @@
   </url>
   <url>
     <loc>https://www.conexus.press/blog/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/blog/curitipao-2026-festival-panificacao-curitiba/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.conexus.press/blog/como-colocar-empresa-no-google-sao-jose-dos-pinhais/</loc>
