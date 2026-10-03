@@ -119,6 +119,29 @@ export function applyTranslations(lang) {
     }
   }
 
+  // 5B. Atualiza Canonical e Open Graph URL conforme o idioma ativo
+  const canonicalEl = document.querySelector('link[rel="canonical"]');
+  if (canonicalEl) {
+    const rawHref = canonicalEl.getAttribute('href') || '';
+    const cleanHref = rawHref.split('?')[0];
+    if (lang === defaultLanguage) {
+      canonicalEl.setAttribute('href', cleanHref);
+    } else {
+      canonicalEl.setAttribute('href', `${cleanHref}?lang=${lang}`);
+    }
+  }
+
+  const ogUrlEl = document.querySelector('meta[property="og:url"]');
+  if (ogUrlEl) {
+    const rawOgHref = ogUrlEl.getAttribute('content') || '';
+    const cleanOgHref = rawOgHref.split('?')[0];
+    if (lang === defaultLanguage) {
+      ogUrlEl.setAttribute('content', cleanOgHref);
+    } else {
+      ogUrlEl.setAttribute('content', `${cleanOgHref}?lang=${lang}`);
+    }
+  }
+
   // 6. Atualiza UI do Seletor no Header
   updateSelectorUI(lang);
 

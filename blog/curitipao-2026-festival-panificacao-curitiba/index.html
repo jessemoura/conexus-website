@@ -41,6 +41,15 @@
       if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
         document.documentElement.setAttribute('data-theme', 'light');
       }
+      const urlParams = new URLSearchParams(window.location.search);
+      const lang = urlParams.get('lang');
+      if (lang && (lang === 'en' || lang === 'es')) {
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) {
+          const clean = canonical.getAttribute('href').split('?')[0];
+          canonical.setAttribute('href', clean + '?lang=' + lang);
+        }
+      }
     })();
   </script>
 

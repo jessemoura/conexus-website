@@ -12,7 +12,8 @@
   <link rel="alternate" hreflang="en" href="https://www.conexus.press/blog/site-responsivo-mobile-first-indispensavel/?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.conexus.press/blog/site-responsivo-mobile-first-indispensavel/?lang=es">
   <link rel="alternate" hreflang="x-default" href="https://www.conexus.press/blog/site-responsivo-mobile-first-indispensavel/">
-  <link rel="icon" type="image/x-icon" href="/assets/favicon-S9KYfZV5.ico">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="stylesheet" href="/src/styles/components.css?v=20260919.02">
 
   <!-- ANTI-FOUC THEME DETECTION SCRIPT -->
   <script>
@@ -21,6 +22,15 @@
       const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
       if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
         document.documentElement.setAttribute('data-theme', 'light');
+      }
+      const urlParams = new URLSearchParams(window.location.search);
+      const lang = urlParams.get('lang');
+      if (lang && (lang === 'en' || lang === 'es')) {
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) {
+          const clean = canonical.getAttribute('href').split('?')[0];
+          canonical.setAttribute('href', clean + '?lang=' + lang);
+        }
       }
     })();
   </script>
@@ -57,16 +67,13 @@
     "description": "Com mais de 80% do tráfego vindo de smartphones, o design Mobile First é obrigatório. Veja como a responsividade impacta o Google e suas vendas."
   }
   </script>
-  <script type="module" crossorigin src="/assets/i18n.js_v_20261003-AY4W1bxJ.js"></script>
-  <script type="module" crossorigin src="/assets/main.js_v_20260919-vOZIKCKv.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/i18n-DGbonKU7.css">
 </head>
 <body>
   <!-- HEADER -->
   <header class="header">
     <div class="container header-container">
       <a href="/" class="brand-logo" aria-label="CONEXUS - Página Inicial">
-        <img src="/assets/conexus-logo-transparent-Bsi8o-0g.png" alt="CONEXUS Logo" width="180" height="44" loading="eager">
+        <img src="/assets/logos/conexus-logo-transparent.png" alt="CONEXUS Logo" width="180" height="44" loading="eager">
       </a>
 
       <nav class="nav-desktop" aria-label="Navegação Principal">
@@ -306,7 +313,7 @@
     <div class="container footer-container">
       <div class="footer-col">
         <a href="/" class="brand-logo" aria-label="CONEXUS - Página Inicial">
-          <img src="/assets/conexus-logo-transparent-Bsi8o-0g.png" alt="CONEXUS Logo" width="180" height="44" loading="lazy">
+          <img src="/assets/logos/conexus-logo-transparent.png" alt="CONEXUS Logo" width="180" height="44" loading="lazy">
         </a>
         <p class="footer-text" data-i18n="footer.articleTagline">
           Agência de marketing digital especializada em websites profissionais, SEO, Google Meu Negócio, branding e gestão de redes sociais.
@@ -381,6 +388,7 @@
     </svg>
   </a>
 
-  <!-- SCRIPT BUNDLE -->
+  <!-- SCRIPT BUNDLE -->
+  <script type="module" src="/src/js/main.js?v=20260919.02"></script>
 </body>
 </html>
