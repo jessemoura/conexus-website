@@ -180,6 +180,26 @@
 
   <style>
     /* Estilos Editoriais Scoped para o Artigo do CuritiPão 2026 */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    img, picture, svg, video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .article-lead, .article-section-title, .article-subsection-title, .faq-question, .faq-answer, .bakery-title, .bakery-desc, .organizer-name, .supporter-name, p, h1, h2, h3, h4, span, a, div {
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
     .article-lead {
       font-size: 1.15rem;
       line-height: 1.8;
@@ -187,7 +207,7 @@
       margin-bottom: 1.75rem;
     }
     .article-section-title {
-      font-size: clamp(1.5rem, 3vw, 1.85rem);
+      font-size: clamp(1.4rem, 4vw, 1.85rem);
       font-weight: 800;
       color: var(--color-text-white);
       margin: 3.5rem 0 1.25rem;
@@ -198,7 +218,7 @@
       color: #07182D;
     }
     .article-subsection-title {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: var(--color-text-white);
       margin: 2rem 0 0.85rem;
@@ -213,6 +233,9 @@
       padding: 1.75rem 2rem;
       margin: 2.5rem 0;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
     [data-theme="light"] .quick-info-box {
       background: #FFFFFF;
@@ -221,7 +244,7 @@
     }
     .quick-info-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1.25rem;
       margin-top: 1rem;
     }
@@ -229,6 +252,8 @@
       display: flex;
       flex-direction: column;
       gap: 0.25rem;
+      min-width: 0;
+      overflow-wrap: anywhere;
     }
     .quick-info-label {
       font-size: 0.82rem;
@@ -244,9 +269,15 @@
       font-size: 1.05rem;
       font-weight: 600;
       color: var(--color-text-white);
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
     [data-theme="light"] .quick-info-value {
       color: #07182D;
+    }
+    .quick-info-value a {
+      overflow-wrap: anywhere;
+      word-break: break-all;
     }
     .editorial-highlight-box {
       background: linear-gradient(135deg, rgba(33, 184, 246, 0.12), rgba(8, 126, 219, 0.08));
@@ -254,6 +285,9 @@
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
       padding: 1.5rem 1.75rem;
       margin: 2.25rem 0;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
     [data-theme="light"] .editorial-highlight-box {
       background: linear-gradient(135deg, rgba(0, 168, 232, 0.08), rgba(0, 102, 179, 0.04));
@@ -278,6 +312,10 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
     }
     @media (min-width: 768px) {
       .bakery-card {
@@ -312,6 +350,7 @@
       background: rgba(0, 0, 0, 0.2);
       aspect-ratio: 4/3;
       width: 100%;
+      max-width: 100%;
     }
     .bakery-img-wrapper img {
       width: 100%;
@@ -327,6 +366,8 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      min-width: 0;
+      width: 100%;
     }
     .bakery-title {
       font-size: 1.35rem;
@@ -348,6 +389,9 @@
       font-weight: 600;
       margin-bottom: 0.85rem;
       align-self: flex-start;
+      max-width: 100%;
+      overflow-wrap: break-word;
+      white-space: normal;
     }
     [data-theme="light"] .bakery-product-badge {
       background: rgba(0, 168, 232, 0.1);
@@ -371,6 +415,7 @@
       display: flex;
       align-items: center;
       gap: 0.4rem;
+      flex-wrap: wrap;
     }
     [data-theme="light"] .bakery-price {
       color: #0066B3;
@@ -383,6 +428,12 @@
       display: flex;
       align-items: flex-start;
       gap: 0.5rem;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .bakery-meta-item span {
+      overflow-wrap: anywhere;
+      min-width: 0;
     }
     [data-theme="light"] .bakery-meta-item {
       color: #4A5568;
@@ -393,6 +444,7 @@
       margin-top: 1.25rem;
       flex-wrap: wrap;
       align-items: center;
+      width: 100%;
     }
     .unit-box {
       background: rgba(255, 255, 255, 0.03);
@@ -401,6 +453,10 @@
       padding: 0.85rem 1rem;
       margin-top: 0.6rem;
       margin-bottom: 0.6rem;
+      width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
+      overflow-wrap: anywhere;
     }
     [data-theme="light"] .unit-box {
       background: #F8FAFC;
@@ -413,6 +469,8 @@
       padding: 1.35rem 1.65rem;
       margin-bottom: 1.15rem;
       transition: border-color var(--transition-fast);
+      width: 100%;
+      box-sizing: border-box;
     }
     [data-theme="light"] .faq-card {
       background: #FFFFFF;
@@ -445,6 +503,8 @@
       border-radius: var(--radius-md);
       padding: 1.5rem;
       margin-bottom: 1rem;
+      width: 100%;
+      box-sizing: border-box;
     }
     [data-theme="light"] .guide-step-card {
       background: #FFFFFF;
@@ -461,6 +521,8 @@
     .organizer-wrapper {
       max-width: 460px;
       margin: 1.75rem auto 3.5rem;
+      width: 100%;
+      box-sizing: border-box;
     }
     .organizer-card {
       background: var(--color-surface-navy);
@@ -475,6 +537,8 @@
       transition: border-color var(--transition-normal), box-shadow var(--transition-normal), transform var(--transition-normal);
       cursor: pointer;
       box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      box-sizing: border-box;
     }
     .organizer-card:hover {
       border-color: var(--color-primary-cyan);
@@ -562,6 +626,8 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
       margin: 1.75rem 0 3rem;
+      width: 100%;
+      box-sizing: border-box;
     }
     @media (max-width: 768px) {
       .supporters-grid {
@@ -581,6 +647,8 @@
       text-decoration: none;
       transition: border-color var(--transition-normal), box-shadow var(--transition-normal), transform var(--transition-normal);
       cursor: pointer;
+      width: 100%;
+      box-sizing: border-box;
     }
     .supporter-card:hover {
       border-color: var(--color-primary-cyan);
@@ -641,6 +709,79 @@
     }
     [data-theme="light"] .supporter-meta {
       color: #0066B3;
+    }
+
+    /* Extra Mobile Breakpoint Rules (max-width: 640px) */
+    @media (max-width: 640px) {
+      .quick-info-box {
+        padding: 1.25rem 1rem;
+        margin: 1.5rem 0;
+      }
+      .quick-info-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 0.85rem;
+      }
+      .editorial-highlight-box {
+        padding: 1.15rem 1rem;
+        margin: 1.5rem 0;
+      }
+      .bakery-card {
+        padding: 1.25rem 1rem;
+        gap: 1.25rem;
+        margin-bottom: 1.75rem;
+      }
+      .bakery-title {
+        font-size: 1.2rem;
+      }
+      .bakery-product-badge {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.65rem;
+      }
+      .bakery-desc {
+        font-size: 0.92rem;
+      }
+      .bakery-price {
+        font-size: 1rem;
+      }
+      .bakery-meta-item {
+        font-size: 0.85rem;
+      }
+      .bakery-actions {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+      }
+      .bakery-actions .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .unit-box {
+        padding: 0.75rem 0.85rem;
+      }
+      .organizer-wrapper {
+        margin: 1.5rem auto 2.5rem;
+      }
+      .organizer-card {
+        padding: 1.75rem 1.25rem;
+      }
+      .supporters-grid {
+        gap: 1rem;
+        margin: 1.5rem 0 2.5rem;
+      }
+      .supporter-card {
+        padding: 1.25rem 1rem;
+      }
+      .faq-card {
+        padding: 1.15rem 1rem;
+      }
+      .faq-question {
+        font-size: 1.02rem;
+      }
+      .guide-step-card {
+        padding: 1.15rem 1rem;
+      }
     }
   </style>
 </head>

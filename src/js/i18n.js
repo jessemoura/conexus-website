@@ -7,6 +7,7 @@ let currentLanguage = defaultLanguage;
  * Obtém valor de chave aninhada no dicionário (ex: 'nav.home' ou 'services.items.criacaoSites.title')
  */
 export function getTranslation(key, lang = currentLanguage) {
+  if (!key || typeof key !== 'string') return null;
   const dict = translations[lang] || translations[defaultLanguage];
   const keys = key.split('.');
   let result = dict;
@@ -21,17 +22,27 @@ export function getTranslation(key, lang = currentLanguage) {
         if (fallback && typeof fallback === 'object' && fk in fallback) {
           fallback = fallback[fk];
         } else {
-          return key;
+          return null;
         }
       }
-      return fallback;
+      return (fallback !== undefined && typeof fallback === 'string') ? fallback : null;
     }
   }
-  return result;
+  return (result !== undefined && typeof result === 'string') ? result : null;
 }
 
 export function getCurrentLanguage() {
   return currentLanguage;
+}
+
+/**
+ * Valida se uma string traduzida é válida para renderização (não é chave técnica vazia/nula)
+ */
+function isValidTranslation(val, key) {
+  if (!val || typeof val !== 'string') return false;
+  if (val === key) return false;
+  if (val.startsWith('autoContent.') || val.startsWith('blog_') || val.startsWith('meta.')) return false;
+  return true;
 }
 
 /**
@@ -54,7 +65,7 @@ export function applyTranslations(lang) {
     const key = el.getAttribute('data-i18n');
     if (!key) return;
     const translation = getTranslation(key, lang);
-    if (translation && typeof translation === 'string') {
+    if (isValidTranslation(translation, key)) {
       el.textContent = translation;
     }
   });
@@ -64,7 +75,7 @@ export function applyTranslations(lang) {
     const key = el.getAttribute('data-i18n-html');
     if (!key) return;
     const translation = getTranslation(key, lang);
-    if (translation && typeof translation === 'string') {
+    if (isValidTranslation(translation, key)) {
       el.innerHTML = translation;
     }
   });
@@ -80,7 +91,7 @@ export function applyTranslations(lang) {
       const [attrName, key] = mapping.split(':').map(s => s.trim());
       if (attrName && key) {
         const translation = getTranslation(key, lang);
-        if (translation && typeof translation === 'string') {
+        if (isValidTranslation(translation, key)) {
           el.setAttribute(attrName, translation);
         }
       }
