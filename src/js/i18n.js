@@ -1,4 +1,4 @@
-import { translations, defaultLanguage, supportedLanguages, languageMeta } from '../i18n/index.js';
+import { translations, defaultLanguage, supportedLanguages, languageMeta } from '../i18n/index.js?v=20261003.04';
 import { initWhatsAppLinks } from './whatsapp.js';
 
 let currentLanguage = defaultLanguage;
@@ -40,8 +40,11 @@ export function getCurrentLanguage() {
  */
 function isValidTranslation(val, key) {
   if (!val || typeof val !== 'string') return false;
-  if (val === key) return false;
-  if (val.startsWith('autoContent.') || val.startsWith('blog_') || val.startsWith('meta.')) return false;
+  const trimmed = val.trim();
+  if (trimmed === '') return false;
+  if (trimmed === key) return false;
+  if (trimmed.startsWith('autoContent.') || trimmed.startsWith('blog_') || trimmed.startsWith('meta.') || trimmed.startsWith('nav.') || trimmed.startsWith('footer.') || trimmed.startsWith('common.') || trimmed.startsWith('services.') || trimmed.startsWith('portfolio.') || trimmed.startsWith('faq.')) return false;
+  if (/\.k\d+/.test(trimmed) || /^k\d+$/.test(trimmed)) return false;
   return true;
 }
 
@@ -105,13 +108,13 @@ export function applyTranslations(lang) {
     const descKey = `meta.${pageKey}Description`;
     
     const pageTitle = getTranslation(titleKey, lang);
-    if (pageTitle && pageTitle !== titleKey) {
+    if (isValidTranslation(pageTitle, titleKey)) {
       document.title = pageTitle;
     }
     
     const metaDesc = document.querySelector('meta[name="description"]');
     const pageDesc = getTranslation(descKey, lang);
-    if (metaDesc && pageDesc && pageDesc !== descKey) {
+    if (metaDesc && isValidTranslation(pageDesc, descKey)) {
       metaDesc.setAttribute('content', pageDesc);
     }
   }

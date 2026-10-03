@@ -3,7 +3,7 @@ import { initMobileMenu } from './mobileMenu.js';
 import { initTracking } from './tracking.js';
 import { initThemeToggle } from './themeToggle.js';
 import { initReviews } from './reviews.js';
-import { initI18n } from './i18n.js';
+import { initI18n } from './i18n.js?v=20261003.04';
 
 function initAll() {
   initI18n();

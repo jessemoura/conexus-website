@@ -1,6 +1,6 @@
-import { pt } from './pt.js';
-import { en } from './en.js';
-import { es } from './es.js';
+import { pt } from './pt.js?v=20261003.04';
+import { en } from './en.js?v=20261003.04';
+import { es } from './es.js?v=20261003.04';
 
 export const translations = {
   pt,
