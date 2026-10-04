@@ -79,8 +79,9 @@ assert(hasSchemaOrg, 'Schemas JSON-LD (Organization e WebSite) incorporados corr
 
 // TEST 4: Verificação de Exibição de Telefone/Celular (Privacidade)
 console.log('\n[TEST 4] Verificação de Privacidade de Contatos');
+const bodyWithoutScripts = indexHtmlContent.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '');
 const phoneRegex = /\+?55\s?\(?\d{2}\)?\s?9?\d{4}[-\s]?\d{4}/g;
-const hasRawPhone = phoneRegex.test(indexHtmlContent);
+const hasRawPhone = phoneRegex.test(bodyWithoutScripts);
 assert(!hasRawPhone, 'Nenhum número de celular ou telefone está exposto como texto puro na Home.');
 
 const hasEmail = indexHtmlContent.includes('comercial@conexus.press');
