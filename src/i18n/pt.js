@@ -507,7 +507,11 @@ export const pt = {
     "serviceSocialMedia": "Olá! Gostaria de saber mais sobre a gestão de redes sociais da CONEXUS.",
     "portfolio": "Olá! Vi o portfólio da CONEXUS e gostaria de solicitar uma proposta para meu projeto.",
     "contactFinal": "Olá! Gostaria de conversar com a equipe da CONEXUS sobre o meu projeto digital.",
-    "diagnosticoGratuito": "Olá! Gostaria de solicitar um diagnóstico gratuito da presença digital e do site da minha empresa com a CONEXUS."
+    "diagnosticoGratuito": "Olá! Gostaria de solicitar um diagnóstico gratuito da presença digital e do site da minha empresa com a CONEXUS.",
+    "serviceAppDev": "Olá! Tenho interesse no desenvolvimento de aplicativo para minha empresa com a CONEXUS.",
+    "portfolioGeneral": "Olá! Vi o portfólio da CONEXUS e gostaria de solicitar uma proposta para meu projeto.",
+    "nikkiCase": "Olá! Vi o case do Nikki Studio no portfólio da CONEXUS e gostaria de uma proposta similar para o meu negócio.",
+    "siteMultipage": "Olá! Tenho interesse na criação de um site multipáginas profissional para minha empresa com a CONEXUS."
   },
   "diagnosticoGratuito": {
     "badge": "ANÁLISE ESTRATÉGICA & GRATUITA",

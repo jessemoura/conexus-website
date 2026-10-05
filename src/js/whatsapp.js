@@ -7,19 +7,24 @@ import { translations, defaultLanguage } from '../i18n/index.js';
  * @returns {string} URL completa de direcionamento ao WhatsApp
  */
 export function getWhatsAppUrl(messageKey = 'homeHero') {
-  const currentLang = document.documentElement.getAttribute('data-current-lang') || localStorage.getItem('conexus_lang') || defaultLanguage;
+  let currentLang = defaultLanguage;
+  if (typeof document !== 'undefined') {
+    currentLang = document.documentElement.getAttribute('data-current-lang') || 
+      (typeof localStorage !== 'undefined' ? localStorage.getItem('conexus_lang') : null) || 
+      defaultLanguage;
+  }
   const dict = translations[currentLang] || translations[defaultLanguage];
-  const message = dict?.whatsapp?.[messageKey] || siteConfig.whatsappMessages[messageKey] || siteConfig.whatsappMessages.homeHero;
-  const encodedText = encodeURIComponent(message);
+  const message = dict?.whatsapp?.[messageKey] || siteConfig.whatsappMessages?.[messageKey] || siteConfig.whatsappMessages?.homeHero || '';
   
-  if (!siteConfig.whatsappNumber) {
-    // Se o número ainda não estiver configurado no staging, utiliza o endpoint de API do WhatsApp com mensagem
-    return `https://api.whatsapp.com/send?text=${encodedText}`;
+  const rawNumber = siteConfig.whatsappNumber || '5541991569590';
+  const cleanNumber = rawNumber.replace(/\D/g, '');
+  
+  if (message) {
+    const encodedText = encodeURIComponent(message);
+    return `https://wa.me/${cleanNumber}?text=${encodedText}`;
   }
   
-  // Limpa caracteres não numéricos do telefone
-  const cleanNumber = siteConfig.whatsappNumber.replace(/\D/g, '');
-  return `https://wa.me/${cleanNumber}?text=${encodedText}`;
+  return `https://wa.me/${cleanNumber}`;
 }
 
 /**

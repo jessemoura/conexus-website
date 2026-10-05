@@ -507,7 +507,11 @@ export const en = {
     "serviceSocialMedia": "Hello! I want to understand how CONEXUS manages social media strategy for businesses.",
     "portfolio": "Hello! I saw your portfolio and would like to talk about a project for my business.",
     "contactFinal": "Hello! I would like to schedule a conversation about my digital project.",
-    "diagnosticoGratuito": "Hello! I would like to request a free digital presence and website audit for my business with CONEXUS."
+    "diagnosticoGratuito": "Hello! I would like to request a free digital presence and website audit for my business with CONEXUS.",
+    "serviceAppDev": "Hello! I am interested in custom mobile app development with CONEXUS and would like to request a proposal.",
+    "portfolioGeneral": "Hello! I saw the CONEXUS portfolio and would like to discuss a project for my business.",
+    "nikkiCase": "Hello! I saw the Nikki Studio case study in the CONEXUS portfolio and would like a similar proposal for my business.",
+    "siteMultipage": "Hello! I am interested in developing a complete multi-page institutional website for my business with CONEXUS."
   },
   "diagnosticoGratuito": {
     "badge": "FREE STRATEGIC AUDIT",

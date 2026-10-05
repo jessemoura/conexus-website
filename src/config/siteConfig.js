@@ -10,7 +10,9 @@ export const siteConfig = {
   brandName: 'CONEXUS',
   tagline: 'Marketing digital para transformar presença online em oportunidades',
   email: 'comercial@conexus.press',
-  whatsappNumber: '', // Será configurado com o número definitivo antes do go-live
+  whatsappNumber: '5541991569590',
+  whatsappDisplay: '(41) 99156-9590',
+  whatsappFormatted: '+55 41 99156-9590',
   
   // Redes Sociais oficiais
   social: {
@@ -41,7 +43,10 @@ export const siteConfig = {
     portfolio: 'Olá! Vi o portfólio da CONEXUS e gostaria de solicitar uma proposta para meu projeto.',
     contactFinal: 'Olá! Gostaria de conversar com a equipe da CONEXUS sobre o meu projeto digital.',
     diagnosticoGratuito: 'Olá! Gostaria de solicitar um diagnóstico gratuito da presença digital e do site da minha empresa com a CONEXUS.',
-    serviceAppDev: 'Olá! Tenho interesse no desenvolvimento de aplicativo para minha empresa com a CONEXUS.'
+    serviceAppDev: 'Olá! Tenho interesse no desenvolvimento de aplicativo para minha empresa com a CONEXUS.',
+    portfolioGeneral: 'Olá! Vi o portfólio da CONEXUS e gostaria de solicitar uma proposta para meu projeto.',
+    nikkiCase: 'Olá! Vi o case do Nikki Studio no portfólio da CONEXUS e gostaria de uma proposta similar para o meu negócio.',
+    siteMultipage: 'Olá! Tenho interesse na criação de um site multipáginas profissional para minha empresa com a CONEXUS.'
   },
 
   // Catálogo de Serviços para Cards da Home
