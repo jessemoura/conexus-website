@@ -17,7 +17,7 @@ export function getWhatsAppUrl(messageKey = 'homeHero') {
   const message = dict?.whatsapp?.[messageKey] || siteConfig.whatsappMessages?.[messageKey] || siteConfig.whatsappMessages?.homeHero || '';
   
   const rawNumber = siteConfig.whatsappNumber || '5541991569590';
-  const cleanNumber = rawNumber.replace(/\D/g, '');
+  const cleanNumber = rawNumber.replace(/\D/g, '') || '5541991569590';
   
   if (message) {
     const encodedText = encodeURIComponent(message);
@@ -26,6 +26,8 @@ export function getWhatsAppUrl(messageKey = 'homeHero') {
   
   return `https://wa.me/${cleanNumber}`;
 }
+
+let isListenerAttached = false;
 
 /**
  * Atualiza dinamicamente os links de WhatsApp presentes na página com a mensagem correspondente
@@ -39,4 +41,18 @@ export function initWhatsAppLinks() {
     element.setAttribute('target', '_blank');
     element.setAttribute('rel', 'noopener noreferrer');
   });
+
+  if (!isListenerAttached && typeof document !== 'undefined') {
+    isListenerAttached = true;
+    document.addEventListener('click', (e) => {
+      const waBtn = e.target.closest('[data-whatsapp-key]');
+      if (waBtn) {
+        const key = waBtn.getAttribute('data-whatsapp-key') || 'homeHero';
+        const targetUrl = getWhatsAppUrl(key);
+        waBtn.setAttribute('href', targetUrl);
+        waBtn.setAttribute('target', '_blank');
+        waBtn.setAttribute('rel', 'noopener noreferrer');
+      }
+    }, { capture: true });
+  }
 }
