@@ -308,9 +308,36 @@
   <meta name="twitter:title" content="Marketing digital para pet shops e serviços veterinários | CONEXUS">
   <meta name="twitter:description" content="Marketing digital para pet shops e serviços veterinários. Estratégias práticas da CONEXUS para gerar visibilidade, confiança e oportunidades em São José dos P">
   <meta name="twitter:image" content="https://conexus.press/assets/images/conexus-marketing-digital-para-pet-shops-e-servicos-veterinarios.webp">
+  <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
 
-    <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M"></script>
+    // Google Consent Mode v2 - Conformidade LGPD (analytics_storage = denied por padrão sem consentimento prévio)
+    var storedConsent = null;
+    try {
+      storedConsent = localStorage.getItem('conexus_analytics_consent');
+    } catch (e) {}
+
+    gtag('consent', 'default', {
+      'analytics_storage': storedConsent === 'granted' ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+
+    gtag('js', new Date());
+
+    // Carregamento condicional: tag analítica só carrega se houver autorização prévia registrada
+    if (storedConsent === 'granted') {
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M';
+      document.head.appendChild(gaScript);
+      gtag('config', 'G-04S0NFMW2M', { send_page_view: true });
+    }
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

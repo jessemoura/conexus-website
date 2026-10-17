@@ -167,17 +167,24 @@ assert(appDevHtml.includes('content="index, follow"'), 'Página /servicos/desenv
 assert(appDevHtml.includes('<title>Desenvolvimento de Aplicativos para Empresas | CONEXUS</title>'), 'Página /servicos/desenvolvimento-de-aplicativos/ contém o Title tag oficial.');
 assert(appDevHtml.includes('schema.org'), 'Página /servicos/desenvolvimento-de-aplicativos/ contém dados estruturados Schema.org JSON-LD.');
 
-// TEST 9: Validação do Google Analytics 4 (GA4 Oficial G-04S0NFMW2M)
-console.log('\n[TEST 9] Validação do Google Analytics 4 (G-04S0NFMW2M)');
-const hasGaTagInHome = indexHtmlContent.includes('https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M');
-const hasGaConfigInHome = indexHtmlContent.includes("gtag('config', 'G-04S0NFMW2M'");
-const hasConsentModeInHome = indexHtmlContent.includes("gtag('consent', 'default'");
-assert(hasGaTagInHome && hasGaConfigInHome, 'Home possui a tag oficial GA4 G-04S0NFMW2M instalada corretamente.');
-assert(hasConsentModeInHome, 'Home possui Google Consent Mode v2 configurado para conformidade LGPD.');
+// TEST 9: Validação do Google Analytics 4 (GA4 Oficial G-04S0NFMW2M & LGPD)
+console.log('\n[TEST 9] Validação do Google Analytics 4 (G-04S0NFMW2M & LGPD)');
+const freshIndexHtml = fs.readFileSync(path.join(rootDir, 'index.html'), 'utf8');
+const hasGaTagInHome = freshIndexHtml.includes('https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M');
+const hasGaConfigInHome = freshIndexHtml.includes("gtag('config', 'G-04S0NFMW2M'");
+const hasConsentModeInHome = freshIndexHtml.includes("gtag('consent', 'default'");
+const hasDefaultDenied = freshIndexHtml.includes("'analytics_storage': storedConsent === 'granted' ? 'granted' : 'denied'");
+assert(hasGaTagInHome && hasGaConfigInHome, 'Home possui a tag oficial GA4 G-04S0NFMW2M instalada.');
+assert(hasConsentModeInHome && hasDefaultDenied, 'Home possui Google Consent Mode v2 configurado com analytics_storage=denied por padrão (LGPD).');
+
+const mainJsContent = fs.readFileSync(path.join(rootDir, 'src/js/main.js'), 'utf8');
+const hasCookieConsentInMain = mainJsContent.includes('initCookieConsent');
+assert(hasCookieConsentInMain, 'Módulo main.js integra initCookieConsent para banner e gestão de consentimento.');
 
 const trackingJsContent = fs.readFileSync(path.join(rootDir, 'src/js/tracking.js'), 'utf8');
 const tracksWhatsApp = trackingJsContent.includes('whatsapp_click') && trackingJsContent.includes('window.gtag');
 assert(tracksWhatsApp, 'Módulo tracking.js configurado para disparar eventos whatsapp_click diretamente no GA4 e dataLayer.');
+
 
 // SUMÁRIO DOS TESTES
 console.log('\n====================================================');

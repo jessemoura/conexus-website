@@ -4,9 +4,11 @@ import { initTracking } from './tracking.js';
 import { initThemeToggle } from './themeToggle.js';
 import { initReviews } from './reviews.js';
 import { initI18n } from './i18n.js?v=20261006.01';
+import { initCookieConsent } from './cookieConsent.js';
 
 function initAll() {
   initI18n();
+  initCookieConsent();
   initWhatsAppLinks();
   initMobileMenu();
   initTracking();
@@ -19,3 +21,4 @@ if (document.readyState === 'loading') {
 } else {
   initAll();
 }
+

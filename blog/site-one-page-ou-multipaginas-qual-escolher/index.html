@@ -73,9 +73,36 @@
   <meta name="twitter:title" content="Site One Page ou Multipáginas: Qual Escolher em 2026? | CONEXUS">
   <meta name="twitter:description" content="Descubra as diferenças entre site One Page e Multipáginas. Saiba qual estrutura traz mais conversão, autoridade e ranqueamento no Google para o seu negócio.">
   <meta name="twitter:image" content="https://conexus.press/assets/images/conexus-site-one-page-ou-multipaginas.webp">
+  <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
 
-    <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M"></script>
+    // Google Consent Mode v2 - Conformidade LGPD (analytics_storage = denied por padrão sem consentimento prévio)
+    var storedConsent = null;
+    try {
+      storedConsent = localStorage.getItem('conexus_analytics_consent');
+    } catch (e) {}
+
+    gtag('consent', 'default', {
+      'analytics_storage': storedConsent === 'granted' ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+
+    gtag('js', new Date());
+
+    // Carregamento condicional: tag analítica só carrega se houver autorização prévia registrada
+    if (storedConsent === 'granted') {
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M';
+      document.head.appendChild(gaScript);
+      gtag('config', 'G-04S0NFMW2M', { send_page_view: true });
+    }
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
