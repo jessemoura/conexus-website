@@ -309,6 +309,32 @@
   <meta name="twitter:description" content="GEO: como preparar sua empresa para ser encontrada por inteligências artificiais. Guia CONEXUS sobre geo, aeo e busca com ia, com aplicação prática para empre">
   <meta name="twitter:image" content="https://conexus.press/assets/images/conexus-geo-como-preparar-sua-empresa-para-ser-encontrada-por-inteligencias-artificiais.webp">
 
+    <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+
+    // Google Consent Mode v2 - Conformidade LGPD
+    var storedConsent = null;
+    try {
+      storedConsent = localStorage.getItem('conexus_analytics_consent');
+    } catch (e) {}
+
+    gtag('consent', 'default', {
+      'analytics_storage': storedConsent === 'denied' ? 'denied' : 'granted',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+
+    gtag('js', new Date());
+    gtag('config', 'G-04S0NFMW2M', {
+      send_page_view: true
+    });
+  </script>
+
   <!-- METRICOOL TRACKING -->
   <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"22550805668229d6afbaafda3c5a592a"})});</script>
 </head>

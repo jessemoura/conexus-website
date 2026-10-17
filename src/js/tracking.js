@@ -1,30 +1,70 @@
 /**
- * Módulo de Preparação de Tracking (GA4 & GTM) - CONEXUS
- * 
- * Captura interações via data-attributes sem depender de bibliotecas externas.
+ * Módulo de Rastreamento de Eventos (GA4 & GTM) - CONEXUS
+ * ID oficial de medição GA4: G-04S0NFMW2M | Stream ID: 16149300226
  */
 
 export function initTracking() {
   document.addEventListener('click', (event) => {
+    // 1. Elemento com atributo data-track explícito
     const trackElement = event.target.closest('[data-track]');
-    if (!trackElement) return;
+    
+    // 2. Elemento âncora direcionado para WhatsApp
+    const waLinkElement = event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+    
+    if (!trackElement && !waLinkElement) return;
 
-    const eventName = trackElement.getAttribute('data-track');
-    const serviceName = trackElement.getAttribute('data-service-name') || '';
-    const ctaPosition = trackElement.getAttribute('data-cta-position') || '';
-    const ctaText = trackElement.textContent.trim();
+    let eventName = '';
+    let ctaPosition = '';
+    let serviceName = '';
+    let ctaText = '';
+
+    if (trackElement) {
+      eventName = trackElement.getAttribute('data-track') || '';
+      ctaPosition = trackElement.getAttribute('data-cta-position') || '';
+      serviceName = trackElement.getAttribute('data-service-name') || '';
+      ctaText = (trackElement.textContent || '').trim();
+    }
+
+    if (waLinkElement) {
+      // Garante que todo clique em link de WhatsApp envie o evento 'whatsapp_click'
+      if (!eventName) {
+        eventName = 'whatsapp_click';
+      }
+      if (!ctaPosition) {
+        if (waLinkElement.classList.contains('whatsapp-float') || waLinkElement.closest('.whatsapp-float')) {
+          ctaPosition = 'floating_button';
+        } else if (waLinkElement.closest('header') || waLinkElement.closest('.header')) {
+          ctaPosition = 'header';
+        } else if (waLinkElement.closest('footer') || waLinkElement.closest('.footer')) {
+          ctaPosition = 'footer';
+        } else if (waLinkElement.closest('.hero') || waLinkElement.closest('.home-hero')) {
+          ctaPosition = 'hero';
+        } else {
+          ctaPosition = 'page_body';
+        }
+      }
+      if (!ctaText) {
+        ctaText = (waLinkElement.textContent || waLinkElement.getAttribute('aria-label') || 'WhatsApp').trim();
+      }
+    }
 
     const payload = {
       event: eventName,
-      page_location: window.location.pathname,
+      event_category: 'engagement',
+      event_label: ctaText || eventName,
+      page_location: window.location.href,
+      page_path: window.location.pathname,
       service_name: serviceName,
       cta_position: ctaPosition,
-      cta_text: ctaText
+      cta_text: ctaText,
+      link_url: waLinkElement ? waLinkElement.href : (trackElement ? trackElement.getAttribute('href') || '' : '')
     };
-    // Dispara para dataLayer (GTM) e/ou gtag (GA4 direto)
-    if (window.dataLayer && Array.isArray(window.dataLayer)) {
-      window.dataLayer.push(payload);
-    }
+
+    // Disparo para dataLayer (GTM / GA4 dataLayer)
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(payload);
+
+    // Disparo direto para gtag (GA4 direto)
     if (typeof window.gtag === 'function') {
       window.gtag('event', eventName, payload);
     }

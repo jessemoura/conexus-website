@@ -277,6 +277,31 @@
       }
     }
   </style>
+  <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+
+    // Google Consent Mode v2 - Conformidade LGPD
+    var storedConsent = null;
+    try {
+      storedConsent = localStorage.getItem('conexus_analytics_consent');
+    } catch (e) {}
+
+    gtag('consent', 'default', {
+      'analytics_storage': storedConsent === 'denied' ? 'denied' : 'granted',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+
+    gtag('js', new Date());
+    gtag('config', 'G-04S0NFMW2M', {
+      send_page_view: true
+    });
+  </script>
 </head>
 <body>
   <!-- HEADER -->
