@@ -21,10 +21,12 @@ export function initTracking() {
       cta_position: ctaPosition,
       cta_text: ctaText
     };
-
-    // Se o GTM / GA4 dataLayer estiver ativo no futuro, dispara o evento
+    // Dispara para dataLayer (GTM) e/ou gtag (GA4 direto)
     if (window.dataLayer && Array.isArray(window.dataLayer)) {
       window.dataLayer.push(payload);
+    }
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, payload);
     }
   });
 }

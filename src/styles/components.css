@@ -35,6 +35,16 @@
   overflow: visible !important;
 }
 
+.brand-logo,
+.lang-selector-dropdown,
+.theme-toggle-btn,
+.mobile-toggle,
+.social-icon-link,
+.footer-social-icon {
+  flex-shrink: 0;
+}
+
+
 .brand-logo {
   display: flex;
   align-items: center;
@@ -106,6 +116,24 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-desktop {
+    gap: 0.85rem;
+  }
+  .header-social-links {
+    gap: 0.5rem;
+    margin-left: 0.25rem;
+    padding-left: 0.5rem;
+  }
+  .header-actions {
+    gap: 0.5rem;
+  }
+  .header-actions .btn {
+    padding: 0.55rem 0.85rem;
+    font-size: var(--fs-xs);
+  }
+}
+
 .header-social-links {
   display: flex;
   align-items: center;
@@ -148,6 +176,23 @@
   height: 25px;
   display: block;
 }
+
+/* Official LinkedIn & Instagram colors in BOTH Dark and Light Themes */
+.social-icon-link[aria-label="LinkedIn"] svg,
+.footer-social-icon[aria-label="LinkedIn"] svg,
+[data-theme="light"] .social-icon-link[aria-label="LinkedIn"] svg,
+[data-theme="light"] .footer-social-icon[aria-label="LinkedIn"] svg {
+  fill: #0A66C2 !important;
+  color: #0A66C2 !important;
+}
+
+.social-icon-link[aria-label="Instagram"] svg,
+.footer-social-icon[aria-label="Instagram"] svg,
+[data-theme="light"] .social-icon-link[aria-label="Instagram"] svg,
+[data-theme="light"] .footer-social-icon[aria-label="Instagram"] svg {
+  opacity: 1 !important;
+}
+
 
 .nav-link {
   color: var(--color-text-muted);
@@ -981,6 +1026,19 @@
   transition: transform 0.25s ease, background-color 0.25s ease;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .footer,
+  [data-theme="light"] .footer {
+    padding-bottom: calc(var(--spacing-md) + 70px) !important;
+  }
+}
+
+.mobile-menu.is-open ~ .whatsapp-float,
+body.menu-open .whatsapp-float {
+  display: none !important;
+}
+
 
 @media (max-width: 768px) {
   .whatsapp-float {
