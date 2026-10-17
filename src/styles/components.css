@@ -728,6 +728,35 @@
 /* -------------------------------------------------------------
    8. FINAL CTA
 ------------------------------------------------------------- */
+
+/* -------------------------------------------------------------
+   CASE POST COVERS STANDARDIZED CONTAINER (16:9)
+------------------------------------------------------------- */
+.case-cover-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  border-radius: var(--radius-md) !important;
+  margin-bottom: 1.25rem !important;
+  overflow: hidden !important;
+  background-color: #061426 !important;
+  text-decoration: none !important;
+}
+
+.case-cover-wrapper .case-cover-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+[data-theme="light"] .case-cover-wrapper {
+  background-color: #F1F5F9 !important;
+}
+
 .final-cta {
   background: linear-gradient(180deg, var(--color-surface-navy) 0%, var(--color-bg-dark) 100%);
   border-top: 1px solid var(--color-cyan-border);

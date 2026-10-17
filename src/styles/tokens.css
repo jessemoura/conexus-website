@@ -44,6 +44,7 @@
   --color-cyan-border: rgba(33, 184, 246, 0.3);
   --color-border-subtle: rgba(184, 197, 211, 0.12);
   --color-border-hover: rgba(33, 184, 246, 0.5);
+  --case-cover-bg: #061426;
 
   /* Typography */
   --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -125,4 +126,5 @@
 
   --section-graphite-bg: #FFFFFF;
   --section-graphite-text: #07182D;
+  --case-cover-bg: #F1F5F9;
 }
