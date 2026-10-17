@@ -12,30 +12,36 @@ const I18N_TEXTS = {
     message: 'Utilizamos cookies essenciais e métricas anônimas para aprimorar sua experiência e avaliar o desempenho do site, em conformidade com a LGPD.',
     accept: 'Aceitar',
     decline: 'Recusar',
+    revoke: 'Revogar Consentimento',
     privacyLink: 'Política de Privacidade',
     privacyUrl: '/grana/politica-de-privacidade/',
-    statusGranted: 'Consentimento ativo (Métricas autorizadas)',
-    statusDenied: 'Consentimento recusado (Métricas bloqueadas)'
+    manageBtn: 'Preferências de Cookies',
+    statusGranted: 'Consentimento atual: Concedido (Métricas ativas)',
+    statusDenied: 'Consentimento atual: Recusado (Métricas bloqueadas)'
   },
   en: {
     title: 'Privacy & Cookies',
     message: 'We use essential and anonymous analytics cookies to improve your browsing experience and measure site performance in compliance with privacy regulations.',
     accept: 'Accept',
     decline: 'Decline',
+    revoke: 'Revoke Consent',
     privacyLink: 'Privacy Policy',
     privacyUrl: '/grana/politica-de-privacidade/',
-    statusGranted: 'Consent active (Analytics allowed)',
-    statusDenied: 'Consent declined (Analytics blocked)'
+    manageBtn: 'Cookie Preferences',
+    statusGranted: 'Current status: Granted (Analytics active)',
+    statusDenied: 'Current status: Declined (Analytics blocked)'
   },
   es: {
     title: 'Privacidad y Cookies',
     message: 'Utilizamos cookies esenciales y analíticas anónimas para mejorar su experiencia y medir el rendimiento del sitio web de acuerdo con las normativas de privacidad.',
     accept: 'Aceptar',
     decline: 'Rechazar',
+    revoke: 'Revocar Consentimiento',
     privacyLink: 'Política de Privacidad',
     privacyUrl: '/grana/politica-de-privacidade/',
-    statusGranted: 'Consentimiento activo (Métricas autorizadas)',
-    statusDenied: 'Consentimiento rechazado (Métricas bloqueadas)'
+    manageBtn: 'Preferencias de Cookies',
+    statusGranted: 'Estado actual: Concedido (Métricas activas)',
+    statusDenied: 'Estado actual: Rechazado (Métricas bloqueadas)'
   }
 };
 
@@ -95,7 +101,7 @@ export function grantConsent() {
 }
 
 /**
- * Recusa ou revoga consentimento analítico
+ * Recusa ou revoga consentimento analítico na mesma sessão sem recarregar
  */
 export function denyConsent() {
   try {
@@ -131,8 +137,11 @@ export function closeBanner() {
  * Renderiza o banner de consentimento de cookies discreto e responsivo
  */
 export function renderCookieBanner(isRevocationMode = false) {
-  // Evita duplicar o banner se já estiver aberto
-  if (document.getElementById('conexus-cookie-banner')) return;
+  // Se o banner já estiver no DOM, remove antes de reabrir atualizado
+  const existing = document.getElementById('conexus-cookie-banner');
+  if (existing) {
+    existing.remove();
+  }
 
   const lang = getActiveLanguage();
   const texts = I18N_TEXTS[lang] || I18N_TEXTS.pt;
@@ -175,13 +184,31 @@ export function renderCookieBanner(isRevocationMode = false) {
       .conexus-cb-header {
         display: flex;
         align-items: center;
-        gap: 8px;
+        justify-content: space-between;
         margin-bottom: 0.5rem;
+      }
+      .conexus-cb-header-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
       .conexus-cb-title {
         font-size: 0.95rem;
         font-weight: 700;
         letter-spacing: -0.01em;
+      }
+      .conexus-cb-close {
+        background: none;
+        border: none;
+        color: inherit;
+        opacity: 0.6;
+        cursor: pointer;
+        font-size: 1.1rem;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+      .conexus-cb-close:hover {
+        opacity: 1;
       }
       .conexus-cb-body {
         font-size: 0.84rem;
@@ -196,11 +223,14 @@ export function renderCookieBanner(isRevocationMode = false) {
       }
       .conexus-cb-status {
         font-size: 0.78rem;
-        padding: 4px 8px;
+        padding: 5px 10px;
         border-radius: 6px;
         background: rgba(255, 255, 255, 0.08);
-        margin-bottom: 0.75rem;
-        display: inline-block;
+        margin-bottom: 0.85rem;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 500;
       }
       [data-theme="light"] .conexus-cb-status {
         background: rgba(0, 0, 0, 0.05);
@@ -212,7 +242,7 @@ export function renderCookieBanner(isRevocationMode = false) {
       }
       .conexus-cb-btn {
         flex: 1;
-        padding: 7px 14px;
+        padding: 8px 14px;
         border-radius: 8px;
         font-size: 0.85rem;
         font-weight: 600;
@@ -242,11 +272,12 @@ export function renderCookieBanner(isRevocationMode = false) {
       [data-theme="light"] .conexus-cb-btn-decline:hover {
         background: rgba(0, 0, 0, 0.05);
       }
+      /* MOBILE: Posicionamento acima do botão WhatsApp flutuante sem sobreposição */
       @media (max-width: 640px) {
         #conexus-cookie-banner {
           left: 12px;
           right: 12px;
-          bottom: 12px;
+          bottom: 88px;
           width: calc(100% - 24px);
           max-width: none;
         }
@@ -261,15 +292,26 @@ export function renderCookieBanner(isRevocationMode = false) {
   banner.setAttribute('aria-label', texts.title);
 
   let statusBadge = '';
-  if (isRevocationMode && currentStatus) {
-    const statusText = currentStatus === 'granted' ? texts.statusGranted : texts.statusDenied;
-    statusBadge = `<div class="conexus-cb-status">${statusText}</div>`;
+  if (isRevocationMode || currentStatus) {
+    const isGranted = currentStatus === 'granted';
+    const statusText = isGranted ? texts.statusGranted : texts.statusDenied;
+    const dotColor = isGranted ? '#10B981' : '#EF4444';
+    statusBadge = `
+      <div class="conexus-cb-status">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:${dotColor};"></span>
+        <span>${statusText}</span>
+      </div>`;
   }
+
+  const closeButton = isRevocationMode ? `<button class="conexus-cb-close" id="conexus-cookie-close" aria-label="Fechar">✕</button>` : '';
 
   banner.innerHTML = `
     <div class="conexus-cb-header">
-      <span aria-hidden="true" style="font-size: 1.1rem;">🛡️</span>
-      <strong class="conexus-cb-title">${texts.title}</strong>
+      <div class="conexus-cb-header-left">
+        <span aria-hidden="true" style="font-size: 1.1rem;">🛡️</span>
+        <strong class="conexus-cb-title">${texts.title}</strong>
+      </div>
+      ${closeButton}
     </div>
     <div class="conexus-cb-body">
       ${texts.message}
@@ -295,6 +337,10 @@ export function renderCookieBanner(isRevocationMode = false) {
   document.getElementById('conexus-cookie-decline')?.addEventListener('click', () => {
     denyConsent();
   });
+
+  document.getElementById('conexus-cookie-close')?.addEventListener('click', () => {
+    closeBanner();
+  });
 }
 
 /**
@@ -305,6 +351,34 @@ export function getStoredConsent() {
     return localStorage.getItem(CONSENT_KEY);
   } catch (e) {
     return null;
+  }
+}
+
+/**
+ * Garante a presença do botão visível de Preferências de Cookies no rodapé
+ */
+export function ensureManageCookiesButton() {
+  if (typeof document === 'undefined') return;
+
+  if (document.getElementById('manage-cookies')) return;
+
+  const lang = getActiveLanguage();
+  const texts = I18N_TEXTS[lang] || I18N_TEXTS.pt;
+
+  const targetContainer = document.querySelector('.footer-legal') || 
+                          document.querySelector('.footer-bottom > div:last-child') || 
+                          document.querySelector('.footer-bottom');
+
+  if (targetContainer) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.id = 'manage-cookies';
+    btn.className = 'cookie-prefs-btn';
+    btn.setAttribute('data-action', 'cookie-consent');
+    btn.setAttribute('aria-label', texts.manageBtn);
+    btn.style.cssText = 'background:none; border:none; padding:0; color:var(--color-text-muted, #94A3B8); cursor:pointer; font-size:0.85rem; text-decoration:underline; margin-left:1rem; display:inline-block; font-family:inherit;';
+    btn.textContent = texts.manageBtn;
+    targetContainer.appendChild(btn);
   }
 }
 
@@ -320,10 +394,13 @@ export function initCookieConsent() {
   window.conexusRevokeConsent = denyConsent;
   window.conexusOpenConsentBanner = () => renderCookieBanner(true);
 
-  // Vincula cliques em links de Privacidade ou Preferências de Cookies no rodapé para revogação
+  // Garante a presença do botão acessível no rodapé
+  ensureManageCookiesButton();
+
+  // Vincula cliques em links de Privacidade ou Preferências de Cookies para reabrir gerenciador
   document.addEventListener('click', (event) => {
-    const trigger = event.target.closest('[data-action="cookie-consent"], #manage-cookies, a[href*="politica-de-privacidade"]');
-    if (trigger && !event.defaultPrevented && trigger.getAttribute('data-action') === 'cookie-consent') {
+    const trigger = event.target.closest('[data-action="cookie-consent"], #manage-cookies, .cookie-prefs-btn');
+    if (trigger) {
       event.preventDefault();
       renderCookieBanner(true);
     }

@@ -493,7 +493,8 @@ export const en = {
     "devBy": "Developed by",
     "devFocus": "Engineered with focus on high performance and digital authority.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
+    "terms": "Terms of Use",
+    "cookies": "Cookie Preferences"
   },
   "whatsapp": {
     "homeHero": "Hello! I am browsing the CONEXUS website and would like to understand how to strengthen my company's digital presence.",

@@ -60,13 +60,19 @@ export function initTracking() {
       link_url: waLinkElement ? waLinkElement.href : (trackElement ? trackElement.getAttribute('href') || '' : '')
     };
 
-    // Disparo para dataLayer (GTM / GA4 dataLayer)
+    // Disparo para dataLayer (GTM / logging interno)
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push(payload);
 
-    // Disparo direto para gtag (GA4 direto)
-    if (typeof window.gtag === 'function') {
+    // Disparo direto para gtag (GA4) - somente quando houver consentimento explícito e ativo
+    let isConsentGranted = false;
+    try {
+      isConsentGranted = localStorage.getItem('conexus_analytics_consent') === 'granted';
+    } catch (e) {}
+
+    if (isConsentGranted && typeof window.gtag === 'function') {
       window.gtag('event', eventName, payload);
     }
   });
 }
+
