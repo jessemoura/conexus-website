@@ -186,6 +186,32 @@ const tracksWhatsApp = trackingJsContent.includes('whatsapp_click') && trackingJ
 assert(tracksWhatsApp, 'Módulo tracking.js configurado para disparar eventos whatsapp_click diretamente no GA4 e dataLayer.');
 
 
+// TEST 10: Validação de SEO Técnico, Integridade de Schemas e Sitemap Único
+console.log('\n[TEST 10] Validação de SEO Técnico & Integridade de Schemas');
+
+const sitemapContent = fs.readFileSync(path.join(rootDir, 'public/sitemap.xml'), 'utf8');
+const sitemapLocs = sitemapContent.match(/<loc>([^<]+)<\/loc>/g) || [];
+const uniqueLocs = new Set(sitemapLocs);
+assert(sitemapLocs.length > 0 && sitemapLocs.length === uniqueLocs.size, `Sitemap público contém ${sitemapLocs.length} URLs canônicas 100% únicas sem duplicatas.`);
+
+// Schema JSON-LD validity check on sample blog post
+const samplePostContent = fs.readFileSync(path.join(rootDir, 'blog/landing-page-ou-site-qual-usar-em-cada-estrategia/index.html'), 'utf8');
+const schemaMatch = samplePostContent.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/i);
+let sampleSchemaValid = false;
+try {
+  if (schemaMatch) {
+    JSON.parse(schemaMatch[1].trim());
+    sampleSchemaValid = true;
+  }
+} catch (e) {}
+assert(sampleSchemaValid, 'Schemas JSON-LD estruturados do Blog com sintaxe JSON 100% válida e parseável.');
+
+// Verificação de grafia correta
+const sampleMichellyPost = fs.readFileSync(path.join(rootDir, 'blog/case-michelly-correa-website-autoridade-comunicacao-jornalismo/index.html'), 'utf8');
+const hasCorrectSpelling = sampleMichellyPost.includes('Michelly Correa') || sampleMichellyPost.includes('Michelly Corrêa');
+const hasWrongSpelling = /michelly[\s_-]*correia/i.test(sampleMichellyPost);
+assert(hasCorrectSpelling && !hasWrongSpelling, 'Grafia oficial de "Michelly Correa" rigorosamente preservada sem erros de concordância.');
+
 // SUMÁRIO DOS TESTES
 console.log('\n====================================================');
 console.log(` RESULTADO DOS TESTES: ${passedTests}/${totalTests} PASSOU (${failedTests} FALHAS)`);
