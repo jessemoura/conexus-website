@@ -76,16 +76,21 @@ export function loadGoogleAnalytics() {
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
     document.head.appendChild(script);
+
+    // Atualiza Consent Mode v2 e configura medição com page_view inicial
+    window.gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+
+    window.gtag('config', GA_MEASUREMENT_ID, {
+      send_page_view: true
+    });
+  } else {
+    // Se o script já existe (carregado via inline head na inicialização), apenas garante consent granted sem duplicar config/page_view
+    window.gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
   }
-
-  // Atualiza Consent Mode v2 e configura medição
-  window.gtag('consent', 'update', {
-    'analytics_storage': 'granted'
-  });
-
-  window.gtag('config', GA_MEASUREMENT_ID, {
-    send_page_view: true
-  });
 }
 
 /**

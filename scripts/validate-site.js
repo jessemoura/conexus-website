@@ -212,6 +212,55 @@ const hasCorrectSpelling = sampleMichellyPost.includes('Michelly Correa') || sam
 const hasWrongSpelling = /michelly[\s_-]*correia/i.test(sampleMichellyPost);
 assert(hasCorrectSpelling && !hasWrongSpelling, 'Grafia oficial de "Michelly Correa" rigorosamente preservada sem erros de concordância.');
 
+// TEST 11: Validação do Ecossistema Comercial GA4 (8 Eventos & 9 Parâmetros)
+console.log('\n[TEST 11] Validação do Ecossistema Comercial GA4');
+const requiredCommercialEvents = [
+  'conexus_whatsapp_click',
+  'conexus_email_click',
+  'conexus_service_click',
+  'conexus_portfolio_click',
+  'conexus_plan_click',
+  'conexus_cta_click',
+  'conexus_blog_commercial_click',
+  'conexus_form_submit'
+];
+
+let allEventsPresent = true;
+for (const ev of requiredCommercialEvents) {
+  if (!trackingJsContent.includes(ev)) {
+    console.error(`     Evento ausente em tracking.js: ${ev}`);
+    allEventsPresent = false;
+  }
+}
+assert(allEventsPresent, 'Todos os 8 eventos comerciais oficiais implementados em src/js/tracking.js.');
+
+const requiredParameters = [
+  'contact_type',
+  'button_name',
+  'interaction_location',
+  'destination_url',
+  'service_name',
+  'portfolio_project',
+  'plan_name',
+  'article_title',
+  'page_language'
+];
+
+let allParamsPresent = true;
+for (const param of requiredParameters) {
+  if (!trackingJsContent.includes(param)) {
+    console.error(`     Parâmetro ausente em tracking.js: ${param}`);
+    allParamsPresent = false;
+  }
+}
+assert(allParamsPresent, 'Todos os 9 parâmetros padronizados suportados em src/js/tracking.js.');
+
+const hasDebounce = trackingJsContent.includes('DEDUPLICATION_WINDOW_MS') && trackingJsContent.includes('recentEvents');
+assert(hasDebounce, 'Algoritmo de desduplicação e debounce (600ms) implementado para proteção contra cliques duplos.');
+
+const hasSanitization = trackingJsContent.includes('sanitizeUrl');
+assert(hasSanitization, 'Módulo de higienização de URLs implementado para conformidade total com LGPD (Zero PII).');
+
 // SUMÁRIO DOS TESTES
 console.log('\n====================================================');
 console.log(` RESULTADO DOS TESTES: ${passedTests}/${totalTests} PASSOU (${failedTests} FALHAS)`);
