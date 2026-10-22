@@ -50,6 +50,7 @@ const whitelistWords = [
   'SSL',
   'HTTPS',
   'Waze',
+  'Michelly Correa',
   'Mychelli Correa',
   'Littlepet - Pet Shop',
   'nikki.studio',
