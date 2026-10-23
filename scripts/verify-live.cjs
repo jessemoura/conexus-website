@@ -10,6 +10,7 @@ const assets = [
   'https://conexus.press/assets/images/card-branding-design.webp',
   'https://conexus.press/assets/images/card-redes-sociais.webp',
   'https://conexus.press/assets/images/card-guest-hub.webp',
+  'https://conexus.press/assets/images/conexus-guest-hub-pousadas-chales.webp',
   'https://conexus.press/assets/images/card-app-development.webp',
   'https://conexus.press/assets/images/criacao-sites-conexus.webp',
   'https://conexus.press/assets/images/site-one-page-conexus.webp',
