@@ -50,13 +50,21 @@ required_samples = [
     "index.html",
     "blog/index.html",
     "blog/quanto-custa-site-profissional-2026/index.html",
+    "blog/case-grana-aplicativo-gestao-financeira-google-play/index.html",
     "diagnostico-gratuito/index.html",
     "portfolio/index.html",
     "portfolio/di-piallato/index.html",
+    "portfolio/grana/index.html",
     "grana/politica-de-privacidade/index.html",
     "servicos/index.html",
+    "servicos/desenvolvimento-de-aplicativos/index.html",
     "sitemap.xml",
-    "robots.txt"
+    "robots.txt",
+    "favicon.ico",
+    "manifest.webmanifest",
+    "assets/icons/favicon.ico",
+    "assets/icons/conexus-favicon-32x32.png",
+    "assets/icons/conexus-icon-180x180.png"
 ]
 
 all_found = True
@@ -73,6 +81,7 @@ assert (HOSTINGER_DIR / "index.html").exists(), "index.html missing in HOSTINGER
 assert (HOSTINGER_DIR / "assets").is_dir(), "assets folder missing in HOSTINGER-FINAL"
 assert (HOSTINGER_DIR / "blog").is_dir(), "blog folder missing in HOSTINGER-FINAL"
 assert (HOSTINGER_DIR / "portfolio").is_dir(), "portfolio folder missing in HOSTINGER-FINAL"
+assert (HOSTINGER_DIR / "portfolio" / "grana").is_dir(), "portfolio/grana folder missing in HOSTINGER-FINAL"
 assert (HOSTINGER_DIR / "diagnostico-gratuito").is_dir(), "diagnostico-gratuito folder missing in HOSTINGER-FINAL"
 assert (HOSTINGER_DIR / "grana").is_dir(), "grana folder missing in HOSTINGER-FINAL"
 

@@ -10997,6 +10997,28 @@ export const es = {
       "k13": "¿Tiene alguna duda específica?",
       "k14": "Nuestro equipo está a su completa disposición para conversar y orientar la mejor estrategia digital para su empresa."
     },
+        "portfolio_grana": {
+      "k1": "CASE STUDY • APLICACIÓN MÓVIL • PROYECTO PROPIO CONEXUS",
+      "k2": "GRANA — Aplicación de Control Financiero desarrollada por CONEXUS",
+      "k3": "Del desarrollo a Google Play Store: una solución práctica, moderna y sin complejidad para la organización financiera creada por CONEXUS Digital Solutions.",
+      "k4": "Ingresos, gastos, metas presupuestarias e informes en una experiencia fluida, con soporte para múltiples idiomas y monedas. Disponible gratis para dispositivos Android.",
+      "k5": "Descargar Gratis en Google Play ↗",
+      "k6": "Conocer el Proyecto ↓",
+      "k7": "Perfil de Desarrollador CONEXUS ↗",
+      "k8": "Proyecto",
+      "k9": "Desarrollo",
+      "k10": "Categoría",
+      "k11": "Disponibilidad",
+      "k12": "Google Play",
+      "k13": "El Desafío de la Claridad Financiera",
+      "k14": "La Solución Desarrollada por CONEXUS",
+      "k15": "Funcionalidades Diseñadas para el Día a Día",
+      "k16": "Visión Integrada de las Pantallas Oficiales",
+      "k17": "Probado en la Práctica en Cinco Países",
+      "k18": "Tus datos financieros permanecen en tu teléfono",
+      "k19": "¿Su empresa necesita una aplicación exclusiva publicada en Google Play?",
+      "k20": "Solicitar Presupuesto de Aplicación"
+},
     "portfolio_conexxus_uk": {
       "k1": "CASE STUDY • MARKETING DIGITAL • REINO UNIDO",
       "k2": "CONEXXUS Digital Marketing UK: Hub Internacional de Soluciones",

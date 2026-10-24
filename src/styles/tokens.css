@@ -20,6 +20,13 @@
   --color-text-muted: #B8C5D3;
   --color-header-bg: rgba(6, 20, 38, 0.85);
 
+  /* Semantic Contrast & Surface Variables */
+  --color-surface-elevated: #0B2340;
+  --color-text-main: #F5F8FC;
+  --color-text-secondary: #B8C5D3;
+  --color-brand-primary: #00BFA5;
+  --color-bg-secondary: #081B30;
+
   /* Section Contrast Rhythm Colors (Dark Default) */
   --section-navy-bg: #061426;
   --section-navy-text: #F5F8FC;
@@ -127,4 +134,11 @@
   --section-graphite-bg: #FFFFFF;
   --section-graphite-text: #07182D;
   --case-cover-bg: #F1F5F9;
+
+  /* Semantic Contrast & Surface Variables (Light Theme) */
+  --color-surface-elevated: #FFFFFF;
+  --color-text-main: #07182D;
+  --color-text-secondary: #35465A;
+  --color-brand-primary: #007A78;
+  --color-bg-secondary: #F0F4F8;
 }

@@ -10997,6 +10997,28 @@ export const en = {
       "k13": "Do you have a specific question?",
       "k14": "Our team is ready to talk and guide you toward the best digital solution for your company."
     },
+        "portfolio_grana": {
+      "k1": "CASE STUDY • MOBILE APP • CONEXUS PROPRIETARY PROJECT",
+      "k2": "GRANA — Personal Finance App Developed by CONEXUS",
+      "k3": "From development to the Google Play Store: a practical, modern, and friction-free personal finance solution created by CONEXUS Digital Solutions.",
+      "k4": "Income, expenses, budget goals, and clear reports in a fluid experience, supporting multiple languages and currencies. Available for free on Android.",
+      "k5": "Download Free on Google Play ↗",
+      "k6": "Explore the Project ↓",
+      "k7": "CONEXUS Developer Profile ↗",
+      "k8": "Project",
+      "k9": "Development",
+      "k10": "Category",
+      "k11": "Availability",
+      "k12": "Google Play",
+      "k13": "The Challenge of Financial Clarity",
+      "k14": "The Solution Developed by CONEXUS",
+      "k15": "Features Built for Daily Life",
+      "k16": "Integrated View of Official Screens",
+      "k17": "Field-Tested in Five Countries",
+      "k18": "Your financial data stays on your phone",
+      "k19": "Does your company need a custom app published on Google Play?",
+      "k20": "Request Mobile App Quote"
+},
     "portfolio_conexxus_uk": {
       "k1": "CASE STUDY • DIGITAL MARKETING • UNITED KINGDOM",
       "k2": "CONEXXUS Digital Marketing UK: International Solutions Hub",

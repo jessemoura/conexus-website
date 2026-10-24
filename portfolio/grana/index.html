@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRANA — Aplicativo de Controle Financeiro desenvolvido pela CONEXUS</title>
+  <meta name="description" content="Case de Sucesso: Desenvolvimento e lançamento do aplicativo GRANA pela CONEXUS Digital Solutions. Controle financeiro pessoal, metas, relatórios e disponibilidade gratuita no Google Play.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.conexus.press/portfolio/grana/">
+  <!-- Multilingual SEO hreflang -->
+  <link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/portfolio/grana/">
+  <link rel="alternate" hreflang="en" href="https://www.conexus.press/portfolio/grana/?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.conexus.press/portfolio/grana/?lang=es">
+  <link rel="alternate" hreflang="x-default" href="https://www.conexus.press/portfolio/grana/">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico?v=20261024.01">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/conexus-favicon-16x16.png?v=20261024.01">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/conexus-favicon-32x32.png?v=20261024.01">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/icons/conexus-favicon-48x48.png?v=20261024.01">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/conexus-icon-180x180.png?v=20261024.01">
+  <link rel="manifest" href="/manifest.webmanifest?v=20261024.01">
+  <link rel="stylesheet" href="/src/styles/components.css?v=20261006.01">
+
+  <!-- ANTI-FOUC THEME DETECTION SCRIPT -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('conexus_theme');
+      const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <!-- OPEN GRAPH / SOCIAL CARDS -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.conexus.press/portfolio/grana/">
+  <meta property="og:title" content="GRANA — Aplicativo de Controle Financeiro desenvolvido pela CONEXUS">
+  <meta property="og:description" content="Case de Sucesso: Desenvolvimento e publicação do aplicativo GRANA na Google Play Store pela CONEXUS Digital Solutions. Finanças pessoais simples, metas e privacidade.">
+  <meta property="og:image" content="https://conexus.press/assets/images/grana/grana-cover-16x9.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:site_name" content="CONEXUS">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GRANA — Aplicativo de Controle Financeiro desenvolvido pela CONEXUS">
+  <meta name="twitter:description" content="Case de Sucesso: Desenvolvimento e publicação do aplicativo GRANA na Google Play Store pela CONEXUS Digital Solutions.">
+  <meta name="twitter:image" content="https://conexus.press/assets/images/grana/grana-cover-16x9.jpg">
+
+  <!-- DADOS ESTRUTURADOS (JSON-LD) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://conexus.press/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfólio",
+          "item": "https://conexus.press/portfolio/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "GRANA — Aplicativo de Controle Financeiro",
+          "item": "https://www.conexus.press/portfolio/grana/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "GRANA",
+      "operatingSystem": "Android",
+      "applicationCategory": "FinanceApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "CONEXUS",
+        "url": "https://conexus.press"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.conexus.grana",
+      "description": "Aplicativo de gestão e organização financeira pessoal desenvolvido pela CONEXUS Digital Solutions. Acompanhamento de receitas, despesas, metas orçamentárias e relatórios visuais com suporte a múltiplos idiomas e moedas."
+    }
+  ]
+  </script>
+
+  <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+
+    var storedConsent = null;
+    try {
+      storedConsent = localStorage.getItem('conexus_analytics_consent');
+    } catch (e) {}
+
+    gtag('consent', 'default', {
+      'analytics_storage': storedConsent === 'granted' ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+
+    gtag('js', new Date());
+
+    if (storedConsent === 'granted') {
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M';
+      document.head.appendChild(gaScript);
+      gtag('config', 'G-04S0NFMW2M', { send_page_view: true });
+    }
+  </script>
+
+  <!-- METRICOOL TRACKING -->
+  <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"22550805668229d6afbaafda3c5a592a"})});</script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="/" class="brand-logo" aria-label="CONEXUS - Página Inicial">
+        <img src="/assets/logos/conexus-logo-primary-transparent.png" alt="CONEXUS" width="144" height="48" loading="eager">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="/" class="nav-link" data-i18n="nav.home">Início</a>
+        <a href="/servicos/" class="nav-link" data-i18n="nav.services">Serviços</a>
+        <a href="/sobre/" class="nav-link" data-i18n="nav.about">Sobre</a>
+        <a href="/portfolio/" class="nav-link active" data-i18n="nav.portfolio">Portfólio</a>
+        <a href="/blog/" class="nav-link" data-i18n="nav.blog">Blog</a>
+        <a href="/faq/" class="nav-link" data-i18n="nav.faq">FAQ</a>
+        <a href="/contato/" class="nav-link" data-i18n="nav.contact">Contato</a>
+
+        <div class="header-social-links">
+          <a href="https://www.linkedin.com/in/jesse-ribeiro-a49666409/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-link" data-track="social_click" data-cta-position="header_linkedin">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path d="M7.12 18.5H4.55V10.2H7.12V18.5ZM5.83 9.07C5.01 9.07 4.35 8.4 4.35 7.59C4.35 6.78 5.01 6.12 5.83 6.12C6.65 6.12 7.31 6.78 7.31 7.59C7.31 8.4 6.65 9.07 5.83 9.07ZM19.65 18.5H17.08V14.47C17.08 13.51 17.06 12.28 15.74 12.28C14.4 12.28 14.2 13.33 14.2 14.4V18.5H11.63V10.2H14.1V11.33H14.13C14.47 10.68 15.31 10 16.55 10C19.14 10 19.62 11.7 19.62 13.92V18.5H19.65Z" fill="#FFFFFF"/></svg>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-link" data-track="social_click" data-cta-position="header_instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="igGradBadge_header" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#833AB4"/><stop offset="35%" stop-color="#C13584"/><stop offset="65%" stop-color="#E1306C"/><stop offset="85%" stop-color="#FD1D1D"/><stop offset="100%" stop-color="#F77737"/></linearGradient></defs><rect width="24" height="24" rx="5.5" fill="url(#igGradBadge_header)"/><rect x="5.5" y="5.5" width="13" height="13" rx="3.5" stroke="#FFFFFF" stroke-width="1.8" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="#FFFFFF" stroke-width="1.8" fill="none"/><circle cx="15.8" cy="8.2" r="1" fill="#FFFFFF"/></svg>
+          </a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Conheci%20o%20case%20do%20aplicativo%20GRANA%20pela%20CONEXUS%20e%20gostaria%20de%20conversar%20sobre%20desenvolvimento%20mobile." target="_blank" rel="noopener noreferrer" data-whatsapp-key="homeHero" class="btn btn-primary" data-track="whatsapp_click" data-cta-position="header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFFFFF" viewBox="0 0 448 512" style="margin-right: 4px;">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+          </svg>
+          <span data-i18n="common.talkToConexus">Falar com a CONEXUS</span>
+        </a>
+
+        <!-- LANGUAGE SELECTOR -->
+        <div class="lang-selector-dropdown" id="lang-selector">
+          <button class="lang-btn" id="lang-btn" aria-label="Selecionar Idioma" aria-expanded="false" aria-haspopup="true">
+            <img src="/assets/icons/flags/br.svg" alt="Bandeira do Brasil" class="lang-flag-img lang-active-flag-img" width="20" height="14" loading="eager">
+            <span class="lang-code lang-active-code">PT</span>
+            <svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-menu" id="lang-menu" role="menu" aria-label="Idiomas disponíveis">
+            <button class="lang-option active" data-lang="pt" role="menuitem" aria-selected="true">
+              <img src="/assets/icons/flags/br.svg" alt="Bandeira do Brasil" class="lang-flag-img" width="20" height="14" loading="eager">
+              <span class="lang-option-name">Português</span>
+              <span class="lang-check">✓</span>
+            </button>
+            <button class="lang-option" data-lang="en" role="menuitem" aria-selected="false">
+              <img src="/assets/icons/flags/gb.svg" alt="Flag of the United Kingdom" class="lang-flag-img" width="20" height="14" loading="eager">
+              <span class="lang-option-name">English</span>
+              <span class="lang-check">✓</span>
+            </button>
+            <button class="lang-option" data-lang="es" role="menuitem" aria-selected="false">
+              <img src="/assets/icons/flags/es.svg" alt="Bandera de España" class="lang-flag-img" width="20" height="14" loading="eager">
+              <span class="lang-option-name">Español</span>
+              <span class="lang-check">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar Tema Claro/Escuro" title="Alternar Tema">
+          <svg class="sun-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div id="mobile-menu" class="mobile-menu" aria-label="Menu Mobile">
+    <a href="/" class="nav-link" data-i18n="nav.home">Início</a>
+    <a href="/servicos/" class="nav-link" data-i18n="nav.services">Serviços</a>
+    <a href="/sobre/" class="nav-link" data-i18n="nav.about">Sobre</a>
+    <a href="/portfolio/" class="nav-link active" data-i18n="nav.portfolio">Portfólio</a>
+    <a href="/blog/" class="nav-link" data-i18n="nav.blog">Blog</a>
+    <a href="/faq/" class="nav-link" data-i18n="nav.faq">FAQ</a>
+    <a href="/contato/" class="nav-link" data-i18n="nav.contact">Contato</a>
+    <div style="display: flex; gap: 1rem; margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--color-border-subtle);">
+      <a href="https://www.linkedin.com/in/jesse-ribeiro-a49666409/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-link" data-track="social_click" data-cta-position="mobile_linkedin">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path d="M7.12 18.5H4.55V10.2H7.12V18.5ZM5.83 9.07C5.01 9.07 4.35 8.4 4.35 7.59C4.35 6.78 5.01 6.12 5.83 6.12C6.65 6.12 7.31 6.78 7.31 7.59C7.31 8.4 6.65 9.07 5.83 9.07ZM19.65 18.5H17.08V14.47C17.08 13.51 17.06 12.28 15.74 12.28C14.4 12.28 14.2 13.33 14.2 14.4V18.5H11.63V10.2H14.1V11.33H14.13C14.47 10.68 15.31 10 16.55 10C19.14 10 19.62 11.7 19.62 13.92V18.5H19.65Z" fill="#FFFFFF"/></svg>
+      </a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-link" data-track="social_click" data-cta-position="mobile_instagram">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="igGradBadge_mobile" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#833AB4"/><stop offset="35%" stop-color="#C13584"/><stop offset="65%" stop-color="#E1306C"/><stop offset="85%" stop-color="#FD1D1D"/><stop offset="100%" stop-color="#F77737"/></linearGradient></defs><rect width="24" height="24" rx="5.5" fill="url(#igGradBadge_mobile)"/><rect x="5.5" y="5.5" width="13" height="13" rx="3.5" stroke="#FFFFFF" stroke-width="1.8" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="#FFFFFF" stroke-width="1.8" fill="none"/><circle cx="15.8" cy="8.2" r="1" fill="#FFFFFF"/></svg>
+      </a>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Conheci%20o%20case%20do%20aplicativo%20GRANA%20pela%20CONEXUS%20e%20gostaria%20de%20conversar%20sobre%20desenvolvimento%20mobile." target="_blank" rel="noopener noreferrer" data-whatsapp-key="homeHero" class="btn btn-primary" style="width: 100%;" data-track="whatsapp_click" data-cta-position="mobile_menu" data-i18n="common.talkToConexus">Falar com a CONEXUS</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- BREADCRUMB & BACK LINK -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 1rem;">
+      <div class="container">
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
+          <a href="/portfolio/" style="color: var(--color-brand-primary); font-weight: 500; display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span data-i18n="portfolio.backToPortfolio">Voltar para o Portfólio</span>
+          </a>
+          <span>/</span>
+          <span>GRANA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE HERO SECTION -->
+    <section class="section" style="padding-top: 1rem; padding-bottom: 4rem;">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 191, 165, 0.12); color: var(--color-brand-primary); border: 1px solid rgba(0, 191, 165, 0.3); padding: 0.45rem 1.15rem; border-radius: 50px; font-weight: 600; font-size: 0.85rem; margin-bottom: 1.5rem;">
+            <span data-i18n="autoContent.portfolio_grana.k1">CASE STUDY • APLICATIVO MOBILE • PROJETO PROPRIETÁRIO CONEXUS</span>
+          </div>
+
+          <!-- APP ICON + H1 TITLE -->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 1.25rem; margin-bottom: 1.25rem;">
+            <img src="/assets/images/grana/grana-app-icon.webp" alt="Ícone Oficial do Aplicativo GRANA" width="108" height="108" style="width: 108px; height: 108px; border-radius: 24px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35); border: 2px solid rgba(255, 255, 255, 0.12); display: block;" loading="eager">
+            <h1 class="hero-title" style="font-size: clamp(2.1rem, 4.8vw, 3.2rem); line-height: 1.18; margin: 0;" data-i18n="autoContent.portfolio_grana.k2">GRANA — Aplicativo de Controle Financeiro desenvolvido pela CONEXUS</h1>
+          </div>
+
+          <p class="hero-subtitle" style="font-size: 1.18rem; color: var(--color-text-secondary); max-width: 760px; margin: 0 auto 1.5rem; line-height: 1.6;">
+            <span data-i18n="autoContent.portfolio_grana.k3">Do desenvolvimento à Google Play Store: uma solução de organização financeira prática, moderna e sem complexidade criada pela CONEXUS Digital Solutions.</span>
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 1rem; max-width: 680px; margin: 0 auto 2.25rem; line-height: 1.6;">
+            <span data-i18n="autoContent.portfolio_grana.k4">Receitas, despesas, metas orçamentárias e relatórios em uma experiência fluida, com suporte a múltiplos idiomas e moedas. Disponível gratuitamente para dispositivos Android.</span>
+          </p>
+
+          <!-- HERO ACTIONS -->
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; align-items: center;">
+            <a href="https://play.google.com/store/apps/details?id=com.conexus.grana" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.9rem 2rem; font-size: 1rem; display: inline-flex; align-items: center; gap: 0.5rem;" data-track="google_play_click" data-cta-position="grana_hero">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.793 12 3.61 22.186c-.366-.37-.61-.955-.61-1.686V3.5c0-.73.244-1.316.61-1.686zm11.3 9.072l2.302-2.302-11.7-6.755 9.398 9.057zm0 2.228l-9.398 9.057 11.7-6.755-2.302-2.302zm1.414-1.414l2.846 1.643c.813.47.813 1.233 0 1.702l-2.846 1.643-2.023-2.023 2.023-2.023z"/></svg>
+              <span data-i18n="autoContent.portfolio_grana.k5">Baixar Grátis na Google Play ↗</span>
+            </a>
+            <a href="#projeto" class="btn btn-secondary" style="padding: 0.9rem 1.75rem; font-size: 1rem;">
+              <span data-i18n="autoContent.portfolio_grana.k6">Conhecer o Projeto ↓</span>
+            </a>
+            <a href="https://play.google.com/store/apps/developer?id=CONEXUS" target="_blank" rel="noopener noreferrer" style="color: var(--color-text-muted); font-size: 0.9rem; text-decoration: underline; padding: 0.5rem;" data-track="google_play_developer_click">
+              <span data-i18n="autoContent.portfolio_grana.k7">Perfil da Desenvolvedora CONEXUS ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- HERO COVER IMAGE BANNER -->
+        <div style="margin-top: 3rem; border-radius: 20px; overflow: hidden; border: 1px solid var(--color-border-subtle); box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35); background: #080f1c; max-width: 1040px; margin-left: auto; margin-right: auto;">
+          <img src="/assets/images/grana/grana-capa.webp" alt="Apresentação do aplicativo de controle financeiro GRANA desenvolvido pela CONEXUS" width="1080" height="1080" style="width: 100%; height: auto; display: block; max-height: 600px; object-fit: cover; object-position: center;">
+        </div>
+
+        <!-- PROJECT METADATA BAR -->
+        <div style="margin-top: 2.5rem; max-width: 1040px; margin-left: auto; margin-right: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1.5rem; background: var(--color-surface-elevated); padding: 1.75rem 2rem; border-radius: 14px; border: 1px solid var(--color-border-subtle);">
+          <div>
+            <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); display: block; margin-bottom: 0.25rem;">Projeto</span>
+            <strong style="font-size: 1rem; color: var(--color-text-main);">GRANA</strong>
+          </div>
+          <div>
+            <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); display: block; margin-bottom: 0.25rem;">Desenvolvimento</span>
+            <strong style="font-size: 1rem; color: var(--color-text-main);">CONEXUS Digital</strong>
+          </div>
+          <div>
+            <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); display: block; margin-bottom: 0.25rem;">Categoria</span>
+            <strong style="font-size: 1rem; color: var(--color-text-main);">Finanças Pessoais</strong>
+          </div>
+          <div>
+            <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); display: block; margin-bottom: 0.25rem;">Disponibilidade</span>
+            <strong style="font-size: 1rem; color: #00BFA5;">100% Gratuito (Android)</strong>
+          </div>
+          <div>
+            <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); display: block; margin-bottom: 0.25rem;">Google Play</span>
+            <a href="https://play.google.com/store/apps/details?id=com.conexus.grana" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--color-brand-primary); font-weight: 600;">com.conexus.grana ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHALLENGE & SOLUTION SECTION -->
+    <section id="projeto" class="section" style="background: var(--color-bg-secondary); padding: 5rem 0;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; max-width: 1040px; margin: 0 auto;">
+          <!-- O DESAFIO -->
+          <div style="background: var(--color-surface-elevated); padding: 2.5rem; border-radius: 16px; border: 1px solid var(--color-border-subtle);">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(0, 191, 165, 0.15); color: var(--color-brand-primary); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem; color: var(--color-text-main);" data-i18n="autoContent.portfolio_grana.k13">O Desafio da Clareza Financeira</h2>
+            <p style="color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+              A maioria das soluções de finanças pessoais falha por dois extremos: ou são planilhas manuais cansativas que as pessoas abandonam na primeira semana, ou são aplicativos complexos repletos de telas intrusivas, cadastros extensos e exigência de permissões bancárias excessivas.
+            </p>
+            <p style="color: var(--color-text-secondary); line-height: 1.65;">
+              O objetivo da CONEXUS foi construir uma ferramenta moderna e descomplicada, focada na rapidez de registro e na clareza visual de receitas, gastos mensais e metas — permitindo ao usuário entender seu momento financeiro em poucos segundos.
+            </p>
+          </div>
+
+          <!-- A SOLUÇÃO -->
+          <div style="background: var(--color-surface-elevated); padding: 2.5rem; border-radius: 16px; border: 1px solid var(--color-border-subtle);">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(0, 191, 165, 0.15); color: #00BFA5; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem; color: var(--color-text-main);" data-i18n="autoContent.portfolio_grana.k14">A Solução Desenvolvida pela CONEXUS</h2>
+            <p style="color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1rem;">
+              A CONEXUS Digital Solutions assumiu todas as etapas do ciclo de vida da aplicação: da pesquisa de ergonomia ao design de interface, implementação em arquitetura nativa Android e publicação homologada na Google Play Store.
+            </p>
+            <ul style="list-style: none; padding: 0; margin: 0; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="display: flex; align-items: flex-start; gap: 0.6rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Privacidade Absoluta:</strong> Armazenamento local sem captura de dados sensíveis ou exigência de senhas bancárias.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.6rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Lançamentos em 2 Toques:</strong> Cadastro imediato de despesas e receitas para não perder o hábito.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.6rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Suporte Internacional:</strong> Configuração nativa para diferentes moedas e idiomas.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.6rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Publicação Oficial:</strong> Homologação completa nos padrões de conformidade do Google Play Console.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REAL FEATURES DETAILED SHOWCASE -->
+    <section class="section" style="padding: 5rem 0;">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto 4rem;">
+          <span class="badge" style="margin-bottom: 0.75rem; display: inline-block;">EXPERIÊNCIA REAL DO USUÁRIO</span>
+          <h2 style="font-size: clamp(1.9rem, 3.8vw, 2.6rem); margin-bottom: 1rem; color: var(--color-text-main);" data-i18n="autoContent.portfolio_grana.k15">Funcionalidades Construídas para o Dia a Dia</h2>
+          <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.6;">
+            Cada tela do GRANA foi desenhada para resolver uma dor específica de gestão financeira sem fricção ou distrações.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 4rem; max-width: 1040px; margin: 0 auto;">
+          <!-- Feature 1: Panorama Mensal -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center; background: var(--color-surface-elevated); padding: 2.5rem; border-radius: 20px; border: 1px solid var(--color-border-subtle);">
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-brand-primary); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">01 • VISÃO GERAL</span>
+              <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--color-text-main);">Panorama Mensal</h3>
+              <p style="color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+                Ao abrir o aplicativo, o usuário tem imediatamente o balanço consolidado do mês: total de receitas, total de despesas e o saldo disponível em tempo real.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 0; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem;">
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #00BFA5;">✓</span> Gráfico dinâmico do comportamento de saldo.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #00BFA5;">✓</span> Navegação rápida entre meses anteriores e futuros.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #00BFA5;">✓</span> Indicadores visuais de saúde do orçamento.
+                </li>
+              </ul>
+            </div>
+            <div style="border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); background: #0c1626;">
+              <img src="/assets/images/grana/grana-panorama.webp" alt="Tela Panorama Mensal do aplicativo GRANA mostrando receitas, despesas e saldo" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Feature 2: Registro de Lançamentos -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center; background: var(--color-surface-elevated); padding: 2.5rem; border-radius: 20px; border: 1px solid var(--color-border-subtle);">
+            <div style="order: 2;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: #0EA5E9; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">02 • AGILIDADE</span>
+              <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--color-text-main);">Registro Rápido de Lançamentos</h3>
+              <p style="color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+                O controle financeiro só funciona se for sustentável. O GRANA reduz o tempo de anotação de uma despesa a poucos segundos, com teclado ergonômico e categorização inteligente.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 0; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem;">
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #0EA5E9;">✓</span> Categorias claras: moradia, alimentação, transporte, lazer e saúde.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #0EA5E9;">✓</span> Opção para adicionar descrições e notas objetivas.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #0EA5E9;">✓</span> Edição e exclusão direta sem complicações.
+                </li>
+              </ul>
+            </div>
+            <div style="border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); background: #0c1626; order: 1;">
+              <img src="/assets/images/grana/grana-lancamentos.webp" alt="Tela de Registro de Lançamentos do aplicativo GRANA com categorias e valores" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Feature 3: Metas Financeiras -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center; background: var(--color-surface-elevated); padding: 2.5rem; border-radius: 20px; border: 1px solid var(--color-border-subtle);">
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #E67E22; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">03 • PLANEJAMENTO</span>
+              <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--color-text-main);">Metas e Objetivos Orçamentários</h3>
+              <p style="color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+                Economizar exige um propósito tangível. O GRANA permite definir metas de economia (reserva de emergência, viagens, compras planejadas) com acompanhamento percentual visual.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 0; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem;">
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #E67E22;">✓</span> Barras de progresso visual em tempo real.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #E67E22;">✓</span> Visualização do valor acumulado versus o objetivo final.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #E67E22;">✓</span> Estímulo contínuo à disciplina e clareza orçamentária.
+                </li>
+              </ul>
+            </div>
+            <div style="border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); background: #0c1626;">
+              <img src="/assets/images/grana/grana-metas.webp" alt="Tela de Metas Financeiras do aplicativo GRANA com objetivos e percentual atingido" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Feature 4: Relatórios e Gráficos -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center; background: var(--color-surface-elevated); padding: 2.5rem; border-radius: 20px; border: 1px solid var(--color-border-subtle);">
+            <div style="order: 2;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: #8B5CF6; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">04 • VISIBILIDADE</span>
+              <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--color-text-main);">Relatórios e Distribuição de Gastos</h3>
+              <p style="color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+                Identificar para onde o dinheiro está indo é o primeiro passo para conter vazamentos orçamentários. O GRANA oferece relatórios gráficos por categoria com proporção visual cristalina.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 0; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem;">
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #8B5CF6;">✓</span> Gráfico de rosca com detalhamento percentual por categoria.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #8B5CF6;">✓</span> Comparativo direto entre maiores despesas do período.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #8B5CF6;">✓</span> Tomada de decisão orientada a dados reais de consumo.
+                </li>
+              </ul>
+            </div>
+            <div style="border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); background: #0c1626; order: 1;">
+              <img src="/assets/images/grana/grana-relatorios.webp" alt="Tela de Relatórios e Gráficos do aplicativo GRANA com distribuição por categorias" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Feature 5: Personalização, Idiomas e Moedas -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center; background: var(--color-surface-elevated); padding: 2.5rem; border-radius: 20px; border: 1px solid var(--color-border-subtle);">
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #10B981; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">05 • FLEXIBILIDADE</span>
+              <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--color-text-main);">Personalização, Moedas e Idiomas</h3>
+              <p style="color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+                Construído para um mundo conectado, o aplicativo permite alternar facilmente entre moedas e idiomas, adaptando-se a quem mora no Brasil ou em qualquer outro país.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 0; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem;">
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #10B981;">✓</span> Suporte configurável a moedas internacionais (Real, Euro, Libra, Dólar).
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #10B981;">✓</span> Opções de idiomas para navegação amigável.
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #10B981;">✓</span> Ergonomia com suporte a Dark Mode para menor cansaço visual.
+                </li>
+              </ul>
+            </div>
+            <div style="border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); background: #0c1626;">
+              <img src="/assets/images/grana/grana-personalizacao.webp" alt="Tela de Personalização do aplicativo GRANA com opções de moedas e configurações" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANIZED VISUAL GALLERY -->
+    <section class="section" style="background: var(--color-bg-secondary); padding: 5rem 0;">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto 3.5rem;">
+          <span class="badge" style="margin-bottom: 0.75rem; display: inline-block;">GALERIA DO APLICATIVO</span>
+          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 1rem; color: var(--color-text-main);" data-i18n="autoContent.portfolio_grana.k16">Visão Integrada das Telas Oficiais</h2>
+          <p style="color: var(--color-text-secondary); font-size: 1.05rem;">
+            Explore a consistência visual, minimalismo e ergonomia desenvolvidos para o GRANA.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto;">
+          <div style="border-radius: 14px; overflow: hidden; border: 1px solid var(--color-border-subtle); background: var(--color-surface-elevated); box-shadow: var(--shadow-sm); transition: transform 0.2s ease;">
+            <img src="/assets/images/grana/grana-panorama.webp" alt="Tela de Panorama Mensal GRANA" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <div style="padding: 0.75rem 1rem; text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);">Panorama Mensal</div>
+          </div>
+          <div style="border-radius: 14px; overflow: hidden; border: 1px solid var(--color-border-subtle); background: var(--color-surface-elevated); box-shadow: var(--shadow-sm); transition: transform 0.2s ease;">
+            <img src="/assets/images/grana/grana-lancamentos.webp" alt="Tela de Lançamentos de Despesas GRANA" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <div style="padding: 0.75rem 1rem; text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);">Lançamentos Rápidos</div>
+          </div>
+          <div style="border-radius: 14px; overflow: hidden; border: 1px solid var(--color-border-subtle); background: var(--color-surface-elevated); box-shadow: var(--shadow-sm); transition: transform 0.2s ease;">
+            <img src="/assets/images/grana/grana-metas.webp" alt="Tela de Metas Financeiras GRANA" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <div style="padding: 0.75rem 1rem; text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);">Metas de Economia</div>
+          </div>
+          <div style="border-radius: 14px; overflow: hidden; border: 1px solid var(--color-border-subtle); background: var(--color-surface-elevated); box-shadow: var(--shadow-sm); transition: transform 0.2s ease;">
+            <img src="/assets/images/grana/grana-relatorios.webp" alt="Tela de Relatórios e Gráficos GRANA" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <div style="padding: 0.75rem 1rem; text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);">Relatórios Visuais</div>
+          </div>
+          <div style="border-radius: 14px; overflow: hidden; border: 1px solid var(--color-border-subtle); background: var(--color-surface-elevated); box-shadow: var(--shadow-sm); transition: transform 0.2s ease;">
+            <img src="/assets/images/grana/grana-personalizacao.webp" alt="Tela de Personalização e Moedas GRANA" width="1080" height="1080" style="width: 100%; height: auto; display: block;" loading="lazy">
+            <div style="padding: 0.75rem 1rem; text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);">Moedas & Temas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTED IN 5 COUNTRIES SECTION -->
+    <section class="section" style="padding: 5rem 0;">
+      <div class="container">
+        <div style="background: var(--color-surface-elevated); border: 1px solid var(--color-border-subtle); border-radius: 24px; padding: 3.5rem 2.5rem; max-width: 1040px; margin: 0 auto; box-shadow: var(--shadow-sm);">
+          <div style="text-align: center; max-width: 740px; margin: 0 auto 3rem;">
+            <span class="badge" style="background: rgba(0, 191, 165, 0.12); color: var(--color-brand-primary); margin-bottom: 0.75rem; display: inline-block;">VALIDAÇÃO EM CENÁRIOS REAIS</span>
+            <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 1rem; color: var(--color-text-main);" data-i18n="autoContent.portfolio_grana.k17">Testado na Prática em Cinco Países</h2>
+            <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.65;">
+              Durante o ciclo de validação e refinamento de experiência de uso, o GRANA passou por testes empíricos de rotina em diferentes localidades e contextos de mercado:
+            </p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
+            <div style="background: var(--color-bg-secondary); border: 1px solid var(--color-border-subtle); border-radius: 14px; padding: 1.5rem; text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🇧🇷</div>
+              <strong style="display: block; font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 0.25rem;">Brasil</strong>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">Real (BRL) • Mercado Nativo</span>
+            </div>
+            <div style="background: var(--color-bg-secondary); border: 1px solid var(--color-border-subtle); border-radius: 14px; padding: 1.5rem; text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🇵🇹</div>
+              <strong style="display: block; font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 0.25rem;">Portugal</strong>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">Euro (EUR) • Espaço Europeu</span>
+            </div>
+            <div style="background: var(--color-bg-secondary); border: 1px solid var(--color-border-subtle); border-radius: 14px; padding: 1.5rem; text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🇬🇧</div>
+              <strong style="display: block; font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 0.25rem;">Inglaterra</strong>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">Libra (GBP) • Mercado Britânico</span>
+            </div>
+            <div style="background: var(--color-bg-secondary); border: 1px solid var(--color-border-subtle); border-radius: 14px; padding: 1.5rem; text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🇪🇸</div>
+              <strong style="display: block; font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 0.25rem;">Espanha</strong>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">Euro (EUR) • Usabilidade Local</span>
+            </div>
+            <div style="background: var(--color-bg-secondary); border: 1px solid var(--color-border-subtle); border-radius: 14px; padding: 1.5rem; text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🇮🇹</div>
+              <strong style="display: block; font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 0.25rem;">Itália</strong>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">Euro (EUR) • Validação de Moeda</span>
+            </div>
+          </div>
+
+          <div style="background: var(--color-surface-navy); border: 1px solid var(--color-cyan-border); border-radius: 12px; padding: 1.25rem 1.75rem; font-size: 0.92rem; color: var(--color-text-secondary); line-height: 1.6;">
+            <strong style="color: var(--color-text-main);">Nota de Engenharia & Usabilidade:</strong> A experimentação em diferentes contextos geográficos auxiliou a equipe da CONEXUS a observar comportamentos reais de pontuação decimal, formatação monetária, fusos e fluidez de interface na rotina diária dos usuários. Trata-se de validação de experiência prática de desenvolvimento prévio à publicação na Google Play Store.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY & SECURITY SECTION -->
+    <section class="section" style="background: var(--color-bg-secondary); padding: 4rem 0;">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; background: var(--color-surface-elevated); border: 1px solid var(--color-border-subtle); border-radius: 18px; padding: 2.25rem;">
+          <div style="max-width: 580px;">
+            <div style="display: inline-flex; align-items: center; gap: 0.4rem; color: #00BFA5; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Privacidade em Primeiro Lugar</span>
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--color-text-main);" data-i18n="autoContent.portfolio_grana.k18">Seus dados financeiros permanecem no seu celular</h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+              O GRANA foi concebido sob princípios estritos de privacidade: não vende informações, não rastreia hábitos para publicidade e preserva o controle total nas mãos do usuário.
+            </p>
+          </div>
+          <div>
+            <a href="/grana/politica-de-privacidade/" class="btn btn-secondary" style="font-size: 0.95rem; padding: 0.75rem 1.5rem; white-space: nowrap;">
+              Ver Política de Privacidade ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL BLOG LINK SECTION -->
+    <section class="section" style="padding: 4rem 0;">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; background: linear-gradient(135deg, rgba(0, 191, 165, 0.08) 0%, rgba(13, 110, 253, 0.08) 100%), var(--color-surface-elevated); border: 1px solid var(--color-border-subtle); border-radius: 20px; padding: 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+          <div style="max-width: 560px;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-brand-primary); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">ARTIGO COMPLETO NO BLOG</span>
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--color-text-main);">Como a CONEXUS desenvolveu e lançou o GRANA na Google Play</h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+              Conheça os bastidores de desenvolvimento, as decisões de arquitetura e a metodologia aplicada na engenharia de aplicativos móveis.
+            </p>
+          </div>
+          <div>
+            <a href="/blog/case-grana-aplicativo-gestao-financeira-google-play/" class="btn btn-secondary" style="font-size: 0.95rem; padding: 0.75rem 1.5rem; white-space: nowrap;">
+              Ler Artigo Completo →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMERCIAL CTA FOR MOBILE APP DEVELOPMENT -->
+    <section class="section" style="padding: 5rem 0; background: var(--color-bg-secondary);">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, rgba(0, 191, 165, 0.12) 0%, rgba(13, 110, 253, 0.12) 100%), var(--color-surface-elevated); border-radius: 24px; padding: 4rem 2rem; border: 1px solid var(--color-border-subtle); text-align: center; max-width: 960px; margin: 0 auto; box-shadow: var(--shadow-lg);">
+          <span class="badge" style="background: rgba(0, 191, 165, 0.15); color: var(--color-brand-primary); margin-bottom: 1rem; display: inline-block;">DESENVOLVIMENTO DE APPS PARA EMPRESAS</span>
+          <h2 style="font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.2; margin-bottom: 1.25rem; color: var(--color-text-main);" data-i18n="autoContent.portfolio_grana.k19">Sua empresa precisa de um aplicativo exclusivo publicado na Google Play?</h2>
+          <p style="font-size: 1.1rem; color: var(--color-text-secondary); max-width: 680px; margin: 0 auto 2.5rem; line-height: 1.65;">
+            Assim como desenvolvemos e homologamos o GRANA, construímos soluções móveis sob medida para empresas que desejam automatizar processos, atender clientes com excelência e ter canal proprietário no ecossistema Android.
+          </p>
+
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Vi%20o%20case%20do%20aplicativo%20GRANA%20e%20gostaria%20de%20solicitar%20uma%20proposta%20para%20desenvolvimento%20de%20aplicativo%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" data-whatsapp-key="serviceAppDev" class="btn btn-primary" style="padding: 0.9rem 2rem; font-size: 1.05rem;" data-track="whatsapp_click" data-cta-position="grana_case_bottom">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF" viewBox="0 0 448 512" style="margin-right: 6px;">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+              </svg>
+              <span data-i18n="autoContent.portfolio_grana.k20">Solicitar Orçamento de Aplicativo</span>
+            </a>
+            <a href="/servicos/desenvolvimento-de-aplicativos/" class="btn btn-secondary" style="padding: 0.9rem 2rem; font-size: 1.05rem;">
+              <span>Ver Serviço de Aplicativos ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" aria-label="CONEXUS Logo Footer">
+            <img src="/assets/logos/conexus-logo-primary-transparent.png" alt="CONEXUS" width="144" height="48" loading="lazy">
+          </a>
+          <p data-i18n="footer.tagline">
+            Estratégia e marketing digital conectando websites profissionais, SEO, branding e redes sociais para fortalecer empresas.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.colNavTitle">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="/" data-i18n="nav.home">Início</a></li>
+            <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+            <li><a href="/sobre/" data-i18n="footer.aboutConexus">Sobre a CONEXUS</a></li>
+            <li><a href="/portfolio/" data-i18n="nav.portfolio">Portfólio</a></li>
+            <li><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="/faq/" data-i18n="footer.faq">Perguntas Frequentes</a></li>
+            <li><a href="/contato/" data-i18n="nav.contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.colServicesTitle">Serviços</h4>
+          <ul class="footer-links">
+            <li><a href="/servicos/criacao-de-sites/" data-i18n="footer.serviceWebsites">Criação de Sites</a></li>
+            <li><a href="/servicos/site-one-page/" data-i18n="footer.serviceOnePage">Site One Page</a></li>
+            <li><a href="/servicos/seo/" data-i18n="footer.serviceSEO">SEO para Empresas</a></li>
+            <li><a href="/servicos/seo-local-google-meu-negocio/" data-i18n="footer.serviceSEOLocal">SEO Local & Google</a></li>
+            <li><a href="/servicos/desenvolvimento-de-aplicativos/">Desenvolvimento de Apps</a></li>
+            <li><a href="/servicos/branding-identidade-visual/" data-i18n="footer.serviceBranding">Branding & Identidade</a></li>
+            <li><a href="/servicos/gestao-redes-sociais/" data-i18n="footer.serviceSocialMedia">Gestão de Redes Sociais</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.colContactTitle">Contato & Redes</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="mailto:comercial@conexus.press" data-track="email_click" data-cta-position="footer" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                comercial@conexus.press
+              </a>
+            </li>
+            <li style="margin-top: 0.35rem;">
+              <a href="mailto:jesse.ribeiro@conexus.press" data-track="email_click" data-cta-position="footer" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                jesse.ribeiro@conexus.press
+              </a>
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.85rem; margin-top: 0.5rem;">
+              <a href="https://www.linkedin.com/in/jesse-ribeiro-a49666409/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon" data-track="social_click" data-cta-position="footer_linkedin">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path d="M7.12 18.5H4.55V10.2H7.12V18.5ZM5.83 9.07C5.01 9.07 4.35 8.4 4.35 7.59C4.35 6.78 5.01 6.12 5.83 6.12C6.65 6.12 7.31 6.78 7.31 7.59C7.31 8.4 6.65 9.07 5.83 9.07ZM19.65 18.5H17.08V14.47C17.08 13.51 17.06 12.28 15.74 12.28C14.4 12.28 14.2 13.33 14.2 14.4V18.5H11.63V10.2H14.1V11.33H14.13C14.47 10.68 15.31 10 16.55 10C19.14 10 19.62 11.7 19.62 13.92V18.5H19.65Z" fill="#FFFFFF"/></svg>
+              </a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-icon" data-track="social_click" data-cta-position="footer_instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="igGradBadge_footer" x1="100%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#833AB4"/><stop offset="35%" stop-color="#C13584"/><stop offset="65%" stop-color="#E1306C"/><stop offset="85%" stop-color="#FD1D1D"/><stop offset="100%" stop-color="#F77737"/></linearGradient></defs><rect width="24" height="24" rx="5.5" fill="url(#igGradBadge_footer)"/><rect x="5.5" y="5.5" width="13" height="13" rx="3.5" stroke="#FFFFFF" stroke-width="1.8" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="#FFFFFF" stroke-width="1.8" fill="none"/><circle cx="15.8" cy="8.2" r="1" fill="#FFFFFF"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span data-i18n="footer.rights">© 2026 CONEXUS. Todos os direitos reservados.</span>
+        </div>
+        <div class="footer-signature">
+          <span data-i18n="footer.devBy">Desenvolvido por</span> <a href="/" class="signature-link">CONEXUS</a>
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="/grana/politica-de-privacidade/" style="color: var(--color-text-muted);">Privacidade do GRANA</a>
+          <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.privacy">Política de Privacidade</a>
+          <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.terms">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Conheci%20o%20case%20do%20aplicativo%20GRANA%20pela%20CONEXUS%20e%20gostaria%20de%20conversar%20sobre%20desenvolvimento%20mobile." target="_blank" rel="noopener noreferrer" data-whatsapp-key="homeHero" class="whatsapp-float" aria-label="Conversar pelo WhatsApp" data-track="whatsapp_click" data-cta-position="floating_button">
+    <span class="whatsapp-tooltip" data-i18n="common.chatWhatsapp">Conversar pelo WhatsApp</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#FFFFFF" viewBox="0 0 448 512">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+  </a>
+
+  <script type="module" src="/src/js/main.js?v=20261006.01"></script>
+</body>
+</html>
