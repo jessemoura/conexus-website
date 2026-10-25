@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Auditoria Visual Final — As 10 Capas em 16:9 vs. CuritiPão 2026</title>
+  <style>
+    body {
+      background: #061426;
+      color: #F5F8FC;
+      font-family: 'Inter', -apple-system, sans-serif;
+      padding: 2rem 1rem 4rem;
+    }
+    .header {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 2.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #FFF;
+      margin-bottom: 0.5rem;
+    }
+    p.sub {
+      color: #94A3B8;
+      font-size: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #0B2340;
+      border: 1px solid rgba(184, 197, 211, 0.14);
+      border-radius: 14px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .card.reference {
+      border: 2px solid #21B8F6;
+      background: linear-gradient(180deg, #0D2D52 0%, #0B2340 100%);
+    }
+    .img-box {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #000;
+      margin-bottom: 1rem;
+    }
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .badge {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    .badge-ref { background: #21B8F6; color: #061426; }
+    .badge-batch1 { background: #10B981; color: #061426; }
+    .badge-batch2 { background: #6366F1; color: #FFF; }
+    h3 {
+      font-size: 1.1rem;
+      color: #FFF;
+      margin: 0 0 0.5rem;
+    }
+    .details {
+      font-size: 0.85rem;
+      color: #94A3B8;
+      line-height: 1.4;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Painel das 10 Capas 16:9 Recompostas</h1>
+    <p class="sub">Todas as capas no padrão horizontal 16:9 (1200x675), sem barras laterais, sem cortes de logos ou textos, proporção perfeita idêntica ao CuritiPão 2026.</p>
+  </div>
+
+  <div class="grid">
+    <!-- 0. REFERÊNCIA -->
+    <div class="card reference">
+      <span class="badge badge-ref">⭐ REFERÊNCIA APROVADA</span>
+      <div class="img-box">
+        <img src="/assets/images/curitipao-2026-festival-panificacao-curitiba-cover.webp" alt="CuritiPão 2026">
+      </div>
+      <h3>CuritiPão 2026</h3>
+      <div class="details">Padrão visual aprovado (horizontal full bleed 16:9).</div>
+    </div>
+
+    <!-- 1. ATTHOS COMEX -->
+    <div class="card">
+      <span class="badge badge-batch1">1. ATTHOS COMEX</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-atthos-comex-16x9.webp" alt="Atthos Comex">
+      </div>
+      <h3>Atthos Comex</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo 3D, navio, mockups preservados.</div>
+    </div>
+
+    <!-- 2. DI PIALLATO -->
+    <div class="card">
+      <span class="badge badge-batch1">2. DI PIALLATO</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-di-piallato-16x9.webp" alt="Di Piallato">
+      </div>
+      <h3>Di Piallato Gelateria</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo, slogan, gelato, mockups preservados.</div>
+    </div>
+
+    <!-- 3. SÓQUINDINS -->
+    <div class="card">
+      <span class="badge badge-batch1">3. SÓQUINDINS (PROPOSTA A)</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-soquindins-top-16x9.webp" alt="SóQuindins">
+      </div>
+      <h3>SóQuindins</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Mascote, logo, tradição 50 anos e telas.</div>
+    </div>
+
+    <!-- 4. FAST GUINCHO -->
+    <div class="card">
+      <span class="badge badge-batch1">4. FAST GUINCHO</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-fast-guincho-16x9.webp" alt="Fast Guincho">
+      </div>
+      <h3>Fast Guincho</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo, texto 24h, guincho e mockups 100%.</div>
+    </div>
+
+    <!-- 5. MICHELLY CORREA -->
+    <div class="card">
+      <span class="badge badge-batch2">5. MICHELLY CORREA</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-michelly-correa-16x9.webp" alt="Michelly Correa">
+      </div>
+      <h3>Michelly Correa</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo oficial, foto, mockups e tipografia integral.</div>
+    </div>
+
+    <!-- 6. LITTLE PET -->
+    <div class="card">
+      <span class="badge badge-batch2">6. LITTLE PET</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-little-pet-16x9.webp" alt="Little Pet">
+      </div>
+      <h3>Little Pet</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo com patinha, mockups e lettering íntegros.</div>
+    </div>
+
+    <!-- 7. NIKKI STUDIO -->
+    <div class="card">
+      <span class="badge badge-batch2">7. NIKKI STUDIO</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-nikki-studio-16x9.webp" alt="Nikki Studio">
+      </div>
+      <h3>Nikki Studio</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo sofisticado, tipografia e mockups no UK.</div>
+    </div>
+
+    <!-- 8. LUMORA CLEANING -->
+    <div class="card">
+      <span class="badge badge-batch2">8. LUMORA CLEANING</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-lumora-cleaning-services-16x9.webp" alt="Lumora Cleaning">
+      </div>
+      <h3>Lumora Cleaning</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo, crachás de serviços, mockups desktop e mobile.</div>
+    </div>
+
+    <!-- 9. SOS ABERTURAS -->
+    <div class="card">
+      <span class="badge badge-batch2">9. SOS ABERTURAS</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-sos-aberturas-16x9.webp" alt="SOS Aberturas">
+      </div>
+      <h3>SOS Aberturas</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo, chave/fechadura, 24 horas e mockups Lisboa.</div>
+    </div>
+
+    <!-- 10. WELCOME BOOK -->
+    <div class="card">
+      <span class="badge badge-batch2">10. WELCOME BOOK DIGITAL</span>
+      <div class="img-box">
+        <img src="/assets/images/preview-case-welcome-book-digital-16x9.webp" alt="Welcome Book Digital">
+      </div>
+      <h3>Welcome Book Digital</h3>
+      <div class="details">Recomposição 16:9 (1200x675) — Logo CONEXUS Guest Hub, mockups do guia interativo.</div>
+    </div>
+  </div>
+</body>
+</html>

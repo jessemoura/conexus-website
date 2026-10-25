@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prévia Comparativa — Recomposição das Capas 16:9 | CONEXUS</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body {
+      background-color: #061426;
+      color: #F5F8FC;
+      font-family: 'Inter', -apple-system, sans-serif;
+      padding: 2rem 1rem 4rem;
+    }
+    .preview-header {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 3rem;
+    }
+    .preview-badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      background: rgba(33, 184, 246, 0.15);
+      border: 1px solid rgba(33, 184, 246, 0.3);
+      color: #21B8F6;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    .preview-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .preview-subtitle {
+      font-size: 1.05rem;
+      color: #B8C5D3;
+      line-height: 1.6;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto 3rem;
+    }
+    .card-preview {
+      background: #0B2340;
+      border: 1px solid rgba(184, 197, 211, 0.14);
+      border-radius: 16px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .card-preview.reference {
+      border: 2px solid #21B8F6;
+      background: linear-gradient(180deg, #0D2D52 0%, #0B2340 100%);
+    }
+    .cover-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1.25rem;
+      background: #000;
+    }
+    .cover-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .card-badge {
+      align-self: flex-start;
+      padding: 0.3rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .card-badge.ref {
+      background: #21B8F6;
+      color: #061426;
+    }
+    .card-badge.new {
+      background: rgba(33, 184, 246, 0.2);
+      color: #21B8F6;
+      border: 1px solid rgba(33, 184, 246, 0.4);
+    }
+    .card-badge.opt {
+      background: rgba(243, 156, 18, 0.2);
+      color: #F39C12;
+      border: 1px solid rgba(243, 156, 18, 0.4);
+    }
+    .card-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #FFF;
+    }
+    .card-notes {
+      font-size: 0.9rem;
+      color: #B8C5D3;
+      line-height: 1.5;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(184, 197, 211, 0.1);
+    }
+    .status-tag {
+      font-weight: 600;
+      color: #4ADE80;
+    }
+    .warning-tag {
+      font-weight: 600;
+      color: #FBBF24;
+    }
+  </style>
+  <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+
+    // Google Consent Mode v2 - Conformidade LGPD (analytics_storage = denied por padrão sem consentimento prévio)
+    var storedConsent = null;
+    try {
+      storedConsent = localStorage.getItem('conexus_analytics_consent');
+    } catch (e) {}
+
+    gtag('consent', 'default', {
+      'analytics_storage': storedConsent === 'granted' ? 'granted' : 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+
+    gtag('js', new Date());
+
+    // Carregamento condicional: tag analítica só carrega se houver autorização prévia registrada
+    if (storedConsent === 'granted') {
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-04S0NFMW2M';
+      document.head.appendChild(gaScript);
+      gtag('config', 'G-04S0NFMW2M', { send_page_view: true });
+    }
+  </script>
+
+
+  <link rel="stylesheet" crossorigin href="/assets/cookieConsent-DfrqGTLp.css">
+</head>
+<body>
+
+  <header class="preview-header">
+    <span class="preview-badge">Etapa 1 — Painel de Aprovação Obrigatória</span>
+    <h1 class="preview-title">Comparativo das 3 Novas Capas em 16:9 vs. CuritiPão</h1>
+    <p class="preview-subtitle">
+      Todas as capas abaixo estão exibidas no mesmo formato horizontal <strong>16:9</strong> com <strong>preenchimento visual completo (sem barras laterais e sem object-fit contain)</strong>, exatamente na mesma dimensão de referência da capa do CuritiPão.
+    </p>
+  </header>
+
+  <main>
+    <div class="comparison-grid">
+
+      <!-- REFERÊNCIA: CURITIPÃO -->
+      <div class="card-preview reference">
+        <span class="card-badge ref">⭐ REFERÊNCIA DE TAMANHO & ESTILO</span>
+        <div class="cover-frame">
+          <img src="/assets/images/curitipao-2026-festival-panificacao-curitiba-cover.webp" alt="CuritiPão 2026 - Capa de Referência">
+        </div>
+        <h2 class="card-name">CuritiPão 2026 (Referência)</h2>
+        <p style="font-size: 0.95rem; color: #E2E8F0; margin-bottom: 0.5rem;">Arte horizontal original com preenchimento total e equilíbrio de elementos à esquerda e à direita.</p>
+        <div class="card-notes">
+          <span class="status-tag">✓ Padrão Visual Aprovado</span> • Formato horizontal 16:9 full bleed.
+        </div>
+      </div>
+
+      <!-- CASE 1: DI PIALLATO -->
+      <div class="card-preview">
+        <span class="card-badge new">CASE 1 — ADAPTAÇÃO 16:9 NATIVA</span>
+        <div class="cover-frame">
+          <img src="/assets/images/preview-case-di-piallato-16x9.webp" alt="Di Piallato Gelateria - Capa Proposta 16:9">
+        </div>
+        <h2 class="card-name">Di Piallato Gelateria</h2>
+        <p style="font-size: 0.95rem; color: #E2E8F0; margin-bottom: 0.5rem;">Adaptada do master horizontal 3:2 com enquadramento proporcional 16:9 perfeito.</p>
+        <div class="card-notes">
+          <span class="status-tag">✓ 100% de Preservação:</span> Logotipo oficial, slogan, 3 ícones, texto completo, copo de gelato pistache, laptop com o site, celular mobile e lettering superior. Sem perdas.
+        </div>
+      </div>
+
+      <!-- CASE 2: ATTHOS COMEX -->
+      <div class="card-preview">
+        <span class="card-badge new">CASE 2 — ENQUADRAMENTO HORIZONTAL 16:9</span>
+        <div class="cover-frame">
+          <img src="/assets/images/preview-case-atthos-comex-16x9.webp" alt="Atthos Comex - Capa Proposta 16:9">
+        </div>
+        <h2 class="card-name">Atthos Comex</h2>
+        <p style="font-size: 0.95rem; color: #E2E8F0; margin-bottom: 0.5rem;">Enquadramento horizontal full bleed focado nos elementos de autoridade e tecnologia.</p>
+        <div class="card-notes">
+          <span class="status-tag">✓ Elementos Preservados:</span> Logotipo oficial 3D metálico, avião, navio porta-contêineres, headline institucional, 4 ícones, tela integral do laptop com o site e celular.
+        </div>
+      </div>
+
+      <!-- CASE 3: SÓQUINDINS (PROPOSTA A) -->
+      <div class="card-preview">
+        <span class="card-badge new">CASE 3 — PROPOSTA A (AUTORIDADE & MOCKUPS)</span>
+        <div class="cover-frame">
+          <img src="/assets/images/preview-case-soquindins-top-16x9.webp" alt="SóQuindins - Proposta A 16:9">
+        </div>
+        <h2 class="card-name">SóQuindins (Proposta A)</h2>
+        <p style="font-size: 0.95rem; color: #E2E8F0; margin-bottom: 0.5rem;">Foco na marca institucional, história de 50 anos, cardápio digital e presença web.</p>
+        <div class="card-notes">
+          <span class="status-tag">✓ Preservados:</span> Logotipo oficial vermelho com mascote, slogan "Tradição que adoça Curitiba", texto de história, 4 ícones, laptop com o site, celular e letreiro neon da loja.
+        </div>
+      </div>
+
+      <!-- CASE 3: SÓQUINDINS (PROPOSTA B) -->
+      <div class="card-preview">
+        <span class="card-badge opt">CASE 3 — PROPOSTA B (PRODUTO & GASTRONOMIA)</span>
+        <div class="cover-frame">
+          <img src="/assets/images/preview-case-soquindins-bottom-16x9.webp" alt="SóQuindins - Proposta B 16:9">
+        </div>
+        <h2 class="card-name">SóQuindins (Proposta B)</h2>
+        <p style="font-size: 0.95rem; color: #E2E8F0; margin-bottom: 0.5rem;">Foco gastronômico na mesa da confeitaria com o quindim e torta Martha Rocha.</p>
+        <div class="card-notes">
+          <span class="warning-tag">⚠️ Limitação Geométrica do Master 1:1:</span> Mostra o Quindim tradicional, bolo Martha Rocha, xícara de café e telas digitais, porém o logotipo vermelho do topo fica fora do corte horizontal.
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

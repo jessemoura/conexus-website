@@ -1,0 +1,1 @@
+import{i as n,a as e,b as t,c as a,d as s,e as o}from"./i18n.js_v_20261006-HmWev4G1.js";function i(){n(),e(),t(),a(),s(),o()}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",i):i();
