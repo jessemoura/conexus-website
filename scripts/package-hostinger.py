@@ -58,6 +58,7 @@ required_samples = [
     "grana/politica-de-privacidade/index.html",
     "servicos/index.html",
     "servicos/desenvolvimento-de-aplicativos/index.html",
+    "meu-carrinho/politica-de-privacidade/index.html",
     "sitemap.xml",
     "robots.txt",
     "favicon.ico",
