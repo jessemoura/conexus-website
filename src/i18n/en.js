@@ -11772,6 +11772,7 @@ export const en = {
       "sec2SubDTitle": "D. Category Breakdown Reports",
       "sec2SubDP": "Viewing spending proportions in a distribution chart enables immediate detection of budget leaks. If dining out or recurring digital subscriptions exceed the planned ceiling, users notice it visually well before the billing cycle concludes.",
       "cap3": "Dynamic budget targets: visual percentage tracking to support short- and medium-term financial goals.",
+      "cap4": "Category analytics reports: decision making driven by real consumption and spending data.",
       "sec3Title": "3. Internationalization: Languages & Multiple Currencies",
       "sec3P1": "CONEXUS maintains connected operations across Brazil, the United Kingdom, and Portugal. This global footprint directly influenced the engineering of GRANA. From the initial codebase, the interface was built with internationalization (i18n) architecture and multi-currency formatting:",
       "sec3B1": "<strong>Flexible Currency Formatting:</strong> native support for Brazilian Real (R$ / BRL), Euro (€ / EUR), British Pound (£ / GBP), and US Dollar ($ / USD), with decimal and thousands separators calibrated for each region.",

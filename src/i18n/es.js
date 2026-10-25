@@ -11772,6 +11772,7 @@ export const es = {
       "sec2SubDTitle": "D. Informes Analíticos por Categoría",
       "sec2SubDP": "Visualizar la proporción de los gastos en un gráfico de distribución permite detectar desviaciones rápidamente. Si la categoría de restauración o suscripciones digitales superó el límite planeado, el usuario lo percibe gráficamente antes de que cierre el ciclo mensual.",
       "cap3": "Metas presupuestarias dinámicas: seguimiento porcentual visual para respaldar objetivos a corto y medio plazo.",
+      "cap4": "Informes analíticos por categoría: toma de decisiones orientada a datos reales de consumo y gastos.",
       "sec3Title": "3. Internacionalización: Idiomas y Múltiples Monedas",
       "sec3P1": "CONEXUS cuenta con presencia conectada entre Brasil, el Reino Unido y Portugal. Esta identidad global influyó directamente en el desarrollo de GRANA. Desde la arquitectura inicial de código, la interfaz se preparó con soporte para internacionalización (i18n) y múltiples sistemas monetarios:",
       "sec3B1": "<strong>Formato Monetario Flexible:</strong> soporte para Real Brasileño (R$ / BRL), Euro (€ / EUR), Libra Esterlina (£ / GBP) y Dólar ($ / USD), con puntuación decimal y separadores de miles calibrados según cada región.",
