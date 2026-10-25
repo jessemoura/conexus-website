@@ -1558,6 +1558,11 @@ body.menu-open .whatsapp-float {
   color: #0066B3 !important;
 }
 
+[data-theme="light"] .stacked-card.card-grana .stacked-card-num,
+[data-theme="light"] .stacked-card.card-grana .stacked-card-tag {
+  color: #00897B !important;
+}
+
 [data-theme="light"] .ecosystem-section {
   background-color: #F4F7FA;
   border-top-color: rgba(0, 58, 112, 0.14);
@@ -2227,6 +2232,15 @@ body.menu-open .whatsapp-float {
   color: #21B8F6;
 }
 
+.stacked-card.card-grana {
+  border-color: rgba(0, 191, 165, 0.45);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 191, 165, 0.15);
+}
+.stacked-card.card-grana .stacked-card-num,
+.stacked-card.card-grana .stacked-card-tag {
+  color: #00BFA5;
+}
+
 @media (min-width: 992px) {
   .stacked-cards-container {
     padding-top: 1rem;
@@ -2250,6 +2264,7 @@ body.menu-open .whatsapp-float {
   .stacked-card:nth-child(6) { z-index: 6; }
   .stacked-card:nth-child(7) { z-index: 7; }
   .stacked-card:nth-child(8) { z-index: 8; }
+  .stacked-card:nth-child(9) { z-index: 9; }
 
   /* Smooth reveal & advance on hover / focus */
   .stacked-card:hover,
@@ -2266,6 +2281,7 @@ body.menu-open .whatsapp-float {
   .stacked-card.card-oxford:hover { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(212, 175, 55, 0.35); }
   .stacked-card.card-michelly:hover { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(255, 255, 255, 0.25); }
   .stacked-card.card-conexxus-uk:hover { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(33, 184, 246, 0.35); }
+  .stacked-card.card-grana:hover { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(0, 191, 165, 0.35); }
 
   /* Slide subsequent cards down to uncover hovered card completely */
   .stacked-card:hover ~ .stacked-card,
