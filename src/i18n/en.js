@@ -515,7 +515,22 @@ export const en = {
     "devFocus": "Engineered with focus on high performance and digital authority.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "cookies": "Cookie Preferences"
+    "cookies": "Cookie Preferences",
+    "serviceSeo": "SEO for Business",
+    "serviceLocalSeo": "Local SEO & Google",
+    "serviceSocial": "Social Media Management",
+    "locations": "Brazil & International",
+    "copyright": "© 2026 CONEXUS. All rights reserved.",
+    "s1": "Website Creation",
+    "s2": "One Page Website",
+    "s3": "SEO for Business",
+    "s4": "Local SEO & Google Maps",
+    "s5": "Branding & Identity",
+    "s6": "Social Media Management",
+    "desc": "Digital marketing agency specialized in online presence, website creation, and business growth.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact & Social",
+    "wa": "Chat on WhatsApp"
   },
   "whatsapp": {
     "homeHero": "Hello! I am browsing the CONEXUS website and would like to understand how to strengthen my company's digital presence.",
@@ -625,7 +640,8 @@ export const en = {
     "readTime10": "10 min read",
     "readTime12": "12 min read",
     "readTime15": "15 min read",
-    "visitWebsite": "Visit Website ↗"
+    "visitWebsite": "Visit Website ↗",
+    "faq": "Frequently Asked Questions"
   },
   "sobre": {
     "badge": "DISCOVER CONEXUS",
@@ -2516,7 +2532,7 @@ export const en = {
       "imageAlt": "Marketing digital para empresas de Campo Largo — CONEXUS"
     },
     "blog_criacao_de_sites_em_sao_jose_dos_pinhais_guia_para_empresas": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "Website creation in São José dos Pinhais: guide for businesses",
       "k4": "Explore in-depth insights and actionable recommendations: website creation in são josé dos pinhais: guide for businesses. Practical guidance by CONEXUS.",
@@ -2576,7 +2592,7 @@ export const en = {
       "imageAlt": "Criação de sites em São José dos Pinhais: guia para empresas — CONEXUS"
     },
     "blog_criacao_de_sites_em_curitiba_o_que_avaliar_antes_de_contratar": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "Website creation in Curitiba: what to evaluate before hiring",
       "k4": "Explore in-depth insights and actionable recommendations: website creation in curitiba: what to evaluate before hiring. Practical guidance by CONEXUS.",
@@ -2636,7 +2652,7 @@ export const en = {
       "imageAlt": "Criação de sites em Curitiba: o que avaliar antes de contratar — CONEXUS"
     },
     "blog_quanto_custa_criar_um_site_profissional_para_uma_pequena_empresa": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "How much does it cost to create a professional website for a small business",
       "k4": "Explore in-depth insights and actionable recommendations: how much does it cost to create a professional website for a small business. Practical guidance by CONEXUS.",
@@ -2696,7 +2712,7 @@ export const en = {
       "imageAlt": "Quanto custa criar um site profissional para uma pequena empresa — CONEXUS"
     },
     "blog_o_que_um_site_empresarial_precisa_ter_para_gerar_contatos": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "What a business website needs to generate leads",
       "k4": "Explore in-depth insights and actionable recommendations: what a business website needs to generate leads. Practical guidance by CONEXUS.",
@@ -2756,7 +2772,7 @@ export const en = {
       "imageAlt": "O que um site empresarial precisa ter para gerar contatos — CONEXUS"
     },
     "blog_site_institucional_estrutura_ideal_para_empresas_locais": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "Corporate website: ideal structure for local businesses",
       "k4": "Explore in-depth insights and actionable recommendations: corporate website: ideal structure for local businesses. Practical guidance by CONEXUS.",
@@ -2816,7 +2832,7 @@ export const en = {
       "imageAlt": "Site institucional: estrutura ideal para empresas locais — CONEXUS"
     },
     "blog_como_transformar_visitantes_do_site_em_contatos_pelo_whatsapp": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "How to turn website visitors into WhatsApp inquiries",
       "k4": "Explore in-depth insights and actionable recommendations: how to turn website visitors into whatsapp inquiries. Practical guidance by CONEXUS.",
@@ -2876,7 +2892,7 @@ export const en = {
       "imageAlt": "Como transformar visitantes do site em contatos pelo WhatsApp — CONEXUS"
     },
     "blog_quanto_tempo_leva_para_criar_um_site_profissional": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "How long does it take to build a professional website",
       "k4": "Explore in-depth insights and actionable recommendations: how long does it take to build a professional website. Practical guidance by CONEXUS.",
@@ -2936,7 +2952,7 @@ export const en = {
       "imageAlt": "Quanto tempo leva para criar um site profissional — CONEXUS"
     },
     "blog_site_barato_ou_site_profissional_onde_realmente_esta_a_diferenca": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "Cheap website vs professional website: where the difference really lies",
       "k4": "Explore in-depth insights and actionable recommendations: cheap website vs professional website: where the difference really lies. Practical guidance by CONEXUS.",
@@ -2996,7 +3012,7 @@ export const en = {
       "imageAlt": "Site barato ou site profissional: onde realmente está a diferença — CONEXUS"
     },
     "blog_como_saber_se_o_site_da_sua_empresa_precisa_ser_reconstruido": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "How to know if your company website needs a redesign",
       "k4": "Explore in-depth insights and actionable recommendations: how to know if your company website needs a redesign. Practical guidance by CONEXUS.",
@@ -3056,7 +3072,7 @@ export const en = {
       "imageAlt": "Como saber se o site da sua empresa precisa ser reconstruído — CONEXUS"
     },
     "blog_15_erros_que_fazem_um_site_empresarial_perder_clientes": {
-      "k1": "Criação de sites",
+      "k1": "Website Creation",
       "k2": "Criação de sites",
       "k3": "15 mistakes that cause a business website to lose customers",
       "k4": "Explore in-depth insights and actionable recommendations: 15 mistakes that cause a business website to lose customers. Practical guidance by CONEXUS.",
@@ -3116,7 +3132,7 @@ export const en = {
       "imageAlt": "15 erros que fazem um site empresarial perder clientes — CONEXUS"
     },
     "blog_como_aumentar_a_visibilidade_da_empresa_nas_pesquisas_locais_do_google": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "How to increase company visibility in Google local search",
       "k4": "Explore in-depth insights and actionable recommendations: how to increase company visibility in google local search. Practical guidance by CONEXUS.",
@@ -3176,7 +3192,7 @@ export const en = {
       "imageAlt": "Como aumentar a visibilidade da empresa nas pesquisas locais do Google — CONEXUS"
     },
     "blog_como_aparecer_quando_alguem_procura_seu_servico_perto_de_mim": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "How to rank when someone searches for your service near me",
       "k4": "Explore in-depth insights and actionable recommendations: how to rank when someone searches for your service near me. Practical guidance by CONEXUS.",
@@ -3236,7 +3252,7 @@ export const en = {
       "imageAlt": "Como aparecer quando alguém procura seu serviço perto de mim — CONEXUS"
     },
     "blog_como_escolher_as_categorias_corretas_no_perfil_da_empresa_no_google": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "How to choose the right categories on Google Business Profile",
       "k4": "Explore in-depth insights and actionable recommendations: how to choose the right categories on google business profile. Practical guidance by CONEXUS.",
@@ -3296,7 +3312,7 @@ export const en = {
       "imageAlt": "Como escolher as categorias corretas no Perfil da Empresa no Google — CONEXUS"
     },
     "blog_como_escrever_servicos_e_produtos_no_perfil_da_empresa_no_google": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "How to list services and products on Google Business Profile",
       "k4": "Explore in-depth insights and actionable recommendations: how to list services and products on google business profile. Practical guidance by CONEXUS.",
@@ -3356,7 +3372,7 @@ export const en = {
       "imageAlt": "Como escrever serviços e produtos no Perfil da Empresa no Google — CONEXUS"
     },
     "blog_fotos_no_google_business_profile_como_melhorar_a_presenca_da_empresa": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "Photos on Google Business Profile: how to enhance company presence",
       "k4": "Explore in-depth insights and actionable recommendations: photos on google business profile: how to enhance company presence. Practical guidance by CONEXUS.",
@@ -3416,7 +3432,7 @@ export const en = {
       "imageAlt": "Fotos no Google Business Profile: como melhorar a presença da empresa — CONEXUS"
     },
     "blog_como_responder_avaliacoes_no_google_profissionalmente": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "How to respond to Google reviews professionally",
       "k4": "Explore in-depth insights and actionable recommendations: how to respond to google reviews professionally. Practical guidance by CONEXUS.",
@@ -3476,7 +3492,7 @@ export const en = {
       "imageAlt": "Como responder avaliações no Google profissionalmente — CONEXUS"
     },
     "blog_o_que_fazer_quando_sua_empresa_nao_aparece_nas_pesquisas_locais": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "What to do when your business does not appear in local search",
       "k4": "Explore in-depth insights and actionable recommendations: what to do when your business does not appear in local search. Practical guidance by CONEXUS.",
@@ -3536,7 +3552,7 @@ export const en = {
       "imageAlt": "O que fazer quando sua empresa não aparece nas pesquisas locais — CONEXUS"
     },
     "blog_como_site_e_perfil_da_empresa_no_google_trabalham_juntos": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "How website and Google Business Profile work together",
       "k4": "Explore in-depth insights and actionable recommendations: how website and google business profile work together. Practical guidance by CONEXUS.",
@@ -3596,7 +3612,7 @@ export const en = {
       "imageAlt": "Como site e Perfil da Empresa no Google trabalham juntos — CONEXUS"
     },
     "blog_como_criar_paginas_locais_sem_fazer_spam_de_localizacao": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "How to create local landing pages without location keyword stuffing",
       "k4": "Explore in-depth insights and actionable recommendations: how to create local landing pages without location keyword stuffing. Practical guidance by CONEXUS.",
@@ -3656,7 +3672,7 @@ export const en = {
       "imageAlt": "Como criar páginas locais sem fazer spam de localização — CONEXUS"
     },
     "blog_como_medir_se_sua_estrategia_de_seo_local_esta_funcionando": {
-      "k1": "SEO Local e Google",
+      "k1": "Local SEO & Google",
       "k2": "SEO Local e Google",
       "k3": "How to measure if your Local SEO strategy is working",
       "k4": "Explore in-depth insights and actionable recommendations: how to measure if your local seo strategy is working. Practical guidance by CONEXUS.",
@@ -3716,7 +3732,7 @@ export const en = {
       "imageAlt": "Como medir se sua estratégia de SEO Local está funcionando — CONEXUS"
     },
     "blog_como_escolher_palavras_chave_para_uma_empresa_local": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "How to choose keywords for a local business",
       "k4": "Explore in-depth insights and actionable recommendations: how to choose keywords for a local business. Practical guidance by CONEXUS.",
@@ -3768,7 +3784,7 @@ export const en = {
       "imageAlt": "Como escolher palavras-chave para uma empresa local — CONEXUS"
     },
     "blog_palavra_chave_comercial_ou_informativa_qual_gera_mais_oportunidades": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "Commercial vs informational keywords: which generates more opportunities?",
       "k4": "Explore in-depth insights and actionable recommendations: commercial vs informational keywords: which generates more opportunities?. Practical guidance by CONEXUS.",
@@ -3820,7 +3836,7 @@ export const en = {
       "imageAlt": "Palavra-chave comercial ou informativa: qual gera mais oportunidades? — CONEXUS"
     },
     "blog_como_criar_conteudo_que_realmente_apareca_no_google": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "How to create content that truly ranks on Google",
       "k4": "Explore in-depth insights and actionable recommendations: how to create content that truly ranks on google. Practical guidance by CONEXUS.",
@@ -3872,7 +3888,7 @@ export const en = {
       "imageAlt": "Como criar conteúdo que realmente apareça no Google — CONEXUS"
     },
     "blog_o_que_e_intencao_de_busca_e_por_que_ela_muda_uma_estrategia_de_seo": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "What is search intent and why it reshapes an SEO strategy",
       "k4": "Explore in-depth insights and actionable recommendations: what is search intent and why it reshapes an seo strategy. Practical guidance by CONEXUS.",
@@ -3924,7 +3940,7 @@ export const en = {
       "imageAlt": "O que é intenção de busca e por que ela muda uma estratégia de SEO — CONEXUS"
     },
     "blog_topic_clusters_como_construir_autoridade_no_google": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "Topic clusters: how to build topical authority on Google",
       "k4": "Explore in-depth insights and actionable recommendations: topic clusters: how to build topical authority on google. Practical guidance by CONEXUS.",
@@ -3976,7 +3992,7 @@ export const en = {
       "imageAlt": "Topic clusters: como construir autoridade no Google — CONEXUS"
     },
     "blog_links_internos_como_fortalecer_as_paginas_mais_importantes_do_site": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "Internal linking: how to strengthen the most important pages of your website",
       "k4": "Explore in-depth insights and actionable recommendations: internal linking: how to strengthen the most important pages of your website. Practical guidance by CONEXUS.",
@@ -4028,7 +4044,7 @@ export const en = {
       "imageAlt": "Links internos: como fortalecer as páginas mais importantes do site — CONEXUS"
     },
     "blog_seo_on_page_checklist_completo_para_paginas_empresariais": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "On-page SEO: complete checklist for business web pages",
       "k4": "Explore in-depth insights and actionable recommendations: on-page seo: complete checklist for business web pages. Practical guidance by CONEXUS.",
@@ -4080,7 +4096,7 @@ export const en = {
       "imageAlt": "SEO on-page: checklist completo para páginas empresariais — CONEXUS"
     },
     "blog_seo_tecnico_para_pequenas_empresas_o_que_realmente_importa": {
-      "k1": "SEO and Content",
+      "k1": "SEO & Content",
       "k2": "SEO and Content",
       "k3": "Technical SEO for small businesses: what truly matters",
       "k4": "Explore in-depth insights and actionable recommendations: technical seo for small businesses: what truly matters. Practical guidance by CONEXUS.",
@@ -4132,7 +4148,7 @@ export const en = {
       "imageAlt": "Technical SEO for small businesses: what really matters — CONEXUS"
     },
     "blog_como_atualizar_conteudos_antigos_e_recuperar_trafego_organico": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "How to update legacy content and recover organic traffic",
       "k4": "Explore in-depth insights and actionable recommendations: how to update legacy content and recover organic traffic. Practical guidance by CONEXUS.",
@@ -4184,7 +4200,7 @@ export const en = {
       "imageAlt": "Como atualizar conteúdos antigos e recuperar tráfego orgânico — CONEXUS"
     },
     "blog_canibalizacao_de_palavras_chave_quando_suas_proprias_paginas_competem_entre_si": {
-      "k1": "SEO e Conteúdo",
+      "k1": "SEO & Content",
       "k2": "SEO e Conteúdo",
       "k3": "Keyword cannibalization: when your own pages compete against each other",
       "k4": "Explore in-depth insights and actionable recommendations: keyword cannibalization: when your own pages compete against each other. Practical guidance by CONEXUS.",
@@ -4236,7 +4252,7 @@ export const en = {
       "imageAlt": "Canibalização de palavras-chave: quando suas próprias páginas competem entre si — CONEXUS"
     },
     "blog_geo_como_preparar_sua_empresa_para_ser_encontrada_por_inteligencias_artificiais": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "GEO: how to prepare your company to be cited by artificial intelligence",
       "k4": "Explore in-depth insights and actionable recommendations: geo: how to prepare your company to be cited by artificial intelligence. Practical guidance by CONEXUS.",
@@ -4294,7 +4310,7 @@ export const en = {
       "imageAlt": "GEO: como preparar sua empresa para ser encontrada por inteligências artificiais — CONEXUS"
     },
     "blog_aeo_como_otimizar_conteudo_para_mecanismos_de_resposta": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "AEO: how to optimize content for answer engines",
       "k4": "Explore in-depth insights and actionable recommendations: aeo: how to optimize content for answer engines. Practical guidance by CONEXUS.",
@@ -4352,7 +4368,7 @@ export const en = {
       "imageAlt": "AEO: como otimizar conteúdo para mecanismos de resposta — CONEXUS"
     },
     "blog_seo_para_chatgpt_google_ai_e_mecanismos_de_busca_com_inteligencia_artificial": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "SEO for ChatGPT, Google AI, and AI-powered search engines",
       "k4": "Explore in-depth insights and actionable recommendations: seo for chatgpt, google ai, and ai-powered search engines. Practical guidance by CONEXUS.",
@@ -4410,7 +4426,7 @@ export const en = {
       "imageAlt": "SEO para ChatGPT, Google AI e mecanismos de busca com inteligência artificial — CONEXUS"
     },
     "blog_seo_tradicional_vai_acabar_por_causa_da_inteligencia_artificial": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "Will traditional SEO die because of artificial intelligence?",
       "k4": "Explore in-depth insights and actionable recommendations: will traditional seo die because of artificial intelligence?. Practical guidance by CONEXUS.",
@@ -4468,7 +4484,7 @@ export const en = {
       "imageAlt": "SEO tradicional vai acabar por causa da inteligência artificial? — CONEXUS"
     },
     "blog_como_estruturar_um_site_para_mecanismos_de_busca_e_assistentes_de_ia": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "How to structure a website for search engines and AI assistants",
       "k4": "Explore in-depth insights and actionable recommendations: how to structure a website for search engines and ai assistants. Practical guidance by CONEXUS.",
@@ -4526,7 +4542,7 @@ export const en = {
       "imageAlt": "Como estruturar um site para mecanismos de busca e assistentes de IA — CONEXUS"
     },
     "blog_como_criar_conteudo_que_possa_ser_citado_por_inteligencias_artificiais": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "How to create content primed to be cited by AI models",
       "k4": "Explore in-depth insights and actionable recommendations: how to create content primed to be cited by ai models. Practical guidance by CONEXUS.",
@@ -4584,7 +4600,7 @@ export const en = {
       "imageAlt": "Como criar conteúdo que possa ser citado por inteligências artificiais — CONEXUS"
     },
     "blog_dados_estruturados_e_ia_por_que_schema_org_esta_ainda_mais_importante": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "Structured data and AI: why Schema.org is now more important than ever",
       "k4": "Explore in-depth insights and actionable recommendations: structured data and ai: why schema.org is now more important than ever. Practical guidance by CONEXUS.",
@@ -4642,7 +4658,7 @@ export const en = {
       "imageAlt": "Dados estruturados e IA: por que Schema.org está ainda mais importante — CONEXUS"
     },
     "blog_faqs_ainda_funcionam_para_seo_e_buscas_por_inteligencia_artificial": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "Do FAQs still work for SEO and AI search queries?",
       "k4": "Explore in-depth insights and actionable recommendations: do faqs still work for seo and ai search queries?. Practical guidance by CONEXUS.",
@@ -4700,7 +4716,7 @@ export const en = {
       "imageAlt": "FAQs ainda funcionam para SEO e buscas por inteligência artificial? — CONEXUS"
     },
     "blog_e_e_a_t_como_demonstrar_experiencia_e_autoridade_online": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "E-E-A-T: how to demonstrate experience, expertise, and authority online",
       "k4": "Explore in-depth insights and actionable recommendations: e-e-a-t: how to demonstrate experience, expertise, and authority online. Practical guidance by CONEXUS.",
@@ -4758,7 +4774,7 @@ export const en = {
       "imageAlt": "E-E-A-T: como demonstrar experiência e autoridade online — CONEXUS"
     },
     "blog_busca_sem_clique_como_empresas_podem_continuar_conquistando_clientes": {
-      "k1": "GEO, AEO e Busca com IA",
+      "k1": "GEO, AEO & AI Search",
       "k2": "GEO, AEO e Busca com IA",
       "k3": "Zero-click searches: how companies can continue winning customers",
       "k4": "Explore in-depth insights and actionable recommendations: zero-click searches: how companies can continue winning customers. Practical guidance by CONEXUS.",
@@ -4816,7 +4832,7 @@ export const en = {
       "imageAlt": "Busca sem clique: como empresas podem continuar conquistando clientes — CONEXUS"
     },
     "blog_como_transformar_um_site_institucional_em_ferramenta_de_vendas": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "How to turn a corporate website into an active sales tool",
       "k4": "Explore in-depth insights and actionable recommendations: how to turn a corporate website into an active sales tool. Practical guidance by CONEXUS.",
@@ -4850,7 +4866,7 @@ export const en = {
       "imageAlt": "Como transformar um site institucional em ferramenta de vendas — CONEXUS"
     },
     "blog_cta_como_levar_visitantes_do_site_a_entrar_em_contato": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "CTA: how to guide website visitors to reach out",
       "k4": "Explore in-depth insights and actionable recommendations: cta: how to guide website visitors to reach out. Practical guidance by CONEXUS.",
@@ -4870,7 +4886,7 @@ export const en = {
       "imageAlt": "CTA: como levar visitantes do site a entrar em contato — CONEXUS"
     },
     "blog_landing_page_ou_site_qual_usar_em_cada_estrategia": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "Landing page vs full website: which to choose for each strategy",
       "k4": "Explore in-depth insights and actionable recommendations: landing page vs full website: which to choose for each strategy. Practical guidance by CONEXUS.",
@@ -4904,7 +4920,7 @@ export const en = {
       "imageAlt": "Landing page ou site: qual usar em cada estratégia — CONEXUS"
     },
     "blog_como_aumentar_a_taxa_de_conversao_de_um_site_empresarial": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "How to increase the conversion rate of a corporate website",
       "k4": "Explore in-depth insights and actionable recommendations: how to increase the conversion rate of a corporate website. Practical guidance by CONEXUS.",
@@ -4938,7 +4954,7 @@ export const en = {
       "imageAlt": "Como aumentar a taxa de conversão de um site empresarial — CONEXUS"
     },
     "blog_por_que_muitos_sites_recebem_visitas_mas_nao_geram_clientes": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "Why many websites receive traffic but fail to generate customers",
       "k4": "Explore in-depth insights and actionable recommendations: why many websites receive traffic but fail to generate customers. Practical guidance by CONEXUS.",
@@ -4972,7 +4988,7 @@ export const en = {
       "imageAlt": "Por que muitos sites recebem visitas mas não geram clientes — CONEXUS"
     },
     "blog_formulario_ou_whatsapp_qual_converte_melhor_em_um_site_local": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "Contact form vs WhatsApp: which converts better on a local business website",
       "k4": "Explore in-depth insights and actionable recommendations: contact form vs whatsapp: which converts better on a local business website. Practical guidance by CONEXUS.",
@@ -5006,7 +5022,7 @@ export const en = {
       "imageAlt": "Formulário ou WhatsApp: qual converte melhor em um site local — CONEXUS"
     },
     "blog_como_criar_paginas_de_servicos_que_geram_oportunidades_comerciais": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "How to build service pages that drive commercial opportunities",
       "k4": "Explore in-depth insights and actionable recommendations: how to build service pages that drive commercial opportunities. Practical guidance by CONEXUS.",
@@ -5040,7 +5056,7 @@ export const en = {
       "imageAlt": "Como criar páginas de serviços que geram oportunidades comerciais — CONEXUS"
     },
     "blog_prova_social_como_avaliacoes_e_cases_aumentam_conversoes": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "Social proof: how reviews and case studies elevate conversion rates",
       "k4": "Explore in-depth insights and actionable recommendations: social proof: how reviews and case studies elevate conversion rates. Practical guidance by CONEXUS.",
@@ -5074,7 +5090,7 @@ export const en = {
       "imageAlt": "Prova social: como avaliações e cases aumentam conversões — CONEXUS"
     },
     "blog_como_usar_cases_de_clientes_para_fortalecer_a_credibilidade_da_empresa": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "How to leverage client case studies to strengthen company credibility",
       "k4": "Explore in-depth insights and actionable recommendations: how to leverage client case studies to strengthen company credibility. Practical guidance by CONEXUS.",
@@ -5108,7 +5124,7 @@ export const en = {
       "imageAlt": "Como usar cases de clientes para fortalecer a credibilidade da empresa — CONEXUS"
     },
     "blog_jornada_do_cliente_do_google_ate_o_primeiro_contato": {
-      "k1": "Conversão e geração de clientes",
+      "k1": "Conversion & Lead Generation",
       "k2": "Conversão e geração de clientes",
       "k3": "Customer journey: from the initial Google search to the first inquiry",
       "k4": "Explore in-depth insights and actionable recommendations: customer journey: from the initial google search to the first inquiry. Practical guidance by CONEXUS.",
@@ -5142,7 +5158,7 @@ export const en = {
       "imageAlt": "Jornada do cliente: do Google até o primeiro contato — CONEXUS"
     },
     "blog_marketing_digital_para_restaurantes_em_curitiba_e_regiao_metropolitana": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for restaurants in Curitiba and Metropolitan Region",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for restaurants in curitiba and metropolitan region. Practical guidance by CONEXUS.",
@@ -5193,7 +5209,7 @@ export const en = {
       "imageAlt": "Marketing digital para restaurantes em Curitiba e Região Metropolitana — CONEXUS"
     },
     "blog_marketing_digital_para_confeitarias_e_padarias": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for bakeries and pastry shops",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for bakeries and pastry shops. Practical guidance by CONEXUS.",
@@ -5244,7 +5260,7 @@ export const en = {
       "imageAlt": "Marketing digital para confeitarias e padarias — CONEXUS"
     },
     "blog_marketing_digital_para_gelaterias_e_sorveterias": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for artisan gelaterias and ice cream parlors",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for artisan gelaterias and ice cream parlors. Practical guidance by CONEXUS.",
@@ -5295,7 +5311,7 @@ export const en = {
       "imageAlt": "Marketing digital para gelaterias e sorveterias — CONEXUS"
     },
     "blog_marketing_digital_para_clinicas_e_profissionais_de_saude": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for healthcare clinics and medical professionals",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for healthcare clinics and medical professionals. Practical guidance by CONEXUS.",
@@ -5346,7 +5362,7 @@ export const en = {
       "imageAlt": "Marketing digital para clínicas e profissionais de saúde — CONEXUS"
     },
     "blog_marketing_digital_para_escritorios_de_advocacia": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for law firms and legal professionals",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for law firms and legal professionals. Practical guidance by CONEXUS.",
@@ -5397,7 +5413,7 @@ export const en = {
       "imageAlt": "Marketing digital para escritórios de advocacia — CONEXUS"
     },
     "blog_marketing_digital_para_empresas_de_comercio_exterior": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for foreign trade and customs companies",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for foreign trade and customs companies. Practical guidance by CONEXUS.",
@@ -5448,7 +5464,7 @@ export const en = {
       "imageAlt": "Marketing digital para empresas de comércio exterior — CONEXUS"
     },
     "blog_marketing_digital_para_transportadoras_e_empresas_de_logistica": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for freight transport and logistics companies",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for freight transport and logistics companies. Practical guidance by CONEXUS.",
@@ -5499,7 +5515,7 @@ export const en = {
       "imageAlt": "Marketing digital para transportadoras e empresas de logística — CONEXUS"
     },
     "blog_marketing_digital_para_pet_shops_e_servicos_veterinarios": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for pet shops and veterinary clinics",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for pet shops and veterinary clinics. Practical guidance by CONEXUS.",
@@ -5550,7 +5566,7 @@ export const en = {
       "imageAlt": "Marketing digital para pet shops e serviços veterinários — CONEXUS"
     },
     "blog_marketing_digital_para_empresas_de_servicos_residenciais": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for residential service companies",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for residential service companies. Practical guidance by CONEXUS.",
@@ -5601,7 +5617,7 @@ export const en = {
       "imageAlt": "Marketing digital para empresas de serviços residenciais — CONEXUS"
     },
     "blog_marketing_digital_para_negocios_de_beleza_e_estetica": {
-      "k1": "Marketing digital por segmento",
+      "k1": "Digital Marketing by Industry",
       "k2": "Marketing digital por segmento",
       "k3": "Digital marketing for beauty salons and aesthetic clinics",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing for beauty salons and aesthetic clinics. Practical guidance by CONEXUS.",
@@ -5652,7 +5668,7 @@ export const en = {
       "imageAlt": "Marketing digital para negócios de beleza e estética — CONEXUS"
     },
     "blog_reputacao_digital_o_que_o_cliente_encontra_antes_de_falar_com_sua_empresa": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "Digital reputation: what prospects find before contacting your business",
       "k4": "Explore in-depth insights and actionable recommendations: digital reputation: what prospects find before contacting your business. Practical guidance by CONEXUS.",
@@ -5703,7 +5719,7 @@ export const en = {
       "imageAlt": "Reputação digital: o que o cliente encontra antes de falar com sua empresa — CONEXUS"
     },
     "blog_como_construir_autoridade_digital_para_uma_pequena_empresa": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "How to build digital authority for a small business",
       "k4": "Explore in-depth insights and actionable recommendations: how to build digital authority for a small business. Practical guidance by CONEXUS.",
@@ -5754,7 +5770,7 @@ export const en = {
       "imageAlt": "Como construir autoridade digital para uma pequena empresa — CONEXUS"
     },
     "blog_identidade_visual_e_site_como_transmitir_profissionalismo": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "Brand identity and website: how to convey true professionalism",
       "k4": "Explore in-depth insights and actionable recommendations: brand identity and website: how to convey true professionalism. Practical guidance by CONEXUS.",
@@ -5805,7 +5821,7 @@ export const en = {
       "imageAlt": "Identidade visual e site: como transmitir profissionalismo — CONEXUS"
     },
     "blog_como_avaliacoes_online_influenciam_a_decisao_de_compra": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "How online reviews influence purchasing decisions",
       "k4": "Explore in-depth insights and actionable recommendations: how online reviews influence purchasing decisions. Practical guidance by CONEXUS.",
@@ -5856,7 +5872,7 @@ export const en = {
       "imageAlt": "Como avaliações online influenciam a decisão de compra — CONEXUS"
     },
     "blog_como_conseguir_avaliacoes_legitimas_de_clientes": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "How to acquire authentic customer reviews",
       "k4": "Explore in-depth insights and actionable recommendations: how to acquire authentic customer reviews. Practical guidance by CONEXUS.",
@@ -5907,7 +5923,7 @@ export const en = {
       "imageAlt": "Como conseguir avaliações legítimas de clientes — CONEXUS"
     },
     "blog_o_que_fazer_com_avaliacoes_negativas_no_google": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "How to manage and respond to negative Google reviews",
       "k4": "Explore in-depth insights and actionable recommendations: how to manage and respond to negative google reviews. Practical guidance by CONEXUS.",
@@ -5958,7 +5974,7 @@ export const en = {
       "imageAlt": "O que fazer com avaliações negativas no Google — CONEXUS"
     },
     "blog_como_transformar_clientes_satisfeitos_em_prova_social": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "How to turn satisfied customers into powerful social proof",
       "k4": "Explore in-depth insights and actionable recommendations: how to turn satisfied customers into powerful social proof. Practical guidance by CONEXUS.",
@@ -6009,7 +6025,7 @@ export const en = {
       "imageAlt": "Como transformar clientes satisfeitos em prova social — CONEXUS"
     },
     "blog_por_que_consistencia_de_marca_aumenta_confianca": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "Why brand consistency builds lasting customer trust",
       "k4": "Explore in-depth insights and actionable recommendations: why brand consistency builds lasting customer trust. Practical guidance by CONEXUS.",
@@ -6060,7 +6076,7 @@ export const en = {
       "imageAlt": "Por que consistência de marca aumenta confiança — CONEXUS"
     },
     "blog_como_mostrar_experiencia_e_credibilidade_no_site_da_empresa": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "How to showcase experience and credibility on your business website",
       "k4": "Explore in-depth insights and actionable recommendations: how to showcase experience and credibility on your business website. Practical guidance by CONEXUS.",
@@ -6111,7 +6127,7 @@ export const en = {
       "imageAlt": "Como mostrar experiência e credibilidade no site da empresa — CONEXUS"
     },
     "blog_cases_depoimentos_e_portfolio_como_usar_cada_um": {
-      "k1": "Reputação e autoridade",
+      "k1": "Reputation & Authority",
       "k2": "Reputação e autoridade",
       "k3": "Case studies, testimonials, and portfolio: how to use each effectively",
       "k4": "Explore in-depth insights and actionable recommendations: case studies, testimonials, and portfolio: how to use each effectively. Practical guidance by CONEXUS.",
@@ -6162,7 +6178,7 @@ export const en = {
       "imageAlt": "Cases, depoimentos e portfólio: como usar cada um — CONEXUS"
     },
     "blog_presenca_digital_completa_site_google_redes_sociais_e_conteudo": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "Comprehensive digital presence: website, Google, social media, and content",
       "k4": "Explore in-depth insights and actionable recommendations: comprehensive digital presence: website, google, social media, and content. Practical guidance by CONEXUS.",
@@ -6213,7 +6229,7 @@ export const en = {
       "imageAlt": "Presença digital completa: site, Google, redes sociais e conteúdo — CONEXUS"
     },
     "blog_marketing_organico_ou_trafego_pago_como_combinar_os_dois": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "Organic marketing vs paid ads: how to combine both effectively",
       "k4": "Explore in-depth insights and actionable recommendations: organic marketing vs paid ads: how to combine both effectively. Practical guidance by CONEXUS.",
@@ -6264,7 +6280,7 @@ export const en = {
       "imageAlt": "Marketing orgânico ou tráfego pago: como combinar os dois — CONEXUS"
     },
     "blog_quanto_uma_pequena_empresa_deve_investir_em_marketing_digital": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "How much should a small business invest in digital marketing",
       "k4": "Explore in-depth insights and actionable recommendations: how much should a small business invest in digital marketing. Practical guidance by CONEXUS.",
@@ -6315,7 +6331,7 @@ export const en = {
       "imageAlt": "Quanto uma pequena empresa deve investir em marketing digital — CONEXUS"
     },
     "blog_como_montar_um_plano_de_marketing_digital_para_12_meses": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "How to structure a 12-month digital marketing plan",
       "k4": "Explore in-depth insights and actionable recommendations: how to structure a 12-month digital marketing plan. Practical guidance by CONEXUS.",
@@ -6366,7 +6382,7 @@ export const en = {
       "imageAlt": "Como montar um plano de marketing digital para 12 meses — CONEXUS"
     },
     "blog_metricas_de_marketing_digital_que_empresarios_realmente_precisam_acompanhar": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "Digital marketing metrics business owners actually need to track",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing metrics business owners actually need to track. Practical guidance by CONEXUS.",
@@ -6417,7 +6433,7 @@ export const en = {
       "imageAlt": "Métricas de marketing digital que empresários realmente precisam acompanhar — CONEXUS"
     },
     "blog_como_saber_se_o_marketing_digital_esta_trazendo_retorno": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "How to know if your digital marketing is generating measurable ROI",
       "k4": "Explore in-depth insights and actionable recommendations: how to know if your digital marketing is generating measurable roi. Practical guidance by CONEXUS.",
@@ -6468,7 +6484,7 @@ export const en = {
       "imageAlt": "Como saber se o marketing digital está trazendo retorno — CONEXUS"
     },
     "blog_google_analytics_4_para_pequenas_empresas_quais_numeros_acompanhar": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "Google Analytics 4 for small businesses: essential numbers to track",
       "k4": "Explore in-depth insights and actionable recommendations: google analytics 4 for small businesses: essential numbers to track. Practical guidance by CONEXUS.",
@@ -6519,7 +6535,7 @@ export const en = {
       "imageAlt": "Google Analytics 4 para pequenas empresas: quais números acompanhar — CONEXUS"
     },
     "blog_como_preparar_a_presenca_digital_da_empresa_para_2027": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "How to prepare your company's digital presence for 2027",
       "k4": "Explore in-depth insights and actionable recommendations: how to prepare your company's digital presence for 2027. Practical guidance by CONEXUS.",
@@ -6570,7 +6586,7 @@ export const en = {
       "imageAlt": "Como preparar a presença digital da empresa para 2027 — CONEXUS"
     },
     "blog_tendencias_de_marketing_digital_para_pequenas_e_medias_empresas_em_2027": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "Digital marketing trends for small and medium businesses in 2027",
       "k4": "Explore in-depth insights and actionable recommendations: digital marketing trends for small and medium businesses in 2027. Practical guidance by CONEXUS.",
@@ -6621,7 +6637,7 @@ export const en = {
       "imageAlt": "Tendências de marketing digital para pequenas e médias empresas em 2027 — CONEXUS"
     },
     "blog_como_construir_uma_estrategia_digital_que_continue_gerando_resultados_no_longo_prazo": {
-      "k1": "Estratégia digital e crescimento",
+      "k1": "Digital Strategy & Growth",
       "k2": "Estratégia digital e crescimento",
       "k3": "How to build a digital strategy that delivers sustainable long-term results",
       "k4": "Explore in-depth insights and actionable recommendations: how to build a digital strategy that delivers sustainable long-term results. Practical guidance by CONEXUS.",
@@ -6858,7 +6874,7 @@ export const en = {
       "comoChegar": "Directions"
     },
     "blog_site_one_page_ou_multipaginas_qual_escolher": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "One Page vs Multi-Page Website: Which is Best for Your Business?",
       "k4": "Understand web architecture, user behavior, and ROI potential to make a strategic decision for your company's digital platform.",
@@ -6930,7 +6946,7 @@ export const en = {
       "k70": "Visit Contact Page"
     },
     "blog_10_sinais_empresa_precisa_novo_site": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "10 Clear Signs Your Business Urgently Needs a New Website",
       "k4": "Discover whether your current website is turning potential customers away and hurting your brand's digital credibility.",
@@ -6995,7 +7011,7 @@ export const en = {
       "k63": "Visit Contact Page"
     },
     "blog_como_site_profissional_gera_mais_clientes": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "How a Professional Website Generates Qualified Leads Every Day",
       "k4": "Learn how to structure your web platform to attract qualified visitors, validate your authority, and convert sales on autopilot.",
@@ -7044,7 +7060,7 @@ export const en = {
       "k47": "Visit Contact Page"
     },
     "blog_site_responsivo_mobile_first_indispensavel": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "Responsive Web Design: Why Mobile-First is Essential in 2026",
       "k4": "Understand how Google indexes websites mobile-first and why smartphone ergonomics define business success in 2026.",
@@ -7103,7 +7119,7 @@ export const en = {
       "k57": "Visit Contact Page"
     },
     "blog_landing_page_ou_site_completo_diferencas": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "Landing Page vs Full Website: Which to Choose for Your Campaigns?",
       "k4": "Understand the distinct roles of landing pages and multi-page websites to optimize your advertising spend and maximize conversions.",
@@ -7162,7 +7178,7 @@ export const en = {
       "k57": "Visit Contact Page"
     },
     "blog_quanto_tempo_leva_para_criar_site_profissional": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "How Long Does It Take to Build a Custom Professional Website?",
       "k4": "Explore each technical milestone and discover which factors accelerate or delay the delivery of your digital project.",
@@ -7227,7 +7243,7 @@ export const en = {
       "k63": "Visit Contact Page"
     },
     "blog_como_escolher_dominio_profissional_para_empresa": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "How to Choose the Perfect Professional Domain Name for Your Company",
       "k4": "Your domain name is your brand's primary digital asset. Learn how to choose a web address that inspires trust and aids SEO.",
@@ -7287,7 +7303,7 @@ export const en = {
       "k58": "Visit Contact Page"
     },
     "blog_por_que_velocidade_do_site_influencia_vendas": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "Why Website Speed Directly Impacts Your Sales and Google Rankings",
       "k4": "Understand the science of web performance: how ultra-fast pages increase commercial conversion rates and lower ad acquisition costs.",
@@ -7346,7 +7362,7 @@ export const en = {
       "k57": "Visit Contact Page"
     },
     "blog_site_multilingue_como_alcancar_clientes_internacionais": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "Multilingual Websites: How to Structure Your Digital Presence for Global Clients",
       "k4": "Discover how to expand cross-border business with international architecture, multilingual SEO, and contextualized translations.",
@@ -7405,7 +7421,7 @@ export const en = {
       "k57": "Visit Contact Page"
     },
     "blog_como_calcular_roi_site_profissional": {
-      "k1": "Web Development",
+      "k1": "Website Creation",
       "k2": "Web Development",
       "k3": "How to Calculate the ROI of a Professional Website",
       "k4": "Understand the numbers behind digital presence and learn how to quantify your website's direct impact on top-line revenue.",
@@ -9928,7 +9944,7 @@ export const en = {
       "k62": "Visit Contact Page"
     },
     "blog_como_conseguir_mais_clientes_pela_internet": {
-      "k1": "Growth & Conversion",
+      "k1": "Growth & Sales",
       "k2": "Growth & Conversion",
       "k3": "How to Win More Clients Online: The Definitive Business Guide",
       "k4": "Build a cohesive digital ecosystem that reliably attracts qualified commercial opportunities every day.",
@@ -9992,7 +10008,7 @@ export const en = {
       "k62": "Visit Contact Page"
     },
     "blog_como_transformar_google_canal_aquisicao_clientes": {
-      "k1": "Growth & Conversion",
+      "k1": "Growth & Sales",
       "k2": "Growth & Conversion",
       "k3": "How to Turn Google into Your Primary Client Acquisition Engine",
       "k4": "Learn how to position your business across Google's search pillars to capture buyers at the exact moment of decision.",
@@ -10056,7 +10072,7 @@ export const en = {
       "k62": "Visit Contact Page"
     },
     "blog_como_medir_se_site_traz_resultados": {
-      "k1": "Analytics & Conversion",
+      "k1": "Metrics & Conversion",
       "k2": "Analytics & Conversion",
       "k3": "How to Measure If Your Website is Truly Delivering Business Results",
       "k4": "Track the direct correlation between your web traffic, qualified inquiries, client acquisition, and closed revenue.",
@@ -10120,7 +10136,7 @@ export const en = {
       "k62": "Visit Contact Page"
     },
     "blog_google_analytics_metricas_que_realmente_importam": {
-      "k1": "Analytics & Conversion",
+      "k1": "Metrics & Conversion",
       "k2": "Analytics & Conversion",
       "k3": "Google Analytics (GA4): The Only Metrics That Truly Matter for Business Growth",
       "k4": "Cut through reporting complexity and focus on the actionable KPIs that directly impact sales, leads, and ROI.",
@@ -10184,7 +10200,7 @@ export const en = {
       "k62": "Visit Contact Page"
     },
     "blog_formulario_ou_whatsapp_qual_gera_mais_contatos": {
-      "k1": "Conversion & UX",
+      "k1": "Conversion & Sales",
       "k2": "Conversion & UX",
       "k3": "Web Form vs WhatsApp: Which Drives Higher-Converting Inquiries?",
       "k4": "Examine buyer behavior and learn how to balance speed of response with lead qualification on your website.",
@@ -10238,7 +10254,7 @@ export const en = {
       "k52": "Visit Contact Page"
     },
     "blog_seguranca_de_sites_como_proteger_empresa_clientes": {
-      "k1": "Cybersecurity & Tech",
+      "k1": "Digital Security",
       "k2": "Cybersecurity & Tech",
       "k3": "Website Security: How to Protect Your Company and Client Data",
       "k4": "Learn how to protect your domain against vulnerabilities, downtime, and browser security warnings that destroy consumer trust.",
@@ -10302,7 +10318,7 @@ export const en = {
       "k62": "Visit Contact Page"
     },
     "blog_lgpd_para_sites_pequenas_empresas": {
-      "k1": "Compliance & Privacy",
+      "k1": "Security & Legislation",
       "k2": "Compliance & Privacy",
       "k3": "Data Privacy & Compliance for Small Business Websites",
       "k4": "Bring your corporate website into full legal compliance with data privacy regulations smoothly and without unnecessary friction.",
@@ -10425,7 +10441,7 @@ export const en = {
       "k57": "Visit Contact Page"
     },
     "blog_software_personalizado_quando_empresa_precisa": {
-      "k1": "Software & Technology",
+      "k1": "Technology & Software",
       "k2": "Software & Technology",
       "k3": "Custom Software Development: When Does a Business Truly Need It?",
       "k4": "Learn to pinpoint the exact moment off-the-shelf software packages bottleneck your growth and custom tools become essential.",
@@ -11134,7 +11150,7 @@ export const en = {
       "k9": "Services Delivered",
       "k10": "International Architecture & UI/UX",
       "k11": "Digital Address",
-      "k12": "conexxus.press ↗",
+      "k12": "www.conexxus.co.uk ↗",
       "k13": "The Strategic Challenge",
       "k14": "Serving businesses across the UK and multiple European countries requires a robust digital architecture, messaging aligned with international audiences, and high-performance infrastructure.",
       "k15": "The challenge was structuring the international CONEXXUS UK operation with a modern platform presenting website creation solutions, technical SEO, and corporate branding.",
@@ -11162,7 +11178,7 @@ export const en = {
       "k37": "Visit Website ↗"
     },
     "portfolio_crafix": {
-      "k1": "CASE STUDY • HOME IMPROVEMENTS • REINO UNIDO",
+      "k1": "CASE STUDY • HOME IMPROVEMENTS • UNITED KINGDOM",
       "k2": "Crafix: Digital Platform for Residential Renovation & Maintenance Services",
       "k3": "Development of an institutional platform for a home improvement, refurbishment, and residential maintenance company in the UK focused on agility and lead conversion.",
       "k4": "Client",
@@ -12431,19 +12447,18 @@ export const en = {
     "granaHighlightDesc": "Personal finance solution engineered and officially published by CONEXUS on the Google Play Store.",
     "granaHighlightBtnCase": "Explore Case",
     "granaHighlightBtnPlay": "Google Play ↗"
-  }
-,
+  },
   "aboutInternational": {
-      "badge": "INTERNATIONAL PRESENCE",
-      "title": "Brazil & United Kingdom Connection",
-      "desc": "CONEXUS Digital Solutions develops strategic solutions in Brazil with a global vision connected to international best practices in technology and digital marketing.",
-      "brTitle": "CONEXUS Digital Solutions",
-      "brRegion": "Brazil • Curitiba & Metropolitan Area",
-      "brDesc": "Brazilian operation focused on high-conversion professional websites, SEO engineering, Google Local search optimization, branding, and mobile app development. Specialized support for small and medium businesses and national industries.",
-      "ukTitle": "CONEXXUS",
-      "ukRegion": "United Kingdom & Europe • Swindon",
-      "ukDesc": "Brand dedicated to the British and European market, delivering corporate websites, international SEO strategies, and digital architecture built with performance standards aligned to European usability and privacy requirements.",
-      "viewCase": "View case study in portfolio"
+    "badge": "INTERNATIONAL PRESENCE",
+    "title": "Brazil & United Kingdom Connection",
+    "desc": "CONEXUS Digital Solutions develops strategic solutions in Brazil with a global vision connected to international best practices in technology and digital marketing.",
+    "brTitle": "CONEXUS Digital Solutions",
+    "brRegion": "Brazil • Curitiba & Metropolitan Area",
+    "brDesc": "Brazilian operation focused on high-conversion professional websites, SEO engineering, Google Local search optimization, branding, and mobile app development. Specialized support for small and medium businesses and national industries.",
+    "ukTitle": "CONEXXUS",
+    "ukRegion": "United Kingdom & Europe • Swindon",
+    "ukDesc": "Brand dedicated to the British and European market, delivering corporate websites, international SEO strategies, and digital architecture built with performance standards aligned to European usability and privacy requirements.",
+    "viewCase": "View case study in portfolio"
   },
   "blog_card_presenca_internacional_tag": "INTERNATIONAL PRESENCE",
   "blog_card_presenca_internacional_title": "CONEXUS in Brazil and CONEXXUS in the UK: Our International Presence and Vision",
@@ -12456,7 +12471,7 @@ export const en = {
   "blog_presencaInternacional_desc": "Explore the strategic presence of CONEXUS Digital Solutions in Brazil and CONEXXUS in the UK, uniting web engineering, SEO, and digital innovation with a global vision.",
   "blog_presencaInternacional_sec1_h2": "1. Two Strategic Operations, One Shared Engineering Philosophy",
   "blog_presencaInternacional_sec1_p1": "CONEXUS operations are guided by a single core principle: engineering high-performance digital infrastructure, functional design, and tangible commercial growth. In Brazil, we operate as CONEXUS Digital Solutions, delivering end-to-end multi-page web architecture, technical SEO, Google Business Profile management, branding, and mobile apps tailored for Brazilian enterprises.",
-  "blog_presencaInternacional_sec1_p2": "In parallel, to serve corporate demands across the British and European markets, we established the CONEXXUS brand (accessible at conexxus.press). This international presence ensures continuous cross-pollination of European usability benchmarks, data privacy compliance, and strict engineering standards.",
+  "blog_presencaInternacional_sec1_p2": "In parallel, to meet corporate demands in the British and European markets, we established the CONEXXUS brand (with digital presence at www.conexxus.co.uk). This international front ensures that global usability, data privacy, and technical rigor standards are continuously shared across our initiatives.",
   "blog_presencaInternacional_sec2_h2": "2. CONEXUS Digital Solutions in Brazil: High-Conversion Digital Architecture",
   "blog_presencaInternacional_sec2_p1": "Based in Curitiba and its metropolitan area, CONEXUS Digital Solutions serves small, medium, and expanding enterprises throughout Brazil. Unlike traditional agencies relying on heavy generic page builders, our engineering prioritizes lightning-fast loading (95+ on Google PageSpeed), LGPD privacy compliance, and deep semantic SEO for durable organic rankings.",
   "blog_presencaInternacional_sec2_p2": "Beyond web development, we build proprietary digital products, including the GRANA personal finance app published on Google Play and the Welcome Book Digital interactive concierge system for hospitality hosts.",
@@ -12469,5 +12484,5 @@ export const en = {
   "blog_presencaInternacional_faq1_q": "What is the relationship between CONEXUS in Brazil and CONEXXUS in the UK?",
   "blog_presencaInternacional_faq1_a": "CONEXUS Digital Solutions is the Brazilian operating brand, while CONEXXUS is the dedicated brand serving the UK and European market, sharing unified engineering methodologies and high technical standards.",
   "blog_presencaInternacional_faq2_q": "Where can I view the official website of the UK operation?",
-  "blog_presencaInternacional_faq2_a": "The official British platform of CONEXXUS is publicly available at https://conexxus.press and features a dedicated case study in our portfolio."
+  "blog_presencaInternacional_faq2_a": "The CONEXXUS British platform is publicly available at https://www.conexxus.co.uk/ and features a detailed case study in our portfolio."
 };

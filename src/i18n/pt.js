@@ -515,7 +515,22 @@ export const pt = {
     "devFocus": "Desenvolvido com foco em alta performance e autoridade digital.",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Uso",
-    "cookies": "Preferências de Cookies"
+    "cookies": "Preferências de Cookies",
+    "serviceSeo": "SEO para Empresas",
+    "serviceLocalSeo": "SEO Local & Google",
+    "serviceSocial": "Gestão de Redes Sociais",
+    "locations": "Brasil & Internacional",
+    "copyright": "© 2026 CONEXUS. Todos os direitos reservados.",
+    "s1": "Criação de Sites",
+    "s2": "Site One Page",
+    "s3": "SEO para Empresas",
+    "s4": "SEO Local & Google Maps",
+    "s5": "Branding & Identidade",
+    "s6": "Gestão de Redes Sociais",
+    "desc": "Agência de marketing digital especializada em presença online, criação de sites e crescimento de empresas.",
+    "navTitle": "Navegação",
+    "contactTitle": "Contato & Redes",
+    "wa": "Conversar pelo WhatsApp"
   },
   "whatsapp": {
     "homeHero": "Olá! Conheci a CONEXUS pelo website e gostaria de conversar sobre a presença digital da minha empresa.",
@@ -625,7 +640,8 @@ export const pt = {
     "readTime10": "10 min de leitura",
     "readTime12": "12 min de leitura",
     "readTime15": "15 min de leitura",
-    "visitWebsite": "Visitar Website ↗"
+    "visitWebsite": "Visitar Website ↗",
+    "faq": "Perguntas Frequentes"
   },
   "sobre": {
     "badge": "CONHEÇA A CONEXUS",
@@ -11101,7 +11117,7 @@ export const pt = {
       "c_br_sub": "Real (BRL) • Mercado Nativo",
       "c_pt": "Portugal",
       "c_pt_sub": "Euro (EUR) • Espaço Europeu",
-      "c_uk": "Inglaterra",
+      "c_uk": "Reino Unido",
       "c_uk_sub": "Libra (GBP) • Mercado Britânico",
       "c_es": "Espanha",
       "c_es_sub": "Euro (EUR) • Usabilidade Local",
@@ -11135,7 +11151,7 @@ export const pt = {
       "k9": "Serviços Prestados",
       "k10": "Arquitetura Internacional & UI/UX",
       "k11": "Endereço Digital",
-      "k12": "conexxus.press ↗",
+      "k12": "www.conexxus.co.uk ↗",
       "k13": "O Desafio Estratégico",
       "k14": "Atender empresas no Reino Unido e em diversos países europeus exige uma arquitetura digital robusta, comunicação alinhada com as exibições internacionais e altíssima velocidade de infraestrutura.",
       "k15": "O desafio consistia em estruturar a operação internacional CONEXXUS UK com uma plataforma moderna de apresentação de soluções em criação de sites, SEO técnico e branding corporativo.",
@@ -12432,19 +12448,18 @@ export const pt = {
     "granaHighlightDesc": "Solução de finanças pessoais desenvolvida e publicada oficialmente pela CONEXUS na Google Play Store.",
     "granaHighlightBtnCase": "Ver Case",
     "granaHighlightBtnPlay": "Google Play ↗"
-  }
-,
+  },
   "aboutInternational": {
-      "badge": "PRESENÇA INTERNACIONAL",
-      "title": "Conexão Brasil & Reino Unido",
-      "desc": "A CONEXUS Digital Solutions desenvolve soluções estratégicas no Brasil com uma visão global conectada às melhores práticas internacionais de tecnologia e marketing digital.",
-      "brTitle": "CONEXUS Digital Solutions",
-      "brRegion": "Brasil • Curitiba e Região Metropolitana",
-      "brDesc": "Operação brasileira focada em websites profissionais de alta conversão, engenharia SEO, otimização de busca local no Google, branding e desenvolvimento de aplicativos. Atendimento especializado a pequenas e médias empresas e indústrias nacionais.",
-      "ukTitle": "CONEXXUS",
-      "ukRegion": "Reino Unido & Europa • Swindon",
-      "ukDesc": "Marca dedicada ao mercado britânico e europeu, entregando websites corporativos, estratégias de SEO internacional e arquitetura digital com rigor de performance alinhado aos padrões europeus de usabilidade e privacidade.",
-      "viewCase": "Ver case no portfólio"
+    "badge": "PRESENÇA INTERNACIONAL",
+    "title": "Conexão Brasil & Reino Unido",
+    "desc": "A CONEXUS Digital Solutions desenvolve soluções estratégicas no Brasil com uma visão global conectada às melhores práticas internacionais de tecnologia e marketing digital.",
+    "brTitle": "CONEXUS Digital Solutions",
+    "brRegion": "Brasil • Curitiba e Região Metropolitana",
+    "brDesc": "Operação brasileira focada em websites profissionais de alta conversão, engenharia SEO, otimização de busca local no Google, branding e desenvolvimento de aplicativos. Atendimento especializado a pequenas e médias empresas e indústrias nacionais.",
+    "ukTitle": "CONEXXUS",
+    "ukRegion": "Reino Unido & Europa • Swindon",
+    "ukDesc": "Marca dedicada ao mercado britânico e europeu, entregando websites corporativos, estratégias de SEO internacional e arquitetura digital com rigor de performance alinhado aos padrões europeus de usabilidade e privacidade.",
+    "viewCase": "Ver case no portfólio"
   },
   "blog_card_presenca_internacional_tag": "PRESENÇA INTERNACIONAL",
   "blog_card_presenca_internacional_title": "CONEXUS no Brasil e CONEXXUS no Reino Unido: Nossa Presença e Visão Internacional",
@@ -12457,7 +12472,7 @@ export const pt = {
   "blog_presencaInternacional_desc": "Conheça a atuação estratégica da CONEXUS Digital Solutions no Brasil e da CONEXXUS no Reino Unido, unindo engenharia web, SEO e inovação digital com visão global.",
   "blog_presencaInternacional_sec1_h2": "1. Duas Operações Estratégicas, Uma Mesma Filosofia de Engenharia",
   "blog_presencaInternacional_sec1_p1": "A expansão e atuação da CONEXUS é pautada por um princípio claro: construir infraestruturas digitais de altíssimo desempenho, design funcional e resultados comerciais reais para empresas. No mercado brasileiro, atuamos como CONEXUS Digital Solutions, desenvolvendo soluções integradas de websites multipáginas, SEO técnico, Google Perfil de Empresa, branding e aplicativos móveis com forte enraizamento local e atendimento consultivo.",
-  "blog_presencaInternacional_sec1_p2": "Paralelamente, para atender demandas corporativas no mercado britânico e europeu, consolidamos a marca CONEXXUS (com presença digital em conexxus.press). Essa frente internacional assegura que metodologias globais de usabilidade, privacidade de dados e rigor técnico sejam compartilhadas de forma contínua entre nossas iniciativas.",
+  "blog_presencaInternacional_sec1_p2": "Paralelamente, para atender demandas corporativas no mercado britânico e europeu, consolidamos a marca CONEXXUS (com presença digital em www.conexxus.co.uk). Essa frente internacional assegura que metodologias globais de usabilidade, privacidade de dados e rigor técnico sejam compartilhadas de forma contínua entre nossas iniciativas.",
   "blog_presencaInternacional_sec2_h2": "2. CONEXUS Digital Solutions no Brasil: Soluções de Alta Conversão",
   "blog_presencaInternacional_sec2_p1": "Com base em Curitiba e Região Metropolitana, a CONEXUS Digital Solutions atende pequenas, médias e grandes empresas em todo o território nacional. Diferente de agências tradicionais que entregam sites lentos baseados em construtores genéricos, nossa engenharia prioriza carregamento ultrarrápido (95+ no Google PageSpeed), conformidade total com a LGPD e otimização semântica para posicionamento orgânico nas primeiras posições de busca.",
   "blog_presencaInternacional_sec2_p2": "Além do desenvolvimento web, criamos soluções proprietárias como o aplicativo de finanças pessoais GRANA e o sistema de guia interativo Welcome Book Digital para anfitriões e hotelaria boutique.",
@@ -12470,5 +12485,5 @@ export const pt = {
   "blog_presencaInternacional_faq1_q": "Qual é a relação entre a CONEXUS no Brasil e a CONEXXUS no Reino Unido?",
   "blog_presencaInternacional_faq1_a": "CONEXUS Digital Solutions é a marca e operação brasileira, enquanto CONEXXUS é a marca utilizada para atender o mercado do Reino Unido e da Europa, compartilhando métodos de engenharia e altos padrões técnicos.",
   "blog_presencaInternacional_faq2_q": "Onde posso conhecer o site oficial da operação britânica?",
-  "blog_presencaInternacional_faq2_a": "A plataforma britânica da CONEXXUS está disponível publicamente em https://conexxus.press e possui case detalhado em nosso portfólio."
+  "blog_presencaInternacional_faq2_a": "A plataforma britânica da CONEXXUS está disponível publicamente em https://www.conexxus.co.uk/ e possui case detalhado em nosso portfólio."
 };
