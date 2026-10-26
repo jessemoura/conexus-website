@@ -25,7 +25,7 @@ const ptKeys = {
   blog_presencaInternacional_desc: "Conheça a atuação estratégica da CONEXUS Digital Solutions no Brasil e da CONEXXUS no Reino Unido, unindo engenharia web, SEO e inovação digital com visão global.",
   blog_presencaInternacional_sec1_h2: "1. Duas Operações Estratégicas, Uma Mesma Filosofia de Engenharia",
   blog_presencaInternacional_sec1_p1: "A expansão e atuação da CONEXUS é pautada por um princípio claro: construir infraestruturas digitais de altíssimo desempenho, design funcional e resultados comerciais reais para empresas. No mercado brasileiro, atuamos como CONEXUS Digital Solutions, desenvolvendo soluções integradas de websites multipáginas, SEO técnico, Google Perfil de Empresa, branding e aplicativos móveis com forte enraizamento local e atendimento consultivo.",
-  blog_presencaInternacional_sec1_p2: "Paralelamente, para atender demandas corporativas no mercado britânico e europeu, consolidamos a marca CONEXXUS (com presença digital em conexxus.press). Essa frente internacional assegura que metodologias globais de usabilidade, privacidade de dados e rigor técnico sejam compartilhadas de forma contínua entre nossas iniciativas.",
+  blog_presencaInternacional_sec1_p2: "Paralelamente, para atender demandas corporativas no mercado britânico e europeu, consolidamos a marca CONEXXUS (com presença digital em www.conexxus.co.uk). Essa frente internacional assegura que metodologias globais de usabilidade, privacidade de dados e rigor técnico sejam compartilhadas de forma contínua entre nossas iniciativas.",
   blog_presencaInternacional_sec2_h2: "2. CONEXUS Digital Solutions no Brasil: Soluções de Alta Conversão",
   blog_presencaInternacional_sec2_p1: "Com base em Curitiba e Região Metropolitana, a CONEXUS Digital Solutions atende pequenas, médias e grandes empresas em todo o território nacional. Diferente de agências tradicionais que entregam sites lentos baseados em construtores genéricos, nossa engenharia prioriza carregamento ultrarrápido (95+ no Google PageSpeed), conformidade total com a LGPD e otimização semântica para posicionamento orgânico nas primeiras posições de busca.",
   blog_presencaInternacional_sec2_p2: "Além do desenvolvimento web, criamos soluções proprietárias como o aplicativo de finanças pessoais GRANA e o sistema de guia interativo Welcome Book Digital para anfitriões e hotelaria boutique.",
@@ -38,7 +38,7 @@ const ptKeys = {
   blog_presencaInternacional_faq1_q: "Qual é a relação entre a CONEXUS no Brasil e a CONEXXUS no Reino Unido?",
   blog_presencaInternacional_faq1_a: "CONEXUS Digital Solutions é a marca e operação brasileira, enquanto CONEXXUS é a marca utilizada para atender o mercado do Reino Unido e da Europa, compartilhando métodos de engenharia e altos padrões técnicos.",
   blog_presencaInternacional_faq2_q: "Onde posso conhecer o site oficial da operação britânica?",
-  blog_presencaInternacional_faq2_a: "A plataforma britânica da CONEXXUS está disponível publicamente em https://conexxus.press e possui case detalhado em nosso portfólio."
+  blog_presencaInternacional_faq2_a: "A plataforma britânica da CONEXXUS está disponível publicamente em https://www.conexxus.co.uk e possui case detalhado em nosso portfólio."
 };
 
 const enKeys = {
@@ -65,7 +65,7 @@ const enKeys = {
   blog_presencaInternacional_desc: "Explore the strategic presence of CONEXUS Digital Solutions in Brazil and CONEXXUS in the UK, uniting web engineering, SEO, and digital innovation with a global vision.",
   blog_presencaInternacional_sec1_h2: "1. Two Strategic Operations, One Shared Engineering Philosophy",
   blog_presencaInternacional_sec1_p1: "CONEXUS operations are guided by a single core principle: engineering high-performance digital infrastructure, functional design, and tangible commercial growth. In Brazil, we operate as CONEXUS Digital Solutions, delivering end-to-end multi-page web architecture, technical SEO, Google Business Profile management, branding, and mobile apps tailored for Brazilian enterprises.",
-  blog_presencaInternacional_sec1_p2: "In parallel, to serve corporate demands across the British and European markets, we established the CONEXXUS brand (accessible at conexxus.press). This international presence ensures continuous cross-pollination of European usability benchmarks, data privacy compliance, and strict engineering standards.",
+  blog_presencaInternacional_sec1_p2: "In parallel, to serve corporate demands across the British and European markets, we established the CONEXXUS brand (accessible at www.conexxus.co.uk). This international presence ensures continuous cross-pollination of European usability benchmarks, data privacy compliance, and strict engineering standards.",
   blog_presencaInternacional_sec2_h2: "2. CONEXUS Digital Solutions in Brazil: High-Conversion Digital Architecture",
   blog_presencaInternacional_sec2_p1: "Based in Curitiba and its metropolitan area, CONEXUS Digital Solutions serves small, medium, and expanding enterprises throughout Brazil. Unlike traditional agencies relying on heavy generic page builders, our engineering prioritizes lightning-fast loading (95+ on Google PageSpeed), LGPD privacy compliance, and deep semantic SEO for durable organic rankings.",
   blog_presencaInternacional_sec2_p2: "Beyond web development, we build proprietary digital products, including the GRANA personal finance app published on Google Play and the Welcome Book Digital interactive concierge system for hospitality hosts.",
@@ -78,7 +78,7 @@ const enKeys = {
   blog_presencaInternacional_faq1_q: "What is the relationship between CONEXUS in Brazil and CONEXXUS in the UK?",
   blog_presencaInternacional_faq1_a: "CONEXUS Digital Solutions is the Brazilian operating brand, while CONEXXUS is the dedicated brand serving the UK and European market, sharing unified engineering methodologies and high technical standards.",
   blog_presencaInternacional_faq2_q: "Where can I view the official website of the UK operation?",
-  blog_presencaInternacional_faq2_a: "The official British platform of CONEXXUS is publicly available at https://conexxus.press and features a dedicated case study in our portfolio."
+  blog_presencaInternacional_faq2_a: "The official British platform of CONEXXUS is publicly available at https://www.conexxus.co.uk and features a dedicated case study in our portfolio."
 };
 
 const esKeys = {
@@ -105,7 +105,7 @@ const esKeys = {
   blog_presencaInternacional_desc: "Conozca la actuación estratégica de CONEXUS Digital Solutions en Brasil y CONEXXUS en el Reino Unido, uniendo ingeniería web, SEO e innovación digital con visión global.",
   blog_presencaInternacional_sec1_h2: "1. Dos Operaciones Estratégicas, Una Misma Filosofía de Ingeniería",
   blog_presencaInternacional_sec1_p1: "La expansión y actuación de CONEXUS se fundamenta en un principio claro: construir infraestructura digital de alto rendimiento, diseño funcional y resultados comerciales reales. En Brasil, operamos como CONEXUS Digital Solutions, desarrollando plataformas web multipágina, SEO técnico, Google Perfil de Empresa, branding y aplicaciones móviles adaptadas a empresas locales.",
-  blog_presencaInternacional_sec1_p2: "Paralelamente, para atender las demandas del mercado británico y europeo, consolidamos la marca CONEXXUS (con presencia en conexxus.press). Este enfoque internacional garantiza la aplicación de estándares europeos de usabilidad, privacidad de datos y rigor técnico de manera continua.",
+  blog_presencaInternacional_sec1_p2: "Paralelamente, para atender las demandas del mercado británico y europeo, consolidamos la marca CONEXXUS (con presencia en www.conexxus.co.uk). Este enfoque internacional garantiza la aplicación de estándares europeos de usabilidad, privacidad de datos y rigor técnico de manera continua.",
   blog_presencaInternacional_sec2_h2: "2. CONEXUS Digital Solutions en Brasil: Soluciones de Alta Conversión",
   blog_presencaInternacional_sec2_p1: "Con base en Curitiba y su región metropolitana, CONEXUS Digital Solutions atiende a pequeñas, medianas y grandes empresas en todo Brasil. A diferencia de las agencias tradicionales, priorizamos la máxima velocidad de carga (95+ en Google PageSpeed), cumplimiento de normativas de privacidad y optimización semántica para los primeros puestos en Google.",
   blog_presencaInternacional_sec2_p2: "Además del desarrollo web, desarrollamos productos tecnológicos propios como la app de finanzas personales GRANA y el sistema interactivo Welcome Book Digital para alojamientos turísticos.",
@@ -118,7 +118,7 @@ const esKeys = {
   blog_presencaInternacional_faq1_q: "¿Cuál es la relación entre CONEXUS en Brasil y CONEXXUS en el Reino Unido?",
   blog_presencaInternacional_faq1_a: "CONEXUS Digital Solutions es la marca y operación brasileña, mientras que CONEXXUS es la marca dedicada al mercado del Reino Unido y Europa, compartiendo metodologías de ingeniería y altos estándares de rendimiento.",
   blog_presencaInternacional_faq2_q: "¿Dónde puedo consultar el sitio web oficial de la operación británica?",
-  blog_presencaInternacional_faq2_a: "La plataforma británica oficial de CONEXXUS se encuentra disponible públicamente en https://conexxus.press y cuenta con un caso detallado en nuestro portafolio."
+  blog_presencaInternacional_faq2_a: "La plataforma británica oficial de CONEXXUS se encuentra disponible públicamente en https://www.conexxus.co.uk y cuenta con un caso detallado en nuestro portafolio."
 };
 
 function injectKeys(filePath, newKeysObj) {
