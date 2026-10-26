@@ -1,6 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { pt } from '../src/i18n/pt.js';
+import { en } from '../src/i18n/en.js';
+import { es } from '../src/i18n/es.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -260,6 +263,111 @@ assert(hasDebounce, 'Algoritmo de desduplicação e debounce (600ms) implementad
 
 const hasSanitization = trackingJsContent.includes('sanitizeUrl');
 assert(hasSanitization, 'Módulo de higienização de URLs implementado para conformidade total com LGPD (Zero PII).');
+
+// TEST 12: Auditoria Específica dos 12 Artigos Mais Recentes do Blog
+console.log('\n[TEST 12] Auditoria Específica dos 12 Artigos Mais Recentes do Blog');
+const topBlogPosts = [
+  'conexus-brasil-conexxus-uk-presenca-internacional',
+  'case-grana-aplicativo-gestao-financeira-google-play',
+  'curitipao-2026-festival-panificacao-curitiba',
+  'case-atthos-comex-site-institucional-comercio-exterior',
+  'case-di-piallato-presenca-digital-gelateria-artesanal',
+  'case-soquindins-presenca-digital-confeitaria-tradicional-curitiba',
+  'case-michelly-correa-website-autoridade-comunicacao-jornalismo',
+  'case-little-pet-presenca-digital-pet-shop-estetica-animal',
+  'case-fast-guincho-conversao-emergencial-seo-local-curitiba',
+  'case-nikki-studio-identidade-visual-plataforma-estetica-uk',
+  'case-lumora-cleaning-services-plataforma-orcamentos-limpeza-uk',
+  'case-sos-aberturas-arquitetura-conversao-emergencial-portugal'
+];
+
+function getNested(dict, key) {
+  if (!key || typeof key !== 'string') return null;
+  const parts = key.split('.');
+  let curr = dict;
+  for (const part of parts) {
+    if (curr && typeof curr === 'object' && part in curr) curr = curr[part];
+    else return null;
+  }
+  return (curr !== undefined && typeof curr === 'string') ? curr : null;
+}
+
+for (const slug of topBlogPosts) {
+  const postPath = path.join(rootDir, 'blog', slug, 'index.html');
+  const exists = fs.existsSync(postPath);
+  assert(exists, `[${slug}] Artigo existe no diretório /blog/`);
+  if (!exists) continue;
+
+  const html = fs.readFileSync(postPath, 'utf8');
+  const expectedCanonical = `https://www.conexus.press/blog/${slug}/`;
+
+  // Canonical
+  const hasCanonical = html.includes(`<link rel="canonical" href="${expectedCanonical}">`);
+  assert(hasCanonical, `[${slug}] Canonical aponta corretamente para a própria URL base`);
+
+  // Hreflang recíproco completo
+  const hasHreflangPt = html.includes(`<link rel="alternate" hreflang="pt-BR" href="${expectedCanonical}">`);
+  const hasHreflangEn = html.includes(`<link rel="alternate" hreflang="en" href="${expectedCanonical}?lang=en">`);
+  const hasHreflangEs = html.includes(`<link rel="alternate" hreflang="es" href="${expectedCanonical}?lang=es">`);
+  const hasHreflangX = html.includes(`<link rel="alternate" hreflang="x-default" href="${expectedCanonical}">`);
+  assert(hasHreflangPt && hasHreflangEn && hasHreflangEs && hasHreflangX, `[${slug}] Hreflangs recíprocos (pt-BR, en, es, x-default) configurados`);
+
+  // Title e Meta Description presentes
+  const titleM = html.match(/<title>([^<]+)<\/title>/i);
+  const metaDescM = html.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
+  assert(Boolean(titleM && titleM[1].trim()), `[${slug}] Meta title presente`);
+  assert(Boolean(metaDescM && metaDescM[1].trim()), `[${slug}] Meta description presente`);
+
+  // H1 único
+  const h1M = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/gi) || [];
+  assert(h1M.length === 1, `[${slug}] H1 único e exclusivo presente`);
+
+  // Article / BlogPosting Schema válido
+  const jsonLdBlocks = [...html.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi)].map(m => m[1]);
+  let hasValidArticleSchema = false;
+  for (const block of jsonLdBlocks) {
+    try {
+      const parsed = JSON.parse(block);
+      const items = Array.isArray(parsed) ? parsed : (parsed['@graph'] ? parsed['@graph'] : [parsed]);
+      for (const item of items) {
+        if ((item['@type'] === 'BlogPosting' || item['@type'] === 'Article') && item.headline && item.description) {
+          hasValidArticleSchema = true;
+        }
+      }
+    } catch (e) {}
+  }
+  assert(hasValidArticleSchema, `[${slug}] Schema JSON-LD Article/BlogPosting válido e estruturado`);
+
+  // Paridade e integridade i18n
+  const keys = [...html.matchAll(/data-i18n(?:-html)?="([^"]+)"/g)].map(m => m[1]);
+  const contentKeys = keys.filter(k => 
+    !k.startsWith('nav.') && 
+    !k.startsWith('footer.') && 
+    !k.startsWith('common.') &&
+    k !== 'article_faq_title' &&
+    !k.startsWith('blog_cta_')
+  );
+
+  let missingPt = 0, missingEn = 0, missingEs = 0;
+  let copiedEn = 0, copiedEs = 0;
+
+  for (const k of contentKeys) {
+    const valPt = getNested(pt, k);
+    const valEn = getNested(en, k);
+    const valEs = getNested(es, k);
+
+    if (!valPt || valPt.trim() === '') missingPt++;
+    if (!valEn || valEn.trim() === '') missingEn++;
+    if (!valEs || valEs.trim() === '') missingEs++;
+
+    if (valPt && valEn && valPt.length > 25 && valEn === valPt) copiedEn++;
+    if (valPt && valEs && valPt.length > 25 && valEs === valPt) copiedEs++;
+  }
+
+  assert(contentKeys.length > 0, `[${slug}] Conteúdo possui chaves dinâmicas mapeadas (${contentKeys.length} chaves)`);
+  assert(missingPt === 0 && missingEn === 0 && missingEs === 0, `[${slug}] 100% de paridade i18n PT/EN/ES (Faltas: PT: ${missingPt}, EN: ${missingEn}, ES: ${missingEs})`);
+  assert(copiedEn === 0 && copiedEs === 0, `[${slug}] Versões EN e ES não são cópias do PT (Cópias: EN: ${copiedEn}, ES: ${copiedEs})`);
+}
 
 // SUMÁRIO DOS TESTES
 console.log('\n====================================================');

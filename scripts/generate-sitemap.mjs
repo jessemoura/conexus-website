@@ -74,7 +74,7 @@ function getRouteMetadata(urlPath) {
   if (urlPath.startsWith('https://www.conexus.press/portfolio/')) {
     return { priority: '0.8', changefreq: 'monthly' };
   }
-  if (urlPath.startsWith('https://www.conexus.press/blog/case-') || urlPath.includes('curitipao-2026')) {
+  if (urlPath.startsWith('https://www.conexus.press/blog/case-') || urlPath.includes('curitipao-2026') || urlPath.includes('conexus-brasil-conexxus-uk')) {
     return { priority: '0.8', changefreq: 'monthly' };
   }
   if (urlPath === 'https://www.conexus.press/sobre/' || urlPath === 'https://www.conexus.press/contato/') {
@@ -103,30 +103,83 @@ for (const filePath of publicFiles) {
     url = 'https://www.conexus.press/' + rel;
   }
 
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+
+  // Extract hreflangs if present
+  const hreflangMatches = [...fileContent.matchAll(/<link\s+rel="alternate"\s+hreflang="([^"]*)"\s+href="([^"]*)"/gi)].map(m => ({
+    lang: m[1],
+    href: m[2]
+  }));
+
   const existing = existingEntries.get(url);
   const defaults = getRouteMetadata(url);
 
+  const entryLastmod = existing ? existing.lastmod : todayIso;
+
+  // Add primary (PT) entry
   targetEntries.push({
     loc: url,
-    lastmod: existing ? existing.lastmod : todayIso,
+    lastmod: entryLastmod,
     changefreq: existing ? existing.changefreq : defaults.changefreq,
-    priority: existing ? existing.priority : defaults.priority
+    priority: existing ? existing.priority : defaults.priority,
+    alternates: hreflangMatches
   });
+
+  // If page defines distinct EN and ES alternates (multilingual routes)
+  const enAlternate = hreflangMatches.find(h => h.lang === 'en');
+  const esAlternate = hreflangMatches.find(h => h.lang === 'es');
+
+  if (enAlternate && enAlternate.href !== url) {
+    const existingEn = existingEntries.get(enAlternate.href);
+    targetEntries.push({
+      loc: enAlternate.href,
+      lastmod: existingEn ? existingEn.lastmod : entryLastmod,
+      changefreq: defaults.changefreq,
+      priority: defaults.priority,
+      alternates: hreflangMatches
+    });
+  }
+
+  if (esAlternate && esAlternate.href !== url) {
+    const existingEs = existingEntries.get(esAlternate.href);
+    targetEntries.push({
+      loc: esAlternate.href,
+      lastmod: existingEs ? existingEs.lastmod : entryLastmod,
+      changefreq: defaults.changefreq,
+      priority: defaults.priority,
+      alternates: hreflangMatches
+    });
+  }
 }
 
+// Eliminate any potential duplicates by loc
+const uniqueEntriesMap = new Map();
+for (const entry of targetEntries) {
+  if (!uniqueEntriesMap.has(entry.loc)) {
+    uniqueEntriesMap.set(entry.loc, entry);
+  }
+}
+const finalEntries = Array.from(uniqueEntriesMap.values());
+
 // Sort alphabetically, with home first
-targetEntries.sort((a, b) => {
+finalEntries.sort((a, b) => {
   if (a.loc === 'https://www.conexus.press/') return -1;
   if (b.loc === 'https://www.conexus.press/') return 1;
   return a.loc.localeCompare(b.loc);
 });
 
-// Build XML
+// Build XML with xhtml namespace support
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-for (const entry of targetEntries) {
+xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
+xml += '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+for (const entry of finalEntries) {
   xml += '  <url>\n';
   xml += `    <loc>${entry.loc}</loc>\n`;
+  if (entry.alternates && entry.alternates.length > 0) {
+    for (const alt of entry.alternates) {
+      xml += `    <xhtml:link rel="alternate" hreflang="${alt.lang}" href="${alt.href}"/>\n`;
+    }
+  }
   xml += `    <lastmod>${entry.lastmod}</lastmod>\n`;
   xml += `    <changefreq>${entry.changefreq}</changefreq>\n`;
   xml += `    <priority>${entry.priority}</priority>\n`;
@@ -143,6 +196,6 @@ if (fs.existsSync(path.dirname(SITEMAP_HOSTINGER))) {
   fs.writeFileSync(SITEMAP_HOSTINGER, xml, 'utf8');
 }
 
-console.log(`✅ Automated sitemap generation complete!`);
-console.log(`   Total URLs: ${targetEntries.length}`);
+console.log(`✅ Automated multilingual sitemap generation complete!`);
+console.log(`   Total URLs: ${finalEntries.length}`);
 console.log(`   Synchronized in: root, public/, and HOSTINGER-FINAL/`);
