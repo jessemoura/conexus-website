@@ -102,7 +102,12 @@
 
 
   <!-- METRICOOL TRACKING -->
-  <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"22550805668229d6afbaafda3c5a592a"})});</script>
+  <script>
+    window.addEventListener('load', function() {
+      function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}
+      loadScript(function(){if(window.beTracker)beTracker.t({hash:"22550805668229d6afbaafda3c5a592a"})});
+    });
+  </script>
 </head>
 <body data-i18n-page="home">
   <!-- HEADER -->
@@ -221,7 +226,10 @@
           </div>
         </div>
         <div class="hero-media">
-          <img src="/assets/images/conexus-home-hero-01.png.png" alt="Marketing Digital CONEXUS" width="580" height="390" loading="eager">
+          <picture>
+            <source srcset="/assets/images/conexus-home-hero-01.webp" type="image/webp">
+            <img src="/assets/images/conexus-home-hero-01.png.png" alt="Marketing Digital CONEXUS" width="580" height="390" loading="eager" fetchpriority="high">
+          </picture>
         </div>
       </div>
     </section>

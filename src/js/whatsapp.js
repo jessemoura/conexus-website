@@ -1,5 +1,4 @@
 import { siteConfig } from '../config/siteConfig.js';
-import { translations, defaultLanguage } from '../i18n/index.js';
 
 /**
  * Retorna a URL formatada do WhatsApp com a mensagem contextual codificada no idioma ativo
@@ -7,14 +6,19 @@ import { translations, defaultLanguage } from '../i18n/index.js';
  * @returns {string} URL completa de direcionamento ao WhatsApp
  */
 export function getWhatsAppUrl(messageKey = 'homeHero') {
-  let currentLang = defaultLanguage;
+  let currentLang = 'pt';
   if (typeof document !== 'undefined') {
     currentLang = document.documentElement.getAttribute('data-current-lang') || 
       (typeof localStorage !== 'undefined' ? localStorage.getItem('conexus_lang') : null) || 
-      defaultLanguage;
+      'pt';
   }
-  const dict = translations[currentLang] || translations[defaultLanguage];
-  const message = dict?.whatsapp?.[messageKey] || siteConfig.whatsappMessages?.[messageKey] || siteConfig.whatsappMessages?.homeHero || '';
+  let message = '';
+  if (typeof window !== 'undefined' && window.__conexusGetTranslation) {
+    message = window.__conexusGetTranslation('whatsapp.' + messageKey, currentLang);
+  }
+  if (!message) {
+    message = siteConfig.whatsappMessages?.[messageKey] || siteConfig.whatsappMessages?.homeHero || '';
+  }
   
   const rawNumber = siteConfig.whatsappNumber || '5541991569590';
   const cleanNumber = rawNumber.replace(/\D/g, '') || '5541991569590';

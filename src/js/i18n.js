@@ -1,14 +1,51 @@
-import { translations, defaultLanguage, supportedLanguages, languageMeta } from '../i18n/index.js?v=20261003.04';
 import { initWhatsAppLinks } from './whatsapp.js';
 
+export const defaultLanguage = 'pt';
+export const supportedLanguages = ['pt', 'en', 'es'];
+
+export const languageMeta = {
+  pt: { code: 'pt', name: 'Português', flag: '/assets/icons/flags/br.svg', flagAlt: 'Bandeira do Brasil', htmlLang: 'pt-BR' },
+  en: { code: 'en', name: 'English', flag: '/assets/icons/flags/gb.svg', flagAlt: 'Flag of the United Kingdom', htmlLang: 'en' },
+  es: { code: 'es', name: 'Español', flag: '/assets/icons/flags/es.svg', flagAlt: 'Bandera de España', htmlLang: 'es' }
+};
+
 let currentLanguage = defaultLanguage;
+let loadedDictionaries = {};
+
+// Função auxiliar global para interoperabilidade sem dependência circular
+if (typeof window !== 'undefined') {
+  window.__conexusGetTranslation = (key, lang) => getTranslation(key, lang);
+}
 
 /**
- * Obtém valor de chave aninhada no dicionário (ex: 'nav.home' ou 'services.items.criacaoSites.title')
+ * Carregador dinâmico sob demanda para não sobrecarregar o bundle inicial
+ */
+export async function loadDictionary(lang) {
+  if (loadedDictionaries[lang]) return loadedDictionaries[lang];
+  try {
+    if (lang === 'pt') {
+      const mod = await import('../i18n/pt.js');
+      loadedDictionaries.pt = mod.pt;
+    } else if (lang === 'en') {
+      const mod = await import('../i18n/en.js');
+      loadedDictionaries.en = mod.en;
+    } else if (lang === 'es') {
+      const mod = await import('../i18n/es.js');
+      loadedDictionaries.es = mod.es;
+    }
+  } catch (err) {
+    console.error(`[i18n] Erro ao carregar dicionário (${lang}):`, err);
+  }
+  return loadedDictionaries[lang] || null;
+}
+
+/**
+ * Obtém valor de chave aninhada no dicionário carregado
  */
 export function getTranslation(key, lang = currentLanguage) {
   if (!key || typeof key !== 'string') return null;
-  const dict = translations[lang] || translations[defaultLanguage];
+  const dict = loadedDictionaries[lang] || loadedDictionaries[defaultLanguage];
+  if (!dict) return null;
   const keys = key.split('.');
   let result = dict;
   
@@ -17,7 +54,8 @@ export function getTranslation(key, lang = currentLanguage) {
       result = result[k];
     } else {
       // Fallback para português caso não encontre
-      let fallback = translations[defaultLanguage];
+      let fallback = loadedDictionaries[defaultLanguage];
+      if (!fallback) return null;
       for (const fk of keys) {
         if (fallback && typeof fallback === 'object' && fk in fallback) {
           fallback = fallback[fk];
@@ -51,7 +89,7 @@ function isValidTranslation(val, key) {
 /**
  * Aplica todas as traduções nos elementos marcados no DOM
  */
-export function applyTranslations(lang) {
+export async function applyTranslations(lang) {
   if (!supportedLanguages.includes(lang)) {
     lang = defaultLanguage;
   }
@@ -62,6 +100,14 @@ export function applyTranslations(lang) {
   // 1. Atualiza atributo lang do elemento <html>
   document.documentElement.lang = meta.htmlLang;
   document.documentElement.setAttribute('data-current-lang', lang);
+
+  // Se o idioma for o padrão (PT) e o dicionário ainda não estiver em memória,
+  // se o HTML já estiver em PT, não precisamos bloquear. Caso contrário, carregamos.
+  const dict = await loadDictionary(lang);
+  if (!dict) {
+    updateSelectorUI(lang);
+    return;
+  }
 
   // 2. Atualiza elementos com data-i18n (texto puro)
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -88,7 +134,6 @@ export function applyTranslations(lang) {
     const attrConfig = el.getAttribute('data-i18n-attr');
     if (!attrConfig) return;
     
-    // Suporta múltiplos atributos separados por vírgula
     const mappings = attrConfig.split(',');
     mappings.forEach(mapping => {
       const [attrName, key] = mapping.split(':').map(s => s.trim());
@@ -169,7 +214,7 @@ export function applyTranslations(lang) {
 
   const ogLocale = document.querySelector('meta[property="og:locale"]');
   if (ogLocale) {
-    const localeMap = { pt: 'pt_BR', en: 'en_US', es: 'es_ES' };
+    const localeMap = { pt: 'pt_BR', en: 'en_GB', es: 'es_ES' };
     ogLocale.setAttribute('content', localeMap[lang] || 'pt_BR');
   }
 
@@ -241,7 +286,7 @@ function updateSelectorUI(lang) {
 /**
  * Troca de idioma programática
  */
-export function setLanguage(lang) {
+export async function setLanguage(lang) {
   if (!supportedLanguages.includes(lang)) {
     lang = defaultLanguage;
   }
@@ -257,7 +302,7 @@ export function setLanguage(lang) {
   }
   window.history.replaceState({}, '', url.toString());
 
-  applyTranslations(lang);
+  await applyTranslations(lang);
 }
 
 /**
@@ -325,5 +370,13 @@ export function initI18n() {
   });
 
   // 3. Aplica idioma inicial
-  applyTranslations(initialLang);
+  if (initialLang !== defaultLanguage) {
+    applyTranslations(initialLang);
+  } else {
+    // Para Português (padrão): o HTML já está 100% pré-renderizado estaticamente!
+    // Evita carregar 2.4MB de dicionário no carregamento crítico inicial.
+    document.documentElement.lang = languageMeta.pt.htmlLang;
+    document.documentElement.setAttribute('data-current-lang', 'pt');
+    updateSelectorUI('pt');
+  }
 }

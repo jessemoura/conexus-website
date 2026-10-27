@@ -30,7 +30,15 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: getHtmlInputs(__dirname)
+      input: getHtmlInputs(__dirname),
+      output: {
+        manualChunks(id) {
+          if (id.includes('src/i18n/pt.js') || id.includes('src\\i18n\\pt.js')) return 'i18n-pt';
+          if (id.includes('src/i18n/en.js') || id.includes('src\\i18n\\en.js')) return 'i18n-en';
+          if (id.includes('src/i18n/es.js') || id.includes('src\\i18n\\es.js')) return 'i18n-es';
+          if (id.includes('src/js/cookieConsent.js') || id.includes('src\\js\\cookieConsent.js')) return 'cookieConsent';
+        }
+      }
     }
   },
   server: {
