@@ -1,9 +1,9 @@
-import { initWhatsAppLinks } from './whatsapp.js?v=20261006.01';
+import { initWhatsAppLinks } from './whatsapp.js?v=20261027.01';
 import { initMobileMenu } from './mobileMenu.js';
 import { initTracking } from './tracking.js';
 import { initThemeToggle } from './themeToggle.js';
 import { initReviews } from './reviews.js';
-import { initI18n } from './i18n.js?v=20261006.01';
+import { initI18n } from './i18n.js?v=20261027.01';
 import { initCookieConsent } from './cookieConsent.js';
 
 function initAll() {
