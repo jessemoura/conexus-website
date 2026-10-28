@@ -1,13 +1,3 @@
-import { pt } from './pt.js?v=20261003.04';
-import { en } from './en.js?v=20261003.04';
-import { es } from './es.js?v=20261003.04';
-
-export const translations = {
-  pt,
-  en,
-  es
-};
-
 export const defaultLanguage = 'pt';
 export const supportedLanguages = ['pt', 'en', 'es'];
 
@@ -17,3 +7,4 @@ export const languageMeta = {
   es: { code: 'es', name: 'Español', flag: '/assets/icons/flags/es.svg', flagAlt: 'Bandera de España', htmlLang: 'es' }
 };
 
+export const translations = {};
