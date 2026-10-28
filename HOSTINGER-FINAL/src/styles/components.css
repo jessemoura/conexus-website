@@ -1172,31 +1172,33 @@ body.menu-open .whatsapp-float {
   padding: 0;
   border-radius: 50%;
   cursor: pointer;
-  margin-left: 0.5rem;
+  margin-left: 0.35rem;
   line-height: 0;
   vertical-align: middle;
   transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   box-sizing: border-box;
-  background-color: #16161a;
-  border: 1px solid #FF2D8D;
-  box-shadow: 0 0 8px rgba(255, 45, 141, 0.25), 0 0 2px rgba(255, 45, 141, 0.15);
+  background-color: #0B2340;
+  border: 1px solid rgba(33, 184, 246, 0.45);
+  box-shadow: 0 0 8px rgba(33, 184, 246, 0.2);
   color: #FACC15;
 }
 
 .theme-toggle-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 12px rgba(255, 45, 141, 0.4), 0 0 4px rgba(255, 45, 141, 0.2);
+  transform: scale(1.08);
+  background-color: rgba(33, 184, 246, 0.15);
+  border-color: #21B8F6;
+  box-shadow: 0 0 12px rgba(33, 184, 246, 0.4);
 }
 
 .theme-toggle-btn:focus-visible {
-  outline: 2px solid #FF2D8D;
+  outline: 2px solid #21B8F6;
   outline-offset: 2px;
 }
 
 .theme-toggle-btn .sun-icon,
 .theme-toggle-btn .moon-icon {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   display: block;
   flex-shrink: 0;
   margin: 0;
@@ -1205,7 +1207,7 @@ body.menu-open .whatsapp-float {
   fill: none;
 }
 
-/* DARK MODE: Sol amarelo ativo, Lua oculta */
+/* DARK MODE: Sol amarelo dourado vibrante ativo, Lua oculta */
 .theme-toggle-btn .sun-icon {
   display: block;
   color: #FACC15;
@@ -1217,54 +1219,39 @@ body.menu-open .whatsapp-float {
 }
 
 /* LIGHT MODE ([data-theme="light"]):
-   - botão circular branco/off-white
-   - borda cinza extremamente sutil
-   - sombra suave
-   - Lua preta/graphite
+   - Botão circular branco puro
+   - Borda suave perfeitamente harmonizada com o header navy #003A70
+   - Sombra sutil de elevação
+   - Ícone da Lua em azul marinho #003A70 com altíssimo contraste (>10:1)
 */
 [data-theme="light"] .theme-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  min-width: 38px;
-  min-height: 38px;
-  padding: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-left: 0.5rem;
-  line-height: 0;
-  vertical-align: middle;
-  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-  box-sizing: border-box;
-  background-color: #16161a;
-  border: 1px solid #FF2D8D;
-  box-shadow: 0 0 8px rgba(255, 45, 141, 0.25), 0 0 2px rgba(255, 45, 141, 0.15);
-  color: #FACC15;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: #003A70;
 }
 
 [data-theme="light"] .theme-toggle-btn:hover {
-  background-color: #F9FAFB;
-  border-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
-  transform: scale(1.05);
+  background-color: #F0F7FF;
+  border-color: #70D7FF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
 }
 
 [data-theme="light"] .theme-toggle-btn:focus-visible {
-  outline: 2px solid #18181b;
+  outline: 2px solid #70D7FF;
   outline-offset: 2px;
 }
 
-/* LIGHT MODE: Lua preta/graphite ativa, Sol oculto */
+/* LIGHT MODE: Lua azul marinho #003A70 ativa, Sol oculto */
 [data-theme="light"] .theme-toggle-btn .sun-icon {
   display: none;
 }
 
 [data-theme="light"] .theme-toggle-btn .moon-icon {
   display: block;
-  color: #18181b;
-  stroke: #18181b;
+  color: #003A70;
+  stroke: #003A70;
 }
 
 /* -------------------------------------------------------------
