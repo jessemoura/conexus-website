@@ -881,10 +881,13 @@
   color: #B8C5D3 !important;
 }
 
+.footer-column h3,
 .footer-column h4,
+[data-theme="light"] .footer-column h3,
 [data-theme="light"] .footer-column h4 {
   color: #FFFFFF !important;
   font-size: var(--fs-sm);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: var(--spacing-md);
@@ -989,7 +992,7 @@
 /* Portfolio Eyebrow & Auxiliary Text Contrast in Light Mode */
 [data-theme="light"] .portfolio-grid [style*="#FFD700"],
 [data-theme="light"] .stacked-cards-container [style*="#FFD700"] {
-  color: #B8860B !important;
+  color: #855b00 !important;
 }
 
 [data-theme="light"] .portfolio-grid [style*="#FF69B4"],
@@ -1510,7 +1513,7 @@ body.menu-open .whatsapp-float {
 
 [data-theme="light"] .stacked-card.card-fastguincho .stacked-card-num,
 [data-theme="light"] .stacked-card.card-fastguincho .stacked-card-tag {
-  color: #B8860B !important;
+  color: #855b00 !important;
 }
 
 [data-theme="light"] .stacked-card.card-atthos .stacked-card-num,
@@ -1530,7 +1533,7 @@ body.menu-open .whatsapp-float {
 
 [data-theme="light"] .stacked-card.card-sos .stacked-card-num,
 [data-theme="light"] .stacked-card.card-sos .stacked-card-tag {
-  color: #B8860B !important;
+  color: #855b00 !important;
 }
 
 [data-theme="light"] .stacked-card.card-nikki .stacked-card-num,
@@ -2715,17 +2718,29 @@ html, body {
 }
 
 .reviews-dot {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.reviews-dot::before {
+  content: '';
+  display: block;
   width: 8px;
   height: 8px;
   border-radius: 9999px;
   background-color: var(--color-border-subtle);
-  border: none;
-  cursor: pointer;
-  padding: 0;
   transition: all var(--transition-fast);
 }
 
-.reviews-dot.active {
+.reviews-dot.active::before {
   width: 24px;
   background-color: var(--color-primary-cyan);
   box-shadow: 0 0 10px rgba(33, 184, 246, 0.4);
@@ -2758,11 +2773,11 @@ html, body {
   color: #0066B3;
 }
 
-[data-theme="light"] .reviews-dot {
+[data-theme="light"] .reviews-dot::before {
   background-color: rgba(0, 58, 112, 0.16);
 }
 
-[data-theme="light"] .reviews-dot.active {
+[data-theme="light"] .reviews-dot.active::before {
   background-color: #0066B3;
   box-shadow: 0 0 8px rgba(0, 102, 179, 0.35);
 }

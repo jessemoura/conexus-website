@@ -713,6 +713,10 @@ export const en = {
     "q3Desc": "We guarantee the implementation of the highest industry technical SEO standards (clean semantic code, metadata, Core Web Vitals speed, and XML sitemaps). While no ethical agency guarantees specific rank positions, we engineer your site for maximum organic authority.",
     "q4Title": "How does project pricing and proposals work?",
     "q4Desc": "We connect directly via WhatsApp to understand your business objectives and technical requirements. Based on this diagnosis, we present a transparent, detailed proposal.",
+    "q5Title": "Do you provide website redesign and migration from WordPress or other platforms?",
+    "q5Desc": "Yes. We modernize outdated websites and perform seamless, secure migrations from platforms such as WordPress, Wix, and legacy systems to a modern, ultra-fast, SEO-optimized architecture, preserving your Google search rankings and indexed authority.",
+    "q6Title": "What is the geographical service area of CONEXUS?",
+    "q6Desc": "We serve businesses both locally and remotely in Curitiba, São José dos Pinhais, and throughout the Curitiba Metropolitan Area, as well as clients across Brazil and international projects worldwide (including the United Kingdom and Portugal).",
     "ctaBoxTitle": "Have a specific question about your project?",
     "ctaBoxDesc": "Our team is ready to talk and guide the best digital strategy for your business.",
     "ctaBoxBtn": "Speak with the Team"

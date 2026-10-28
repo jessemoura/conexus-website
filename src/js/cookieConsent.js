@@ -226,6 +226,9 @@ export function renderCookieBanner(isRevocationMode = false) {
         text-decoration: underline;
         text-underline-offset: 2px;
       }
+      [data-theme="light"] .conexus-cb-link {
+        color: #0369A1;
+      }
       .conexus-cb-status {
         font-size: 0.78rem;
         padding: 5px 10px;
@@ -257,11 +260,11 @@ export function renderCookieBanner(isRevocationMode = false) {
         border: none;
       }
       .conexus-cb-btn-accept {
-        background: #0284C7;
+        background: #0369A1;
         color: #FFFFFF;
       }
       .conexus-cb-btn-accept:hover {
-        background: #0369A1;
+        background: #0284C7;
       }
       .conexus-cb-btn-decline {
         background: transparent;

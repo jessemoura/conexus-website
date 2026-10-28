@@ -273,6 +273,11 @@ function updateSelectorUI(lang) {
   document.querySelectorAll('.lang-active-code').forEach(el => {
     el.textContent = meta.code.toUpperCase();
   });
+
+  // Atualiza aria-label do botão seletor para garantir conformidade com WCAG 2.5.3 (Label in Name)
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.setAttribute('aria-label', `Selecionar Idioma: ${meta.code.toUpperCase()}`);
+  });
   
   // Atualiza classes ativas nas opções do dropdown
   document.querySelectorAll('.lang-option').forEach(option => {

@@ -713,6 +713,10 @@ export const pt = {
     "q3Desc": "Garantimos a implementação das melhores práticas técnicas de SEO (código semântico, meta tags, velocidade e sitemaps XML). Nenhum profissional sério promete posições específicas, mas estruturamos seu site para obter o máximo de relevância orgânica.",
     "q4Title": "Como funciona o orçamento do meu projeto?",
     "q4Desc": "Entramos em contato via WhatsApp para entender os objetivos e necessidades da sua empresa. Com base nisso, apresentamos uma proposta transparente e detalhada.",
+    "q5Title": "Vocês realizam redesign de sites antigos e migração de WordPress ou outras plataformas?",
+    "q5Desc": "Sim. Modernizamos websites antigos e realizamos a migração completa e segura de plataformas como WordPress, Wix e outros sistemas para uma arquitetura moderna, ultra-rápida e otimizada para SEO, preservando seu histórico de indexação e autoridade no Google.",
+    "q6Title": "Qual é a região de atendimento da CONEXUS?",
+    "q6Desc": "Atendemos presencial e remotamente empresas em Curitiba, São José dos Pinhais e em toda a Região Metropolitana (RMC), além de clientes em todo o território nacional (Brasil) e projetos internacionais com presença global (como Reino Unido e Portugal).",
     "ctaBoxTitle": "Ficou com alguma dúvida específica?",
     "ctaBoxDesc": "Nossa equipe está à disposição para conversar e orientar o melhor caminho digital para a sua empresa.",
     "ctaBoxBtn": "Conversar com a Equipe"
