@@ -1,4 +1,4 @@
-import { siteConfig } from '../config/siteConfig.js';
+import { siteConfig } from '../config/siteConfig.js?v=20261028.03';
 
 /**
  * Retorna a URL formatada do WhatsApp com a mensagem contextual codificada no idioma ativo

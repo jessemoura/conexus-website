@@ -1,10 +1,10 @@
-import { initWhatsAppLinks } from './whatsapp.js';
-import { initMobileMenu } from './mobileMenu.js';
-import { initTracking } from './tracking.js';
-import { initThemeToggle } from './themeToggle.js';
-import { initReviews } from './reviews.js';
-import { initI18n } from './i18n.js';
-import { initCookieConsent } from './cookieConsent.js';
+import { initWhatsAppLinks } from './whatsapp.js?v=20261028.03';
+import { initMobileMenu } from './mobileMenu.js?v=20261028.03';
+import { initTracking } from './tracking.js?v=20261028.03';
+import { initThemeToggle } from './themeToggle.js?v=20261028.03';
+import { initReviews } from './reviews.js?v=20261028.03';
+import { initI18n } from './i18n.js?v=20261028.03';
+import { initCookieConsent } from './cookieConsent.js?v=20261028.03';
 
 function initAll() {
   initI18n();

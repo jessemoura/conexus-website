@@ -1,4 +1,4 @@
-import { initWhatsAppLinks } from './whatsapp.js';
+import { initWhatsAppLinks } from './whatsapp.js?v=20261028.03';
 
 export const defaultLanguage = 'pt';
 export const supportedLanguages = ['pt', 'en', 'es'];
