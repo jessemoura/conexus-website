@@ -35,17 +35,41 @@
   overflow: visible !important;
 }
 
+.brand-logo,
+.lang-selector-dropdown,
+.theme-toggle-btn,
+.mobile-toggle,
+.social-icon-link,
+.footer-social-icon {
+  flex-shrink: 0;
+}
+
+
 .brand-logo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  text-decoration: none;
 }
 
 .brand-logo img {
-  height: 48px;
+  height: 44px;
   width: auto;
+  max-width: 155px;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+  transition: transform var(--transition-fast);
+}
+
+.brand-logo:hover img {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .brand-logo img {
+    height: 38px;
+    max-width: 135px;
+  }
 }
 
 /* -------------------------------------------------------------
@@ -88,7 +112,27 @@
   .nav-desktop {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-desktop {
+    gap: 0.7rem;
+  }
+  .header-social-links {
+    gap: 0.4rem;
+    margin-left: 0.2rem;
+    padding-left: 0.4rem;
+  }
+  .header-actions {
+    gap: 0.4rem;
+  }
+  .header-actions .btn {
+    padding: 0.5rem 0.75rem;
+    font-size: var(--fs-xs);
+    white-space: nowrap;
   }
 }
 
@@ -135,8 +179,12 @@
   display: block;
 }
 
+
+
+
 .nav-link {
   color: var(--color-text-muted);
+  white-space: nowrap;
   font-family: var(--font-heading);
   font-size: var(--fs-sm);
   font-weight: 600;
@@ -683,6 +731,35 @@
 /* -------------------------------------------------------------
    8. FINAL CTA
 ------------------------------------------------------------- */
+
+/* -------------------------------------------------------------
+   CASE POST COVERS STANDARDIZED CONTAINER (16:9)
+------------------------------------------------------------- */
+.case-cover-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  border-radius: var(--radius-md) !important;
+  margin-bottom: 1.25rem !important;
+  overflow: hidden !important;
+  background-color: #061426 !important;
+  text-decoration: none !important;
+}
+
+.case-cover-wrapper .case-cover-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+[data-theme="light"] .case-cover-wrapper {
+  background-color: #F1F5F9 !important;
+}
+
 .final-cta {
   background: linear-gradient(180deg, var(--color-surface-navy) 0%, var(--color-bg-dark) 100%);
   border-top: 1px solid var(--color-cyan-border);
@@ -804,10 +881,13 @@
   color: #B8C5D3 !important;
 }
 
+.footer-column h3,
 .footer-column h4,
+[data-theme="light"] .footer-column h3,
 [data-theme="light"] .footer-column h4 {
   color: #FFFFFF !important;
   font-size: var(--fs-sm);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: var(--spacing-md);
@@ -912,7 +992,7 @@
 /* Portfolio Eyebrow & Auxiliary Text Contrast in Light Mode */
 [data-theme="light"] .portfolio-grid [style*="#FFD700"],
 [data-theme="light"] .stacked-cards-container [style*="#FFD700"] {
-  color: #B8860B !important;
+  color: #855b00 !important;
 }
 
 [data-theme="light"] .portfolio-grid [style*="#FF69B4"],
@@ -967,6 +1047,19 @@
   transition: transform 0.25s ease, background-color 0.25s ease;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .footer,
+  [data-theme="light"] .footer {
+    padding-bottom: calc(var(--spacing-md) + 70px) !important;
+  }
+}
+
+.mobile-menu.is-open ~ .whatsapp-float,
+body.menu-open .whatsapp-float {
+  display: none !important;
+}
+
 
 @media (max-width: 768px) {
   .whatsapp-float {
@@ -1080,15 +1173,10 @@
   border-radius: 50%;
   cursor: pointer;
   margin-left: 0.5rem;
+  line-height: 0;
+  vertical-align: middle;
   transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   box-sizing: border-box;
-
-  /* DARK MODE DEFAULT:
-     - botão circular com interior charcoal/grafite escuro
-     - contorno pink/magenta fino (#FF2D8D)
-     - glow pink MUITO discreto
-     - Sol amarelo
-  */
   background-color: #16161a;
   border: 1px solid #FF2D8D;
   box-shadow: 0 0 8px rgba(255, 45, 141, 0.25), 0 0 2px rgba(255, 45, 141, 0.15);
@@ -1107,9 +1195,14 @@
 
 .theme-toggle-btn .sun-icon,
 .theme-toggle-btn .moon-icon {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
+  display: block;
   flex-shrink: 0;
+  margin: 0;
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
 }
 
 /* DARK MODE: Sol amarelo ativo, Lua oculta */
@@ -1130,10 +1223,25 @@
    - Lua preta/graphite
 */
 [data-theme="light"] .theme-toggle-btn {
-  background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
-  color: #18181b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  min-height: 38px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  line-height: 0;
+  vertical-align: middle;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  box-sizing: border-box;
+  background-color: #16161a;
+  border: 1px solid #FF2D8D;
+  box-shadow: 0 0 8px rgba(255, 45, 141, 0.25), 0 0 2px rgba(255, 45, 141, 0.15);
+  color: #FACC15;
 }
 
 [data-theme="light"] .theme-toggle-btn:hover {
@@ -1405,7 +1513,7 @@
 
 [data-theme="light"] .stacked-card.card-fastguincho .stacked-card-num,
 [data-theme="light"] .stacked-card.card-fastguincho .stacked-card-tag {
-  color: #B8860B !important;
+  color: #855b00 !important;
 }
 
 [data-theme="light"] .stacked-card.card-atthos .stacked-card-num,
@@ -1425,7 +1533,7 @@
 
 [data-theme="light"] .stacked-card.card-sos .stacked-card-num,
 [data-theme="light"] .stacked-card.card-sos .stacked-card-tag {
-  color: #B8860B !important;
+  color: #855b00 !important;
 }
 
 [data-theme="light"] .stacked-card.card-nikki .stacked-card-num,
@@ -1451,6 +1559,11 @@
 [data-theme="light"] .stacked-card.card-conexxus-uk .stacked-card-num,
 [data-theme="light"] .stacked-card.card-conexxus-uk .stacked-card-tag {
   color: #0066B3 !important;
+}
+
+[data-theme="light"] .stacked-card.card-grana .stacked-card-num,
+[data-theme="light"] .stacked-card.card-grana .stacked-card-tag {
+  color: #00897B !important;
 }
 
 [data-theme="light"] .ecosystem-section {
@@ -2122,6 +2235,15 @@
   color: #21B8F6;
 }
 
+.stacked-card.card-grana {
+  border-color: rgba(0, 191, 165, 0.45);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 191, 165, 0.15);
+}
+.stacked-card.card-grana .stacked-card-num,
+.stacked-card.card-grana .stacked-card-tag {
+  color: #00BFA5;
+}
+
 @media (min-width: 992px) {
   .stacked-cards-container {
     padding-top: 1rem;
@@ -2145,6 +2267,7 @@
   .stacked-card:nth-child(6) { z-index: 6; }
   .stacked-card:nth-child(7) { z-index: 7; }
   .stacked-card:nth-child(8) { z-index: 8; }
+  .stacked-card:nth-child(9) { z-index: 9; }
 
   /* Smooth reveal & advance on hover / focus */
   .stacked-card:hover,
@@ -2161,6 +2284,7 @@
   .stacked-card.card-oxford:hover { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(212, 175, 55, 0.35); }
   .stacked-card.card-michelly:hover { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(255, 255, 255, 0.25); }
   .stacked-card.card-conexxus-uk:hover { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(33, 184, 246, 0.35); }
+  .stacked-card.card-grana:hover { box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(0, 191, 165, 0.35); }
 
   /* Slide subsequent cards down to uncover hovered card completely */
   .stacked-card:hover ~ .stacked-card,
@@ -2594,17 +2718,29 @@ html, body {
 }
 
 .reviews-dot {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.reviews-dot::before {
+  content: '';
+  display: block;
   width: 8px;
   height: 8px;
   border-radius: 9999px;
   background-color: var(--color-border-subtle);
-  border: none;
-  cursor: pointer;
-  padding: 0;
   transition: all var(--transition-fast);
 }
 
-.reviews-dot.active {
+.reviews-dot.active::before {
   width: 24px;
   background-color: var(--color-primary-cyan);
   box-shadow: 0 0 10px rgba(33, 184, 246, 0.4);
@@ -2637,11 +2773,11 @@ html, body {
   color: #0066B3;
 }
 
-[data-theme="light"] .reviews-dot {
+[data-theme="light"] .reviews-dot::before {
   background-color: rgba(0, 58, 112, 0.16);
 }
 
-[data-theme="light"] .reviews-dot.active {
+[data-theme="light"] .reviews-dot.active::before {
   background-color: #0066B3;
   box-shadow: 0 0 8px rgba(0, 102, 179, 0.35);
 }
@@ -3529,3 +3665,262 @@ html, body {
 
 
 
+
+
+/* GLOBAL THEME CONTRAST REINFORCEMENTS */
+
+/* DARK MODE CONTRAST (Default) */
+.card,
+.service-card,
+.portfolio-card,
+.process-step,
+.faq-item,
+.diag-card {
+  background-color: var(--color-surface-navy);
+  border: 1px solid var(--color-border-subtle);
+  color: var(--color-text-white);
+}
+
+.card h2, .card h3, .card h4,
+.service-card h2, .service-card h3, .service-card h4,
+.portfolio-card h2, .portfolio-card h3, .portfolio-card h4,
+.process-step h2, .process-step h3, .process-step h4,
+.faq-item h2, .faq-item h3, .faq-item h4 {
+  color: #F5F8FC;
+}
+
+.card p,
+.service-card p,
+.portfolio-card p,
+.process-step p,
+.faq-item p {
+  color: #B8C5D3;
+  line-height: 1.65;
+}
+
+/* Form controls dark mode */
+input, textarea, select {
+  background-color: #0B2340;
+  border: 1px solid rgba(184, 197, 211, 0.25);
+  color: #F5F8FC;
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #8898AA;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-primary-cyan);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(33, 184, 246, 0.25);
+}
+
+/* LIGHT MODE GLOBAL CONTRAST OVERRIDES */
+[data-theme="light"] {
+  --color-bg-dark: #F4F7FA;
+  --color-bg-body: #F4F7FA;
+  --color-surface-navy: #FFFFFF;
+  --color-surface-graphite: #FFFFFF;
+  --color-text-white: #07182D;
+  --color-text-muted: #35465A;
+  --color-border-subtle: rgba(0, 58, 112, 0.16);
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+  background-color: #FFFFFF !important;
+  border: 1px solid rgba(0, 58, 112, 0.25) !important;
+  color: #07182D !important;
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: #64748B !important;
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus,
+[data-theme="light"] select:focus {
+  border-color: #0066B3 !important;
+  box-shadow: 0 0 0 3px rgba(0, 102, 179, 0.2) !important;
+}
+
+/* Light mode breadcrumbs & meta links */
+[data-theme="light"] a[style*="--color-brand-primary"],
+[data-theme="light"] a[style*="--color-primary-cyan"],
+[data-theme="light"] a[style*="--color-cyan"] {
+  color: #0066B3 !important;
+}
+
+[data-theme="light"] a[style*="--color-brand-primary"]:hover,
+[data-theme="light"] a[style*="--color-primary-cyan"]:hover {
+  color: #003A70 !important;
+}
+
+/* Light mode list items */
+[data-theme="light"] ul,
+[data-theme="light"] ol {
+  color: #35465A;
+}
+
+[data-theme="light"] li {
+  color: #35465A;
+}
+
+/* Fix any inline styles that used hardcoded light text colors in light mode */
+[data-theme="light"] [style*="color: #CBD5E1"],
+[data-theme="light"] [style*="color: #cbd5e1"] {
+  color: #35465A !important;
+}
+
+[data-theme="light"] [style*="color: #FFFFFF"],
+[data-theme="light"] [style*="color: #ffffff"] {
+  color: #07182D !important;
+}
+
+/* Preserve white text on primary buttons and dark headers in light mode */
+[data-theme="light"] .btn-primary,
+[data-theme="light"] .btn-primary *,
+[data-theme="light"] .header,
+[data-theme="light"] .header .nav-link,
+[data-theme="light"] .footer,
+[data-theme="light"] .footer * {
+  color: #FFFFFF;
+}
+
+[data-theme="light"] .header .nav-link:hover,
+[data-theme="light"] .header .nav-link.active {
+  color: #70D7FF;
+}
+
+/* Light mode cards and boxes */
+[data-theme="light"] .service-card,
+[data-theme="light"] .card,
+[data-theme="light"] .portfolio-card,
+[data-theme="light"] .faq-item,
+[data-theme="light"] .process-step {
+  background-color: #FFFFFF !important;
+  border-color: rgba(0, 58, 112, 0.16) !important;
+  box-shadow: 0 4px 20px rgba(7, 24, 45, 0.06) !important;
+}
+
+[data-theme="light"] .faq-item-question {
+  color: #07182D !important;
+}
+
+[data-theme="light"] .faq-item-answer,
+[data-theme="light"] .faq-item-answer p {
+  color: #35465A !important;
+}
+
+
+
+
+.social-icon-link:hover,
+.footer-social-icon:hover {
+  transform: scale(1.08) !important;
+  opacity: 0.9 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.social-icon-link:focus-visible,
+.footer-social-icon:focus-visible {
+  outline: 2px solid #00f0ff !important;
+  outline-offset: 2px !important;
+}
+
+.social-icon-link svg,
+.footer-social-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+
+
+
+.social-icon-link:focus-visible,
+.footer-social-icon:focus-visible {
+  outline: 2px solid #00f0ff !important;
+  outline-offset: 2px !important;
+}
+
+/* Official LinkedIn Badge */
+.social-icon-link[aria-label="LinkedIn"],
+.footer-social-icon[aria-label="LinkedIn"] {
+  background: #0A66C2 !important;
+  border-radius: 4px !important;
+}
+
+/* Official Instagram Badge */
+.social-icon-link[aria-label="Instagram"],
+.footer-social-icon[aria-label="Instagram"] {
+  background: linear-gradient(135deg, #833AB4 0%, #C13584 35%, #E1306C 65%, #FD1D1D 85%, #F77737 100%) !important;
+  border-radius: 6px !important;
+}
+
+.social-icon-link svg,
+.footer-social-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+
+/* -------------------------------------------------------------
+   OFFICIAL SOCIAL ICONS (LINKEDIN & INSTAGRAM)
+   - Zero neon effects, zero drop-shadows, zero artificial borders
+   - Exact official badges
+------------------------------------------------------------- */
+.social-icon-link,
+.footer-social-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  transition: transform 0.2s ease, opacity 0.2s ease !important;
+  text-decoration: none !important;
+  flex-shrink: 0 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.social-icon-link:hover,
+.footer-social-icon:hover {
+  transform: scale(1.08) !important;
+  opacity: 0.92 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.social-icon-link:focus-visible,
+.footer-social-icon:focus-visible {
+  outline: 2px solid #00f0ff !important;
+  outline-offset: 2px !important;
+}
+
+.social-icon-link svg,
+.footer-social-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}

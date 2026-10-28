@@ -1,5 +1,5 @@
 /* Design Tokens - CONEXUS (Theme System & Contrast Variables) */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+/* Fonts loaded via async <link> in HTML head for non-blocking rendering */
 
 :root {
   /* Brand Palette - Official Specifications */
@@ -19,6 +19,13 @@
   --color-text-white: #F5F8FC;
   --color-text-muted: #B8C5D3;
   --color-header-bg: rgba(6, 20, 38, 0.85);
+
+  /* Semantic Contrast & Surface Variables */
+  --color-surface-elevated: #0B2340;
+  --color-text-main: #F5F8FC;
+  --color-text-secondary: #B8C5D3;
+  --color-brand-primary: #00BFA5;
+  --color-bg-secondary: #081B30;
 
   /* Section Contrast Rhythm Colors (Dark Default) */
   --section-navy-bg: #061426;
@@ -44,6 +51,7 @@
   --color-cyan-border: rgba(33, 184, 246, 0.3);
   --color-border-subtle: rgba(184, 197, 211, 0.12);
   --color-border-hover: rgba(33, 184, 246, 0.5);
+  --case-cover-bg: #061426;
 
   /* Typography */
   --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -125,4 +133,12 @@
 
   --section-graphite-bg: #FFFFFF;
   --section-graphite-text: #07182D;
+  --case-cover-bg: #F1F5F9;
+
+  /* Semantic Contrast & Surface Variables (Light Theme) */
+  --color-surface-elevated: #FFFFFF;
+  --color-text-main: #07182D;
+  --color-text-secondary: #35465A;
+  --color-brand-primary: #007A78;
+  --color-bg-secondary: #F0F4F8;
 }
