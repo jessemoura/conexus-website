@@ -14,7 +14,7 @@ const I18N_TEXTS = {
     decline: 'Recusar',
     revoke: 'Revogar Consentimento',
     privacyLink: 'Política de Privacidade',
-    privacyUrl: '/grana/politica-de-privacidade/',
+    privacyUrl: '/politica-de-privacidade/',
     manageBtn: 'Preferências de Cookies',
     statusGranted: 'Consentimento atual: Concedido (Métricas ativas)',
     statusDenied: 'Consentimento atual: Recusado (Métricas bloqueadas)'
@@ -26,7 +26,7 @@ const I18N_TEXTS = {
     decline: 'Decline',
     revoke: 'Revoke Consent',
     privacyLink: 'Privacy Policy',
-    privacyUrl: '/grana/politica-de-privacidade/',
+    privacyUrl: '/politica-de-privacidade/',
     manageBtn: 'Cookie Preferences',
     statusGranted: 'Current status: Granted (Analytics active)',
     statusDenied: 'Current status: Declined (Analytics blocked)'
@@ -38,7 +38,7 @@ const I18N_TEXTS = {
     decline: 'Rechazar',
     revoke: 'Revocar Consentimiento',
     privacyLink: 'Política de Privacidad',
-    privacyUrl: '/grana/politica-de-privacidade/',
+    privacyUrl: '/politica-de-privacidade/',
     manageBtn: 'Preferencias de Cookies',
     statusGranted: 'Estado actual: Concedido (Métricas activas)',
     statusDenied: 'Estado actual: Rechazado (Métricas bloqueadas)'

@@ -36,7 +36,66 @@
       }
     })();
   </script>
-    <!-- OPEN GRAPH / SOCIAL CARDS -->
+      <!-- DADOS ESTRUTURADOS (JSON-LD) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.conexus.press/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfólio",
+          "item": "https://www.conexus.press/portfolio/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lumora Cleaning Services",
+          "item": "https://www.conexus.press/portfolio/lumora-cleaning-services/"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.conexus.press/portfolio/lumora-cleaning-services/#creativework",
+      "name": "Lumora Cleaning Services — Plataforma de Orçamentos e Limpeza Comercial no Reino Unido",
+      "headline": "Lumora Cleaning Services — Case de Website e Conversão B2B",
+      "description": "Website institucional e sistema ágil de cotações desenvolvido pela CONEXUS para a Lumora Cleaning Services no Reino Unido, otimizado para captação de clientes corporativos e residenciais.",
+      "image": "https://www.conexus.press/assets/images/conexus-case-lumora-cleaning-services.webp",
+      "author": {
+        "@type": "Organization",
+        "name": "CONEXUS",
+        "url": "https://www.conexus.press"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CONEXUS",
+        "url": "https://www.conexus.press",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.conexus.press/assets/logos/conexus-logo-primary-transparent.png"
+        }
+      },
+      "about": {
+        "@type": "ProfessionalService",
+        "name": "Lumora Cleaning Services",
+        "url": "https://www.lumoracleaningservices.co.uk"
+      },
+      "inLanguage": "pt-BR"
+    }
+  ]
+}
+  </script>
+  <!-- OPEN GRAPH / SOCIAL CARDS -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.conexus.press/portfolio/lumora-cleaning-services/">
   <meta property="og:title" content="Lumora Cleaning Services — Case Study | Presença Web & SEO Local | CONEXUS">
@@ -412,8 +471,8 @@
           <span data-i18n="footer.devBy">Desenvolvido por</span> <a href="/" class="signature-link">CONEXUS</a>
         </div>
         <div style="display: flex; gap: 1.5rem;">
-          <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.privacy">Política de Privacidade</a>
-          <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.terms">Termos de Uso</a>
+          <a href="/politica-de-privacidade/" style="color: var(--color-text-muted);" data-i18n="footer.privacy">Política de Privacidade</a>
+          <a href="/termos-de-uso/" style="color: var(--color-text-muted);" data-i18n="footer.terms">Termos de Uso</a>
         </div>
       </div>
     </div>

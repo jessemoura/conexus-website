@@ -36,7 +36,66 @@
       }
     })();
   </script>
-    <!-- OPEN GRAPH / SOCIAL CARDS -->
+      <!-- DADOS ESTRUTURADOS (JSON-LD) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.conexus.press/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfólio",
+          "item": "https://www.conexus.press/portfolio/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Michelly Correa",
+          "item": "https://www.conexus.press/portfolio/michelly-correa/"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.conexus.press/portfolio/michelly-correa/#creativework",
+      "name": "Michelly Correa — Website Institucional de Autoridade para Jornalismo e Assessoria de Imprensa",
+      "headline": "Michelly Correa — Case de Website Institucional de Autoridade",
+      "description": "Plataforma digital com estética editorial refinada criada pela CONEXUS para Michelly Correa, consolidando autoridade e presença profissional no Brasil perante veículos de imprensa e clientes.",
+      "image": "https://www.conexus.press/assets/images/conexus-case-michelly-correa.webp",
+      "author": {
+        "@type": "Organization",
+        "name": "CONEXUS",
+        "url": "https://www.conexus.press"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CONEXUS",
+        "url": "https://www.conexus.press",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.conexus.press/assets/logos/conexus-logo-primary-transparent.png"
+        }
+      },
+      "about": {
+        "@type": "Person",
+        "name": "Michelly Correa",
+        "url": "https://www.michellycorrea.com"
+      },
+      "inLanguage": "pt-BR"
+    }
+  ]
+}
+  </script>
+  <!-- OPEN GRAPH / SOCIAL CARDS -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.conexus.press/portfolio/michelly-correa/">
   <meta property="og:title" content="Michelly Correa — Case Study | Website Profissional de Jornalismo & Comunicação | CONEXUS">
@@ -412,8 +471,8 @@
           <span data-i18n="footer.devBy">Desenvolvido por</span> <a href="/" class="signature-link">CONEXUS</a>
         </div>
         <div style="display: flex; gap: 1.5rem;">
-          <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.privacy">Política de Privacidade</a>
-          <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.terms">Termos de Uso</a>
+          <a href="/politica-de-privacidade/" style="color: var(--color-text-muted);" data-i18n="footer.privacy">Política de Privacidade</a>
+          <a href="/termos-de-uso/" style="color: var(--color-text-muted);" data-i18n="footer.terms">Termos de Uso</a>
         </div>
       </div>
     </div>

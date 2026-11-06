@@ -43,30 +43,64 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "CONEXUS",
-    "url": "https://conexus.press/",
-    "logo": "https://conexus.press/assets/logos/conexus-logo-transparent.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "comercial@conexus.press",
-      "contactType": "customer service"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Curitiba" },
-      { "@type": "City", "name": "São José dos Pinhais" },
-      { "@type": "AdministrativeArea", "name": "Região Metropolitana de Curitiba" },
-      { "@type": "Country", "name": "Brasil" }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "additionalType": "https://schema.org/ProfessionalService",
+        "@id": "https://www.conexus.press/#organization",
+        "name": "CONEXUS",
+        "alternateName": "CONEXUS Digital Solutions",
+        "url": "https://www.conexus.press/",
+        "logo": "https://www.conexus.press/assets/logos/conexus-logo-primary-transparent.png",
+        "image": "https://www.conexus.press/assets/images/marketing-digital-estrategia-conexus.webp",
+        "description": "Agência de soluções digitais e desenvolvimento web em São José dos Pinhais e Curitiba. Criação de sites profissionais, redesign e modernização de sites antigos sem WordPress, SEO local, Google Maps, cardápios digitais e Guest Hub.",
+        "telephone": "+55-41-99156-9590",
+        "email": "comercial@conexus.press",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São José dos Pinhais",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -25.5335701,
+          "longitude": -49.202697
+        },
+        "hasMap": "https://www.google.com/maps/place/CONEXUS+Digital+Marketing/@-25.5335701,-49.2408058,5985m/data=!3m1!1e3!4m10!1m2!2m1!1sConexus+digital+marketing+sao+jose+dos+pinhais!3m6!1s0x94dcf1a123d6a22b:0xcd8e94757c829d4c!8m2!3d-25.5335701!4d-49.202697!15sCi5Db25leHVzIGRpZ2l0YWwgbWFya2V0aW5nIHNhbyBqb3NlIGRvcyBwaW5oYWlzkgEQbWFya2V0aW5nX2FnZW5jeeABAA!16s%2Fg%2F11zfj3k5fz?entry=ttu&g_ep=EgoyMDI2MDkwNi4wIKXMDSoASAFQAw%3D%3D",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:30",
+            "closes": "18:30"
+          }
+        ],
+        "areaServed": [
+          { "@type": "City", "name": "São José dos Pinhais" },
+          { "@type": "City", "name": "Curitiba" },
+          { "@type": "AdministrativeArea", "name": "Região Metropolitana de Curitiba" },
+          { "@type": "AdministrativeArea", "name": "Paraná" },
+          { "@type": "Country", "name": "Brasil" }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+55-41-99156-9590",
+          "email": "comercial@conexus.press",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.conexus.press/#website",
+        "name": "CONEXUS",
+        "url": "https://www.conexus.press/",
+        "publisher": {
+          "@id": "https://www.conexus.press/#organization"
+        }
+      }
     ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "CONEXUS",
-    "url": "https://conexus.press/"
   }
   </script>
     <!-- OPEN GRAPH / SOCIAL CARDS -->
@@ -267,8 +301,8 @@
               <h3 data-i18n="services.s1Title">Criação de Sites Profissionais</h3>
               <span class="card-tag" data-i18n="services.s1Tag">DESENVOLVIMENTO WEB</span>
             </div>
-            <p class="editorial-service-desc" data-i18n="services.s1Desc">
-              Websites institucionais e plataformas de alta performance, ultra-rápidos e 100% responsivos. Especialistas em desenvolvimento de sites Curitiba, sites profissionais São José dos Pinhais e em âmbito nacional.
+            <p class="editorial-service-desc">
+              Websites institucionais multipáginas e plataformas de alta performance, ultra-rápidos e 100% responsivos. Especialistas em criação de sites São José dos Pinhais e Curitiba para clínicas, empresas e comércios.
             </p>
             <div class="editorial-service-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -282,83 +316,128 @@
               <h3 data-i18n="services.s2Title">Site One Page</h3>
               <span class="card-tag" data-i18n="services.s2Tag">CONVERSÃO DIRETA</span>
             </div>
-            <p class="editorial-service-desc" data-i18n="services.s2Desc">
-              Página única objetiva focada em comunicação direta e alta conversão para lançamentos, campanhas de anúncios e empresas em estágio inicial.
+            <p class="editorial-service-desc">
+              Página única focada em comunicação direta, clareza comercial e alta conversão para lançamentos, campanhas de anúncios e prestadores de serviços.
             </p>
             <div class="editorial-service-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
           </a>
 
-          <!-- 03. SEO para Empresas -->
-          <a href="/servicos/seo/" class="editorial-service-item">
+          <!-- 03. Cardápio Digital Interativo -->
+          <a href="/servicos/cardapio-digital/" class="editorial-service-item">
             <div class="editorial-service-num">03</div>
+            <div class="editorial-service-title-box">
+              <h3>Cardápio Digital Interativo</h3>
+              <span class="card-tag">GASTRONOMIA & WHATSAPP</span>
+            </div>
+            <p class="editorial-service-desc">
+              Catálogo online e cardápio digital com pedidos via WhatsApp para restaurantes, confeitarias, padarias e cafeterias. Sem taxas nem comissões por pedido.
+            </p>
+            <div class="editorial-service-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- 04. CONEXUS Guest Hub & Welcome Book -->
+          <a href="/servicos/conexus-guest-hub/" class="editorial-service-item">
+            <div class="editorial-service-num">04</div>
+            <div class="editorial-service-title-box">
+              <h3>CONEXUS Guest Hub</h3>
+              <span class="card-tag">HOSPITALIDADE & POUSADAS</span>
+            </div>
+            <p class="editorial-service-desc">
+              Central e Welcome Book digital multilíngue para pousadas, chalés, cabanas e anfitriões Airbnb/Booking. Informações, regras, Wi-Fi e roteiros em QR Code.
+            </p>
+            <div class="editorial-service-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- 05. Redesign & Modernização de Sites Antigos -->
+          <a href="/servicos/criacao-de-sites/#modelos-projeto" class="editorial-service-item">
+            <div class="editorial-service-num">05</div>
+            <div class="editorial-service-title-box">
+              <h3>Redesign & Modernização de Sites</h3>
+              <span class="card-tag">CÓDIGO LIMPO • SEM WORDPRESS</span>
+            </div>
+            <p class="editorial-service-desc">
+              Substituição de sites antigos lentos em WordPress ou Wix por arquitetura moderna, segura e ultra-rápida, preservando 100% da indexação e SEO existente no Google.
+            </p>
+            <div class="editorial-service-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- 06. SEO para Empresas -->
+          <a href="/servicos/seo/" class="editorial-service-item">
+            <div class="editorial-service-num">06</div>
             <div class="editorial-service-title-box">
               <h3 data-i18n="services.s3Title">SEO para Empresas</h3>
               <span class="card-tag" data-i18n="services.s3Tag">VISIBILIDADE NO GOOGLE</span>
             </div>
-            <p class="editorial-service-desc" data-i18n="services.s3Desc">
-              Estratégias avançadas de otimização orgânica e pesquisa de palavras-chave para posicionar sua empresa nas primeiras páginas do Google sem depender só de anúncios.
+            <p class="editorial-service-desc">
+              Estratégias avançadas de otimização orgânica e posicionamento no Google para gerar tráfego qualificado de clientes sem depender exclusivamente de anúncios pagos.
             </p>
             <div class="editorial-service-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
           </a>
 
-          <!-- 04. SEO Local -->
+          <!-- 07. SEO Local & Google Meu Negócio -->
           <a href="/servicos/seo-local-google-meu-negocio/" class="editorial-service-item">
-            <div class="editorial-service-num">04</div>
+            <div class="editorial-service-num">07</div>
             <div class="editorial-service-title-box">
               <h3 data-i18n="services.s4Title">SEO Local & Google Meu Negócio</h3>
               <span class="card-tag" data-i18n="services.s4Tag">PRESENÇA REGIONAL</span>
             </div>
-            <p class="editorial-service-desc" data-i18n="services.s4Desc">
-              SEO local Curitiba e São José dos Pinhais, otimização do Perfil da Empresa e presença de destaque no Google Maps para conquistar clientes locais no momento da busca.
+            <p class="editorial-service-desc">
+              SEO local Curitiba e São José dos Pinhais, gestão do Perfil da Empresa no Google e domínio do Google Maps para atrair clientes das redondezas no momento da busca.
             </p>
             <div class="editorial-service-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
           </a>
 
-          <!-- 05. Branding -->
+          <!-- 08. Branding & Identidade Visual -->
           <a href="/servicos/branding-identidade-visual/" class="editorial-service-item">
-            <div class="editorial-service-num">05</div>
+            <div class="editorial-service-num">08</div>
             <div class="editorial-service-title-box">
               <h3 data-i18n="services.s5Title">Branding & Identidade Visual</h3>
               <span class="card-tag" data-i18n="services.s5Tag">AUTORIDADE DE MARCA</span>
             </div>
-            <p class="editorial-service-desc" data-i18n="services.s5Desc">
-              Desenvolvimento de marcas memoráveis, logotipos profissionais e manuais de identidade corporativa alinhados à sua autoridade de mercado.
+            <p class="editorial-service-desc">
+              Desenvolvimento de marcas memoráveis, logotipos profissionais e manuais corporativos alinhados à percepção de valor e autoridade de mercado da sua empresa.
             </p>
             <div class="editorial-service-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
           </a>
 
-          <!-- 06. Redes Sociais -->
+          <!-- 09. Gestão de Redes Sociais -->
           <a href="/servicos/gestao-redes-sociais/" class="editorial-service-item">
-            <div class="editorial-service-num">06</div>
+            <div class="editorial-service-num">09</div>
             <div class="editorial-service-title-box">
               <h3 data-i18n="services.s6Title">Gestão de Redes Sociais</h3>
               <span class="card-tag" data-i18n="services.s6Tag">ENGAJAMENTO & CONTEÚDO</span>
             </div>
-            <p class="editorial-service-desc" data-i18n="services.s6Desc">
-              Planejamento estratégico de conteúdo visual profissional para envolver seu público, fortalecer o posicionamento e alimentar o funil de vendas.
+            <p class="editorial-service-desc">
+              Planejamento estratégico de conteúdo visual profissional para envolver o público certo, fortalecer o posicionamento institucional e nutrir potenciais compradores.
             </p>
             <div class="editorial-service-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
           </a>
 
-          <!-- 07. Desenvolvimento de Aplicativos -->
+          <!-- 10. Desenvolvimento de Aplicativos -->
           <a href="/servicos/desenvolvimento-de-aplicativos/" class="editorial-service-item">
-            <div class="editorial-service-num">07</div>
+            <div class="editorial-service-num">10</div>
             <div class="editorial-service-title-box">
               <h3 data-i18n="services.sAppDevTitle">Desenvolvimento de Aplicativos</h3>
               <span class="card-tag" data-i18n="services.sAppDevTag">SOLUÇÕES MOBILE & ANDROID</span>
             </div>
-            <p class="editorial-service-desc" data-i18n="services.sAppDevDesc">
-              Aplicações sob medida e corporativas para Android e Google Play. Otimize processos operacionais, atenda clientes com excelência e crie um canal proprietário de alto impacto.
+            <p class="editorial-service-desc">
+              Aplicações sob medida para Android com publicação homologada na Google Play Store. Otimize rotinas operacionais e proporcione um canal próprio aos clientes.
             </p>
             <div class="editorial-service-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -624,15 +703,24 @@
           <p class="lead" data-i18n="about.lead">
             Conectamos tecnologia web, otimização no Google, identidade visual e redes sociais em uma estratégia coerente e orientada a resultados.
           </p>
-          <div style="margin-top: 1.5rem;">
+          <p style="color: var(--color-text-secondary); margin-top: 1rem; line-height: 1.65; font-size: 0.98rem;">
+            Sediada em <strong>São José dos Pinhais</strong> e com forte atuação em <strong>Curitiba</strong> e na Região Metropolitana, a <strong>CONEXUS</strong> é a parceira estratégica para empresas que buscam criação de sites profissionais, SEO local e consolidação do Perfil da Empresa no Google e Google Maps.
+          </p>
+          <p style="color: var(--color-text-secondary); margin-top: 0.5rem; line-height: 1.65; font-size: 0.98rem;">
+            A CONEXUS não desenvolve em WordPress: modernizamos e substituímos sites antigos feitos nessa plataforma por código limpo, ultra-rápido e seguro, preservando todo o histórico de SEO. Desenvolvemos soluções comprovadas para <strong>padarias, confeitarias, restaurantes, clínicas e consultórios, pousadas, chalés</strong> e prestadores de serviços.
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="/sobre/" class="btn btn-primary">
               <span data-i18n="about.btn">Conhecer a CONEXUS</span>
               <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
+            <a href="/portfolio/" class="btn btn-secondary">
+              <span>Ver Cases de Sucesso</span>
+            </a>
           </div>
         </div>
         <div class="hero-media">
-          <img src="/assets/images/conexus-tecnologia-estrategia-digital.webp" alt="Tecnologia e Estratégia Digital CONEXUS" width="580" height="390" loading="lazy" style="border-radius: var(--radius-lg);">
+          <img src="/assets/images/conexus-tecnologia-estrategia-digital.webp" alt="Tecnologia e Estratégia Digital CONEXUS — Criação de Sites e SEO em Curitiba e São José dos Pinhais" width="580" height="390" loading="lazy" style="border-radius: var(--radius-lg);">
         </div>
       </div>
     </section>
@@ -1048,8 +1136,8 @@
           <span data-i18n="footer.devBy">Desenvolvido por</span> <a href="/" class="signature-link">CONEXUS</a>
         </div>
         <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;">
-          <a href="/grana/politica-de-privacidade/" style="color: var(--color-text-muted);" data-i18n="footer.privacy">Política de Privacidade</a>
-          <a href="#" style="color: var(--color-text-muted);" data-i18n="footer.terms">Termos de Uso</a>
+          <a href="/politica-de-privacidade/" style="color: var(--color-text-muted);" data-i18n="footer.privacy">Política de Privacidade</a>
+          <a href="/termos-de-uso/" style="color: var(--color-text-muted);" data-i18n="footer.terms">Termos de Uso</a>
           <button type="button" id="manage-cookies" class="cookie-prefs-btn" data-action="cookie-consent" style="background: none; border: none; padding: 0; color: var(--color-text-muted); cursor: pointer; font-size: inherit; text-decoration: underline;" data-i18n="footer.cookies">Preferências de Cookies</button>
         </div>
       </div>

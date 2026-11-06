@@ -5582,12 +5582,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.conexus.press/grana/Case_Grana_CONEXUS/</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.conexus.press/grana/politica-de-privacidade/</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/grana/politica-de-privacidade/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/grana/politica-de-privacidade/?lang=en"/>
@@ -5622,6 +5616,36 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/meu-carrinho/politica-de-privacidade/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/meu-carrinho/politica-de-privacidade/"/>
     <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/politica-de-privacidade/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/politica-de-privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/politica-de-privacidade/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/politica-de-privacidade/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/politica-de-privacidade/"/>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/politica-de-privacidade/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/politica-de-privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/politica-de-privacidade/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/politica-de-privacidade/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/politica-de-privacidade/"/>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/politica-de-privacidade/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/politica-de-privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/politica-de-privacidade/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/politica-de-privacidade/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/politica-de-privacidade/"/>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -6374,5 +6398,35 @@
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/termos-de-uso/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/termos-de-uso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/termos-de-uso/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/termos-de-uso/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/termos-de-uso/"/>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/termos-de-uso/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/termos-de-uso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/termos-de-uso/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/termos-de-uso/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/termos-de-uso/"/>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/termos-de-uso/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/termos-de-uso/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/termos-de-uso/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/termos-de-uso/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/termos-de-uso/"/>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

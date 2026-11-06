@@ -52,7 +52,13 @@ function getHtmlFiles(dir) {
 }
 
 const allHtmlFiles = getHtmlFiles(rootDir);
-const publicFiles = allHtmlFiles.filter(f => !path.basename(f).startsWith('preview-'));
+const publicFiles = allHtmlFiles.filter(f => {
+  if (path.basename(f).startsWith('preview-')) return false;
+  if (f.includes('Case_Grana_CONEXUS')) return false;
+  const content = fs.readFileSync(f, 'utf8');
+  if (content.includes('robots" content="noindex') || content.includes("robots' content='noindex")) return false;
+  return true;
+});
 
 // Determine route priority & frequency defaults
 function getRouteMetadata(urlPath) {
