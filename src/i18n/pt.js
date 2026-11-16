@@ -498,7 +498,8 @@ export const pt = {
     "r6P2": "O Jesse foi o nosso guia e foi muito atencioso, paciente e sempre disponível para tirar nossas dúvidas e fazer os ajustes necessários. Mesmo quando mudamos alguns detalhes no meio do caminho, ele sempre nos atendeu prontamente.",
     "r6P3": "A página ficou esteticamente linda, organizada e, acima de tudo, muito fácil de usar, que era exatamente o que buscávamos para facilitar a experiência dos nossos hóspedes.",
     "r6P4": "Além disso, ter o Welcome Book disponível em português, inglês e espanhol com apenas um clique foi uma grande vantagem para nós, principalmente porque recebemos hóspedes de diferentes lugares.",
-    "r6P5": "Gostamos muito do resultado e do atendimento. Recomendamos a Conexus com certeza! 😊"
+    "r6P5": "Gostamos muito do resultado e do atendimento. Recomendamos a Conexus com certeza! 😊",
+    "r7Text": "Adorei o resultado do meu site feito pela Conexus! Ficou lindo, com um layout muito bem elaborado, moderno e elegante. Os textos também ficaram excelentes, muito bem escritos e alinhados com a proposta do meu trabalho. Além de bonito, o site é super intuitivo e fácil de navegar. Fiquei muito feliz com o resultado e com todo o cuidado em cada detalhe. Recomendo de olhos fechados!"
   },
   "homeDiagnostico": {
     "tag": "ANÁLISE ESTRATÉGICA",

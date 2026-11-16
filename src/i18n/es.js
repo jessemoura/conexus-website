@@ -498,7 +498,8 @@ export const es = {
     "r6P2": "Plazos claros, presupuesto transparente y excelente ejecución.",
     "r6P3": "Nuestra marca ganó credibilidad inmediata con nuevos clientes corporativos.",
     "r6P4": "Sin duda un socio estratégico a largo plazo.",
-    "r6P5": "¡Muchas gracias equipo CONEXUS!”"
+    "r6P5": "¡Muchas gracias equipo CONEXUS!”",
+    "r7Text": "¡Me encantó el resultado de mi sitio web realizado por Conexus! Quedó hermoso, con un diseño muy bien elaborado, moderno y elegante. Los textos también quedaron excelentes, muy bien redactados y alineados con la propuesta de mi trabajo. Además de atractivo, el sitio es super intuitivo y fácil de navegar. Quedé muy contenta con el resultado y con toda la atención a cada detalle. ¡Lo recomiendo con los ojos cerrados!"
   },
   "homeDiagnostico": {
     "tag": "ANÁLISIS ESTRATÉGICO",

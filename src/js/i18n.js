@@ -12,6 +12,9 @@ export const languageMeta = {
 let currentLanguage = defaultLanguage;
 let loadedDictionaries = {};
 
+// Versão para cache-busting rigoroso dos dicionários no CDN e navegadores
+export const I18N_DICT_VERSION = '20261116.05';
+
 // Função auxiliar global para interoperabilidade sem dependência circular
 if (typeof window !== 'undefined') {
   window.__conexusGetTranslation = (key, lang) => getTranslation(key, lang);
@@ -24,13 +27,13 @@ export async function loadDictionary(lang) {
   if (loadedDictionaries[lang]) return loadedDictionaries[lang];
   try {
     if (lang === 'pt') {
-      const mod = await import('../i18n/pt.js');
+      const mod = await import(`../i18n/pt.js?v=${I18N_DICT_VERSION}`);
       loadedDictionaries.pt = mod.pt;
     } else if (lang === 'en') {
-      const mod = await import('../i18n/en.js');
+      const mod = await import(`../i18n/en.js?v=${I18N_DICT_VERSION}`);
       loadedDictionaries.en = mod.en;
     } else if (lang === 'es') {
-      const mod = await import('../i18n/es.js');
+      const mod = await import(`../i18n/es.js?v=${I18N_DICT_VERSION}`);
       loadedDictionaries.es = mod.es;
     }
   } catch (err) {

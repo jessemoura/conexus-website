@@ -498,7 +498,8 @@ export const en = {
     "r6P2": "Clear deadlines, transparent budget, and outstanding execution.",
     "r6P3": "Our brand gained instant credibility with new corporate clients.",
     "r6P4": "Definitely a strategic partner for the long term.",
-    "r6P5": "Thank you CONEXUS team!”"
+    "r6P5": "Thank you CONEXUS team!”",
+    "r7Text": "I loved the result of my website created by Conexus! It turned out beautiful, with a very well-crafted, modern, and elegant layout. The copy was also excellent, well-written and perfectly aligned with my work's proposal. Besides being beautiful, the website is super intuitive and easy to navigate. I was very happy with the result and all the attention to detail. Highly recommend!"
   },
   "homeDiagnostico": {
     "tag": "STRATEGIC AUDIT",

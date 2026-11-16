@@ -2590,6 +2590,17 @@ html, body {
   text-overflow: ellipsis;
 }
 
+.review-author-name a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.review-author-name a:hover {
+  color: var(--color-cyan);
+  text-decoration: underline;
+}
+
 .review-badge-google {
   display: inline-flex;
   align-items: center;
