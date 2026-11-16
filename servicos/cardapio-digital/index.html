@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cardápio Digital com WhatsApp para Restaurantes e Pequenos Negócios | CONEXUS</title>
-  <meta name="description" content="Criação de cardápio digital e catálogo online com WhatsApp para restaurantes, confeitarias, lanchonetes e padarias em Curitiba e todo o Brasil. Sem comissões por pedido.">
+  <meta name="description" content="Criação de cardápios digitais interativos e catálogos online com pedidos no WhatsApp. Demonstrações reais ao vivo (Bora Lanches e Natal), 8 modelos e planos a partir de R$ 49,90/mês sem comissões.">
+  <meta name="keywords" content="cardapio digital interativo, catalogo online whatsapp, cardapio bora lanches, cardapio de natal conexus, site para restaurantes curitiba, planos cardapio digital, pedidos whatsapp sem comissao">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.conexus.press/servicos/cardapio-digital/">
   <!-- Multilingual SEO hreflang -->
@@ -48,19 +49,19 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Início",
-        "item": "https://conexus.press/"
+        "item": "https://www.conexus.press/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Serviços",
-        "item": "https://conexus.press/servicos/"
+        "item": "https://www.conexus.press/servicos/"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Cardápio Digital",
-        "item": "https://conexus.press/servicos/cardapio-digital/"
+        "item": "https://www.conexus.press/servicos/cardapio-digital/"
       }
     ]
   }
@@ -70,24 +71,53 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Cardápio Digital com WhatsApp",
+    "@id": "https://www.conexus.press/servicos/cardapio-digital/#service",
+    "name": "Cardápios Digitais Interativos com WhatsApp",
     "provider": {
       "@type": "Organization",
       "name": "CONEXUS",
-      "url": "https://conexus.press/"
+      "url": "https://www.conexus.press/"
     },
-    "description": "Criação de cardápio digital interativo e catálogo online com pedidos direcionados ao WhatsApp para restaurantes, lanchonetes, padarias e confeitarias. Sem comissões por venda, com QR Code para mesas e navegação mobile-first.",
+    "description": "Criação de cardápios digitais interativos e catálogos online com pedidos direcionados ao WhatsApp para restaurantes, lanchonetes, padarias, açaiterias e confeitarias. Sem comissões por venda, com QR Code para mesas e navegação mobile-first.",
     "serviceType": "Cardápio Digital & Catálogo Online",
     "areaServed": [
-      "Curitiba",
-      "São José dos Pinhais",
-      "Pinhais",
-      "Colombo",
-      "Araucária",
-      "Fazenda Rio Grande",
-      "Campo Largo",
-      "Brasil"
-    ]
+      { "@type": "City", "name": "Curitiba" },
+      { "@type": "City", "name": "São José dos Pinhais" },
+      { "@type": "AdministrativeArea", "name": "Região Metropolitana de Curitiba" },
+      { "@type": "Country", "name": "Brasil" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Planos Comerciais de Cardápio Digital",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Plano Essencial",
+          "description": "Até 30 produtos cadastrados, carrinho de compras, envio automático ao WhatsApp, QR Code digital para mesas e implantação gratuita.",
+          "price": "49.90",
+          "priceCurrency": "BRL",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49.90",
+            "priceCurrency": "BRL",
+            "unitText": "MONTH"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Plano Plus",
+          "description": "Até 50 produtos cadastrados, 10 alterações simples mensais inclusas em até 2 lotes, personalização visual completa, banners de destaque e combos, suporte prioritário e contrato de 12 meses.",
+          "price": "89.90",
+          "priceCurrency": "BRL",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "89.90",
+            "priceCurrency": "BRL",
+            "unitText": "MONTH"
+          }
+        }
+      ]
+    }
   }
   </script>
 
@@ -98,10 +128,34 @@
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "Qual a principal diferença entre o Plano Essencial e o Plano Plus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Plano Essencial (R$ 49,90/mês) tem implantação gratuita, até 30 produtos e manutenções sob demanda (R$ 29,90 por 5 alterações). O Plano Plus (R$ 89,90/mês) tem implantação de R$ 199 e contrato de 12 meses, amplia o catálogo para até 50 produtos, inclui 10 alterações mensais em até 2 lotes, personalização visual avançada da sua marca, banners de promoções e atendimento prioritário."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona o pacote de 5 alterações simples no Plano Essencial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Caso você precise atualizar preços, fotos ou descrições no Plano Essencial, você pode solicitar pacotes avulsos de 5 alterações simples por apenas R$ 29,90, pagando somente quando realmente precisar alterar itens do seu cardápio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona o envio das 10 alterações mensais no Plano Plus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No Plano Plus, você tem direito a 10 alterações simples todo mês já inclusas na mensalidade, que podem ser enviadas em até 2 lotes mensais para nossa equipe aplicar na nuvem com prioridade máxima."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "A CONEXUS cobra comissões sobre os pedidos realizados pelo cardápio digital?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Não. Diferente dos marketplaces de delivery que cobram comissões de 15% a 30% sobre cada venda, a CONEXUS desenvolve a plataforma para o seu estabelecimento sem nenhuma taxa por pedido. Todo o lucro das suas vendas fica 100% com o seu negócio."
+          "text": "Não. Diferente dos marketplaces de delivery que cobram comissões de 15% a 30% sobre cada venda, a CONEXUS desenvolve a plataforma para o seu estabelecimento sem nenhuma taxa por pedido. Todo o faturamento das suas vendas fica 100% no seu caixa."
         }
       },
       {
@@ -122,26 +176,10 @@
       },
       {
         "@type": "Question",
-        "name": "O cardápio digital serve tanto para atendimento presencial quanto para delivery e encomendas?",
+        "name": "Posso iniciar no Plano Essencial e migrar para o Plano Plus posteriormente?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sim. No salão, agiliza a escolha dos pratos e reduz o tempo de espera. Para delivery e retiradas, o cliente seleciona os itens, informa observações e envia o pedido formatado com um clique diretamente para o WhatsApp do restaurante."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Como funciona a atualização de preços, pratos e itens esgotados?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "As atualizações são rápidas e digitais. Se um ingrediente esgotar ou os preços forem reajustados, o cardápio é atualizado na nuvem sem necessidade de gastar com reimpressão de papel plastificado."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Como solicitar um orçamento de cardápio digital para meu negócio gastronômico?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Basta entrar em contato direto pelo WhatsApp da CONEXUS. Nossa equipe avalia a estrutura do seu cardápio, quantidade de categorias e necessidades operacionais para apresentar uma proposta sob medida."
+          "text": "Sim! À medida que seu volume de produtos crescer ou sua operação demandar atualizações frequentes e banners promocionais, a migração para o Plano Plus pode ser solicitada a qualquer momento diretamente pelo WhatsApp."
         }
       }
     ]
@@ -152,14 +190,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.conexus.press/servicos/cardapio-digital/">
   <meta property="og:title" content="Cardápio Digital com WhatsApp para Restaurantes | CONEXUS">
-  <meta property="og:description" content="Criação de cardápio digital e catálogo online com WhatsApp para restaurantes, lanchonetes e confeitarias. Sem comissões por pedido.">
+  <meta property="og:description" content="Criação de cardápios digitais interativos e catálogos online com pedidos no WhatsApp. Demonstrações reais, 8 modelos e planos a partir de R$ 49,90/mês sem comissões.">
   <meta property="og:image" content="https://conexus.press/assets/images/hero-cardapio-digital.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="675">
   <meta property="og:site_name" content="CONEXUS">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cardápio Digital com WhatsApp para Restaurantes | CONEXUS">
-  <meta name="twitter:description" content="Criação de cardápio digital e catálogo online com WhatsApp para restaurantes, lanchonetes e confeitarias. Sem comissões por pedido.">
+  <meta name="twitter:description" content="Criação de cardápios digitais interativos e catálogos online com pedidos no WhatsApp. Demonstrações reais, 8 modelos e planos a partir de R$ 49,90/mês sem comissões.">
   <meta name="twitter:image" content="https://conexus.press/assets/images/hero-cardapio-digital.webp">
 
   <!-- Google tag (gtag.js) - Google Analytics 4 (CONEXUS G-04S0NFMW2M) -->
@@ -194,6 +232,167 @@
 
   <!-- METRICOOL TRACKING -->
   <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"22550805668229d6afbaafda3c5a592a"})});</script>
+
+  <style>
+    /* Scoped visual polish for Cardápio Digital */
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .showcase-card {
+      background: var(--color-surface-navy);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .showcase-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(33, 184, 246, 0.4);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    }
+    .showcase-badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(0, 191, 165, 0.12);
+      color: #00BFA5;
+      border: 1px solid rgba(0, 191, 165, 0.35);
+      border-radius: 50px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+      width: fit-content;
+    }
+    .showcase-badge-live .pulse-dot {
+      width: 7px;
+      height: 7px;
+      background: #00BFA5;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #00BFA5;
+    }
+    .showcase-badge-upcoming {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(33, 184, 246, 0.1);
+      color: #21B8F6;
+      border: 1px solid rgba(33, 184, 246, 0.25);
+      border-radius: 50px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+      width: fit-content;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 960px;
+      margin: 2.5rem auto 0;
+    }
+    .pricing-card {
+      background: var(--color-surface-navy);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .pricing-card-featured {
+      background: linear-gradient(180deg, rgba(33, 184, 246, 0.08) 0%, var(--color-surface-navy) 100%);
+      border: 2px solid #21B8F6;
+      box-shadow: 0 16px 36px rgba(33, 184, 246, 0.15);
+    }
+    .pricing-featured-tag {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #00BFA5 0%, #21B8F6 100%);
+      color: #061426;
+      font-weight: 800;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.35rem 1.1rem;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 191, 165, 0.3);
+      white-space: nowrap;
+    }
+    .pricing-feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .pricing-feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--color-text-secondary);
+    }
+    .pricing-feature-list li svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .table-container-scroll {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 2rem;
+      border: 1px solid var(--color-border-subtle);
+      border-radius: 14px;
+      background: var(--color-surface-navy);
+    }
+    .comparison-table {
+      width: 100%;
+      min-width: 680px;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .comparison-table th, .comparison-table td {
+      padding: 1.1rem 1.4rem;
+      border-bottom: 1px solid var(--color-border-subtle);
+      font-size: 0.92rem;
+    }
+    .comparison-table th {
+      background: rgba(0, 0, 0, 0.2);
+      font-weight: 700;
+      color: var(--color-text-main);
+    }
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+    .comparison-table tr:hover td {
+      background: rgba(33, 184, 246, 0.03);
+    }
+    [data-theme="light"] .showcase-card,
+    [data-theme="light"] .pricing-card,
+    [data-theme="light"] .table-container-scroll {
+      background: #FFFFFF;
+      border-color: rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+    [data-theme="light"] .comparison-table th {
+      background: #F8FAFC;
+    }
+  </style>
 </head>
 <body data-i18n-page="cardapioDigital">
   <!-- HEADER -->
@@ -301,9 +500,19 @@
           <h1 class="hero-title" data-i18n="cardapioDigital.title">Cardápio Digital com WhatsApp para Restaurantes e Pequenos Negócios</h1>
           <p class="hero-description" style="font-size: var(--fs-lg); color: var(--color-primary-cyan); font-weight: 600; margin-bottom: 0.75rem;" data-i18n="cardapioDigital.lead">Mais agilidade no atendimento. Zero comissões por pedido.</p>
           <p class="hero-description" data-i18n="cardapioDigital.desc">Apresente seus pratos, produtos e valores em uma experiência mobile-first moderna, elegante e intuitiva. Ideal para restaurantes, confeitarias, padarias, cafeterias e lanchonetes em Curitiba e em todo o Brasil que buscam independência digital com pedidos diretos no WhatsApp.</p>
-          <div class="hero-ctas" style="flex-wrap: wrap; gap: 1rem;">
-            <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20cria%C3%A7%C3%A3o%20de%20card%C3%A1pio%20digital%20para%20meu%20estabelecimento." target="_blank" rel="noopener noreferrer" data-whatsapp-key="serviceCardapioDigital" class="btn btn-primary" data-track="whatsapp_click" data-cta-position="cardapio_hero_whatsapp" data-i18n="cardapioDigital.ctaPrimary">Solicitar Orçamento de Cardápio Digital</a>
-            <a href="#cases" class="btn btn-secondary" data-track="anchor_click" data-cta-position="cardapio_hero_cases" data-i18n="cardapioDigital.ctaSecondary">Ver Cases no Portfólio</a>
+          
+          <div class="hero-ctas" style="flex-wrap: wrap; gap: 0.85rem; margin-top: 1.5rem;">
+            <a href="#planos" class="btn btn-primary" data-track="anchor_click" data-cta-position="cardapio_hero_plans" style="font-weight: 700;">
+              <span>Ver Planos a partir de R$ 49,90</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#modelos" class="btn btn-secondary" data-track="anchor_click" data-cta-position="cardapio_hero_models">
+              <span>Testar Demonstrações ao Vivo</span>
+            </a>
+            <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20os%20Card%C3%A1pios%20Digitais%20da%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-track="whatsapp_click" data-cta-position="cardapio_hero_wa_direct" style="display: inline-flex; align-items: center; gap: 0.4rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              <span>Falar no WhatsApp</span>
+            </a>
           </div>
         </div>
 
@@ -346,6 +555,418 @@
             </div>
             <h3 style="color: var(--color-text-white); font-size: var(--fs-md); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.card3Title">Pedidos Organizados no WhatsApp</h3>
             <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.card3Desc">O cliente escolhe os itens, opcionais, quantidade e observações. Com um toque, uma mensagem perfeitamente estruturada chega ao WhatsApp da sua equipe para faturamento ágil.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VITRINE DE MODELOS & DEMONSTRAÇÕES INTERATIVAS (8 POSIÇÕES) -->
+    <section class="section" id="modelos">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tag" style="color: #21B8F6 !important; border-color: rgba(33, 184, 246, 0.3) !important;" data-i18n="cardapioDigital.showcaseTag">MODELOS & DEMONSTRAÇÕES INTERATIVAS</span>
+          <h2 data-i18n="cardapioDigital.showcaseTitle">Vitrine de Modelos e Demonstrações ao Vivo</h2>
+          <p class="section-subtitle" data-i18n="cardapioDigital.showcaseSubtitle">Navegue por demonstrações reais em funcionamento e conheça os modelos estruturados para os principais segmentos do comércio e da gastronomia.</p>
+        </div>
+
+        <div class="showcase-grid">
+          <!-- Modelo 1: Bora Lanches (Demo Real) -->
+          <div class="showcase-card" style="border-top: 3px solid #00BFA5;">
+            <div class="showcase-badge-live">
+              <span class="pulse-dot"></span>
+              <span data-i18n="cardapioDigital.badgeDemoActive">DEMONSTRAÇÃO REAL ONLINE</span>
+            </div>
+            <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model1Segment">Lanchonetes, Hamburguerias & Fast Food</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model1Title">Bora Lanches — Hamburgueria & Lanches</h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model1Desc">
+              Demonstração real ativa com personalização de adicionais, combos, bebidas, tempo estimado e envio do pedido formatado diretamente ao WhatsApp.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: auto;">
+              <a href="https://boralanches.conexus.press/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.6rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnTestDemo">
+                Testar Demonstração ao Vivo ↗
+              </a>
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20Bora%20Lanches%20e%20gostaria%20de%20um%20card%C3%A1pio%20digital%20similar%20para%20minha%20lanchonete%2Fhamburgueria." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+                Solicitar este Modelo no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Modelo 2: Bella Festa (Demo Real de Natal) -->
+          <div class="showcase-card" style="border-top: 3px solid #00BFA5;">
+            <div class="showcase-badge-live">
+              <span class="pulse-dot"></span>
+              <span data-i18n="cardapioDigital.badgeDemoActive">DEMONSTRAÇÃO REAL ONLINE</span>
+            </div>
+            <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model2Segment">Ceias Festivas, Confeitaria & Encomendas</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model2Title">Bella Festa — Cardápio de Natal & Ceias</h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model2Desc">
+              Demonstração real desenvolvida para encomendas sazonais de fim de ano, cálculo de porções, produtos por quilo e reservas antecipadas.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: auto;">
+              <a href="https://bellafesta.conexus.press/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.6rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnTestDemo">
+                Testar Demonstração ao Vivo ↗
+              </a>
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20Card%C3%A1pio%20de%20Natal%20Bella%20Festa%20e%20gostaria%20de%20um%20cat%C3%A1logo%20digital%20para%20encomendas%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+                Solicitar este Modelo no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Modelo 3: Pizzaria Artesanal -->
+          <div class="showcase-card">
+            <div class="showcase-badge-upcoming">
+              <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
+            </div>
+            <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model3Segment">Pizzarias & Delivery Noturno</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model3Title">Pizzaria Artesanal & Forno a Lenha</h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model3Desc">
+              Modelo estruturado para seleção de tamanhos, sabores meio a meio, bordas recheadas, massas especiais, calzones e bebidas.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Card%C3%A1pio%20Digital%20para%20Pizzaria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+                Solicitar este Modelo no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Modelo 4: Açaiteria & Sorveteria -->
+          <div class="showcase-card">
+            <div class="showcase-badge-upcoming">
+              <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
+            </div>
+            <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model4Segment">Açaí no Copo, Sorvetes & Sobremesas</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model4Title">Açaiteria & Sorveteria Express</h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model4Desc">
+              Montagem ágil de copos e tigelas com escolha de tamanhos, acompanhamentos adicionais ilimitados, frutas frescas e caldas.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Card%C3%A1pio%20Digital%20para%20A%C3%A7aiteria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+                Solicitar este Modelo no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Modelo 5: Restaurante & Marmitaria -->
+          <div class="showcase-card">
+            <div class="showcase-badge-upcoming">
+              <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
+            </div>
+            <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model5Segment">Almoço Executivo, Marmitas & Self-Service</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model5Title">Restaurante & Marmitaria Executiva</h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model5Desc">
+              Apresentação dinâmica do cardápio do dia rotativo, marmitas fitness, opções comerciais e guarnições personalizadas.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Card%C3%A1pio%20Digital%20para%20Restaurante%2FMarmitaria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+                Solicitar este Modelo no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Modelo 6: Confeitaria, Doceria & Bolos -->
+          <div class="showcase-card">
+            <div class="showcase-badge-upcoming">
+              <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
+            </div>
+            <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model6Segment">Bolos Decorados, Tortas & Doces de Festa</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model6Title">Confeitaria, Doceria & Bolos Finos</h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model6Desc">
+              Catálogo visual para encomendas de bolos por quilo, docinhos para eventos, caixas de presentes e sobremesas especiais.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20Digital%20para%20Confeitaria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+                Solicitar este Modelo no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Modelo 7: Pet Shop & Estética Animal -->
+          <div class="showcase-card">
+            <div class="showcase-badge-upcoming">
+              <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
+            </div>
+            <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model7Segment">Rações, Higiene, Banho & Tosa</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model7Title">Pet Shop & Estética Animal</h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model7Desc">
+              Vitrine prática para rações premium, medicamentos, acessórios para pets e botão rápido de agendamento de serviços.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20Digital%20para%20Pet%20Shop%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+                Solicitar este Modelo no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Modelo 8: Perfumaria, Cosméticos & Beleza -->
+          <div class="showcase-card">
+            <div class="showcase-badge-upcoming">
+              <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
+            </div>
+            <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model8Segment">Cosméticos, Fragrâncias & Cuidados Pessoais</span>
+            <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model8Title">Perfumaria, Cosméticos & Beleza</h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model8Desc">
+              Exibição elegante de perfumes importados e nacionais, maquiagens e kits de beleza com especificações de tons e fragrâncias.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20Digital%20para%20Perfumaria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+                Solicitar este Modelo no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS COMERCIAIS (ESSENCIAL E PLUS) -->
+    <section class="section" id="planos" style="background-color: var(--color-surface-navy); border-top: 1px solid var(--color-border-subtle); border-bottom: 1px solid var(--color-border-subtle);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tag" style="color: #21B8F6 !important; border-color: rgba(33, 184, 246, 0.3) !important;" data-i18n="cardapioDigital.plansTag">INVESTIMENTO TRANSPARENTE</span>
+          <h2 style="color: var(--color-text-white);" data-i18n="cardapioDigital.plansTitle">Dois Planos Claros para a Escala do seu Negócio</h2>
+          <p class="section-subtitle" style="color: var(--color-text-muted);" data-i18n="cardapioDigital.plansSubtitle">Sem cobrança de porcentagens sobre suas vendas. Seu faturamento permanece 100% no seu caixa.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- PLANO ESSENCIAL -->
+          <div class="pricing-card">
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary-cyan); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;" data-i18n="cardapioDigital.plan1Badge">PARA QUEM ESTÁ COMEÇANDO</span>
+            <h3 style="font-size: 1.6rem; color: var(--color-text-white); margin-bottom: 0.75rem;" data-i18n="cardapioDigital.plan1Name">Plano Essencial</h3>
+            
+            <div style="display: flex; align-items: baseline; gap: 0.35rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 2.5rem; font-weight: 800; color: var(--color-text-white);" data-i18n="cardapioDigital.plan1Price">R$ 49,90</span>
+              <span style="font-size: 1rem; color: var(--color-text-muted);" data-i18n="cardapioDigital.plan1Period">/mês</span>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 0.6rem 0.9rem; border-radius: 8px; font-size: 0.85rem; color: #00BFA5; font-weight: 600; margin-bottom: 1.25rem;">
+              ✨ <span data-i18n="cardapioDigital.plan1Setup">Implantação Gratuita (R$ 0)</span> • <span data-i18n="cardapioDigital.plan1Contract">Sem fidelidade</span>
+            </div>
+
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 1rem;">
+              Perfeito para estabelecimentos que precisam de um cardápio funcional, ágil e independente para substituir o papel e agilizar pedidos no balcão e salão.
+            </p>
+
+            <ul class="pricing-feature-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan1Feat1">Até 30 produtos cadastrados com fotos e descrições</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan1Feat2">Carrinho interativo e envio automático ao WhatsApp</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan1Feat3">QR Code digital em alta definição para mesas e balcão</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan1Feat4">Apresentação visual padrão elegante e mobile-first</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan1Feat5">Pacotes de 5 alterações simples avulsas por R$ 29,90</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00BFA5" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan1Feat6">Suporte padrão em horário comercial</span>
+              </li>
+            </ul>
+
+            <div style="margin-top: auto; padding-top: 1rem;">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Quero%20contratar%20o%20Plano%20Essencial%20(R%24%2049%2C90%2Fm%C3%AAs)%20para%20o%20Card%C3%A1pio%20Digital%20do%20meu%20estabelecimento." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.85rem 1.25rem;" data-track="whatsapp_click" data-cta-position="cardapio_plan_essencial" data-i18n="cardapioDigital.plan1Cta">
+                Contratar Plano Essencial
+              </a>
+            </div>
+          </div>
+
+          <!-- PLANO PLUS (FEATURED) -->
+          <div class="pricing-card pricing-card-featured">
+            <span class="pricing-featured-tag" data-i18n="cardapioDigital.plan2Badge">MAIS ESCOLHIDO • MELHOR CUSTO-BENEFÍCIO</span>
+            
+            <span style="font-size: 0.8rem; font-weight: 700; color: #21B8F6; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; margin-top: 0.5rem;">CRESCIMENTO & GESTÃO COMPLETA</span>
+            <h3 style="font-size: 1.6rem; color: var(--color-text-white); margin-bottom: 0.75rem;" data-i18n="cardapioDigital.plan2Name">Plano Plus</h3>
+            
+            <div style="display: flex; align-items: baseline; gap: 0.35rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 2.5rem; font-weight: 800; color: #21B8F6;" data-i18n="cardapioDigital.plan2Price">R$ 89,90</span>
+              <span style="font-size: 1rem; color: var(--color-text-muted);" data-i18n="cardapioDigital.plan2Period">/mês</span>
+            </div>
+
+            <div style="background: rgba(33, 184, 246, 0.12); border: 1px solid rgba(33, 184, 246, 0.25); padding: 0.6rem 0.9rem; border-radius: 8px; font-size: 0.85rem; color: var(--color-text-white); font-weight: 600; margin-bottom: 1.25rem;">
+              🚀 <span data-i18n="cardapioDigital.plan2Setup">Implantação R$ 199</span> • <span data-i18n="cardapioDigital.plan2Contract">Contrato de 12 meses</span>
+            </div>
+
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 1rem;">
+              A solução definitiva para estabelecimentos com rotação de produtos, banners promocionais e necessidade de atualizações mensais com suporte prioritário.
+            </p>
+
+            <ul class="pricing-feature-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#21B8F6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <strong style="color: var(--color-text-white);" data-i18n="cardapioDigital.plan2Feat1">Todos os recursos do Plano Essencial inclusos</strong>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#21B8F6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan2Feat2">Até 50 produtos cadastrados</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#21B8F6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="color: #21B8F6; font-weight: 600;" data-i18n="cardapioDigital.plan2Feat3">10 alterações simples mensais incluídas (em até 2 lotes)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#21B8F6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan2Feat4">Personalização visual avançada com a identidade da sua marca</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#21B8F6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan2Feat5">Banner de destaque e área de promoções/combos do dia</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#21B8F6" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="cardapioDigital.plan2Feat6">Atendimento e suporte prioritário via canal direto CONEXUS</span>
+              </li>
+            </ul>
+
+            <div style="margin-top: auto; padding-top: 1rem;">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Quero%20contratar%20o%20Plano%20Plus%20(R%24%2089%2C90%2Fm%C3%AAs)%20para%20o%20Card%C3%A1pio%20Digital%20do%20meu%20estabelecimento." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.85rem 1.25rem; font-weight: 700;" data-track="whatsapp_click" data-cta-position="cardapio_plan_plus" data-i18n="cardapioDigital.plan2Cta">
+                Contratar Plano Plus
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABELA COMPARATIVA RESPONSIVA -->
+    <section class="section">
+      <div class="container" style="max-width: 960px;">
+        <div class="section-header text-center">
+          <span class="tag" data-i18n="cardapioDigital.tableTag">COMPARAÇÃO DIRETA</span>
+          <h2 data-i18n="cardapioDigital.tableTitle">Tabela Comparativa de Recursos</h2>
+          <p class="section-subtitle" data-i18n="cardapioDigital.tableSubtitle">Compare todos os detalhes técnicos e operacionais de cada plano para tomar a melhor decisão.</p>
+        </div>
+
+        <div class="table-container-scroll">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th style="width: 44%;" data-i18n="cardapioDigital.colFeature">Recurso / Especificação</th>
+                <th style="width: 28%; text-align: center;" data-i18n="cardapioDigital.colEssencial">Plano Essencial</th>
+                <th style="width: 28%; text-align: center; color: #21B8F6;" data-i18n="cardapioDigital.colPlus">Plano Plus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowMonthly">Mensalidade</strong></td>
+                <td style="text-align: center; font-weight: 700;" data-i18n="cardapioDigital.rowMonthlyEss">R$ 49,90 / mês</td>
+                <td style="text-align: center; font-weight: 700; color: #21B8F6;" data-i18n="cardapioDigital.rowMonthlyPlus">R$ 89,90 / mês</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowSetup">Taxa de Implantação</strong></td>
+                <td style="text-align: center; color: #00BFA5; font-weight: 600;" data-i18n="cardapioDigital.rowSetupEss">Gratuita (R$ 0)</td>
+                <td style="text-align: center;" data-i18n="cardapioDigital.rowSetupPlus">R$ 199 (taxa única)</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowContract">Fidelidade Contratual</strong></td>
+                <td style="text-align: center;" data-i18n="cardapioDigital.rowContractEss">Mensal (sem fidelidade)</td>
+                <td style="text-align: center; font-weight: 600;" data-i18n="cardapioDigital.rowContractPlus">Contrato de 12 meses</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowProductLimit">Limite de Produtos Cadastrados</strong></td>
+                <td style="text-align: center;" data-i18n="cardapioDigital.rowProductLimitEss">Até 30 produtos</td>
+                <td style="text-align: center; font-weight: 600; color: #21B8F6;" data-i18n="cardapioDigital.rowProductLimitPlus">Até 50 produtos</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowMaintenance">Alterações e Atualizações</strong></td>
+                <td style="text-align: center;" data-i18n="cardapioDigital.rowMaintenanceEss">R$ 29,90 por pacote de 5</td>
+                <td style="text-align: center; font-weight: 600; color: #00BFA5;" data-i18n="cardapioDigital.rowMaintenancePlus">10 inclusas/mês (até 2 lotes)</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowCart">Carrinho & Pedidos no WhatsApp</strong></td>
+                <td style="text-align: center; color: #00BFA5;">✓ Sim (100% incluso)</td>
+                <td style="text-align: center; color: #00BFA5;">✓ Sim (100% incluso)</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowQr">QR Code em Alta Resolução (Mesa/Balcão)</strong></td>
+                <td style="text-align: center; color: #00BFA5;">✓ Sim (Arquivo digital)</td>
+                <td style="text-align: center; color: #00BFA5;">✓ Sim (Arquivo digital)</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowBanners">Banners Promocionais & Combos do Dia</strong></td>
+                <td style="text-align: center; color: var(--color-text-muted);" data-i18n="cardapioDigital.rowBannersEss">Não disponível</td>
+                <td style="text-align: center; color: #00BFA5; font-weight: 600;" data-i18n="cardapioDigital.rowBannersPlus">✓ Incluído e validado</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowCustom">Nível de Personalização Visual</strong></td>
+                <td style="text-align: center;" data-i18n="cardapioDigital.rowCustomEss">Padrão CONEXUS</td>
+                <td style="text-align: center; font-weight: 600;" data-i18n="cardapioDigital.rowCustomPlus">Avançada (Cores, Fontes e Marca)</td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="cardapioDigital.rowSupport">Canal de Atendimento e Suporte</strong></td>
+                <td style="text-align: center;" data-i18n="cardapioDigital.rowSupportEss">Horário Comercial</td>
+                <td style="text-align: center; font-weight: 600; color: #21B8F6;" data-i18n="cardapioDigital.rowSupportPlus">Atendimento Prioritário</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS DO CARDÁPIO ONLINE -->
+    <section class="section" style="background-color: var(--color-surface-navy); border-top: 1px solid var(--color-border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag" style="color: #21B8F6 !important; border-color: rgba(33, 184, 246, 0.3) !important;" data-i18n="cardapioDigital.featuresTag">RECURSOS & FUNCIONALIDADES</span>
+          <h2 style="color: var(--color-text-white);" data-i18n="cardapioDigital.featuresTitle">Tudo o que seu Estabelecimento Precisa para Vender Mais</h2>
+          <p class="section-subtitle" style="color: var(--color-text-muted);" data-i18n="cardapioDigital.featuresSubtitle">Projetado com rigor técnico para entregar carregamento ultrarrápido e ergonomia impecável no smartphone do cliente.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.75rem; margin-top: 2.5rem;">
+          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat1Title">Categorias & Filtros Rápidos</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat1Desc">Organização por abas temáticas permitindo que o cliente encontre o que deseja em segundos.</p>
+          </div>
+
+          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat2Title">Fotos e Descrições Detalhadas</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat2Desc">Imagens em alta definição otimizadas em formato WebP para carregamento instantâneo, com ingredientes, alérgenos e opções especiais.</p>
+          </div>
+
+          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat3Title">Atualização Instantânea na Nuvem</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat3Desc">Ajuste valores, pause itens esgotados e adicione novidades a qualquer momento sem custo de reimpressão.</p>
+          </div>
+
+          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M7 7h3v3H7z"/><path d="M14 7h3v3h-3z"/><path d="M7 14h3v3H7z"/><path d="M14 14h3v3h-3z"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat4Title">QR Code de Mesa & Balcão em Alta Resolução</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat4Desc">Receba arquivos prontos para impressão em acrílico, madeira ou display de papel, integrando com a decoração do seu espaço.</p>
+          </div>
+
+          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat5Title">Integração Direta com WhatsApp</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat5Desc">Elimina ruídos de comunicação. O pedido chega organizado com todos os itens, adicionais, observações e total calculado.</p>
+          </div>
+
+          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat6Title">Incentivo a Avaliações no Google</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat6Desc">Botão integrado para o cliente avaliar seu estabelecimento no Perfil da Empresa no Google, fortalecendo seu SEO local.</p>
           </div>
         </div>
       </div>
@@ -404,69 +1025,8 @@
       </div>
     </section>
 
-    <!-- RECURSOS DO CARDÁPIO ONLINE -->
-    <section class="section" style="background-color: var(--color-surface-navy); border-top: 1px solid var(--color-border-subtle);">
-      <div class="container">
-        <div class="section-header">
-          <span class="tag" style="color: #21B8F6 !important; border-color: rgba(33, 184, 246, 0.3) !important;" data-i18n="cardapioDigital.featuresTag">RECURSOS & FUNCIONALIDADES</span>
-          <h2 style="color: var(--color-text-white);" data-i18n="cardapioDigital.featuresTitle">Tudo o que seu Estabelecimento Precisa para Vender Mais</h2>
-          <p class="section-subtitle" style="color: var(--color-text-muted);" data-i18n="cardapioDigital.featuresSubtitle">Projetado com rigor técnico para entregar carregamento ultrarrápido e ergonomia impecável no smartphone do cliente.</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.75rem; margin-top: 2.5rem;">
-          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
-            </div>
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat1Title">Categorias & Filtros Rápidos</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat1Desc">Organização por abas temáticas (Pratos, Entradas, Bebidas, Sobremesas, Promoções) permitindo que o cliente encontre o que deseja em segundos.</p>
-          </div>
-
-          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
-            </div>
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat2Title">Fotos e Descrições Detalhadas</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat2Desc">Imagens em alta definição otimizadas em formato WebP para carregamento instantâneo, com ingredientes, alérgenos e opções especiais.</p>
-          </div>
-
-          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat3Title">Atualização Instantânea na Nuvem</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat3Desc">Ajuste valores, pause itens esgotados e adicione novidades a qualquer momento. Chega de cardápios de papel com preços rasurados ou colados.</p>
-          </div>
-
-          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M7 7h3v3H7z"/><path d="M14 7h3v3h-3z"/><path d="M7 14h3v3H7z"/><path d="M14 14h3v3h-3z"/></svg>
-            </div>
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat4Title">QR Code de Mesa & Balcão em Alta Resolução</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat4Desc">Receba arquivos prontos para impressão em acrílico, madeira ou display de papel, integrando perfeitamente com a decoração do seu espaço.</p>
-          </div>
-
-          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat5Title">Integração Direta com WhatsApp</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat5Desc">Elimina ruídos de comunicação. O pedido chega organizado com todos os itens, ponto da carne, acompanhamentos e total calculado.</p>
-          </div>
-
-          <div style="background: var(--color-surface-navy); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <div style="color: #21B8F6; margin-bottom: 0.75rem;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.4rem;" data-i18n="cardapioDigital.feat6Title">Incentivo a Avaliações no Google</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.feat6Desc">Botão integrado para o cliente avaliar seu estabelecimento com 5 estrelas no Perfil da Empresa no Google, fortalecendo seu SEO local.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CASES REAIS DE GASTRONOMIA -->
-    <section class="section" id="cases">
+    <section class="section" id="cases" style="background-color: var(--color-surface-navy); border-top: 1px solid var(--color-border-subtle);">
       <div class="container">
         <div class="section-header">
           <span class="tag" data-i18n="cardapioDigital.casesTag">PROJETOS REAIS • PORTFÓLIO CONEXUS</span>
@@ -543,6 +1103,21 @@
 
         <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2.5rem;">
           <div style="background: var(--color-surface-navy); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.qPlanDiff">Qual a principal diferença entre o Plano Essencial e o Plano Plus?</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.aPlanDiff">O Plano Essencial (R$ 49,90/mês) tem implantação gratuita, até 30 produtos e manutenções sob demanda (R$ 29,90 por 5 alterações). O Plano Plus (R$ 89,90/mês) tem implantação de R$ 199 e contrato de 12 meses, amplia o catálogo para até 50 produtos, inclui 10 alterações mensais em até 2 lotes, personalização visual avançada da sua marca, banners de promoções e atendimento prioritário.</p>
+          </div>
+
+          <div style="background: var(--color-surface-navy); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.qMaintenance">Como funciona o pacote de 5 alterações simples no Plano Essencial?</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.aMaintenance">Caso você precise atualizar preços, fotos ou descrições no Plano Essencial, você pode solicitar pacotes avulsos de 5 alterações simples por apenas R$ 29,90, pagando somente quando realmente precisar alterar itens do seu cardápio.</p>
+          </div>
+
+          <div style="background: var(--color-surface-navy); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.qPlusLot">Como funciona o envio das 10 alterações mensais no Plano Plus?</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.aPlusLot">No Plano Plus, você tem direito a 10 alterações simples todo mês já inclusas na mensalidade, que podem ser enviadas em até 2 lotes mensais para nossa equipe aplicar na nuvem com prioridade máxima.</p>
+          </div>
+
+          <div style="background: var(--color-surface-navy); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
             <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.q1">A CONEXUS cobra comissões sobre os pedidos realizados pelo cardápio digital?</h3>
             <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.a1">Não. Ao contrário dos marketplaces de entrega que retêm porcentagens entre 15% e 30% sobre cada prato vendido, a CONEXUS desenvolve a plataforma para o seu estabelecimento sem comissão por venda. O faturamento é 100% seu.</p>
           </div>
@@ -558,18 +1133,8 @@
           </div>
 
           <div style="background: var(--color-surface-navy); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.q4">O cardápio digital serve tanto para atendimento no salão quanto para delivery e encomendas?</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.a4">Sim. No salão, agiliza a escolha dos pratos e reduz a sobrecarga dos garçons. Para delivery e retiradas no balcão, o cliente escolhe os produtos, adicionais e clica em enviar o pedido direto para o WhatsApp do restaurante.</p>
-          </div>
-
-          <div style="background: var(--color-surface-navy); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.q5">Como funciona a atualização de preços, pratos e itens esgotados?</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.a5">As atualizações são feitas na nuvem. Se um prato sazonal for incluído ou os preços forem ajustados, a atualização é imediata, sem custo de reimpressão gráfica de cardápios de papel plastificado.</p>
-          </div>
-
-          <div style="background: var(--color-surface-navy); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
-            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.q6">Como solicitar um orçamento de cardápio digital para o meu negócio?</h3>
-            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.a6">Basta entrar em contato pelo WhatsApp oficial da CONEXUS. Nossa equipe entenderá o volume de itens do seu menu e as necessidades do seu estabelecimento para enviar uma proposta personalizada sem compromisso.</p>
+            <h3 style="color: var(--color-text-white); font-size: var(--fs-sm); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.qUpgrade">Posso iniciar no Plano Essencial e migrar para o Plano Plus posteriormente?</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-xs); margin: 0; line-height: 1.6;" data-i18n="cardapioDigital.aUpgrade">Sim! À medida que seu volume de produtos crescer ou sua operação demandar atualizações frequentes e banners promocionais, a migração para o Plano Plus pode ser solicitada a qualquer momento diretamente pelo WhatsApp.</p>
           </div>
         </div>
       </div>
