@@ -255,6 +255,68 @@
       border-color: rgba(33, 184, 246, 0.4);
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
     }
+    .showcase-image-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: 1.15rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--color-border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .showcase-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+    .showcase-card:hover .showcase-image {
+      transform: scale(1.03);
+    }
+    .showcase-image-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      background: linear-gradient(135deg, rgba(33, 184, 246, 0.06) 0%, rgba(10, 25, 47, 0.6) 100%);
+      color: var(--color-text-muted);
+      text-align: center;
+      padding: 1rem;
+      transition: background 0.3s ease;
+    }
+    .showcase-card:hover .showcase-image-placeholder {
+      background: linear-gradient(135deg, rgba(33, 184, 246, 0.12) 0%, rgba(10, 25, 47, 0.8) 100%);
+    }
+    .showcase-placeholder-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(33, 184, 246, 0.12);
+      color: #21B8F6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+    .showcase-card:hover .showcase-placeholder-icon {
+      transform: scale(1.08);
+    }
+    .showcase-placeholder-text {
+      font-size: var(--fs-2xs);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
     .showcase-badge-live {
       display: inline-flex;
       align-items: center;
@@ -388,6 +450,16 @@
       background: #FFFFFF;
       border-color: rgba(0, 0, 0, 0.08);
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+    [data-theme="light"] .showcase-image-wrapper {
+      background: #F1F5F9;
+      border-color: rgba(0, 0, 0, 0.08);
+    }
+    [data-theme="light"] .showcase-image-placeholder {
+      background: linear-gradient(135deg, rgba(33, 184, 246, 0.08) 0%, rgba(241, 245, 249, 0.9) 100%);
+    }
+    [data-theme="light"] .showcase-placeholder-text {
+      color: #64748B;
     }
     [data-theme="light"] .comparison-table th {
       background: #F8FAFC;
@@ -572,6 +644,9 @@
         <div class="showcase-grid">
           <!-- Modelo 1: Bora Lanches (Demo Real) -->
           <div class="showcase-card" style="border-top: 3px solid #00BFA5;">
+            <div class="showcase-image-wrapper">
+              <img src="/assets/cardapio-digital/bora-lanches-cardapio-digital.webp" alt="Cardápio Digital Bora Lanches - Demonstração Online" width="1200" height="675" loading="lazy" class="showcase-image">
+            </div>
             <div class="showcase-badge-live">
               <span class="pulse-dot"></span>
               <span data-i18n="cardapioDigital.badgeDemoActive">DEMONSTRAÇÃO REAL ONLINE</span>
@@ -583,7 +658,7 @@
             </p>
             <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: auto;">
               <a href="https://boralanches.conexus.press/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.6rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnTestDemo">
-                Testar Demonstração ao Vivo ↗
+                Ver Demonstração ↗
               </a>
               <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20Bora%20Lanches%20e%20gostaria%20de%20um%20card%C3%A1pio%20digital%20similar%20para%20minha%20lanchonete%2Fhamburgueria." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
                 Solicitar este Modelo no WhatsApp
@@ -593,6 +668,14 @@
 
           <!-- Modelo 2: Bella Festa (Demo Real de Natal) -->
           <div class="showcase-card" style="border-top: 3px solid #00BFA5;">
+            <div class="showcase-image-wrapper">
+              <div class="showcase-image-placeholder">
+                <div class="showcase-placeholder-icon" style="background: rgba(0, 191, 165, 0.12); color: #00BFA5;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <span class="showcase-placeholder-text" data-i18n="cardapioDigital.placeholderDemo">Padrão 16:9 • Demonstração Online</span>
+              </div>
+            </div>
             <div class="showcase-badge-live">
               <span class="pulse-dot"></span>
               <span data-i18n="cardapioDigital.badgeDemoActive">DEMONSTRAÇÃO REAL ONLINE</span>
@@ -604,7 +687,7 @@
             </p>
             <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: auto;">
               <a href="https://bellafesta.conexus.press/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.6rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnTestDemo">
-                Testar Demonstração ao Vivo ↗
+                Ver Demonstração ↗
               </a>
               <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20Card%C3%A1pio%20de%20Natal%20Bella%20Festa%20e%20gostaria%20de%20um%20cat%C3%A1logo%20digital%20para%20encomendas%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
                 Solicitar este Modelo no WhatsApp
@@ -614,6 +697,14 @@
 
           <!-- Modelo 3: Pizzaria Artesanal -->
           <div class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <div class="showcase-image-placeholder">
+                <div class="showcase-placeholder-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+                </div>
+                <span class="showcase-placeholder-text" data-i18n="cardapioDigital.placeholderModel">Padrão 16:9 • Modelo Estruturado</span>
+              </div>
+            </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
             </div>
@@ -631,6 +722,14 @@
 
           <!-- Modelo 4: Açaiteria & Sorveteria -->
           <div class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <div class="showcase-image-placeholder">
+                <div class="showcase-placeholder-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                </div>
+                <span class="showcase-placeholder-text" data-i18n="cardapioDigital.placeholderModel">Padrão 16:9 • Modelo Estruturado</span>
+              </div>
+            </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
             </div>
@@ -648,6 +747,14 @@
 
           <!-- Modelo 5: Restaurante & Marmitaria -->
           <div class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <div class="showcase-image-placeholder">
+                <div class="showcase-placeholder-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2v20M21 2v6a3 3 0 0 1-3 3M6 2v7a3 3 0 0 0 3 3v10M3 2v7a3 3 0 0 0 3 3"/></svg>
+                </div>
+                <span class="showcase-placeholder-text" data-i18n="cardapioDigital.placeholderModel">Padrão 16:9 • Modelo Estruturado</span>
+              </div>
+            </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
             </div>
@@ -665,6 +772,14 @@
 
           <!-- Modelo 6: Confeitaria, Doceria & Bolos -->
           <div class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <div class="showcase-image-placeholder">
+                <div class="showcase-placeholder-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v2"/><path d="M12 8v2"/><path d="M17 8v2"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
+                </div>
+                <span class="showcase-placeholder-text" data-i18n="cardapioDigital.placeholderModel">Padrão 16:9 • Modelo Estruturado</span>
+              </div>
+            </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
             </div>
@@ -674,7 +789,7 @@
               Catálogo visual para encomendas de bolos por quilo, docinhos para eventos, caixas de presentes e sobremesas especiais.
             </p>
             <div style="margin-top: auto;">
-              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20Digital%20para%20Confeitaria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Card%C3%A1pio%20Digital%20para%20Confeitaria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
                 Solicitar este Modelo no WhatsApp
               </a>
             </div>
@@ -682,16 +797,24 @@
 
           <!-- Modelo 7: Pet Shop & Estética Animal -->
           <div class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <div class="showcase-image-placeholder">
+                <div class="showcase-placeholder-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                </div>
+                <span class="showcase-placeholder-text" data-i18n="cardapioDigital.placeholderModel">Padrão 16:9 • Modelo Estruturado</span>
+              </div>
+            </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
             </div>
             <span style="font-size: var(--fs-2xs); color: var(--color-primary-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.35rem;" data-i18n="cardapioDigital.model7Segment">Rações, Higiene, Banho & Tosa</span>
             <h3 style="font-size: 1.15rem; color: var(--color-text-main); margin-bottom: 0.5rem;" data-i18n="cardapioDigital.model7Title">Pet Shop & Estética Animal</h3>
             <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;" data-i18n="cardapioDigital.model7Desc">
-              Vitrine prática para rações premium, medicamentos, acessórios para pets e botão rápido de agendamento de serviços.
+              Vitrine prática para rações premium, medicamentos, acessórios para pets e agendamento rápido de banho e tosa.
             </p>
             <div style="margin-top: auto;">
-              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20Digital%20para%20Pet%20Shop%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20de%20Produtos%20para%20Pet%20Shop%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
                 Solicitar este Modelo no WhatsApp
               </a>
             </div>
@@ -699,6 +822,14 @@
 
           <!-- Modelo 8: Perfumaria, Cosméticos & Beleza -->
           <div class="showcase-card">
+            <div class="showcase-image-wrapper">
+              <div class="showcase-image-placeholder">
+                <div class="showcase-placeholder-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+                </div>
+                <span class="showcase-placeholder-text" data-i18n="cardapioDigital.placeholderModel">Padrão 16:9 • Modelo Estruturado</span>
+              </div>
+            </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="cardapioDigital.badgeModelUpcoming">MODELO ESTRUTURADO</span>
             </div>
@@ -708,7 +839,7 @@
               Exibição elegante de perfumes importados e nacionais, maquiagens e kits de beleza com especificações de tons e fragrâncias.
             </p>
             <div style="margin-top: auto;">
-              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20Digital%20para%20Perfumaria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20de%20Produtos%20para%20Perfumaria%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.55rem 1rem; width: 100%; text-align: center; justify-content: center;" data-i18n="cardapioDigital.btnRequestModel">
                 Solicitar este Modelo no WhatsApp
               </a>
             </div>
