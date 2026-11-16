@@ -234,7 +234,7 @@
     <section class="section" style="padding-top: 1rem; padding-bottom: 2rem;">
       <div class="container text-center">
         <div class="blog-filter-container" style="display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem;">
-          <button class="filter-btn active" data-filter="all" style="padding: 0.5rem 1.25rem; border-radius: 999px; border: 1px solid var(--color-cyan); background: var(--color-cyan-glow); color: var(--color-cyan); font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Todos (181)</button>
+          <button class="filter-btn active" data-filter="all" style="padding: 0.5rem 1.25rem; border-radius: 999px; border: 1px solid var(--color-cyan); background: var(--color-cyan-glow); color: var(--color-cyan); font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Todos (182)</button>
           <button class="filter-btn" data-filter="websites" style="padding: 0.5rem 1.25rem; border-radius: 999px; border: 1px solid var(--color-border-subtle); background: var(--color-surface-navy); color: var(--color-text-muted); font-weight: 500; cursor: pointer; transition: all 0.2s ease;">Sites & Design</button>
           <button class="filter-btn" data-filter="seo" style="padding: 0.5rem 1.25rem; border-radius: 999px; border: 1px solid var(--color-border-subtle); background: var(--color-surface-navy); color: var(--color-text-muted); font-weight: 500; cursor: pointer; transition: all 0.2s ease;">SEO & Google</button>
           <button class="filter-btn" data-filter="marketing" style="padding: 0.5rem 1.25rem; border-radius: 999px; border: 1px solid var(--color-border-subtle); background: var(--color-surface-navy); color: var(--color-text-muted); font-weight: 500; cursor: pointer; transition: all 0.2s ease;">Marketing Digital</button>
@@ -249,6 +249,29 @@
     <section class="section section-dark" style="padding-top: 1rem;">
       <div class="container">
         <div class="grid grid-3" id="blog-grid">
+
+          <!-- CARD: cardapio-digital-com-whatsapp-vantagens -->
+          <article class="card blog-post-card" data-category="websites business" style="display: flex; flex-direction: column; height: 100%;">
+            <a href="/blog/cardapio-digital-com-whatsapp-vantagens/" aria-label="Ler artigo: Cardápio Digital com WhatsApp: 7 Vantagens para Seu Negócio" class="case-cover-wrapper">
+              <img src="/assets/images/conexus-cardapio-digital-com-whatsapp-vantagens.webp" alt="Demonstração ilustrativa de cardápio digital com WhatsApp em smartphones — Modelos conceituais Bora Lanches e Bella Festa" width="380" height="214" loading="lazy" class="case-cover-img">
+            </a>
+            <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem;">
+              <span class="badge" style="background: var(--color-cyan-glow); color: var(--color-cyan); font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: var(--radius-sm);" data-i18n="blog_card_cardapio_digital_whatsapp_tag">GASTRONOMIA & DELIVERY</span>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">16/11/2026</span>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted); margin-left: auto;" data-i18n="blog_card_cardapio_digital_whatsapp_readTime">9 min de leitura</span>
+            </div>
+            <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4; margin-bottom: 0.75rem;">
+              <a href="/blog/cardapio-digital-com-whatsapp-vantagens/" style="color: inherit; text-decoration: none;" data-i18n="blog_card_cardapio_digital_whatsapp_title">Cardápio Digital com WhatsApp: 7 Vantagens para Seu Negócio</a>
+            </h3>
+            <p class="card-description" style="flex-grow: 1; font-size: 0.95rem; line-height: 1.6;" data-i18n="blog_card_cardapio_digital_whatsapp_desc">Descubra como o cardápio digital integrado ao WhatsApp elimina comissões abusivas de aplicativos, agiliza pedidos e transforma a experiência do cliente em hamburguerias, pizzarias e restaurantes.</p>
+            <div style="margin-top: 1.25rem;">
+              <a href="/blog/cardapio-digital-com-whatsapp-vantagens/" class="btn btn-secondary" style="width: 100%; justify-content: center; text-align: center;">
+                <span data-i18n="common.readArticle">Ler Artigo</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 6px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
 
           <!-- CARD: conexus-brasil-conexxus-uk-presenca-internacional -->
           <article class="card blog-post-card" data-category="business" style="display: flex; flex-direction: column; height: 100%;">
@@ -4047,7 +4070,22 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const filterBtns = document.querySelectorAll('.filter-btn');
-      const cards = document.querySelectorAll('.blog-post-card');
+      const cards = document.querySelectorAll('#blog-grid .blog-post-card');
+      const allFilterBtn = document.querySelector('.filter-btn[data-filter="all"]');
+
+      // Atualização dinâmica da contagem no botão Todos
+      const updateCount = () => {
+        if (allFilterBtn && cards.length) {
+          const lang = document.documentElement.getAttribute('data-current-lang') || 'pt';
+          const label = lang === 'en' ? 'All' : 'Todos';
+          allFilterBtn.textContent = `${label} (${cards.length})`;
+        }
+      };
+      updateCount();
+
+      // Sincroniza contador quando o idioma for alternado
+      const observer = new MutationObserver(updateCount);
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-current-lang', 'lang'] });
 
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -4065,10 +4103,11 @@
           btn.style.borderColor = 'var(--color-cyan)';
           btn.style.color = 'var(--color-cyan)';
 
-          // Filter cards
+          // Filter cards (suporte a múltiplas categorias e correspondência precisa)
           cards.forEach(card => {
-            const cat = card.getAttribute('data-category');
-            if (filter === 'all' || cat === filter) {
+            const cat = card.getAttribute('data-category') || '';
+            const categories = cat.split(/\s+/);
+            if (filter === 'all' || categories.includes(filter)) {
               card.style.display = 'flex';
             } else {
               card.style.display = 'none';
@@ -4080,24 +4119,3 @@
   </script>
 </body>
 </html>
-          <!-- Card: Cardápio Digital com WhatsApp -->
-          <article class="card blog-post-card" data-category="sales" style="display: flex; flex-direction: column; height: 100%;">
-            <a href="/blog/cardapio-digital-com-whatsapp-vantagens/" aria-label="Ler artigo: Cardápio Digital com WhatsApp: 7 Vantagens para Seu Negócio" class="case-cover-wrapper">
-              <img src="/assets/images/conexus-cardapio-digital-com-whatsapp-vantagens.webp" alt="Demonstração ilustrativa de cardápio digital com WhatsApp em smartphones — Modelos conceituais Bora Lanches e Bella Festa" width="380" height="214" loading="lazy" class="case-cover-img">
-            </a>
-            <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem;">
-              <span class="badge" style="background: var(--color-cyan-glow); color: var(--color-cyan); font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: var(--radius-sm);" data-i18n="blog_card_cardapio_digital_whatsapp_tag">GASTRONOMIA & DELIVERY</span>
-              <span style="font-size: 0.85rem; color: var(--color-text-muted);">16/11/2026</span>
-              <span style="font-size: 0.85rem; color: var(--color-text-muted); margin-left: auto;" data-i18n="blog_card_cardapio_digital_whatsapp_readTime">9 min de leitura</span>
-            </div>
-            <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4; margin-bottom: 0.75rem;">
-              <a href="/blog/cardapio-digital-com-whatsapp-vantagens/" style="color: inherit; text-decoration: none;" data-i18n="blog_card_cardapio_digital_whatsapp_title">Cardápio Digital com WhatsApp: 7 Vantagens para Seu Negócio</a>
-            </h3>
-            <p class="card-description" style="flex-grow: 1; font-size: 0.95rem; line-height: 1.6;" data-i18n="blog_card_cardapio_digital_whatsapp_desc">Descubra como o cardápio digital integrado ao WhatsApp elimina comissões abusivas de aplicativos, agiliza pedidos e transforma a experiência do cliente em hamburguerias, pizzarias e restaurantes.</p>
-            <div style="margin-top: 1.25rem;">
-              <a href="/blog/cardapio-digital-com-whatsapp-vantagens/" class="btn btn-secondary" style="width: 100%; justify-content: center; text-align: center;">
-                <span data-i18n="common.readArticle">Ler Artigo</span>
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; margin-left: 6px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>

@@ -369,6 +369,36 @@ for (const slug of topBlogPosts) {
   assert(copiedEn === 0 && copiedEs === 0, `[${slug}] Versões EN e ES não são cópias do PT (Cópias: EN: ${copiedEn}, ES: ${copiedEs})`);
 }
 
+// TEST 13: Validação da Integridade e Catálogo Completo do Blog
+console.log('\n[TEST 13] Validação do Catálogo do Blog (Contador & Integridade)');
+const blogIndexPath = path.join(rootDir, 'blog/index.html');
+const blogHtml = fs.readFileSync(blogIndexPath, 'utf8');
+
+// 1. Sem conteúdo órfão após </html>
+const htmlCloseIdx = blogHtml.indexOf('</html>');
+const afterHtml = htmlCloseIdx !== -1 ? blogHtml.slice(htmlCloseIdx + '</html>'.length).trim() : '';
+assert(afterHtml.length === 0, 'blog/index.html não possui conteúdo órfão após o fechamento </html>.');
+
+// 2. Paridade entre diretórios e cards no grid
+const blogSubdirs = fs.readdirSync(path.join(rootDir, 'blog'), { withFileTypes: true })
+  .filter(d => d.isDirectory())
+  .filter(d => fs.existsSync(path.join(rootDir, 'blog', d.name, 'index.html')));
+
+const gridMatch = blogHtml.match(/<div class="grid grid-3" id="blog-grid">([\s\S]*?)<\/section>/);
+const gridCards = gridMatch ? (gridMatch[1].match(/<article class="card blog-post-card"[^>]*>/g) || []) : [];
+assert(gridCards.length === blogSubdirs.length, `Total de cards no grid (${gridCards.length}) é exatamente igual ao número de diretórios de artigos (${blogSubdirs.length}).`);
+assert(gridCards.length === 182, `Total de artigos é rigorosamente 182 (Encontrado: ${gridCards.length}).`);
+
+// 3. Botão do filtro exibe Todos (182)
+const filterAllBtnMatch = blogHtml.match(/<button class="filter-btn active" data-filter="all"[^>]*>([\s\S]*?)<\/button>/);
+const filterAllText = filterAllBtnMatch ? filterAllBtnMatch[1].trim() : '';
+assert(filterAllText === 'Todos (182)', `Botão do filtro exibe exatamente "Todos (182)" (Encontrado: "${filterAllText}").`);
+
+// 4. Card do novo artigo é o primeiro do catálogo
+const firstCardMatch = gridMatch ? gridMatch[1].match(/<article class="card blog-post-card"[\s\S]*?<\/article>/) : null;
+const isCardapioFirst = firstCardMatch && firstCardMatch[0].includes('/blog/cardapio-digital-com-whatsapp-vantagens/');
+assert(isCardapioFirst, 'O novo artigo de Cardápio Digital com WhatsApp é o primeiro card (mais recente) no catálogo do blog.');
+
 // SUMÁRIO DOS TESTES
 console.log('\n====================================================');
 console.log(` RESULTADO DOS TESTES: ${passedTests}/${totalTests} PASSOU (${failedTests} FALHAS)`);
