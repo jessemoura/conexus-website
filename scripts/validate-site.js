@@ -264,9 +264,10 @@ assert(hasDebounce, 'Algoritmo de desduplicação e debounce (600ms) implementad
 const hasSanitization = trackingJsContent.includes('sanitizeUrl');
 assert(hasSanitization, 'Módulo de higienização de URLs implementado para conformidade total com LGPD (Zero PII).');
 
-// TEST 12: Auditoria Específica dos 12 Artigos Mais Recentes do Blog
-console.log('\n[TEST 12] Auditoria Específica dos 12 Artigos Mais Recentes do Blog');
+// TEST 12: Auditoria Específica dos Artigos Mais Recentes do Blog
+console.log('\n[TEST 12] Auditoria Específica dos Artigos Mais Recentes do Blog');
 const topBlogPosts = [
+  'cardapio-digital-com-whatsapp-vantagens',
   'conexus-brasil-conexxus-uk-presenca-internacional',
   'case-grana-aplicativo-gestao-financeira-google-play',
   'curitipao-2026-festival-panificacao-curitiba',
