@@ -12610,7 +12610,7 @@ export const pt = {
   "badgeDemoActive": "DEMONSTRAÇÃO REAL ONLINE",
   "badgeModelUpcoming": "MODELO ESTRUTURADO",
   "btnTestDemo": "Ver Demonstração ↗",
-  "btnRequestModel": "Solicitar este Modelo no WhatsApp",
+  "btnRequestModel": "Solicitar Modelo",
   "placeholderDemo": "Padrão 16:9 • Demonstração Online",
   "placeholderModel": "Padrão 16:9 • Modelo Estruturado",
   "model1Title": "Bora Lanches — Hamburgueria & Lanches",

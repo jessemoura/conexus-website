@@ -12609,7 +12609,7 @@ export const en = {
   "badgeDemoActive": "LIVE DEMO ONLINE",
   "badgeModelUpcoming": "STRUCTURED MODEL",
   "btnTestDemo": "View Live Demo ↗",
-  "btnRequestModel": "Request this Model on WhatsApp",
+  "btnRequestModel": "Request Model",
   "placeholderDemo": "16:9 Standard • Live Demo",
   "placeholderModel": "16:9 Standard • Structured Model",
   "model1Title": "Bora Lanches — Burgers & Snacks",
