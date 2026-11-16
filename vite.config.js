@@ -29,6 +29,7 @@ export default defineConfig({
   publicDir: 'public',
   build: {
     outDir: 'dist',
+    emptyOutDir: false,
     rollupOptions: {
       input: getHtmlInputs(__dirname),
       output: {

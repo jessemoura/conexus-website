@@ -394,6 +394,17 @@ export const pt = {
     "sAppDevTitle": "Desenvolvimento de Aplicativos",
     "sAppDevDesc": "Aplicações sob medida e corporativas para Android e Google Play. Otimize processos operacionais, atenda clientes com excelência e crie um canal proprietário de alto impacto.",
     "sAppDevDescFull": "Desenvolvimento de aplicativos sob medida para empresas. Soluções corporativas e operacionais para Android e publicação na Google Play Store com foco em processos, clientes e escalabilidade.",
+    "editorialS1Desc": "Websites institucionais multipáginas e plataformas de alta performance, ultra-rápidos e 100% responsivos. Especialistas em criação de sites São José dos Pinhais e Curitiba para clínicas, empresas e comércios.",
+    "editorialS2Desc": "Página única focada em comunicação direta, clareza comercial e alta conversão para lançamentos, campanhas de anúncios e prestadores de serviços.",
+    "editorialS3Title": "Cardápio Digital Interativo",
+    "editorialS3Tag": "GASTRONOMIA & WHATSAPP",
+    "editorialS3Desc": "Catálogo online e cardápio digital com pedidos via WhatsApp para restaurantes, confeitarias, padarias e cafeterias. Sem taxas nem comissões por pedido.",
+    "editorialS4Title": "CONEXUS Guest Hub",
+    "editorialS4Tag": "HOSPITALIDADE & POUSADAS",
+    "editorialS4Desc": "Central e Welcome Book digital multilíngue para pousadas, chalés, cabanas e anfitriões Airbnb/Booking. Informações, regras, Wi-Fi e roteiros em QR Code.",
+    "editorialS5Title": "Redesign & Modernização de Sites",
+    "editorialS5Tag": "CÓDIGO LIMPO • SEM WORDPRESS",
+    "editorialS5Desc": "Substituição de sites antigos lentos em WordPress ou Wix por arquitetura moderna, segura e ultra-rápida, preservando 100% da indexação e SEO existente no Google.",
     "sAppDevCta": "Saber mais sobre Aplicativos"
   },
   "portfolio": {
@@ -404,6 +415,7 @@ export const pt = {
     "title": "Projetos Desenvolvidos com Estratégia e Foco em Resultados",
     "subtitle": "Conheça alguns dos projetos entregues para empresas no Brasil e no exterior.",
     "viewProject": "Visualizar Projeto",
+    "viewAllCasesBtn": "Ver Todos os Cases no Portfólio Completo",
     "c1Tag": "JORNALISMO & COMUNICAÇÃO • BRASIL",
     "c1Title": "Michelly Correa",
     "c1Desc": "Portal institucional de comunicação e estratégia de autoridade de marca para o mercado nacional de jornalismo.",
@@ -447,6 +459,9 @@ export const pt = {
     "tag": "SOBRE A CONEXUS",
     "title": "Estratégia e Inteligência Digital Orientadas ao Seu Negócio",
     "lead": "Conectamos tecnologia web, otimização no Google, identidade visual e redes sociais em uma estratégia coerente e orientada a resultados.",
+    "p1": "Sediada em <strong>São José dos Pinhais</strong> e com forte atuação em <strong>Curitiba</strong> e na Região Metropolitana, a <strong>CONEXUS</strong> é a parceira estratégica para empresas que buscam criação de sites profissionais, SEO local e consolidação do Perfil da Empresa no Google e Google Maps.",
+    "p2": "A CONEXUS não desenvolve em WordPress: modernizamos e substituímos sites antigos feitos nessa plataforma por código limpo, ultra-rápido e seguro, preservando todo o histórico de SEO. Desenvolvemos soluções comprovadas para <strong>padarias, confeitarias, restaurantes, clínicas e consultórios, pousadas, chalés</strong> e prestadores de serviços.",
+    "viewCasesBtn": "Ver Cases de Sucesso",
     "btn": "Conhecer a CONEXUS"
   },
   "process": {
@@ -12658,7 +12673,13 @@ export const pt = {
   "blog_presencaInternacional_faq2_a": "A plataforma britânica da CONEXXUS está disponível publicamente em https://www.conexxus.co.uk/ e possui case detalhado em nosso portfólio."
 ,
   "cardapioDigital": {
-  "badge": "GASTRONOMIA • CARDÁPIO DIGITAL & CATÁLOGO ONLINE",
+  "heroBtnPlans": "Ver Planos a partir de R$ 49,90",
+    "heroBtnModels": "Testar Demonstrações ao Vivo",
+    "heroBtnWa": "Falar no WhatsApp",
+    "plan1Summary": "Perfeito para estabelecimentos que precisam de um cardápio funcional, ágil e independente para substituir o papel e agilizar pedidos no balcão e salão.",
+    "plan2Category": "CRESCIMENTO & GESTÃO COMPLETA",
+    "plan2Summary": "A solução definitiva para estabelecimentos com rotação de produtos, banners promocionais e necessidade de atualizações mensais com suporte prioritário.",
+    "badge": "GASTRONOMIA • CARDÁPIO DIGITAL & CATÁLOGO ONLINE",
   "title": "Cardápio Digital com WhatsApp para Restaurantes e Pequenos Negócios",
   "lead": "Mais agilidade no atendimento. Zero comissões por pedido.",
   "desc": "Apresente seus pratos, produtos e valores em uma experiência mobile-first moderna, elegante e intuitiva. Ideal para restaurantes, confeitarias, padarias, cafeterias e lanchonetes em Curitiba e em todo o Brasil que buscam independência digital com pedidos diretos no WhatsApp.",

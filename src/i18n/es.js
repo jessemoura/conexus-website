@@ -394,6 +394,17 @@ export const es = {
     "sAppDevTitle": "Desarrollo de Aplicaciones Móviles",
     "sAppDevDesc": "Aplicaciones corporativas y a medida para Android y Google Play. Optimice procesos operativos, atienda a sus clientes con excelencia y construya un canal propio de alto impacto.",
     "sAppDevDescFull": "Desarrollo de aplicaciones móviles a medida para empresas. Soluciones corporativas y operativas para Android y publicación oficial en Google Play Store enfocadas en procesos, clientes y escalabilidad.",
+    "editorialS1Desc": "Sitios web corporativos multipágina y plataformas de alto rendimiento, ultrarrápidos y 100% responsivos. Especialistas en desarrollo web en São José dos Pinhais y Curitiba para clínicas, empresas y comercios.",
+    "editorialS2Desc": "Página única enfocada en comunicación directa, claridad comercial y alta conversión para lanzamientos, campañas publicitarias y profesionales independientes.",
+    "editorialS3Title": "Menú Digital Interactivo",
+    "editorialS3Tag": "GASTRONOMÍA Y WHATSAPP",
+    "editorialS3Desc": "Catálogo online y menú digital con pedidos por WhatsApp para restaurantes, pastelerías, panaderías y cafeterías. Sin comisiones por pedido.",
+    "editorialS4Title": "CONEXUS Guest Hub",
+    "editorialS4Tag": "HOSPITALIDAD Y ALOJAMIENTOS",
+    "editorialS4Desc": "Central y Welcome Book digital multilingüe para posadas, cabañas y anfitriones Airbnb/Booking. Información, reglas, Wi-Fi y guías turísticas en código QR.",
+    "editorialS5Title": "Rediseño y Modernización Web",
+    "editorialS5Tag": "CÓDIGO LIMPIO • SIN WORDPRESS",
+    "editorialS5Desc": "Sustitución de sitios antiguos lentos en WordPress o Wix por arquitectura moderna, segura y ultrarrápida, preservando el 100% de la indexación y SEO en Google.",
     "sAppDevCta": "Saber más sobre Aplicaciones"
   },
   "portfolio": {
@@ -404,6 +415,7 @@ export const es = {
     "title": "Proyectos Desarrollados con Estrategia y Enfoque en Resultados",
     "subtitle": "Conozca algunos de los proyectos entregados a empresas en Brasil, Reino Unido y Portugal.",
     "viewProject": "Ver Proyecto",
+    "viewAllCasesBtn": "Ver Todos los Casos en el Portafolio Completo",
     "c1Tag": "PERIODISMO Y MEDIOS • BRASIL",
     "c1Title": "Michelly Correa",
     "c1Desc": "Portal institucional de comunicación y estrategia de autoridad de marca para el mercado periodístico en Brasil.",
@@ -447,6 +459,9 @@ export const es = {
     "tag": "SOBRE CONEXUS",
     "title": "Estrategia, Tecnología y Diseño al Servicio del Crecimiento de su Empresa",
     "lead": "Diseño web estratégico, ingeniería de alto rendimiento y posicionamiento digital.",
+    "p1": "Con sede en <strong>São José dos Pinhais</strong> y destacada presencia en <strong>Curitiba</strong> y su región metropolitana, <strong>CONEXUS</strong> es el socio estratégico para empresas que buscan creación de sitios web profesionales, SEO local y optimización de Perfil de Negocio en Google.",
+    "p2": "En CONEXUS no desarrollamos en WordPress: modernizamos y reemplazamos sitios web antiguos por código limpio, ultrarrápido y seguro, preservando todo el historial SEO. Desarrollamos soluciones probadas para <strong>panaderías, pastelerías, restaurantes, clínicas, posadas</strong> y empresas de servicios.",
+    "viewCasesBtn": "Ver Casos de Éxito",
     "btn": "Conocer Más Sobre CONEXUS"
   },
   "process": {
@@ -12657,6 +12672,12 @@ export const es = {
   "blog_presencaInternacional_faq2_a": "La plataforma británica de CONEXXUS está disponible públicamente en https://www.conexxus.co.uk/ y cuenta con un case detallado en nuestro portafolio."
   ,
   "cardapioDigital": {
+    "heroBtnPlans": "Ver Planes a partir de R$ 49,90",
+    "heroBtnModels": "Probar Demostraciones en Vivo",
+    "heroBtnWa": "Hablar por WhatsApp",
+    "plan1Summary": "Ideal para establecimientos gastronómicos que necesitan un menú ágil e independiente para sustituir el papel y agilizar pedidos en mesa y mostrador.",
+    "plan2Category": "CRECIMIENTO Y GESTIÓN COMPLETA",
+    "plan2Summary": "La solución definitiva para negocios con rotación de productos, banners destacados y necesidad de actualizaciones mensuales con soporte prioritario.",
     "badge": "GASTRONOMÍA • MENÚ DIGITAL & CATÁLOGO ONLINE",
     "title": "Menú Digital con WhatsApp para Restaurantes y Negocios Gastronómicos",
     "lead": "Más agilidad en el servicio. Cero comisiones por pedido.",

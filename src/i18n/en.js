@@ -394,6 +394,17 @@ export const en = {
     "sAppDevTitle": "Mobile App Development",
     "sAppDevDesc": "Tailored enterprise and mobile applications for Android and Google Play. Streamline operations, deliver customer convenience, and build a high-impact proprietary channel.",
     "sAppDevDescFull": "Custom mobile app development for businesses. Corporate and operational Android solutions with official Google Play Store publishing focusing on processes, customers, and scale.",
+    "editorialS1Desc": "Multi-page corporate websites and high-performance platforms, ultra-fast and 100% responsive. Specialists in website development in São José dos Pinhais and Curitiba for clinics, enterprises, and local commerce.",
+    "editorialS2Desc": "Single-page website focused on direct communication, commercial clarity, and high conversion for product launches, ad campaigns, and service providers.",
+    "editorialS3Title": "Interactive Digital Menu",
+    "editorialS3Tag": "FOOD SERVICE & WHATSAPP",
+    "editorialS3Desc": "Online catalog and digital menu with WhatsApp ordering for restaurants, bakeries, pastry shops, and cafes. Zero fees and zero commission per order.",
+    "editorialS4Title": "CONEXUS Guest Hub",
+    "editorialS4Tag": "HOSPITALITY & GUEST HOUSES",
+    "editorialS4Desc": "Multilingual digital Welcome Book and guest hub for inns, chalets, cabins, and Airbnb/Booking hosts. Guest info, house rules, Wi-Fi, and guides via QR Code.",
+    "editorialS5Title": "Website Redesign & Modernization",
+    "editorialS5Tag": "CLEAN CODE • NO WORDPRESS",
+    "editorialS5Desc": "Replacement of legacy, slow WordPress or Wix websites with modern, secure, and ultra-fast architecture, preserving 100% of existing Google search indexing and SEO.",
     "sAppDevCta": "Learn More about App Development"
   },
   "portfolio": {
@@ -404,6 +415,7 @@ export const en = {
     "title": "Projects Engineered with Strategy and Focus on Results",
     "subtitle": "Discover selected digital projects delivered for companies in Brazil, the United Kingdom, and Portugal.",
     "viewProject": "View Project",
+    "viewAllCasesBtn": "View All Case Studies in Full Portfolio",
     "c1Tag": "JOURNALISM & MEDIA • BRAZIL",
     "c1Title": "Michelly Correa",
     "c1Desc": "Institutional communications portal and brand authority strategy for the national Brazilian journalism market.",
@@ -447,6 +459,9 @@ export const en = {
     "tag": "ABOUT CONEXUS",
     "title": "Strategy, Technology, and Design Working for Your Business Growth",
     "lead": "Strategic web design, high-performance engineering, and digital positioning.",
+    "p1": "Based in <strong>São José dos Pinhais</strong> and actively serving <strong>Curitiba</strong> and the Metropolitan Region, <strong>CONEXUS</strong> is the strategic partner for businesses seeking professional web design, local SEO, and Google Business Profile optimization.",
+    "p2": "CONEXUS does not build on WordPress: we modernize and replace legacy platforms with clean, ultra-fast, and secure code, preserving all SEO ranking history. We deliver proven digital solutions for <strong>bakeries, restaurants, clinics, medical practices, inns, holiday rentals</strong>, and professional service providers.",
+    "viewCasesBtn": "View Success Stories",
     "btn": "Learn More About CONEXUS"
   },
   "process": {
@@ -12657,7 +12672,13 @@ export const en = {
   "blog_presencaInternacional_faq2_a": "The CONEXXUS British platform is publicly available at https://www.conexxus.co.uk/ and features a detailed case study in our portfolio."
 ,
   "cardapioDigital": {
-  "badge": "HOSPITALITY • DIGITAL MENU & ONLINE CATALOG",
+  "heroBtnPlans": "View Plans starting from R$ 49.90",
+    "heroBtnModels": "Test Live Demos",
+    "heroBtnWa": "Chat on WhatsApp",
+    "plan1Summary": "Perfect for food establishments that need an agile, independent digital menu to replace paper and streamline counter and table orders.",
+    "plan2Category": "GROWTH & COMPLETE MANAGEMENT",
+    "plan2Summary": "The definitive solution for businesses with seasonal product rotations, promotional banners, and monthly updates with priority support.",
+    "badge": "HOSPITALITY • DIGITAL MENU & ONLINE CATALOG",
   "title": "Digital Menu with WhatsApp Ordering for Restaurants & Small Businesses",
   "lead": "Faster service. Zero commission per order.",
   "desc": "Showcase your dishes, products, and prices in a modern, elegant, and intuitive mobile-first experience. Ideal for restaurants, bakeries, coffee shops, and snack bars seeking digital independence with direct WhatsApp orders.",

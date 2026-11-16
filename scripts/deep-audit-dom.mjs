@@ -41,7 +41,6 @@ const whitelistWords = [
   'Vila Serena',
   'comercial@conexus.press',
   'jesse.ribeiro@conexus.press',
-  'CNPJ: 50.429.176/0001-90',
   'PT',
   'EN',
   'ES',

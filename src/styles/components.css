@@ -3803,6 +3803,84 @@ input:focus, textarea:focus, select:focus {
   color: #35465A !important;
 }
 
+/* Article CTA Box - Base / Dark Mode */
+.article-cta-box {
+  background: linear-gradient(135deg, rgba(7, 24, 45, 0.95), rgba(0, 58, 112, 0.6));
+  border: 1px solid #21B8F6;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+
+.article-cta-box .article-cta-title,
+.article-cta-box h2,
+.article-cta-box h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text-white);
+  margin-bottom: 1rem;
+}
+
+.article-cta-box .article-cta-desc,
+.article-cta-box p {
+  color: var(--color-text-muted);
+  max-width: 620px;
+  margin: 0 auto 1.75rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.article-cta-box .article-cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* LIGHT MODE CONTRAST FIX: Article CTA Box & Dark Gradient Containers */
+[data-theme="light"] .article-cta-box,
+[data-theme="light"] div[style*="linear-gradient(135deg, rgba(7, 24, 45"] {
+  background: #F0F9FF !important;
+  border: 1px solid #BAE6FD !important;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 20px rgba(0, 58, 112, 0.08) !important;
+}
+
+[data-theme="light"] .article-cta-box h2,
+[data-theme="light"] .article-cta-box h3,
+[data-theme="light"] .article-cta-box .article-cta-title,
+[data-theme="light"] div[style*="linear-gradient(135deg, rgba(7, 24, 45"] h2,
+[data-theme="light"] div[style*="linear-gradient(135deg, rgba(7, 24, 45"] h3 {
+  color: #07182D !important;
+}
+
+[data-theme="light"] .article-cta-box p,
+[data-theme="light"] .article-cta-box .article-cta-desc,
+[data-theme="light"] div[style*="linear-gradient(135deg, rgba(7, 24, 45"] p {
+  color: #35465A !important;
+}
+
+[data-theme="light"] .article-cta-box .btn-secondary,
+[data-theme="light"] div[style*="linear-gradient(135deg, rgba(7, 24, 45"] .btn-secondary {
+  background-color: #FFFFFF !important;
+  border: 1px solid #003A70 !important;
+  color: #003A70 !important;
+}
+
+[data-theme="light"] .article-cta-box .btn-secondary:hover,
+[data-theme="light"] div[style*="linear-gradient(135deg, rgba(7, 24, 45"] .btn-secondary:hover {
+  background-color: #003A70 !important;
+  border-color: #003A70 !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .pricing-card-featured {
+  background: linear-gradient(180deg, rgba(33, 184, 246, 0.08) 0%, #FFFFFF 100%) !important;
+  border: 2px solid #00A8E8 !important;
+}
+
 
 
 
