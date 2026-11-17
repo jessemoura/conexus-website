@@ -455,7 +455,11 @@ export const pt = {
     "fastguinchoTag": "SERVIÇOS AUTOMOTIVOS • CURITIBA E REGIÃO METROPOLITANA",
     "fastguinchoDesc": "Website desenvolvido para uma operação de guincho 24 horas em Curitiba e Região Metropolitana, com foco em atendimento rápido, contato imediato e presença digital local.",
     "atthosTag": "COMÉRCIO EXTERIOR • SÃO JOSÉ DOS PINHAIS/PR",
-    "atthosDesc": "Projeto digital desenvolvido para fortalecer a presença da Atthos Comex no mercado de comércio exterior, apresentando suas soluções, atuação internacional e experiência de forma profissional e multilíngue."
+    "atthosDesc": "Projeto digital desenvolvido para fortalecer a presença da Atthos Comex no mercado de comércio exterior, apresentando suas soluções, atuação internacional e experiência de forma profissional e multilíngue.",
+    "bellaitaliaTag": "CARDÁPIO DIGITAL • DEMONSTRAÇÃO INTERATIVA",
+    "bellaitaliaTitle": "Bella Italia — Pizzaria Artesanal",
+    "bellaitaliaDesc": "Cardápio digital interativo e responsivo para pizzaria artesanal e delivery, com montador de pizza meio a meio, seleção de bordas recheadas, QR Code por mesa e integração completa de pedidos via WhatsApp.",
+    "viewDemo": "Ver Demonstração ↗",
   },
   "about": {
     "tag": "SOBRE A CONEXUS",
@@ -12734,6 +12738,9 @@ export const pt = {
   "model2Title": "Bella Festa — Cardápio de Natal & Ceias",
   "model2Segment": "Ceias Festivas, Confeitaria & Encomendas",
   "model2Desc": "Demonstração real desenvolvida para encomendas sazonais de fim de ano, cálculo de porções, produtos por quilo e reservas antecipadas.",
+  "demoBellaItaliaTitle": "Bella Italia — Pizzaria Artesanal & Delivery",
+  "demoBellaItaliaSegment": "Pizzarias Artesanais & Delivery Noturno",
+  "demoBellaItaliaDesc": "Demonstração real ativa com montador de pizza meio a meio, bordas recheadas, QR Code individual por mesa e envio direto do pedido formatado ao WhatsApp.",
   "model3Title": "Pizzaria Artesanal & Forno a Lenha",
   "model3Segment": "Pizzarias & Delivery Noturno",
   "model3Desc": "Modelo estruturado para seleção de tamanhos, sabores meio a meio, bordas recheadas, massas especiais, calzones e bebidas.",

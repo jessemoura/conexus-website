@@ -455,7 +455,11 @@ export const es = {
     "fastguinchoTag": "SERVICIOS AUTOMOTRICES • CURITIBA Y ÁREA METROPOLITANA",
     "fastguinchoDesc": "Sitio web de alto rendimiento desarrollado para auxilio mecánico 24 horas en Curitiba y área metropolitana, enfocado en atención rápida, contacto inmediato y SEO local.",
     "atthosTag": "COMERCIO EXTERIOR • SÃO JOSÉ DOS PINHAIS/PR",
-    "atthosDesc": "Proyecto digital corporativo desarrollado para fortalecer la presencia de Atthos Comex en el comercio exterior, presentando sus soluciones, alcance global y experiencia de forma profesional y multilingüe."
+    "atthosDesc": "Proyecto digital corporativo desarrollado para fortalecer la presencia de Atthos Comex en el comercio exterior, presentando sus soluciones, alcance global y experiencia de forma profesional y multilingüe.",
+    "bellaitaliaTag": "MENÚ DIGITAL • DEMOSTRACIÓN INTERACTIVA",
+    "bellaitaliaTitle": "Bella Italia — Pizzería Artesanal",
+    "bellaitaliaDesc": "Menú digital interactivo y responsivo para pizzería artesanal y delivery, con selector de pizza mitad y mitad, opciones de bordes rellenos, códigos QR por mesa e integración completa de pedidos por WhatsApp.",
+    "viewDemo": "Ver Demostración ↗",
   },
   "about": {
     "tag": "SOBRE CONEXUS",
@@ -12733,6 +12737,9 @@ export const es = {
     "model2Title": "Bella Festa — Menú Navideño y Cenas Festivas",
     "model2Segment": "Cenas Festivas, Pastelería y Reservas",
     "model2Desc": "Demostración real diseñada para pedidos de fin de año, cálculo de raciones, productos por peso y reservas anticipadas.",
+  "demoBellaItaliaTitle": "Bella Italia — Pizzería Artesanal y Delivery",
+  "demoBellaItaliaSegment": "Pizzerías Artesanales y Delivery Nocturno",
+  "demoBellaItaliaDesc": "Demostración real activa con selector de pizza mitad y mitad, bordes rellenos, código QR individual por mesa y envío directo del pedido formateado a WhatsApp.",
     "model3Title": "Pizzería Artesanal y Horno de Leña",
     "model3Segment": "Pizzerías y Reparto Nocturno",
     "model3Desc": "Modelo estructurado para selección de tamaños, mitad y mitad, bordes rellenos, masas especiales, calzones y bebidas.",

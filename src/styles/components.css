@@ -2515,7 +2515,8 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: 380px;
+  min-height: 380px;
+  height: auto;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -2535,7 +2536,8 @@ html, body {
 
   .review-card {
     flex: 0 0 calc((100% - 1.25rem) / 2);
-    height: 380px;
+    min-height: 380px;
+    height: auto;
   }
 }
 
@@ -2551,7 +2553,8 @@ html, body {
   .review-card {
     flex: 0 0 100%;
     padding: 1.5rem;
-    height: 370px;
+    min-height: 370px;
+    height: auto;
   }
 }
 
@@ -2637,6 +2640,8 @@ html, body {
   line-height: 1.65;
   color: var(--color-text-muted);
   margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .review-text-truncated {
@@ -2646,6 +2651,7 @@ html, body {
 .review-text-full {
   flex: 1;
   min-height: 0;
+  max-height: 240px;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;

@@ -455,7 +455,11 @@ export const en = {
     "fastguinchoTag": "AUTOMOTIVE SERVICES • CURITIBA & METROPOLITAN AREA",
     "fastguinchoDesc": "High-performance website developed for a 24-hour towing operation in Curitiba and surrounding area, focused on rapid dispatch, instant contact, and local SEO.",
     "atthosTag": "FOREIGN TRADE • SÃO JOSÉ DOS PINHAIS/PR",
-    "atthosDesc": "Corporate digital project developed to reinforce Atthos Comex's authority in international trade, presenting its solutions, global operations, and experience across a multilingual platform."
+    "atthosDesc": "Corporate digital project developed to reinforce Atthos Comex's authority in international trade, presenting its solutions, global operations, and experience across a multilingual platform.",
+    "bellaitaliaTag": "DIGITAL MENU • INTERACTIVE DEMONSTRATION",
+    "bellaitaliaTitle": "Bella Italia — Artisan Pizzeria",
+    "bellaitaliaDesc": "Interactive and responsive digital menu for artisan pizzeria and delivery, featuring half-and-half pizza builder, stuffed crust options, table QR codes, and full WhatsApp ordering integration.",
+    "viewDemo": "View Demonstration ↗",
   },
   "about": {
     "tag": "ABOUT CONEXUS",
@@ -12733,6 +12737,9 @@ export const en = {
   "model2Title": "Bella Festa — Christmas & Holiday Menu",
   "model2Segment": "Holiday Feasts, Bakery & Pre-Orders",
   "model2Desc": "Live seasonal demo developed for year-end holiday meals, portion estimations, per-kilo pricing, and scheduled advance reservations.",
+  "demoBellaItaliaTitle": "Bella Italia — Artisan Pizzeria & Delivery",
+  "demoBellaItaliaSegment": "Artisan Pizzerias & Evening Delivery",
+  "demoBellaItaliaDesc": "Active live demonstration featuring half-and-half pizza builder, stuffed crusts, individual table QR codes, and formatted direct WhatsApp ordering.",
   "model3Title": "Artisanal Pizzeria & Wood-Fired Oven",
   "model3Segment": "Pizzerias & Night Delivery",
   "model3Desc": "Structured model for size choices, half-and-half toppings, stuffed crusts, specialty doughs, calzones, and chilled beverages.",
