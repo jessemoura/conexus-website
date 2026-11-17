@@ -6190,6 +6190,36 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.conexus.press/servicos/catalogo-digital/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/servicos/catalogo-digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/servicos/catalogo-digital/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/servicos/catalogo-digital/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/servicos/catalogo-digital/"/>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/servicos/catalogo-digital/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/servicos/catalogo-digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/servicos/catalogo-digital/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/servicos/catalogo-digital/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/servicos/catalogo-digital/"/>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.conexus.press/servicos/catalogo-digital/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/servicos/catalogo-digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/servicos/catalogo-digital/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.conexus.press/servicos/catalogo-digital/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.conexus.press/servicos/catalogo-digital/"/>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.conexus.press/servicos/conexus-guest-hub/</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.conexus.press/servicos/conexus-guest-hub/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.conexus.press/servicos/conexus-guest-hub/?lang=en"/>
