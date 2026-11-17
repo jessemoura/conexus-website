@@ -169,22 +169,48 @@
       border-radius: var(--radius-md);
       overflow: hidden;
       margin-bottom: 1.1rem;
-      background: rgba(255, 255, 255, 0.03);
+      background: #0B1628;
       border: 1px solid var(--color-border-subtle);
       display: flex;
       align-items: center;
       justify-content: center;
     }
+    .showcase-image-wrapper--restore::before {
+      content: "";
+      position: absolute;
+      inset: -14%;
+      background-image: var(--card-bg);
+      background-size: cover;
+      background-position: center;
+      filter: blur(18px) saturate(1.12) brightness(0.46);
+      transform: scale(1.12);
+      z-index: 0;
+      pointer-events: none;
+    }
     .showcase-image {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
       display: block;
+      position: relative;
+      z-index: 1;
       transition: transform 0.35s ease;
+    }
+    .showcase-image--restore {
+      width: 100%;
+      height: 94%;
+      object-fit: contain;
+      object-position: center;
+      transform: scaleX(0.55);
+      border-radius: 14px / 8px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
     }
     .showcase-card:hover .showcase-image {
       transform: scale(1.03);
+    }
+    .showcase-card:hover .showcase-image--restore {
+      transform: scaleX(0.55) scale(1.03);
     }
     .showcase-image-placeholder {
       width: 100%;
@@ -587,8 +613,8 @@
 
           <!-- Card 2: Beleza & Barbearia -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper">
-              <img src="/assets/catalogos-digitais/beleza-barbearia.webp" alt="Catálogo Digital Beleza e Barbearia — Cortes, Barba, Coloração e Tratamentos no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
+            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/beleza-barbearia.webp');">
+              <img src="/assets/catalogos-digitais/beleza-barbearia.webp" alt="Catálogo Digital Beleza e Barbearia — Cortes, Barba, Coloração e Tratamentos no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -609,8 +635,8 @@
 
           <!-- Card 3: Limpeza Residencial & Comercial -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper">
-              <img src="/assets/catalogos-digitais/limpeza-residencial-comercial.webp" alt="Catálogo Digital Limpeza Residencial e Comercial — Serviços de Limpeza Pós-Obra e Higienização no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
+            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/limpeza-residencial-comercial.webp');">
+              <img src="/assets/catalogos-digitais/limpeza-residencial-comercial.webp" alt="Catálogo Digital Limpeza Residencial e Comercial — Serviços de Limpeza Pós-Obra e Higienização no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -631,8 +657,8 @@
 
           <!-- Card 4: Floriculturas & Presentes -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper">
-              <img src="/assets/catalogos-digitais/floriculturas-presentes.webp" alt="Catálogo Digital Floriculturas e Presentes — Buquês, Arranjos, Cestas e Presentes no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
+            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/floriculturas-presentes.webp');">
+              <img src="/assets/catalogos-digitais/floriculturas-presentes.webp" alt="Catálogo Digital Floriculturas e Presentes — Buquês, Arranjos, Cestas e Presentes no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -653,8 +679,8 @@
 
           <!-- Card 5: Pet Shop & Banho e Tosa -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper">
-              <img src="/assets/catalogos-digitais/pet-shop-banho-tosa.webp" alt="Catálogo Digital Pet Shop e Banho e Tosa — Estética Animal, Rações e Acessórios no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
+            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/pet-shop-banho-tosa.webp');">
+              <img src="/assets/catalogos-digitais/pet-shop-banho-tosa.webp" alt="Catálogo Digital Pet Shop e Banho e Tosa — Estética Animal, Rações e Acessórios no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -675,8 +701,8 @@
 
           <!-- Card 6: Móveis & Decoração -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper">
-              <img src="/assets/catalogos-digitais/moveis-decoracao.webp" alt="Catálogo Digital Móveis e Decoração — Sofás, Mesas, Cadeiras e Peças Decorativas no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
+            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/moveis-decoracao.webp');">
+              <img src="/assets/catalogos-digitais/moveis-decoracao.webp" alt="Catálogo Digital Móveis e Decoração — Sofás, Mesas, Cadeiras e Peças Decorativas no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -697,8 +723,8 @@
 
           <!-- Card 7: Moda & Acessórios -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper">
-              <img src="/assets/catalogos-digitais/moda-acessorios.webp" alt="Catálogo Digital Moda e Acessórios — Roupas, Calçados, Bolsas e Acessórios no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
+            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/moda-acessorios.webp');">
+              <img src="/assets/catalogos-digitais/moda-acessorios.webp" alt="Catálogo Digital Moda e Acessórios — Roupas, Calçados, Bolsas e Acessórios no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -719,8 +745,8 @@
 
           <!-- Card 8: Eletrônicos & Acessórios -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper">
-              <img src="/assets/catalogos-digitais/eletronicos-acessorios.webp" alt="Catálogo Digital Eletrônicos e Acessórios — Smartphones, Notebooks, Games e Periféricos no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
+            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/eletronicos-acessorios.webp');">
+              <img src="/assets/catalogos-digitais/eletronicos-acessorios.webp" alt="Catálogo Digital Eletrônicos e Acessórios — Smartphones, Notebooks, Games e Periféricos no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
