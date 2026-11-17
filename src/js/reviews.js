@@ -7,7 +7,7 @@
  * - Autoplay (6s interval, pause on hover / expansion / touch, prefers-reduced-motion)
  */
 
-import { getTranslation } from './i18n.js?v=20261116.08';
+import { getTranslation } from './i18n.js?v=20261116.09';
 
 let autoplayTimer = null;
 const AUTOPLAY_INTERVAL = 6000;

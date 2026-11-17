@@ -442,10 +442,12 @@ export function initTracking() {
       interactive.classList.contains('showcase-btn-primary') ||
       href.includes('boralanches.conexus.press') ||
       href.includes('bellafesta.conexus.press') ||
+      href.includes('bellaitalia.conexus.press') ||
+      href.includes('fornoegrao.conexus.press') ||
       href.includes('vilaserena.conexus.press');
 
     if (isDemoLink && !isWhatsApp && !isMailto) {
-      const demoName = resolveRequestedModel(interactive) || (href.includes('boralanches') ? 'Bora Lanches' : href.includes('bellafesta') ? 'Bella Festa' : href.includes('vilaserena') ? 'Vila Serena' : 'Demonstração');
+      const demoName = resolveRequestedModel(interactive) || (href.includes('boralanches') ? 'Bora Lanches' : href.includes('bellafesta') ? 'Bella Festa' : href.includes('bellaitalia') ? 'Bella Italia' : href.includes('fornoegrao') ? 'Forno & Grão' : href.includes('vilaserena') ? 'Vila Serena' : 'Demonstração');
       sendGA4Event('conexus_demo_click', {
         button_name: resolveButtonName(interactive),
         interaction_location: resolveSectionLocation(interactive),

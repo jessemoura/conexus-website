@@ -207,7 +207,7 @@ try {
     JSON.parse(schemaMatch[1].trim());
     sampleSchemaValid = true;
   }
-} catch (e) {}
+} catch (e) { }
 assert(sampleSchemaValid, 'Schemas JSON-LD estruturados do Blog com sintaxe JSON 100% válida e parseável.');
 
 // Verificação de grafia correta
@@ -336,15 +336,15 @@ for (const slug of topBlogPosts) {
           hasValidArticleSchema = true;
         }
       }
-    } catch (e) {}
+    } catch (e) { }
   }
   assert(hasValidArticleSchema, `[${slug}] Schema JSON-LD Article/BlogPosting válido e estruturado`);
 
   // Paridade e integridade i18n
   const keys = [...html.matchAll(/data-i18n(?:-html)?="([^"]+)"/g)].map(m => m[1]);
-  const contentKeys = keys.filter(k => 
-    !k.startsWith('nav.') && 
-    !k.startsWith('footer.') && 
+  const contentKeys = keys.filter(k =>
+    !k.startsWith('nav.') &&
+    !k.startsWith('footer.') &&
     !k.startsWith('common.') &&
     k !== 'article_faq_title' &&
     !k.startsWith('blog_cta_')
