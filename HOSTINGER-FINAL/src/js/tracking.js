@@ -148,6 +148,8 @@ export function resolveSectionLocation(el) {
   if (el.closest('.services-grid') || el.closest('#hub-servicos') || el.closest('#servicos')) return 'services_grid';
   if (el.closest('.portfolio-grid') || el.closest('#portfolio')) return 'portfolio_grid';
   if (el.closest('.diag-cards-grid') || el.closest('#o-que-analisamos')) return 'diagnostico_section';
+  if (el.closest('.showcase-card') || el.closest('#modelos')) return 'vitrine_modelos';
+  if (el.closest('#planos') || el.closest('.pricing-card') || el.closest('.table-container-scroll')) return 'planos_comerciais';
   if (el.closest('.final-cta')) return 'final_cta';
   if (el.closest('.faq-item-card') || el.closest('#faq')) return 'faq';
 
@@ -217,7 +219,16 @@ export function resolveContactType(el) {
     return 'blog';
   }
 
-  // 6. Demais serviços (App Dev, Branding, Redes Sociais, Guest Hub)
+  // 6. Cardápio Digital & Catálogos Online
+  if (
+    waKey === 'serviceCardapioDigital' ||
+    ctaPos.includes('cardapio_') ||
+    path.includes('/cardapio-digital')
+  ) {
+    return 'cardapio_digital';
+  }
+
+  // 7. Demais serviços (App Dev, Branding, Redes Sociais, Guest Hub)
   if (
     waKey === 'serviceAppDev' || 
     waKey === 'serviceBranding' || 
@@ -264,6 +275,9 @@ export function resolveServiceName(targetElement, href = '') {
   if (waKey === 'serviceAppDev' || ctaPos.includes('app_')) {
     return 'Desenvolvimento de Aplicativos';
   }
+  if (waKey === 'serviceCardapioDigital' || ctaPos.includes('cardapio_')) {
+    return 'Cardápio Digital';
+  }
   if (ctaPos.includes('guest_hub_')) {
     return 'CONEXUS Guest Hub';
   }
@@ -271,6 +285,7 @@ export function resolveServiceName(targetElement, href = '') {
   const cleanHref = href || (targetElement ? targetElement.getAttribute('href') || '' : '');
   const path = (cleanHref + ' ' + (typeof window !== 'undefined' ? window.location.pathname : '')).toLowerCase();
 
+  if (path.includes('cardapio-digital')) return 'Cardápio Digital';
   if (path.includes('criacao-de-sites')) return 'Criação de Sites';
   if (path.includes('site-one-page')) return 'Site One Page';
   if (path.includes('seo-local-google-meu-negocio')) return 'SEO Local & Google Meu Negócio';
@@ -346,6 +361,24 @@ export function resolvePlanName(targetElement) {
 }
 
 /**
+ * Identifica o modelo demonstrado ou solicitado na vitrine de cardápios
+ */
+export function resolveRequestedModel(targetElement) {
+  if (!targetElement) return '';
+  const dataModel = targetElement.getAttribute('data-model') || targetElement.getAttribute('data-demo-name');
+  if (dataModel) return dataModel;
+
+  const card = targetElement.closest('.showcase-card');
+  if (card) {
+    const heading = card.querySelector('h3');
+    if (heading && heading.textContent.trim()) {
+      return heading.textContent.trim().split('—')[0].trim();
+    }
+  }
+  return '';
+}
+
+/**
  * Retorna o título do artigo quando a página atual for um artigo do blog
  */
 export function getArticleTitle() {
@@ -403,6 +436,33 @@ export function initTracking() {
     const articleTitle = getArticleTitle();
     const isInsideBlogArticle = Boolean(articleTitle);
 
+    // 0. Demo Clicks (conexus_demo_click)
+    const isDemoLink = 
+      interactive.getAttribute('data-track') === 'demo_click' ||
+      interactive.classList.contains('showcase-btn-primary') ||
+      href.includes('boralanches.conexus.press') ||
+      href.includes('bellafesta.conexus.press') ||
+      href.includes('vilaserena.conexus.press');
+
+    if (isDemoLink && !isWhatsApp && !isMailto) {
+      const demoName = resolveRequestedModel(interactive) || (href.includes('boralanches') ? 'Bora Lanches' : href.includes('bellafesta') ? 'Bella Festa' : href.includes('vilaserena') ? 'Vila Serena' : 'Demonstração');
+      sendGA4Event('conexus_demo_click', {
+        button_name: resolveButtonName(interactive),
+        interaction_location: resolveSectionLocation(interactive),
+        destination_url: href,
+        demo_name: demoName
+      });
+      if (typeof window !== 'undefined') {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'demo_click',
+          demo_name: demoName,
+          destination_url: href
+        });
+      }
+      return;
+    }
+
     // 1. WhatsApp Clicks (conexus_whatsapp_click)
     if (isWhatsApp) {
       const buttonName = resolveButtonName(link);
@@ -411,6 +471,7 @@ export function initTracking() {
       const serviceName = resolveServiceName(link, href);
       const portfolioProject = resolvePortfolioProject(link, href);
       const planName = resolvePlanName(link);
+      const requestedModel = resolveRequestedModel(link);
 
       sendGA4Event('conexus_whatsapp_click', {
         button_name: buttonName,
@@ -420,8 +481,20 @@ export function initTracking() {
         ...(serviceName ? { service_name: serviceName } : {}),
         ...(portfolioProject ? { portfolio_project: portfolioProject } : {}),
         ...(planName ? { plan_name: planName } : {}),
+        ...(requestedModel ? { requested_model: requestedModel, model_name: requestedModel } : {}),
         ...(articleTitle ? { article_title: articleTitle } : {})
       });
+
+      // Se identificado modelo solicitado na vitrine, envia evento dedicado ao dataLayer
+      if (requestedModel && typeof window !== 'undefined') {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'model_request',
+          requested_model: requestedModel,
+          model_name: requestedModel,
+          destination_url: href
+        });
+      }
 
       // Se originado no blog, registra também a conversão comercial de blog
       if (isInsideBlogArticle) {

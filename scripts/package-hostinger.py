@@ -11,10 +11,22 @@ ZIP_PATH = BASE_DIR / "CONEXUS-HOSTINGER-FINAL.zip"
 print(f"Base dir: {BASE_DIR}")
 print(f"Dist dir: {DIST_DIR}")
 
-# 1. Create/Update HOSTINGER-FINAL folder
+# 1. Create/Update HOSTINGER-FINAL folder (cleaning stale hashed JS/CSS chunks first)
 HOSTINGER_DIR.mkdir(parents=True, exist_ok=True)
+hostinger_assets = HOSTINGER_DIR / "assets"
+if hostinger_assets.is_dir():
+    removed_bundles = 0
+    for item in hostinger_assets.iterdir():
+        if item.is_file() and item.suffix in (".js", ".css"):
+            item.unlink()
+            removed_bundles += 1
+    print(f"Cleaned {removed_bundles} stale JS/CSS bundle(s) from HOSTINGER-FINAL/assets")
+
 shutil.copytree(DIST_DIR, HOSTINGER_DIR, dirs_exist_ok=True)
-print(f"Copied dist to: {HOSTINGER_DIR}")
+src_dir = BASE_DIR / "src"
+if src_dir.is_dir():
+    shutil.copytree(src_dir, HOSTINGER_DIR / "src", dirs_exist_ok=True)
+print(f"Copied dist and synced src to: {HOSTINGER_DIR}")
 
 # 2. Create ZIP with POSIX '/' forward slashes
 if ZIP_PATH.exists():

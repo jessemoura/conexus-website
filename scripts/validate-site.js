@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { pt } from '../src/i18n/pt.js';
 import { en } from '../src/i18n/en.js';
 import { es } from '../src/i18n/es.js';
+import { siteConfig } from '../src/config/siteConfig.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -399,6 +400,93 @@ assert(filterAllText === 'Todos (182)', `Botão do filtro exibe exatamente "Todo
 const firstCardMatch = gridMatch ? gridMatch[1].match(/<article class="card blog-post-card"[\s\S]*?<\/article>/) : null;
 const isCardapioFirst = firstCardMatch && firstCardMatch[0].includes('/blog/cardapio-digital-com-whatsapp-vantagens/');
 assert(isCardapioFirst, 'O novo artigo de Cardápio Digital com WhatsApp é o primeiro card (mais recente) no catálogo do blog.');
+
+// TEST 14: Auditoria Oficial de WhatsApp e Telefone CONEXUS (+55 41 99156-9590)
+console.log('\n[TEST 14] Auditoria de WhatsApp e Telefone Oficial (+55 41 99156-9590)');
+assert(
+  siteConfig.whatsappNumber === '5541991569590' &&
+  siteConfig.whatsappDisplay === '(41) 99156-9590' &&
+  siteConfig.whatsappFormatted === '+55 41 99156-9590',
+  'Configuração central (siteConfig.js) define exclusivamente +55 41 99156-9590 / 5541991569590.'
+);
+
+let badIncompleteNumFiles = [];
+let wrongWaNumberFiles = [];
+let legacyWaDomainFiles = [];
+let emptyFallbackWaFiles = [];
+let missingWaKeyRefs = [];
+let totalVerifiedWaLinks = 0;
+
+function auditWhatsAppRecursive(dir) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.isDirectory()) {
+      if (['node_modules', '.git', 'dist', 'HOSTINGER-FINAL', 'scratch', 'backups', 'docs'].includes(entry.name)) continue;
+      auditWhatsAppRecursive(path.join(dir, entry.name));
+    } else if (/\.(html|js|mjs|json|css)$/i.test(entry.name)) {
+      const fullPath = path.join(dir, entry.name);
+      if (fullPath.includes('validate-site.js')) continue;
+      const rel = path.relative(rootDir, fullPath).replace(/\\/g, '/');
+      const content = fs.readFileSync(fullPath, 'utf8');
+
+      // 1. Proibir número incompleto sem o 9º dígito (ex: 41 9156-9590, 554191569590)
+      if (/(?<!9)9156[\s.-]?9590/.test(content) || /554191569590/.test(content)) {
+        badIncompleteNumFiles.push(rel);
+      }
+
+      if (entry.name.endsWith('.html')) {
+        // 2. Todos os links wa.me/<num> devem apontar para 5541991569590
+        const waMatches = [...content.matchAll(/wa\.me\/(\d+)/gi)];
+        for (const m of waMatches) {
+          totalVerifiedWaLinks++;
+          if (m[1] !== '5541991569590') {
+            wrongWaNumberFiles.push(`${rel} (${m[1]})`);
+          }
+        }
+
+        // 3. Sem domínios legados api.whatsapp.com / web.whatsapp.com / whatsapp:// em href
+        if (/href=["'](?:https?:\/\/(?:api|web)\.whatsapp\.com|whatsapp:\/\/)/i.test(content)) {
+          legacyWaDomainFiles.push(rel);
+        }
+
+        // 4. Sem data-whatsapp-key com href="#" sem fallback oficial
+        const anchorRegex = /<a\s+[^>]*data-whatsapp-key=["']([^"']+)["'][^>]*>/gi;
+        let am;
+        while ((am = anchorRegex.exec(content)) !== null) {
+          const tag = am[0];
+          const key = am[1];
+          if (!/href=["']https:\/\/wa\.me\/5541991569590/i.test(tag)) {
+            emptyFallbackWaFiles.push(`${rel} (key=${key})`);
+          }
+          const okCfg = !!(siteConfig.whatsappMessages && siteConfig.whatsappMessages[key]);
+          const okPt = !!(pt.whatsapp && pt.whatsapp[key]);
+          const okEn = !!(en.whatsapp && en.whatsapp[key]);
+          const okEs = !!(es.whatsapp && es.whatsapp[key]);
+          if (!okCfg || !okPt || !okEn || !okEs) {
+            missingWaKeyRefs.push(`${rel} (key=${key})`);
+          }
+        }
+      }
+    }
+  }
+}
+
+auditWhatsAppRecursive(rootDir);
+
+assert(badIncompleteNumFiles.length === 0, `Zero ocorrências de número antigo/incompleto sem 9º dígito (9156-9590) em todo o site (Encontradas: ${badIncompleteNumFiles.length}).`);
+assert(wrongWaNumberFiles.length === 0 && totalVerifiedWaLinks > 600, `Todos os ${totalVerifiedWaLinks} links wa.me/ das páginas HTML apontam exclusivamente para 5541991569590.`);
+assert(legacyWaDomainFiles.length === 0, `Zero links legados api.whatsapp.com / web.whatsapp.com / whatsapp:// nas páginas HTML.`);
+assert(emptyFallbackWaFiles.length === 0, `Zero botões WhatsApp com href="#" sem fallback estático oficial (Encontrados: ${emptyFallbackWaFiles.length}).`);
+assert(missingWaKeyRefs.length === 0, `100% das chaves data-whatsapp-key existem em siteConfig e nos dicionários PT/EN/ES (Faltas: ${missingWaKeyRefs.length}).`);
+
+const contatoHtmlCheck = fs.readFileSync(path.join(rootDir, 'contato/index.html'), 'utf8');
+const sobreHtmlCheck = fs.readFileSync(path.join(rootDir, 'sobre/index.html'), 'utf8');
+assert(
+  indexHtmlContent.includes('"telephone": "+55-41-99156-9590"') &&
+  contatoHtmlCheck.includes('"telephone": "+55-41-99156-9590"') &&
+  sobreHtmlCheck.includes('"telephone": "+55-41-99156-9590"'),
+  'Dados estruturados Schema.org (Organization / ContactPoint) em Home, Contato e Sobre utilizam oficialmente +55-41-99156-9590.'
+);
 
 // SUMÁRIO DOS TESTES
 console.log('\n====================================================');

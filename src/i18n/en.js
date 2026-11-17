@@ -594,7 +594,9 @@ export const en = {
     "serviceAppDev": "Hello! I am interested in custom mobile app development with CONEXUS and would like to request a proposal.",
     "portfolioGeneral": "Hello! I saw the CONEXUS portfolio and would like to discuss a project for my business.",
     "nikkiCase": "Hello! I saw the Nikki Studio case study in the CONEXUS portfolio and would like a similar proposal for my business.",
-    "siteMultipage": "Hello! I am interested in developing a complete multi-page institutional website for my business with CONEXUS."
+    "siteMultipage": "Hello! I am interested in developing a complete multi-page institutional website for my business with CONEXUS.",
+    "siteMigration": "Hello! I would like a quote to redesign and migrate my company's website with CONEXUS.",
+    "serviceCardapioDigital": "Hello! I would like to request a quote for a digital menu and online catalog with CONEXUS."
   },
   "diagnosticoGratuito": {
     "badge": "FREE STRATEGIC AUDIT",
