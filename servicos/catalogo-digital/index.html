@@ -169,48 +169,22 @@
       border-radius: var(--radius-md);
       overflow: hidden;
       margin-bottom: 1.1rem;
-      background: #0B1628;
+      background: #FFFFFF;
       border: 1px solid var(--color-border-subtle);
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .showcase-image-wrapper--restore::before {
-      content: "";
-      position: absolute;
-      inset: -14%;
-      background-image: var(--card-bg);
-      background-size: cover;
-      background-position: center;
-      filter: blur(18px) saturate(1.12) brightness(0.46);
-      transform: scale(1.12);
-      z-index: 0;
-      pointer-events: none;
-    }
     .showcase-image {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       object-position: center;
       display: block;
-      position: relative;
-      z-index: 1;
       transition: transform 0.35s ease;
-    }
-    .showcase-image--restore {
-      width: 100%;
-      height: 94%;
-      object-fit: contain;
-      object-position: center;
-      transform: scaleX(0.55);
-      border-radius: 14px / 8px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
     }
     .showcase-card:hover .showcase-image {
       transform: scale(1.03);
-    }
-    .showcase-card:hover .showcase-image--restore {
-      transform: scaleX(0.55) scale(1.03);
     }
     .showcase-image-placeholder {
       width: 100%;
@@ -267,6 +241,29 @@
       margin-bottom: 0.8rem;
       width: fit-content;
     }
+    .showcase-badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(0, 191, 165, 0.12);
+      color: #00BFA5;
+      border: 1px solid rgba(0, 191, 165, 0.35);
+      border-radius: 50px;
+      padding: 0.28rem 0.75rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      width: fit-content;
+    }
+    .showcase-badge-live .pulse-dot {
+      width: 7px;
+      height: 7px;
+      background: #00BFA5;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #00BFA5;
+    }
     .showcase-badge-upcoming {
       display: inline-flex;
       align-items: center;
@@ -310,6 +307,23 @@
       gap: 0.6rem;
       margin-top: auto;
       width: 100%;
+    }
+    .showcase-btn-primary {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
+      min-height: 44px !important;
+      padding: 0.65rem 16px !important;
+      width: 100% !important;
+      white-space: nowrap !important;
+      text-align: center !important;
+      box-sizing: border-box !important;
+      font-size: 0.84rem !important;
+      font-weight: 600 !important;
+      border-radius: var(--radius-md) !important;
+      text-decoration: none !important;
+      transition: all 0.25s ease !important;
     }
     .showcase-btn-secondary {
       display: inline-flex !important;
@@ -377,6 +391,15 @@
       background: rgba(0, 58, 112, 0.08);
       color: #003A70;
       border-color: rgba(0, 58, 112, 0.2);
+    }
+    [data-theme="light"] .showcase-badge-live {
+      background: rgba(0, 150, 130, 0.1);
+      color: #00796B;
+      border-color: rgba(0, 150, 130, 0.28);
+    }
+    [data-theme="light"] .showcase-badge-live .pulse-dot {
+      background: #00796B;
+      box-shadow: 0 0 8px #00796B;
     }
     [data-theme="light"] .showcase-badge-featured {
       background: rgba(0, 150, 130, 0.1);
@@ -593,18 +616,20 @@
             <div class="showcase-image-wrapper">
               <img src="/assets/catalogos-digitais/osmar-polimentos-catalogo-digital.webp" alt="Catálogo Digital Estética Automotiva — Osmar Polimentos com polimento técnico, vitrificação e orçamento pelo WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
             </div>
-            <div class="showcase-badge-featured">
-              <span data-i18n="catalogoDigital.statusOsmar">EM PREPARAÇÃO • PUBLICAÇÃO EM BREVE</span>
+            <div class="showcase-badge-live">
+              <span class="pulse-dot"></span>
+              <span data-i18n="catalogoDigital.badgeDemoActive">DEMONSTRAÇÃO REAL ONLINE</span>
             </div>
             <span class="showcase-segment" data-i18n="catalogoDigital.cat1Segment">Estética Automotiva</span>
             <h3 class="showcase-title" data-i18n="catalogoDigital.cat1Title">Estética Automotiva — Osmar Polimentos</h3>
             <p class="showcase-desc" data-i18n="catalogoDigital.cat1Desc">
-              Catálogo digital de serviços automotivos com polimento técnico, vitrificação, higienização interna e de estofados, preços e orçamento direto no WhatsApp.
+              Demonstração real ativa com polimento técnico, vitrificação, higienização interna e de estofados, preços e orçamento direto no WhatsApp.
             </p>
             <div class="showcase-actions">
-              <!-- Botão Ver Demonstração pronto para ativação após publicação definitiva de https://osmar-polimentos.conexus.press/ -->
-              <span class="showcase-status-note" data-i18n="catalogoDigital.noteOsmarPending">Demonstração em fase final de publicação</span>
-              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20modelo%20de%20Cat%C3%A1logo%20Digital%20para%20Est%C3%A9tica%20Automotiva%20(Osmar%20Polimentos)%20com%20a%20CONEXUS." target="_blank" rel="noopener noreferrer" class="btn btn-secondary showcase-btn-secondary" data-track="whatsapp_click" data-model="Osmar Polimentos" data-cta-position="catalogo_model_osmar">
+              <a href="https://osmar-polimentos.conexus.press/" target="_blank" rel="noopener noreferrer" class="btn btn-primary showcase-btn-primary" data-track="demo_click" data-demo-name="Osmar Polimentos" data-cta-position="catalogo_demo_osmar">
+                <span data-i18n="catalogoDigital.btnTestDemo">Ver Demonstração ↗</span>
+              </a>
+              <a href="https://wa.me/5541991569590?text=Ol%C3%A1!%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20Osmar%20Polimentos%20e%20gostaria%20de%20um%20cat%C3%A1logo%20digital%20similar%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn btn-secondary showcase-btn-secondary" data-track="whatsapp_click" data-model="Osmar Polimentos" data-cta-position="catalogo_model_osmar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 448 512" aria-hidden="true" style="flex-shrink: 0;"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
                 <span data-i18n="catalogoDigital.btnRequestModel">Solicitar Modelo</span>
               </a>
@@ -613,8 +638,8 @@
 
           <!-- Card 2: Beleza & Barbearia -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/beleza-barbearia.webp');">
-              <img src="/assets/catalogos-digitais/beleza-barbearia.webp" alt="Catálogo Digital Beleza e Barbearia — Cortes, Barba, Coloração e Tratamentos no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
+            <div class="showcase-image-wrapper">
+              <img src="/assets/catalogos-digitais/beleza-barbearia.webp?v=20261117.2" alt="Catálogo Digital Beleza e Barbearia — Cortes, Barba, Coloração e Tratamentos no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -635,8 +660,8 @@
 
           <!-- Card 3: Limpeza Residencial & Comercial -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/limpeza-residencial-comercial.webp');">
-              <img src="/assets/catalogos-digitais/limpeza-residencial-comercial.webp" alt="Catálogo Digital Limpeza Residencial e Comercial — Serviços de Limpeza Pós-Obra e Higienização no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
+            <div class="showcase-image-wrapper">
+              <img src="/assets/catalogos-digitais/limpeza-residencial-comercial.webp?v=20261117.2" alt="Catálogo Digital Limpeza Residencial e Comercial — Serviços de Limpeza Pós-Obra e Higienização no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -657,8 +682,8 @@
 
           <!-- Card 4: Floriculturas & Presentes -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/floriculturas-presentes.webp');">
-              <img src="/assets/catalogos-digitais/floriculturas-presentes.webp" alt="Catálogo Digital Floriculturas e Presentes — Buquês, Arranjos, Cestas e Presentes no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
+            <div class="showcase-image-wrapper">
+              <img src="/assets/catalogos-digitais/floriculturas-presentes.webp?v=20261117.2" alt="Catálogo Digital Floriculturas e Presentes — Buquês, Arranjos, Cestas e Presentes no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -679,8 +704,8 @@
 
           <!-- Card 5: Pet Shop & Banho e Tosa -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/pet-shop-banho-tosa.webp');">
-              <img src="/assets/catalogos-digitais/pet-shop-banho-tosa.webp" alt="Catálogo Digital Pet Shop e Banho e Tosa — Estética Animal, Rações e Acessórios no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
+            <div class="showcase-image-wrapper">
+              <img src="/assets/catalogos-digitais/pet-shop-banho-tosa.webp?v=20261117.2" alt="Catálogo Digital Pet Shop e Banho e Tosa — Estética Animal, Rações e Acessórios no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -701,8 +726,8 @@
 
           <!-- Card 6: Móveis & Decoração -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/moveis-decoracao.webp');">
-              <img src="/assets/catalogos-digitais/moveis-decoracao.webp" alt="Catálogo Digital Móveis e Decoração — Sofás, Mesas, Cadeiras e Peças Decorativas no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
+            <div class="showcase-image-wrapper">
+              <img src="/assets/catalogos-digitais/moveis-decoracao.webp?v=20261117.2" alt="Catálogo Digital Móveis e Decoração — Sofás, Mesas, Cadeiras e Peças Decorativas no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -723,8 +748,8 @@
 
           <!-- Card 7: Moda & Acessórios -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/moda-acessorios.webp');">
-              <img src="/assets/catalogos-digitais/moda-acessorios.webp" alt="Catálogo Digital Moda e Acessórios — Roupas, Calçados, Bolsas e Acessórios no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
+            <div class="showcase-image-wrapper">
+              <img src="/assets/catalogos-digitais/moda-acessorios.webp?v=20261117.2" alt="Catálogo Digital Moda e Acessórios — Roupas, Calçados, Bolsas e Acessórios no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
@@ -745,8 +770,8 @@
 
           <!-- Card 8: Eletrônicos & Acessórios -->
           <article class="showcase-card">
-            <div class="showcase-image-wrapper showcase-image-wrapper--restore" style="--card-bg: url('/assets/catalogos-digitais/eletronicos-acessorios.webp');">
-              <img src="/assets/catalogos-digitais/eletronicos-acessorios.webp" alt="Catálogo Digital Eletrônicos e Acessórios — Smartphones, Notebooks, Games e Periféricos no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image showcase-image--restore">
+            <div class="showcase-image-wrapper">
+              <img src="/assets/catalogos-digitais/eletronicos-acessorios.webp?v=20261117.2" alt="Catálogo Digital Eletrônicos e Acessórios — Smartphones, Notebooks, Games e Periféricos no WhatsApp" width="1200" height="675" loading="lazy" class="showcase-image">
             </div>
             <div class="showcase-badge-upcoming">
               <span data-i18n="catalogoDigital.statusPreparing">EM PREPARAÇÃO</span>
