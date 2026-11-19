@@ -1,4 +1,4 @@
-import { initWhatsAppLinks } from './whatsapp.js?v=20261116.10';
+import { initWhatsAppLinks } from './whatsapp.js?v=20261119.1';
 
 export const defaultLanguage = 'pt';
 export const supportedLanguages = ['pt', 'en', 'es'];
@@ -13,7 +13,7 @@ let currentLanguage = defaultLanguage;
 let loadedDictionaries = {};
 
 // Versão para cache-busting rigoroso dos dicionários no CDN e navegadores
-export const I18N_DICT_VERSION = '20261116.10';
+export const I18N_DICT_VERSION = '20261119.1';
 
 // Função auxiliar global para interoperabilidade sem dependência circular
 if (typeof window !== 'undefined') {
