@@ -4054,6 +4054,52 @@ select:focus {
   color: #07182D !important;
 }
 
+/* Links Inferiores do Bloco CTA Final (Branco #FFFFFF de Alto Contraste WCAG AAA) */
+.article-cta-box .article-cta-secondary-links a,
+.article-cta-box a.article-cta-sublink,
+.article-cta-box div[style*="border-top"] a,
+[data-theme="light"] .article-cta-box .article-cta-secondary-links a,
+[data-theme="light"] .article-cta-box a.article-cta-sublink,
+[data-theme="light"] .article-cta-box div[style*="border-top"] a {
+  color: #FFFFFF !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+  text-decoration-color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 500 !important;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease !important;
+}
+
+.article-cta-box .article-cta-secondary-links a:visited,
+.article-cta-box a.article-cta-sublink:visited,
+.article-cta-box div[style*="border-top"] a:visited,
+[data-theme="light"] .article-cta-box .article-cta-secondary-links a:visited,
+[data-theme="light"] .article-cta-box a.article-cta-sublink:visited,
+[data-theme="light"] .article-cta-box div[style*="border-top"] a:visited {
+  color: #FFFFFF !important;
+  text-decoration-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.article-cta-box .article-cta-secondary-links a:hover,
+.article-cta-box a.article-cta-sublink:hover,
+.article-cta-box div[style*="border-top"] a:hover,
+[data-theme="light"] .article-cta-box .article-cta-secondary-links a:hover,
+[data-theme="light"] .article-cta-box a.article-cta-sublink:hover,
+[data-theme="light"] .article-cta-box div[style*="border-top"] a:hover {
+  color: #21B8F6 !important;
+  text-decoration-color: #21B8F6 !important;
+}
+
+.article-cta-box .article-cta-secondary-links a:focus-visible,
+.article-cta-box a.article-cta-sublink:focus-visible,
+.article-cta-box div[style*="border-top"] a:focus-visible,
+[data-theme="light"] .article-cta-box .article-cta-secondary-links a:focus-visible,
+[data-theme="light"] .article-cta-box a.article-cta-sublink:focus-visible,
+[data-theme="light"] .article-cta-box div[style*="border-top"] a:focus-visible {
+  outline: 2px solid #21B8F6 !important;
+  outline-offset: 3px !important;
+  color: #FFFFFF !important;
+}
+
 [data-theme="light"] .pricing-card-featured {
   background: linear-gradient(180deg, rgba(33, 184, 246, 0.08) 0%, #FFFFFF 100%) !important;
   border: 2px solid #00A8E8 !important;

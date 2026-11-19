@@ -434,6 +434,51 @@
       white-space: normal !important;
       text-align: center;
     }
+    /* Links Inferiores do Bloco CTA Final (Branco #FFFFFF de Alto Contraste WCAG AAA) */
+    .article-cta-box .article-cta-secondary-links,
+    [data-theme="light"] .article-cta-box .article-cta-secondary-links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      padding-top: 1.25rem;
+      margin-top: 0.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .article-cta-box a.article-cta-sublink,
+    .article-cta-box .article-cta-secondary-links a,
+    [data-theme="light"] .article-cta-box a.article-cta-sublink,
+    [data-theme="light"] .article-cta-box .article-cta-secondary-links a {
+      color: #FFFFFF !important;
+      text-decoration: underline !important;
+      text-underline-offset: 4px !important;
+      text-decoration-color: rgba(255, 255, 255, 0.6) !important;
+      font-weight: 500 !important;
+      transition: color 0.2s ease, text-decoration-color 0.2s ease !important;
+    }
+    .article-cta-box a.article-cta-sublink:visited,
+    .article-cta-box .article-cta-secondary-links a:visited,
+    [data-theme="light"] .article-cta-box a.article-cta-sublink:visited,
+    [data-theme="light"] .article-cta-box .article-cta-secondary-links a:visited {
+      color: #FFFFFF !important;
+      text-decoration-color: rgba(255, 255, 255, 0.6) !important;
+    }
+    .article-cta-box a.article-cta-sublink:hover,
+    .article-cta-box .article-cta-secondary-links a:hover,
+    [data-theme="light"] .article-cta-box a.article-cta-sublink:hover,
+    [data-theme="light"] .article-cta-box .article-cta-secondary-links a:hover {
+      color: #21B8F6 !important;
+      text-decoration-color: #21B8F6 !important;
+    }
+    .article-cta-box a.article-cta-sublink:focus-visible,
+    .article-cta-box .article-cta-secondary-links a:focus-visible,
+    [data-theme="light"] .article-cta-box a.article-cta-sublink:focus-visible,
+    [data-theme="light"] .article-cta-box .article-cta-secondary-links a:focus-visible {
+      outline: 2px solid #21B8F6 !important;
+      outline-offset: 3px !important;
+      color: #FFFFFF !important;
+    }
     @media (max-width: 768px) {
       .article-callout-cta {
         flex-direction: column;
@@ -445,10 +490,10 @@
       }
     }
   </style>
-  <script type="module" crossorigin src="/assets/blog_cardapio-digital-com-whatsapp-vantagens-BWCbDCri.js"></script>
+  <script type="module" crossorigin src="/assets/blog_cardapio-digital-com-whatsapp-vantagens-Bxf2CNlS.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/i18n.js_v_20261119-D-7MO1QX.js">
   <link rel="modulepreload" crossorigin href="/assets/cookieConsent-B5mWIJbD.js">
-  <link rel="stylesheet" crossorigin href="/assets/blog_cardapio-digital-com-whatsapp-vantagens-8whvSTBW.css">
+  <link rel="stylesheet" crossorigin href="/assets/blog_cardapio-digital-com-whatsapp-vantagens-C7y9uwmS.css">
 </head>
 <body data-i18n-page="blog_cardapio_digital_com_whatsapp_vantagens">
   <!-- HEADER -->
@@ -863,10 +908,10 @@
             </div>
 
             <!-- LINKS INTERNOS ADICIONAIS -->
-            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; font-size: 0.9rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
-              <a href="/servicos/criacao-de-sites/" style="color: var(--color-cyan); text-decoration: underline;" data-i18n="autoContent.blog_cardapio_digital_com_whatsapp_vantagens.k121">Conhecer Outros Serviços e Criação de Sites</a>
-              <a href="/portfolio/" style="color: var(--color-cyan); text-decoration: underline;" data-i18n="autoContent.blog_cardapio_digital_com_whatsapp_vantagens.k122">Ver Portfólio Completo de Projetos CONEXUS</a>
-              <a href="/contato/" style="color: var(--color-cyan); text-decoration: underline;" data-i18n="nav.contact">Contato</a>
+            <div class="article-cta-secondary-links" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; font-size: 0.9rem; padding-top: 1.25rem; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+              <a href="/servicos/criacao-de-sites/" class="article-cta-sublink" style="color: #FFFFFF !important; text-decoration: underline;" data-i18n="autoContent.blog_cardapio_digital_com_whatsapp_vantagens.k121">Conhecer Outros Serviços e Criação de Sites</a>
+              <a href="/portfolio/" class="article-cta-sublink" style="color: #FFFFFF !important; text-decoration: underline;" data-i18n="autoContent.blog_cardapio_digital_com_whatsapp_vantagens.k122">Ver Portfólio Completo de Projetos CONEXUS</a>
+              <a href="/contato/" class="article-cta-sublink" style="color: #FFFFFF !important; text-decoration: underline;" data-i18n="nav.contact">Contato</a>
             </div>
           </div>
         </article>
