@@ -13,7 +13,7 @@ let currentLanguage = defaultLanguage;
 let loadedDictionaries = {};
 
 // Versão para cache-busting rigoroso dos dicionários no CDN e navegadores
-export const I18N_DICT_VERSION = '20261119.1';
+export const I18N_DICT_VERSION = '20261119.3';
 
 // Função auxiliar global para interoperabilidade sem dependência circular
 if (typeof window !== 'undefined') {
