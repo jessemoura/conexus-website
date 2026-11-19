@@ -51,7 +51,9 @@ export const siteConfig = {
     siteMultipage: 'Olá! Tenho interesse na criação de um site multipáginas profissional para minha empresa com a CONEXUS.',
     siteMigration: 'Olá! Gostaria de um orçamento para redesign e migração do meu site com a CONEXUS.',
     serviceCardapioDigital: 'Olá! Gostaria de solicitar um orçamento para cardápio digital e catálogo online com a CONEXUS.',
-    serviceCatalogoDigital: 'Olá! Gostaria de solicitar um orçamento para catálogo digital com WhatsApp da CONEXUS.'
+    serviceCatalogoDigital: 'Olá! Gostaria de solicitar um orçamento para catálogo digital com WhatsApp da CONEXUS.',
+    planCatalogoEssencial: 'Olá! Tenho interesse no Plano Essencial de Catálogo Digital da CONEXUS, por R$ 49,90/mês. Gostaria de receber mais informações.',
+    planCatalogoPlus: 'Olá! Tenho interesse no Plano Plus de Catálogo Digital da CONEXUS, por R$ 89,90/mês. Gostaria de receber mais informações.'
   },
 
   // Catálogo de Serviços para Cards da Home
