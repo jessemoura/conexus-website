@@ -5,6 +5,8 @@ export const en = {
   "flagAlt": "English",
   "htmlLang": "en",
   "meta": {
+    "error404Title": "Page Not Found (404) | CONEXUS",
+    "error404Desc": "The page you are looking for was not found. Explore our services, discover our success cases, or speak with our team.",
     "blog_cardapio_digital_com_whatsapp_vantagensTitle": "Digital Menu for Restaurants and Snack Bars: How to Get More WhatsApp Orders | CONEXUS",
     "blog_cardapio_digital_com_whatsapp_vantagensDescription": "Learn how a WhatsApp-integrated digital menu for restaurants and snack bars increases your daily orders, eliminates delivery commissions, and speeds up service.",
     "cardapioDigitalTitle": "Digital Menu with WhatsApp Ordering for Restaurants & Small Businesses | CONEXUS",
@@ -270,6 +272,12 @@ export const en = {
     "blog_case_granaTitle": "GRANA: How CONEXUS Developed and Launched its App on Google Play | Blog CONEXUS",
     "blog_case_granaDescription": "Go behind the scenes of engineering and UX for the GRANA app: from initial concept and field tests in 5 countries to official approval on the Google Play Store by CONEXUS."
   },
+  "error404": {
+    "title": "Page Not Found",
+    "desc": "The requested page may have been updated, moved, or is no longer available. You can return to the homepage or explore our services and portfolio.",
+    "backHome": "Back to Home"
+  },
+
   "nav": {
     "home": "Home",
     "services": "Services",

@@ -1,0 +1,48 @@
+# CONEXUS Digital Solutions — Servidor de Produção Apache / LiteSpeed (Hostinger)
+
+# 1. Página de Erro 404 Personalizada
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 2. Forçar HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 3. Forçar Canonical Host (non-www -> www.conexus.press)
+  RewriteCond %{HTTP_HOST} ^conexus\.press$ [NC]
+  RewriteRule ^(.*)$ https://www.conexus.press/$1 [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # 4. Headers de Segurança
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_expires.c>
+  # 5. Políticas de Cache de Navegador
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  # HTML sem cache agressivo para deploys ágeis
+  ExpiresByType text/html "access plus 0 seconds"
+
+  # CSS e JavaScript
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+
+  # Imagens e Mídias
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fontes
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

@@ -5,6 +5,8 @@ export const pt = {
   "flagAlt": "Bandeira do Brasil",
   "htmlLang": "pt-BR",
   "meta": {
+    "error404Title": "Página Não Encontrada (404) | CONEXUS",
+    "error404Desc": "A página que você está procurando não foi encontrada. Navegue pelos nossos serviços, conheça nossos cases de sucesso ou fale com a nossa equipe.",
     "blog_cardapio_digital_com_whatsapp_vantagensTitle": "Cardápio Digital para Restaurantes e Lanchonetes: Como Receber Mais Pedidos pelo WhatsApp | CONEXUS",
     "blog_cardapio_digital_com_whatsapp_vantagensDescription": "Aprenda como um cardápio digital para restaurantes e lanchonetes integrado ao WhatsApp aumenta seus pedidos, elimina comissões de aplicativos e agiliza seu atendimento.",
     "cardapioDigitalTitle": "Cardápio Digital com WhatsApp para Restaurantes e Pequenos Negócios | CONEXUS",
@@ -270,6 +272,12 @@ export const pt = {
     "blog_case_granaTitle": "GRANA: como a CONEXUS desenvolveu e lançou seu aplicativo na Google Play | Blog CONEXUS",
     "blog_case_granaDescription": "Confira os bastidores de engenharia e UX do aplicativo GRANA: da concepção e testes práticos em 5 países à homologação e publicação na Google Play Store pela CONEXUS."
   },
+  "error404": {
+    "title": "Página Não Encontrada",
+    "desc": "O endereço acessado pode ter sido atualizado, movido ou não está mais disponível. Você pode retornar à página inicial ou navegar pelos nossos serviços e portfólio.",
+    "backHome": "Voltar ao Início"
+  },
+
   "nav": {
     "home": "Início",
     "services": "Serviços",
