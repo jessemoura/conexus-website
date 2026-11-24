@@ -444,10 +444,22 @@ export function initTracking() {
       href.includes('bellafesta.conexus.press') ||
       href.includes('bellaitalia.conexus.press') ||
       href.includes('fornoegrao.conexus.press') ||
-      href.includes('vilaserena.conexus.press');
+      href.includes('vilaserena.conexus.press') ||
+      href.includes('acaivibe.conexus.press') ||
+      href.includes('osmar-polimentos.conexus.press') ||
+      href.includes('osmarpolimentos.conexus.press');
 
     if (isDemoLink && !isWhatsApp && !isMailto) {
-      const demoName = resolveRequestedModel(interactive) || (href.includes('boralanches') ? 'Bora Lanches' : href.includes('bellafesta') ? 'Bella Festa' : href.includes('bellaitalia') ? 'Bella Italia' : href.includes('fornoegrao') ? 'Forno & Grão' : href.includes('vilaserena') ? 'Vila Serena' : 'Demonstração');
+      const demoName = resolveRequestedModel(interactive) || (
+        href.includes('boralanches') ? 'Bora Lanches' : 
+        href.includes('bellafesta') ? 'Bella Festa' : 
+        href.includes('bellaitalia') ? 'Bella Italia' : 
+        href.includes('fornoegrao') ? 'Forno & Grão' : 
+        href.includes('vilaserena') ? 'Vila Serena' : 
+        href.includes('acaivibe') ? 'Açaí Vibe' : 
+        (href.includes('osmar-polimentos') || href.includes('osmarpolimentos')) ? 'Osmar Polimentos' : 
+        'Demonstração'
+      );
       sendGA4Event('conexus_demo_click', {
         button_name: resolveButtonName(interactive),
         interaction_location: resolveSectionLocation(interactive),

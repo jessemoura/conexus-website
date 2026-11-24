@@ -13,7 +13,9 @@ let currentLanguage = defaultLanguage;
 let loadedDictionaries = {};
 
 // Versão para cache-busting rigoroso dos dicionários no CDN e navegadores
-export const I18N_DICT_VERSION = '20261119.3';
+export const I18N_DICT_VERSION = '20261124.1';
+
+let loadedArticles = {};
 
 // Função auxiliar global para interoperabilidade sem dependência circular
 if (typeof window !== 'undefined') {
@@ -27,19 +29,41 @@ export async function loadDictionary(lang) {
   if (loadedDictionaries[lang]) return loadedDictionaries[lang];
   try {
     if (lang === 'pt') {
-      const mod = await import(`../i18n/pt.js?v=${I18N_DICT_VERSION}`);
+      const mod = await import('../i18n/pt.js');
       loadedDictionaries.pt = mod.pt;
     } else if (lang === 'en') {
-      const mod = await import(`../i18n/en.js?v=${I18N_DICT_VERSION}`);
+      const mod = await import('../i18n/en.js');
       loadedDictionaries.en = mod.en;
     } else if (lang === 'es') {
-      const mod = await import(`../i18n/es.js?v=${I18N_DICT_VERSION}`);
+      const mod = await import('../i18n/es.js');
       loadedDictionaries.es = mod.es;
     }
   } catch (err) {
     console.error(`[i18n] Erro ao carregar dicionário (${lang}):`, err);
   }
   return loadedDictionaries[lang] || null;
+}
+
+/**
+ * Carrega sob demanda as traduções de um artigo específico do blog
+ */
+export async function loadArticleTranslations(articleGroup) {
+  if (!articleGroup || loadedArticles[articleGroup]) return loadedArticles[articleGroup];
+  try {
+    const mod = await import(`../i18n/articles/${articleGroup}.js`);
+    loadedArticles[articleGroup] = mod;
+    for (const l of supportedLanguages) {
+      if (mod[l]) {
+        if (!loadedDictionaries[l]) loadedDictionaries[l] = {};
+        if (!loadedDictionaries[l].autoContent) loadedDictionaries[l].autoContent = {};
+        loadedDictionaries[l].autoContent[articleGroup] = mod[l];
+      }
+    }
+    return mod;
+  } catch (err) {
+    console.warn(`[i18n] Artigo ${articleGroup} não possui dicionário separado ou erro:`, err);
+    return null;
+  }
 }
 
 /**
@@ -112,6 +136,23 @@ export async function applyTranslations(lang) {
     return;
   }
 
+  // Carrega sob demanda as traduções específicas do artigo se a página for um post do blog
+  const pageKey = document.body?.getAttribute('data-i18n-page');
+  let articleGroup = null;
+  if (pageKey && pageKey.startsWith('blog_')) {
+    articleGroup = pageKey;
+  } else {
+    const autoEl = document.querySelector('[data-i18n^="autoContent.blog_"], [data-i18n-html^="autoContent.blog_"]');
+    if (autoEl) {
+      const attrVal = autoEl.getAttribute('data-i18n') || autoEl.getAttribute('data-i18n-html');
+      const m = attrVal.match(/^autoContent\.(blog_[^.]+)\./);
+      if (m) articleGroup = m[1];
+    }
+  }
+  if (articleGroup) {
+    await loadArticleTranslations(articleGroup);
+  }
+
   // 2. Atualiza elementos com data-i18n (texto puro)
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -150,7 +191,6 @@ export async function applyTranslations(lang) {
   });
 
   // 5. Atualiza Title e Meta Description da página se houver data-i18n-page no <body>
-  const pageKey = document.body?.getAttribute('data-i18n-page');
   let translatedPageTitle = null;
   let translatedPageDesc = null;
 

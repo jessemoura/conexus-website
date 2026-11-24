@@ -267,6 +267,24 @@ assert(hasSanitization, 'Módulo de higienização de URLs implementado para con
 
 // TEST 12: Auditoria Específica dos Artigos Mais Recentes do Blog
 console.log('\n[TEST 12] Auditoria Específica dos Artigos Mais Recentes do Blog');
+
+// Carrega os módulos de artigos sob demanda para validação do test suite
+const articlesDir = path.join(rootDir, 'src', 'i18n', 'articles');
+if (fs.existsSync(articlesDir)) {
+  const articleFiles = fs.readdirSync(articlesDir).filter(f => f.endsWith('.js'));
+  for (const f of articleFiles) {
+    const group = f.replace('.js', '');
+    const { pathToFileURL } = await import('url');
+    const mod = await import(pathToFileURL(path.join(articlesDir, f)).href);
+    if (!pt.autoContent) pt.autoContent = {};
+    if (!en.autoContent) en.autoContent = {};
+    if (!es.autoContent) es.autoContent = {};
+    if (mod.pt) pt.autoContent[group] = mod.pt;
+    if (mod.en) en.autoContent[group] = mod.en;
+    if (mod.es) es.autoContent[group] = mod.es;
+  }
+}
+
 const topBlogPosts = [
   'cardapio-digital-com-whatsapp-vantagens',
   'conexus-brasil-conexxus-uk-presenca-internacional',
