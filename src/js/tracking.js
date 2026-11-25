@@ -325,6 +325,7 @@ export function resolvePortfolioProject(targetElement, href = '') {
   if (path.includes('conexxus-uk')) return 'CONEXXUS Digital Marketing UK';
   if (path.includes('crafix')) return 'Crafix';
   if (path.includes('lumora')) return 'Lumora Cleaning Services';
+  if (path.includes('tempero') || path.includes('temperodacasa')) return 'Tempero da Casa';
 
   const card = targetElement ? targetElement.closest('[style*="border-radius: 16px"], .card, .portfolio-item') : null;
   if (card) {
@@ -446,6 +447,7 @@ export function initTracking() {
       href.includes('fornoegrao.conexus.press') ||
       href.includes('vilaserena.conexus.press') ||
       href.includes('acaivibe.conexus.press') ||
+      href.includes('temperodacasa.conexus.press') ||
       href.includes('osmar-polimentos.conexus.press') ||
       href.includes('osmarpolimentos.conexus.press');
 
@@ -457,6 +459,7 @@ export function initTracking() {
         href.includes('fornoegrao') ? 'Forno & Grão' : 
         href.includes('vilaserena') ? 'Vila Serena' : 
         href.includes('acaivibe') ? 'Açaí Vibe' : 
+        href.includes('temperodacasa') ? 'Tempero da Casa' : 
         (href.includes('osmar-polimentos') || href.includes('osmarpolimentos')) ? 'Osmar Polimentos' : 
         'Demonstração'
       );
